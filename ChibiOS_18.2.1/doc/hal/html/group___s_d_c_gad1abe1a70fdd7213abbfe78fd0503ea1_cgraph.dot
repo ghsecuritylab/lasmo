@@ -1,0 +1,10 @@
+digraph "sdcStart"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node67 [label="sdcStart",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node67 -> Node68 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node68 [label="sdc_lld_start",height=0.2,width=0.4,color="black",URL="$group___s_d_c.html#ga7a2cba8e917448ea8801127c39ff0c63",tooltip="Configures and activates the SDC peripheral. "];
+}

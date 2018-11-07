@@ -1,0 +1,12 @@
+digraph "uartStopReceiveI"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node62 [label="uartStopReceiveI",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node62 -> Node63 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node63 [label="uart_lld_stop_receive",height=0.2,width=0.4,color="black",URL="$group___u_a_r_t.html#gaf6eeebdeb91ad7e692d73ceefa9eafb7",tooltip="Stops any ongoing receive operation. "];
+  Node63 -> Node64 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node64 [label="uart_enter_rx_idle_loop",height=0.2,width=0.4,color="black",URL="$group___u_a_r_t.html#gac51617b9c08f922aed2a951a23001af7",tooltip="Puts the receiver in the UART_RX_IDLE state. "];
+}

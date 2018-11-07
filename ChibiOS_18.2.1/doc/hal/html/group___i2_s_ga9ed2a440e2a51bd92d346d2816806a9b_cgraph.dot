@@ -1,0 +1,16 @@
+digraph "i2sStart"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node17 [label="i2sStart",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node17 -> Node18 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node18 [label="i2s_lld_start",height=0.2,width=0.4,color="black",URL="$group___i2_s.html#gac29220167e0419922766bbeae8a8c5e6",tooltip="Configures and activates the I2S peripheral. "];
+  Node18 -> Node19 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node19 [label="dmaStreamAllocate",height=0.2,width=0.4,color="black",URL="$group___s_t_m32___d_m_a.html#ga2779cd46d0f5e9d7a6e549391e05cdd0",tooltip="Allocates a DMA stream. "];
+  Node18 -> Node20 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node20 [label="i2s_lld_serve_rx_interrupt",height=0.2,width=0.4,color="black",URL="$group___i2_s.html#ga6799b0b297241e85aeda104e7c317463",tooltip="Shared end-of-rx service routine. "];
+  Node18 -> Node21 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node21 [label="i2s_lld_serve_tx_interrupt",height=0.2,width=0.4,color="black",URL="$group___i2_s.html#gad8200eacd02d0b5ca833bec5c84c4794",tooltip="Shared end-of-tx service routine. "];
+}

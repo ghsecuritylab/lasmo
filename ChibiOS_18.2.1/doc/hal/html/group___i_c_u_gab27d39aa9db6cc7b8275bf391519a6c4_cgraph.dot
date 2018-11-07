@@ -1,0 +1,10 @@
+digraph "icuWaitCapture"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node32 [label="icuWaitCapture",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node32 -> Node33 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node33 [label="icu_lld_wait_capture",height=0.2,width=0.4,color="black",URL="$group___i_c_u.html#ga11ecf6dcdc8b409dad5f2ae7fd5bb978",tooltip="Waits for a completed capture. "];
+}

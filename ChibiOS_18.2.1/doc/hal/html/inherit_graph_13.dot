@@ -1,0 +1,18 @@
+digraph "Graphical Class Hierarchy"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node0 [label="BaseSequentialStreamVMT",height=0.2,width=0.4,color="black",URL="$struct_base_sequential_stream_v_m_t.html",tooltip="BaseSequentialStream virtual methods table. "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node1 [label="BaseChannelVMT",height=0.2,width=0.4,color="black",URL="$struct_base_channel_v_m_t.html",tooltip="BaseChannel virtual methods table. "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node2 [label="BaseAsynchronousChannelVMT",height=0.2,width=0.4,color="black",URL="$struct_base_asynchronous_channel_v_m_t.html",tooltip="BaseAsynchronousChannel virtual methods table. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node3 [label="SerialDriverVMT",height=0.2,width=0.4,color="black",URL="$struct_serial_driver_v_m_t.html",tooltip="SerialDriver virtual methods table. "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node4 [label="SerialUSBDriverVMT",height=0.2,width=0.4,color="black",URL="$struct_serial_u_s_b_driver_v_m_t.html",tooltip="SerialDriver virtual methods table. "];
+  Node0 -> Node5 [dir="back",color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node5 [label="FileStreamVMT",height=0.2,width=0.4,color="black",URL="$struct_file_stream_v_m_t.html",tooltip="FileStream virtual methods table. "];
+}

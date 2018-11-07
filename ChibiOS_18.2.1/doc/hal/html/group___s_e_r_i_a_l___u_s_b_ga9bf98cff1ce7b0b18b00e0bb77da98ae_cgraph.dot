@@ -1,0 +1,12 @@
+digraph "sduStop"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node8 [label="sduStop",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node8 -> Node9 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node9 [label="ibqResetI",height=0.2,width=0.4,color="black",URL="$group___h_a_l___b_u_f_f_e_r_s.html#gabb11859756f526b7f2150aaef6a4667c",tooltip="Resets an input buffers queue. "];
+  Node8 -> Node10 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node10 [label="obqResetI",height=0.2,width=0.4,color="black",URL="$group___h_a_l___b_u_f_f_e_r_s.html#gaddd8be7bc7d1c4c18ca709aff412f79c",tooltip="Resets an output buffers queue. "];
+}

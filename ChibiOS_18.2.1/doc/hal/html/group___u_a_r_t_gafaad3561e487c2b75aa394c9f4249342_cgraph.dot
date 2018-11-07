@@ -1,0 +1,15 @@
+digraph "uart_lld_stop"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node23 [label="uart_lld_stop",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node23 -> Node24 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node24 [label="dmaStreamRelease",height=0.2,width=0.4,color="black",URL="$group___s_t_m32___d_m_a.html#ga6427d36d4aba6469fd46e53bf972211e",tooltip="Releases a DMA stream. "];
+  Node24 -> Node25 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node25 [label="nvicDisableVector",height=0.2,width=0.4,color="black",URL="$group___c_o_m_m_o_n___a_r_m_c_mx___n_v_i_c.html#gafdc14a7abfb6cb5fd2dd93a05767bbf8",tooltip="Disables an interrupt handler. "];
+  Node23 -> Node25 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node23 -> Node26 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node26 [label="usart_stop",height=0.2,width=0.4,color="black",URL="$group___u_a_r_t.html#ga588507f9d46743f8433952ad9085018b",tooltip="USART de-initialization. "];
+}

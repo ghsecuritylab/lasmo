@@ -1,0 +1,14 @@
+digraph "SPIConfig"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  Node1 [label="{SPIConfig\n|+ circular\l+ ssline\l+ ssmask\l+ sspad\l+ cr1\l+ cr2\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="8",style="solid",label=" +end_cb" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{SPIDriver\n|+ state\l+ thread\l+ mutex\l+ spi\l+ rxdmamode\l+ txdmamode\l|}",height=0.2,width=0.4,color="black",URL="$struct_s_p_i_driver.html",tooltip="Structure representing an SPI driver. "];
+  Node3 -> Node2 [color="grey25",fontsize="8",style="solid",label=" +dmarx\n+dmatx" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{stm32_dma_stream_t\n|+ stream\l+ ifcr\l+ ishift\l+ selfindex\l+ vector\l|}",height=0.2,width=0.4,color="black",URL="$structstm32__dma__stream__t.html",tooltip="STM32 DMA stream descriptor structure. "];
+  Node1 -> Node2 [color="grey25",fontsize="8",style="solid",label=" +config" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 -> Node1 [color="grey25",fontsize="8",style="solid",label=" +ssport" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{stm32_gpio_t\n|+ MODER\l+ OTYPER\l+ OSPEEDR\l+ PUPDR\l+ IDR\l+ ODR\l+ W\l+ set\l+ clear\l+ H\l+ BSRR\l+ LOCKR\l+ AFRL\l+ AFRH\l|}",height=0.2,width=0.4,color="black",URL="$structstm32__gpio__t.html",tooltip="STM32 GPIO registers block. "];
+}

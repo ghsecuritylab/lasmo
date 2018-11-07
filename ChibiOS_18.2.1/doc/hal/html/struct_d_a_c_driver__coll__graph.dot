@@ -1,0 +1,16 @@
+digraph "DACDriver"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  Node1 [label="{DACDriver\n|+ state\l+ samples\l+ depth\l+ thread\l+ mutex\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="8",style="solid",label=" +config" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{DACConfig\n|+ init\l+ datamode\l+ cr\l|}",height=0.2,width=0.4,color="black",URL="$struct_d_a_c_config.html",tooltip="Driver configuration structure. "];
+  Node3 -> Node1 [color="grey25",fontsize="8",style="solid",label=" +params" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{dacparams_t\n|+ dac\l+ dataoffset\l+ regshift\l+ regmask\l+ dmamode\l+ dmairqprio\l|}",height=0.2,width=0.4,color="black",URL="$structdacparams__t.html",tooltip="DAC channel parameters type. "];
+  Node4 -> Node3 [color="grey25",fontsize="8",style="solid",label=" +dma" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{stm32_dma_stream_t\n|+ stream\l+ ifcr\l+ ishift\l+ selfindex\l+ vector\l|}",height=0.2,width=0.4,color="black",URL="$structstm32__dma__stream__t.html",tooltip="STM32 DMA stream descriptor structure. "];
+  Node5 -> Node1 [color="grey25",fontsize="8",style="solid",label=" +grpp" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{DACConversionGroup\n|+ num_channels\l+ trigger\l|}",height=0.2,width=0.4,color="black",URL="$struct_d_a_c_conversion_group.html",tooltip="DAC Conversion group structure. "];
+  Node1 -> Node5 [color="grey25",fontsize="8",style="solid",label=" +error_cb\n+end_cb" ,arrowhead="odiamond",fontname="Helvetica"];
+}

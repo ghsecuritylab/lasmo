@@ -1,0 +1,10 @@
+digraph "qspi_lld_init"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node3 [label="qspi_lld_init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 -> Node4 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node4 [label="qspiObjectInit",height=0.2,width=0.4,color="black",URL="$group___q_s_p_i.html#ga2266ed18c5410b991655475be4774b19",tooltip="Initializes the standard part of a QSPIDriver structure. "];
+}

@@ -1,0 +1,10 @@
+digraph "OSAL_IRQ_HANDLER"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node19 [label="OSAL_IRQ_HANDLER",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node19 -> Node20 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node20 [label="can_lld_rx0_handler",height=0.2,width=0.4,color="black",URL="$group___c_a_n.html#ga413ae4d6b4cbd1572a7634748d6d8dbf",tooltip="Common RX0 ISR handler. "];
+}

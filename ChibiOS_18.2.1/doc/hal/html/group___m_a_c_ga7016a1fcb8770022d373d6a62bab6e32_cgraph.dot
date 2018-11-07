@@ -1,0 +1,10 @@
+digraph "macWaitTransmitDescriptor"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node33 [label="macWaitTransmitDescriptor",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node33 -> Node34 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node34 [label="mac_lld_get_transmit\l_descriptor",height=0.2,width=0.4,color="black",URL="$group___m_a_c.html#ga34d066d0a473e0720569cbcb1b5bb90f",tooltip="Returns a transmission descriptor. "];
+}

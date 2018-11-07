@@ -1,0 +1,13 @@
+digraph "recvr3"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node10 [label="recvr3",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node10 -> Node11 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node11 [label="recvr1",height=0.2,width=0.4,color="black",URL="$group___m_m_c___s_p_i.html#ga3862a084e567aa0e36d86038f504b7b5",tooltip="Receives a single byte response. "];
+  Node11 -> Node12 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node12 [label="spiReceive",height=0.2,width=0.4,color="black",URL="$group___s_p_i.html#gadd99ad823b391dde114f04dedafe5e80",tooltip="Receives data from the SPI bus. "];
+  Node10 -> Node12 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+}

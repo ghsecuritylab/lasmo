@@ -1,0 +1,12 @@
+digraph "adcStop"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node24 [label="adcStop",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node24 -> Node25 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node25 [label="adc_lld_stop",height=0.2,width=0.4,color="black",URL="$group___a_d_c.html#ga5f4152006602b187c745bb32f915d679",tooltip="Deactivates the ADC peripheral. "];
+  Node25 -> Node26 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node26 [label="dmaStreamRelease",height=0.2,width=0.4,color="red",URL="$group___s_t_m32___d_m_a.html#ga6427d36d4aba6469fd46e53bf972211e",tooltip="Releases a DMA stream. "];
+}

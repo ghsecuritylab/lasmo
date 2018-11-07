@@ -1,0 +1,9 @@
+digraph "MACReceiveDescriptor"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  Node1 [label="{MACReceiveDescriptor\n|+ offset\l+ size\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="8",style="solid",label=" +physdesc" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{stm32_eth_rx_descriptor_t\n|+ rdes0\l+ rdes1\l+ rdes2\l+ rdes3\l|}",height=0.2,width=0.4,color="black",URL="$structstm32__eth__rx__descriptor__t.html",tooltip="Type of an STM32 Ethernet receive descriptor. "];
+}

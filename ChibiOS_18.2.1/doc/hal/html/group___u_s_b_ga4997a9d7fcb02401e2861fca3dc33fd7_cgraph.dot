@@ -1,0 +1,10 @@
+digraph "usbStallTransmitI"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node71 [label="usbStallTransmitI",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node71 -> Node72 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node72 [label="usb_lld_stall_in",height=0.2,width=0.4,color="black",URL="$group___u_s_b.html#gadf46718eb0c2d0bf4982283682d64813",tooltip="Brings an IN endpoint in the stalled state. "];
+}

@@ -1,0 +1,18 @@
+digraph "OSAL_IRQ_HANDLER"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node23 [label="OSAL_IRQ_HANDLER",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node23 -> Node24 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node24 [label="can_lld_sce_handler",height=0.2,width=0.4,color="black",URL="$group___c_a_n.html#gaee4bcfd04868a1d8c97958859a9918c4",tooltip="Common SCE ISR handler. "];
+  Node24 -> Node25 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node25 [label="can_lld_rx0_handler",height=0.2,width=0.4,color="black",URL="$group___c_a_n.html#ga413ae4d6b4cbd1572a7634748d6d8dbf",tooltip="Common RX0 ISR handler. "];
+  Node24 -> Node26 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node26 [label="can_lld_rx1_handler",height=0.2,width=0.4,color="black",URL="$group___c_a_n.html#ga635b53cbc3e0dce637e7b0526a2103a1",tooltip="Common RX1 ISR handler. "];
+  Node24 -> Node27 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node27 [label="can_lld_tx_handler",height=0.2,width=0.4,color="black",URL="$group___c_a_n.html#gaf97d7f485a06fa30d93882c7e4007ea8",tooltip="Common TX ISR handler. "];
+  Node24 -> Node28 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node28 [label="OSAL_IRQ_HANDLER",height=0.2,width=0.4,color="black",URL="$group___c_a_n.html#ga88c6427e607c3328544d8b395126c1d7",tooltip="CAN1 TX interrupt handler. "];
+}

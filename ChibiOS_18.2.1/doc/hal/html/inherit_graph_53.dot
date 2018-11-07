@@ -1,0 +1,8 @@
+digraph "Graphical Class Hierarchy"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node0 [label="qspi_command_t",height=0.2,width=0.4,color="black",URL="$structqspi__command__t.html",tooltip="Type of a QSPI command descriptor. "];
+}

@@ -1,0 +1,12 @@
+digraph "obqPutTimeout"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node26 [label="obqPutTimeout",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node26 -> Node27 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node27 [label="obqGetEmptyBufferTimeoutS",height=0.2,width=0.4,color="black",URL="$group___h_a_l___b_u_f_f_e_r_s.html#ga5fd1a9f207211fdbd50a42d711826aa2",tooltip="Gets the next empty buffer from the queue. "];
+  Node26 -> Node28 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node28 [label="obqPostFullBufferS",height=0.2,width=0.4,color="black",URL="$group___h_a_l___b_u_f_f_e_r_s.html#ga76b1e20bacea1453e16338e6fd12e6cf",tooltip="Posts a new filled buffer to the queue. "];
+}

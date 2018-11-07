@@ -1,0 +1,10 @@
+digraph "palWaitPadTimeout"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node10 [label="palWaitPadTimeout",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node10 -> Node11 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node11 [label="palWaitPadTimeoutS",height=0.2,width=0.4,color="black",URL="$group___p_a_l.html#ga43732cbeebdcc5e769c5a4d3e5181b7e",tooltip="Waits for an edge on the specified port/pad. "];
+}

@@ -1,0 +1,10 @@
+digraph "USB CDC Header"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir=LR;
+  Node0 [label="USB CDC Header",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 [label="Support Code",height=0.2,width=0.4,color="black",URL="$group___h_a_l___s_u_p_p_o_r_t.html",tooltip="HAL Support Code. "];
+  Node1->Node0 [shape=plaintext, dir="back", style="solid"];
+}

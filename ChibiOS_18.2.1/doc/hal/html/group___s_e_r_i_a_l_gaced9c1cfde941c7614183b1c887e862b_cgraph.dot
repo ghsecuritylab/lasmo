@@ -1,0 +1,12 @@
+digraph "sdInit"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node23 [label="sdInit",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node23 -> Node24 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node24 [label="sd_lld_init",height=0.2,width=0.4,color="black",URL="$group___s_e_r_i_a_l.html#gad05320e8f231f3e092b7042c574da015",tooltip="Low level serial driver initialization. "];
+  Node24 -> Node25 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node25 [label="sdObjectInit",height=0.2,width=0.4,color="black",URL="$group___s_e_r_i_a_l.html#gacb9838adcf51106f4e481f41a851cc34",tooltip="Initializes a generic full duplex driver object. "];
+}

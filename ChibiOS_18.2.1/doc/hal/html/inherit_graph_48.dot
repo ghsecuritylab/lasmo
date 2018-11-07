@@ -1,0 +1,8 @@
+digraph "Graphical Class Hierarchy"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node0 [label="MMCConfig",height=0.2,width=0.4,color="black",URL="$struct_m_m_c_config.html",tooltip="MMC/SD over SPI driver configuration structure. "];
+}

@@ -1,0 +1,10 @@
+digraph "i2cMasterReceiveTimeout"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node31 [label="i2cMasterReceiveTimeout",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node31 -> Node32 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node32 [label="i2c_lld_master_receive\l_timeout",height=0.2,width=0.4,color="black",URL="$group___i2_c.html#ga315c38a6d88db1009de65b2d0437f3d1",tooltip="Receives data via the I2C bus as master. "];
+}

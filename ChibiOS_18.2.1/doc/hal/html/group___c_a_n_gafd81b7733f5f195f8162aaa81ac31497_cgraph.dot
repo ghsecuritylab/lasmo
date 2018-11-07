@@ -1,0 +1,12 @@
+digraph "canTryReceiveI"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node53 [label="canTryReceiveI",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node53 -> Node54 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node54 [label="can_lld_is_rx_nonempty",height=0.2,width=0.4,color="black",URL="$group___c_a_n.html#gae061807c8879157051859f1252494690",tooltip="Determines whether a frame has been received. "];
+  Node53 -> Node55 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node55 [label="can_lld_receive",height=0.2,width=0.4,color="black",URL="$group___c_a_n.html#ga14aa484f836fddaa233ad278c9a67910",tooltip="Receives a frame from the input queue. "];
+}

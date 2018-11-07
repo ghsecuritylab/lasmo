@@ -1,0 +1,16 @@
+digraph "rtcInit"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node21 [label="rtcInit",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node21 -> Node22 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node22 [label="rtc_lld_init",height=0.2,width=0.4,color="black",URL="$group___r_t_c.html#ga167649286b06b62ece09ea6857773624",tooltip="Enable access to registers. "];
+  Node22 -> Node23 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node23 [label="rtc_enter_init",height=0.2,width=0.4,color="black",URL="$group___r_t_c.html#ga2cbfcf70b0ad8d7f18c6f90949946a28",tooltip="Beginning of configuration procedure. "];
+  Node22 -> Node24 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node24 [label="rtc_exit_init",height=0.2,width=0.4,color="black",URL="$group___r_t_c.html#gaec9b76b674bb8dead972b08c500dffa5",tooltip="Finalizing of configuration procedure. "];
+  Node22 -> Node25 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node25 [label="rtcObjectInit",height=0.2,width=0.4,color="black",URL="$group___r_t_c.html#gaed3c0ba431fea2baabfc9e031b1f3134",tooltip="Initializes a generic RTC driver object. "];
+}

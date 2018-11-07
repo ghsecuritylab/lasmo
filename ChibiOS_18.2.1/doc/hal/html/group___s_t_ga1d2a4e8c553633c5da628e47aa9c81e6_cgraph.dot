@@ -1,0 +1,10 @@
+digraph "stGetAlarm"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node17 [label="stGetAlarm",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node17 -> Node18 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node18 [label="st_lld_get_alarm",height=0.2,width=0.4,color="black",URL="$group___s_t.html#ga9c3a09a9f6a8214190956d1c37721cfc",tooltip="Returns the current alarm time. "];
+}

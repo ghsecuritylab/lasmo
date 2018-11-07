@@ -1,0 +1,10 @@
+digraph "uartStopSend"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node51 [label="uartStopSend",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node51 -> Node52 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node52 [label="uart_lld_stop_send",height=0.2,width=0.4,color="black",URL="$group___u_a_r_t.html#gaec269894b7a38cc224a92469728dac28",tooltip="Stops any ongoing transmission. "];
+}

@@ -1,0 +1,10 @@
+digraph "usbStartReceiveI"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node59 [label="usbStartReceiveI",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node59 -> Node60 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node60 [label="usb_lld_start_out",height=0.2,width=0.4,color="black",URL="$group___u_s_b.html#ga9ef9040f705088dab583a31b544abb0f",tooltip="Starts a receive operation on an OUT endpoint. "];
+}

@@ -1,0 +1,12 @@
+digraph "ibqGetTimeout"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node10 [label="ibqGetTimeout",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node10 -> Node11 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node11 [label="ibqGetFullBufferTimeoutS",height=0.2,width=0.4,color="black",URL="$group___h_a_l___b_u_f_f_e_r_s.html#gab15c822e09c04d8ab8a6173dc5c86b04",tooltip="Gets the next filled buffer from the queue. "];
+  Node10 -> Node12 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node12 [label="ibqReleaseEmptyBufferS",height=0.2,width=0.4,color="black",URL="$group___h_a_l___b_u_f_f_e_r_s.html#ga84bd11d1a8f4125aac9261d6eda50857",tooltip="Releases the buffer back in the queue. "];
+}

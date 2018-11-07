@@ -1,0 +1,14 @@
+digraph "rtcGetTime"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node32 [label="rtcGetTime",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node32 -> Node33 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node33 [label="rtc_lld_get_time",height=0.2,width=0.4,color="black",URL="$group___r_t_c.html#ga48ba5473cc2ecd526fceb6282f65a860",tooltip="Get current time. "];
+  Node33 -> Node34 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node34 [label="rtc_decode_date",height=0.2,width=0.4,color="black",URL="$group___r_t_c.html#ga7172497c6c8b01e4b335577ac1c98842",tooltip="Converts date from DR register encoding to timespec. "];
+  Node33 -> Node35 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node35 [label="rtc_decode_time",height=0.2,width=0.4,color="black",URL="$group___r_t_c.html#ga6b6214c93d4426ffb8a428e712256cf6",tooltip="Converts time from TR register encoding to timespec. "];
+}

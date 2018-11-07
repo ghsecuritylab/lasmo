@@ -1,0 +1,10 @@
+digraph "usb_lld_init_endpoint"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node28 [label="usb_lld_init_endpoint",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node28 -> Node29 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node29 [label="otg_ram_alloc",height=0.2,width=0.4,color="black",URL="$group___u_s_b.html#ga16b16095d3fc03569684abfd629dc016",tooltip="Allocates a block from the FIFO RAM memory. "];
+}

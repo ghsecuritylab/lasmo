@@ -1,0 +1,10 @@
+digraph "macReleaseTransmitDescriptor"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node35 [label="macReleaseTransmitDescriptor",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node35 -> Node36 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node36 [label="mac_lld_release_transmit\l_descriptor",height=0.2,width=0.4,color="black",URL="$group___m_a_c.html#ga29cd5df4ce571b7088c7107cf7901330",tooltip="Releases a transmit descriptor and starts the transmission of the enqueued data as a single frame..."];
+}

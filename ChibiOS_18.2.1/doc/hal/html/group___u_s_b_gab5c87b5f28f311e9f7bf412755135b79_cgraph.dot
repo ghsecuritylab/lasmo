@@ -1,0 +1,10 @@
+digraph "usbStop"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node51 [label="usbStop",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node51 -> Node52 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node52 [label="usb_lld_stop",height=0.2,width=0.4,color="black",URL="$group___u_s_b.html#ga06bf57ec27b15511ac02c5a7016ea3e6",tooltip="Deactivates the USB peripheral. "];
+}

@@ -1,0 +1,12 @@
+digraph "usbDisableEndpointsI"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node56 [label="usbDisableEndpointsI",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node56 -> Node57 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node57 [label="usb_lld_disable_endpoints",height=0.2,width=0.4,color="black",URL="$group___u_s_b.html#ga97950278d6eaaf64ba91cd460523aeb0",tooltip="Disables all the active endpoints except the endpoint zero. "];
+  Node57 -> Node58 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node58 [label="otg_ram_reset",height=0.2,width=0.4,color="black",URL="$group___u_s_b.html#ga9fda935bc01bccd42d9b4394f9937562",tooltip="Resets the FIFO RAM memory allocator. "];
+}

@@ -1,0 +1,12 @@
+digraph "ext_lld_start"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node2 [label="ext_lld_start",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node3 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node3 [label="ext_lld_channel_disable",height=0.2,width=0.4,color="black",URL="$group___e_x_t.html#ga25a3680106dbb172cb08c34ffa81af79",tooltip="Disables an EXT channel. "];
+  Node2 -> Node4 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node4 [label="ext_lld_channel_enable",height=0.2,width=0.4,color="black",URL="$group___e_x_t.html#ga8569f791b7419e028a409f7ee213769f",tooltip="Enables an EXT channel. "];
+}

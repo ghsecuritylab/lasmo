@@ -1,0 +1,10 @@
+digraph "spi_lld_init"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node2 [label="spi_lld_init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node3 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node3 [label="spiObjectInit",height=0.2,width=0.4,color="black",URL="$group___s_p_i.html#ga87a7bdc554b8e8fdfc77064e67689fcf",tooltip="Initializes the standard part of a SPIDriver structure. "];
+}

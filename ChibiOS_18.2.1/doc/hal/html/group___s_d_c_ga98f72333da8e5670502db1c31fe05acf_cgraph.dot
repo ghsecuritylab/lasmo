@@ -1,0 +1,12 @@
+digraph "sdcInit"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node63 [label="sdcInit",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node63 -> Node64 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node64 [label="sdc_lld_init",height=0.2,width=0.4,color="black",URL="$group___s_d_c.html#gab67e7f85b3624c1c8fed1196b3b0a3f4",tooltip="Low level SDC driver initialization. "];
+  Node64 -> Node65 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node65 [label="sdcObjectInit",height=0.2,width=0.4,color="black",URL="$group___s_d_c.html#ga012d12a7461aa9a58f7d60c7ab18936e",tooltip="Initializes the standard part of a SDCDriver structure. "];
+}

@@ -1,0 +1,7 @@
+digraph "CANFilter"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  Node1 [label="{CANFilter\n|+ filter\l+ mode\l+ scale\l+ assignment\l+ register1\l+ register2\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+}

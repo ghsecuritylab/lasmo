@@ -1,0 +1,20 @@
+digraph "USBConfig"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  Node1 [label="{USBConfig\n||}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="8",style="solid",label=" +get_descriptor_cb" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{USBDescriptor\n|+ ud_size\l+ ud_string\l|}",height=0.2,width=0.4,color="black",URL="$struct_u_s_b_descriptor.html",tooltip="Type of an USB descriptor. "];
+  Node3 -> Node1 [color="grey25",fontsize="8",style="solid",label=" +requests_hook_cb\n+event_cb\n+sof_cb" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{USBDriver\n|+ state\l+ transmitting\l+ receiving\l+ in_params\l+ out_params\l+ ep0state\l+ ep0next\l+ ep0n\l+ setup\l+ status\l+ address\l+ configuration\l+ saved_state\l+ pmnext\l|}",height=0.2,width=0.4,color="black",URL="$struct_u_s_b_driver.html",tooltip="Structure representing an USB driver. "];
+  Node1 -> Node3 [color="grey25",fontsize="8",style="solid",label=" +config" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 -> Node3 [color="grey25",fontsize="8",style="solid",label=" +otgparams" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{stm32_otg_params_t\n|+ rx_fifo_size\l+ otg_ram_size\l+ num_endpoints\l|}",height=0.2,width=0.4,color="black",URL="$structstm32__otg__params__t.html",tooltip="Peripheral-specific parameters block. "];
+  Node3 -> Node3 [color="grey25",fontsize="8",style="solid",label=" +ep0endcb" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 -> Node3 [color="grey25",fontsize="8",style="solid",label=" +epc" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{USBEndpointConfig\n|+ ep_mode\l+ in_maxsize\l+ out_maxsize\l+ in_multiplier\l+ setup_buf\l|}",height=0.2,width=0.4,color="red",URL="$struct_u_s_b_endpoint_config.html",tooltip="Type of an USB endpoint configuration structure. "];
+  Node3 -> Node5 [color="grey25",fontsize="8",style="solid",label=" +out_cb\n+in_cb\n+setup_cb" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node8 -> Node3 [color="grey25",fontsize="8",style="solid",label=" +otg" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node8 [label="{stm32_otg_t\n|+ GOTGCTL\l+ GOTGINT\l+ GAHBCFG\l+ GUSBCFG\l+ GRSTCTL\l+ GINTSTS\l+ GINTMSK\l+ GRXSTSR\l+ GRXSTSP\l+ GRXFSIZ\land 44 more...\l|}",height=0.2,width=0.4,color="red",URL="$structstm32__otg__t.html",tooltip="USB registers memory map. "];
+}

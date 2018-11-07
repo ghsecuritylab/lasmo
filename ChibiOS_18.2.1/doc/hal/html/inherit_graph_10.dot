@@ -1,0 +1,44 @@
+digraph "Graphical Class Hierarchy"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node0 [label="BaseObject",height=0.2,width=0.4,color="black",URL="$struct_base_object.html",tooltip="Base stream class. "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node1 [label="BaseBlockDevice",height=0.2,width=0.4,color="black",URL="$struct_base_block_device.html",tooltip="Base block device class. "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node2 [label="MMCSDBlockDevice",height=0.2,width=0.4,color="black",URL="$struct_m_m_c_s_d_block_device.html",tooltip="MCC/SD block device class. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node3 [label="MMCDriver",height=0.2,width=0.4,color="black",URL="$struct_m_m_c_driver.html",tooltip="Structure representing a MMC/SD over SPI driver. "];
+  Node0 -> Node4 [dir="back",color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node4 [label="BaseFlash",height=0.2,width=0.4,color="black",URL="$struct_base_flash.html",tooltip="Base flash class. "];
+  Node0 -> Node5 [dir="back",color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node5 [label="BaseSensor",height=0.2,width=0.4,color="black",URL="$struct_base_sensor.html",tooltip="Base stream class. "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node6 [label="BaseAccelerometer",height=0.2,width=0.4,color="black",URL="$struct_base_accelerometer.html",tooltip="Base accelerometer class. "];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node7 [label="BaseBarometer",height=0.2,width=0.4,color="black",URL="$struct_base_barometer.html",tooltip="Base barometer class. "];
+  Node5 -> Node8 [dir="back",color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node8 [label="BaseCompass",height=0.2,width=0.4,color="black",URL="$struct_base_compass.html",tooltip="Base compass class. "];
+  Node5 -> Node9 [dir="back",color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node9 [label="BaseGyroscope",height=0.2,width=0.4,color="black",URL="$struct_base_gyroscope.html",tooltip="Base gyroscope class. "];
+  Node5 -> Node10 [dir="back",color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node10 [label="BaseHygrometer",height=0.2,width=0.4,color="black",URL="$struct_base_hygrometer.html",tooltip="Base hygrometer class. "];
+  Node5 -> Node11 [dir="back",color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node11 [label="BaseThermometer",height=0.2,width=0.4,color="black",URL="$struct_base_thermometer.html",tooltip="Base thermometer class. "];
+  Node0 -> Node12 [dir="back",color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node12 [label="BaseSequentialStream",height=0.2,width=0.4,color="black",URL="$struct_base_sequential_stream.html",tooltip="Base stream class. "];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node13 [label="BaseChannel",height=0.2,width=0.4,color="black",URL="$struct_base_channel.html",tooltip="Base channel class. "];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node14 [label="BaseAsynchronousChannel",height=0.2,width=0.4,color="black",URL="$struct_base_asynchronous_channel.html",tooltip="Base asynchronous channel class. "];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node15 [label="SerialDriver",height=0.2,width=0.4,color="black",URL="$struct_serial_driver.html",tooltip="Full duplex serial driver class. "];
+  Node14 -> Node16 [dir="back",color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node16 [label="SerialUSBDriver",height=0.2,width=0.4,color="black",URL="$struct_serial_u_s_b_driver.html",tooltip="Full duplex serial driver class. "];
+  Node12 -> Node17 [dir="back",color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node17 [label="FileStream",height=0.2,width=0.4,color="black",URL="$struct_file_stream.html",tooltip="Base file stream class. "];
+  Node17 -> Node18 [dir="back",color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node18 [label="RTCDriverVMT",height=0.2,width=0.4,color="black",URL="$struct_r_t_c_driver_v_m_t.html",tooltip="RTCDriver virtual methods table. "];
+}

@@ -1,0 +1,10 @@
+digraph "wdgStart"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node6 [label="wdgStart",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node6 -> Node7 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node7 [label="wdg_lld_start",height=0.2,width=0.4,color="black",URL="$group___w_d_g.html#gafb160e12f3d921300f6be170067eb894",tooltip="Configures and activates the WDG peripheral. "];
+}

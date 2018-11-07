@@ -1,0 +1,8 @@
+digraph "Graphical Class Hierarchy"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node0 [label="DACConversionGroup",height=0.2,width=0.4,color="black",URL="$struct_d_a_c_conversion_group.html",tooltip="DAC Conversion group structure. "];
+}

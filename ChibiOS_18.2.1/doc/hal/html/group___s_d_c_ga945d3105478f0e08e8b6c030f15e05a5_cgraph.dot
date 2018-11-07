@@ -1,0 +1,12 @@
+digraph "mode_detect"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node43 [label="mode_detect",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node43 -> Node44 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node44 [label="sdc_lld_send_cmd_short_crc",height=0.2,width=0.4,color="black",URL="$group___s_d_c.html#ga93392c5297148eea683ec6d9bc79be3e",tooltip="Sends an SDIO command with a short response expected and CRC. "];
+  Node44 -> Node45 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node45 [label="sdc_lld_collect_errors",height=0.2,width=0.4,color="black",URL="$group___s_d_c.html#ga2769aa9ad202410d6c0c79bc2b34f023",tooltip="Gets SDC errors. "];
+}

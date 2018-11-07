@@ -1,0 +1,10 @@
+digraph "mac_lld_poll_link_status"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
+  node [fontname="Helvetica",fontsize="8",shape=record];
+  rankdir="LR";
+  Node16 [label="mac_lld_poll_link_status",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node16 -> Node17 [color="midnightblue",fontsize="8",style="solid",fontname="Helvetica"];
+  Node17 [label="mii_read",height=0.2,width=0.4,color="black",URL="$group___m_a_c.html#ga752399cc55bfe5a4a70e639fd6583a40",tooltip="Reads a PHY register. "];
+}
