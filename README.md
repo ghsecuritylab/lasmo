@@ -11,3 +11,8 @@
 - The protocol chosen for the animations of the laser is the **ILDA** protocol
   - it is mostly because it's the most popular format and thus it's well-documented and we can find help on the Internet if we need to.
   - official specification of the format was added in the `General documentations` folder
+
+#### Wednesday, 14 Nov 2018
+
+- Replaced **ChibiOS** with **FreeRTOS**
+- Changing the license because of the change of OS

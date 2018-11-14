@@ -1,7 +1,0 @@
-digraph "unpacked_mmc_csd_t"
-{
-  bgcolor="transparent";
-  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
-  node [fontname="Helvetica",fontsize="8",shape=record];
-  Node1 [label="{unpacked_mmc_csd_t\n|+ csd_structure\l+ spec_vers\l+ taac\l+ nsac\l+ tran_speed\l+ ccc\l+ read_bl_len\l+ read_bl_partial\l+ write_blk_misalign\l+ read_blk_misalign\land 23 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-}
