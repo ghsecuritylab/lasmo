@@ -1,7 +1,0 @@
-digraph "USBInEndpointState"
-{
-  bgcolor="transparent";
-  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
-  node [fontname="Helvetica",fontsize="8",shape=record];
-  Node1 [label="{USBInEndpointState\n|+ txsize\l+ txcnt\l+ txbuf\l+ thread\l+ totsize\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-}

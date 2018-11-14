@@ -1,9 +1,0 @@
-digraph "CANDriver"
-{
-  bgcolor="transparent";
-  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
-  node [fontname="Helvetica",fontsize="8",shape=record];
-  Node1 [label="{CANDriver\n|+ state\l+ txqueue\l+ rxqueue\l+ rxfull_event\l+ txempty_event\l+ error_event\l+ sleep_event\l+ wakeup_event\l+ can\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node2 -> Node1 [color="grey25",fontsize="8",style="solid",label=" +config" ,arrowhead="odiamond",fontname="Helvetica"];
-  Node2 [label="{CANConfig\n|+ mcr\l+ btr\l|}",height=0.2,width=0.4,color="black",URL="$struct_c_a_n_config.html",tooltip="Driver configuration structure. "];
-}

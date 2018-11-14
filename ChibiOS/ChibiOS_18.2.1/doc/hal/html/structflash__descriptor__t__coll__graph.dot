@@ -1,9 +1,0 @@
-digraph "flash_descriptor_t"
-{
-  bgcolor="transparent";
-  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
-  node [fontname="Helvetica",fontsize="8",shape=record];
-  Node1 [label="{flash_descriptor_t\n|+ attributes\l+ page_size\l+ sectors_count\l+ sectors_size\l+ address\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node2 -> Node1 [color="grey25",fontsize="8",style="solid",label=" +sectors" ,arrowhead="odiamond",fontname="Helvetica"];
-  Node2 [label="{flash_sector_descriptor_t\n|+ offset\l+ size\l|}",height=0.2,width=0.4,color="black",URL="$structflash__sector__descriptor__t.html",tooltip="Flash sector descriptor. "];
-}

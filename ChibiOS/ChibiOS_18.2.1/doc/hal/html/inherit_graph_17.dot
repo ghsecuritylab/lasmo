@@ -1,8 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  bgcolor="transparent";
-  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
-  node [fontname="Helvetica",fontsize="8",shape=record];
-  rankdir="LR";
-  Node0 [label="CANDriver",height=0.2,width=0.4,color="black",URL="$struct_c_a_n_driver.html",tooltip="Structure representing an CAN driver. "];
-}

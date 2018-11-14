@@ -1,9 +1,0 @@
-digraph "IOBus"
-{
-  bgcolor="transparent";
-  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
-  node [fontname="Helvetica",fontsize="8",shape=record];
-  Node1 [label="{IOBus\n|+ mask\l+ offset\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node2 -> Node1 [color="grey25",fontsize="8",style="solid",label=" +portid" ,arrowhead="odiamond",fontname="Helvetica"];
-  Node2 [label="{stm32_gpio_t\n|+ MODER\l+ OTYPER\l+ OSPEEDR\l+ PUPDR\l+ IDR\l+ ODR\l+ W\l+ set\l+ clear\l+ H\l+ BSRR\l+ LOCKR\l+ AFRL\l+ AFRH\l|}",height=0.2,width=0.4,color="black",URL="$structstm32__gpio__t.html",tooltip="STM32 GPIO registers block. "];
-}

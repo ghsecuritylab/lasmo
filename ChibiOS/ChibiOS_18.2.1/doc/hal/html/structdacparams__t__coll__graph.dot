@@ -1,9 +1,0 @@
-digraph "dacparams_t"
-{
-  bgcolor="transparent";
-  edge [fontname="Helvetica",fontsize="8",labelfontname="Helvetica",labelfontsize="8"];
-  node [fontname="Helvetica",fontsize="8",shape=record];
-  Node1 [label="{dacparams_t\n|+ dac\l+ dataoffset\l+ regshift\l+ regmask\l+ dmamode\l+ dmairqprio\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node2 -> Node1 [color="grey25",fontsize="8",style="solid",label=" +dma" ,arrowhead="odiamond",fontname="Helvetica"];
-  Node2 [label="{stm32_dma_stream_t\n|+ stream\l+ ifcr\l+ ishift\l+ selfindex\l+ vector\l|}",height=0.2,width=0.4,color="black",URL="$structstm32__dma__stream__t.html",tooltip="STM32 DMA stream descriptor structure. "];
-}
