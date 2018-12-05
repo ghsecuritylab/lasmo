@@ -2,21 +2,21 @@
                                     Packager
                                     --------
 
-                      12:06 PM Wednesday, December 05, 2018
-                         Job Name: E:\LASMO\PCB\PCB.prj
+                      01:10 PM Wednesday, December 05, 2018
+                     Job Name: D:\telecom\lasmo\PCB\PCB.prj
 
 
      Packager     Version: 020806.00
 
-        Commandline is: "C:\mentorgraphics\EEVX.2.4\SDD_HOME\wg\win32\bin\package "-uE:\LASMO\PCB\Default\default.icdb" -k -CleanBuild -W1PinNets -i "-jE:\LASMO\PCB\PCB.prj" "
+        Commandline is: "C:\MentorGraphics\EEVX.2.4\SDD_HOME\wg\win32\bin\package "-uD:\telecom\lasmo\PCB\Default\default.icdb" -k -CleanBuild -W1PinNets "-jD:\telecom\lasmo\PCB\PCB.prj" "
 
-     The Common Database is at "E:\LASMO\PCB\Default\default.icdb".
+     The Common Database is at "D:\telecom\lasmo\PCB\Default\default.icdb".
 
      The Root of this design is "Schematic1".
 
      The Front End Snapshot of this design is "DCDV".
 
-     The PCB Design Path of this design is at "E:\LASMO\PCB\PCB\PCB.pcb".
+     The PCB Design Path of this design is at "D:\telecom\lasmo\PCB\PCB\PCB.pcb".
 
      The Central Library is at "F:\Central_Libs\ENST.lmc".
 
@@ -29,12 +29,6 @@
      The AllowAlphaRefDes status indicates that reference
       designators containing all alpha characters should be deleted
       and the relevant symbols repackaged.
-
-     All existing reference designators and frozen properties will be ignored
-      during packaging except for those on symbols within Reusable Blocks.
-      Only the Room and Cluster symbol properties will be read for the purpose
-      of user designated packaging.  Use with the -y option if back annotation
-      to the Common DataBase is not desired.
 
      The cross mapping of symbol pin names to Part Number pin
       numbers will be checked for packaged symbols and mapped correctly
@@ -85,590 +79,6 @@
 
 
 
-    WARNING: Block Schematic1, Page 1, Symbol XCMP718:
-     Reference designator removal.
-     The Reference Designator "U" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 1, Symbol XCMP720:
-     Reference designator removal.
-     The Reference Designator "U" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 1, Symbol XCMP812:
-     Reference designator removal.
-     The Reference Designator "QZ" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 1, Symbol XCMP813:
-     Reference designator removal.
-     The Reference Designator "C" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 1, Symbol XCMP814:
-     Reference designator removal.
-     The Reference Designator "C" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 1, Symbol XCMP815:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 2, Symbol XCMP737:
-     Reference designator removal.
-     The Reference Designator "U" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 2, Symbol XCMP738:
-     Reference designator removal.
-     The Reference Designator "J" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 2, Symbol XCMP740:
-     Reference designator removal.
-     The Reference Designator "L" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 2, Symbol XCMP741:
-     Reference designator removal.
-     The Reference Designator "C" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 2, Symbol XCMP742:
-     Reference designator removal.
-     The Reference Designator "C" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 2, Symbol XCMP745:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 2, Symbol XCMP746:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 2, Symbol XCMP747:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 2, Symbol XCMP748:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 2, Symbol XCMP749:
-     Reference designator removal.
-     The Reference Designator "C" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 2, Symbol XCMP750:
-     Reference designator removal.
-     The Reference Designator "C" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 2, Symbol XCMP755:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 2, Symbol XCMP756:
-     Reference designator removal.
-     The Reference Designator "C" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 2, Symbol XCMP763:
-     Reference designator removal.
-     The Reference Designator "C" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 2, Symbol XCMP764:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 2, Symbol XCMP766:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 2, Symbol XCMP767:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 2, Symbol XCMP770:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 2, Symbol XCMP773:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 2, Symbol XCMP774:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 2, Symbol XCMP775:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 2, Symbol XCMP776:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 2, Symbol XCMP777:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 2, Symbol XCMP778:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP781:
-     Reference designator removal.
-     The Reference Designator "U" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP786:
-     Reference designator removal.
-     The Reference Designator "J" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP788:
-     Reference designator removal.
-     The Reference Designator "J" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP789:
-     Reference designator removal.
-     The Reference Designator "J" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP797:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP793:
-     Reference designator removal.
-     The Reference Designator "U" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP801:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP802:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP803:
-     Reference designator removal.
-     The Reference Designator "U" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP806:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP828:
-     Reference designator removal.
-     The Reference Designator "J" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP843:
-     Reference designator removal.
-     The Reference Designator "J" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP844:
-     Reference designator removal.
-     The Reference Designator "J" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP846:
-     Reference designator removal.
-     The Reference Designator "U" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP857:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP858:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP860:
-     Reference designator removal.
-     The Reference Designator "U" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP861:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP862:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP863:
-     Reference designator removal.
-     The Reference Designator "U" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP864:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP865:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP869:
-     Reference designator removal.
-     The Reference Designator "U" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP870:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP871:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP872:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP873:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP874:
-     Reference designator removal.
-     The Reference Designator "J" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP875:
-     Reference designator removal.
-     The Reference Designator "U" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP876:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP877:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP878:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP879:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP880:
-     Reference designator removal.
-     The Reference Designator "J" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP883:
-     Reference designator removal.
-     The Reference Designator "J" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP884:
-     Reference designator removal.
-     The Reference Designator "J" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 4, Symbol XCMP790:
-     Reference designator removal.
-     The Reference Designator "U" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 4, Symbol XCMP823:
-     Reference designator removal.
-     The Reference Designator "U" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 4, Symbol XCMP824:
-     Reference designator removal.
-     The Reference Designator "QZ" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 4, Symbol XCMP825:
-     Reference designator removal.
-     The Reference Designator "C" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 4, Symbol XCMP826:
-     Reference designator removal.
-     The Reference Designator "C" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 4, Symbol XCMP827:
-     Reference designator removal.
-     The Reference Designator "R" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 4, Symbol XCMP835:
-     Reference designator removal.
-     The Reference Designator "J" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
      Common Data Base has been read
 
      Target PDB Name: Integration\LocalPartsDB.pdb
@@ -717,131 +127,197 @@
      Checking for value differences between non-null symbol properties and PartsDB properties,
       but only for those properties checked off in the Property Definition Editor
 
-    WARNING: Block Schematic1, Page 4, Symbol XCMP827:
-      Symbol property changed to limited precision PartsDB value:
-                        Resolved PartNumber = 00-0075
-                        Symbol Property: Value = 1,1K 
-     Limited Precision PartsDB Property: Value = 1.1K 
-
-    WARNING: Block Schematic1, Page 1, Symbol XCMP815:
-      Symbol property changed to limited precision PartsDB value:
-                        Resolved PartNumber = 00-0075
-                        Symbol Property: Value = 1,1K 
-     Limited Precision PartsDB Property: Value = 1.1K 
-
     WARNING: Block Schematic1, Page 2, Symbol XCMP748:
       Symbol property changed to limited precision PartsDB value:
                         Resolved PartNumber = 01-1164
-                        Symbol Property: Value = 49,9 
-     Limited Precision PartsDB Property: Value = 49.9 
+                        Symbol Property: Value = 49.9 
+     Limited Precision PartsDB Property: Value = 49,9 
 
     WARNING: Block Schematic1, Page 2, Symbol XCMP747:
       Symbol property changed to limited precision PartsDB value:
                         Resolved PartNumber = 01-1164
-                        Symbol Property: Value = 49,9 
-     Limited Precision PartsDB Property: Value = 49.9 
+                        Symbol Property: Value = 49.9 
+     Limited Precision PartsDB Property: Value = 49,9 
 
     WARNING: Block Schematic1, Page 2, Symbol XCMP746:
       Symbol property changed to limited precision PartsDB value:
                         Resolved PartNumber = 01-1164
-                        Symbol Property: Value = 49,9 
-     Limited Precision PartsDB Property: Value = 49.9 
+                        Symbol Property: Value = 49.9 
+     Limited Precision PartsDB Property: Value = 49,9 
 
     WARNING: Block Schematic1, Page 2, Symbol XCMP745:
       Symbol property changed to limited precision PartsDB value:
                         Resolved PartNumber = 01-1164
-                        Symbol Property: Value = 49,9 
-     Limited Precision PartsDB Property: Value = 49.9 
+                        Symbol Property: Value = 49.9 
+     Limited Precision PartsDB Property: Value = 49,9 
 
-    WARNING: Block Schematic1, Page 2, Symbol XCMP755:
-      Symbol property changed to limited precision PartsDB value:
-                        Resolved PartNumber = 01-0393
-                        Symbol Property: Value = 12,1K 
-     Limited Precision PartsDB Property: Value = 12.1K 
+    WARNING: Block Schematic1, Page 4, Symbol XCMP835:
+      Symbol / PartsDB property mismatch:
+      Resolved PartNumber = 70-0081
+      Symbol Property: Cout HT = 1,96
+     PartsDB Property: Cout HT = 1.96
+     The symbol property value matches the PartsDB value with the Notation
+      Setting being ignored as requested for this property.
 
-    WARNING: Block Schematic1, Page 2, Symbol XCMP767:
-      Symbol property changed to limited precision PartsDB value:
-                        Resolved PartNumber = 00-0078
-                        Symbol Property: Value = 1,5K 
-     Limited Precision PartsDB Property: Value = 1.5K 
+    WARNING: Block Schematic1, Page 1, Symbol XCMP681:
+      Symbol / PartsDB property mismatch:
+      Resolved PartNumber = 70-0081
+      Symbol Property: Cout HT = 1,96
+     PartsDB Property: Cout HT = 1.96
+     The symbol property value matches the PartsDB value with the Notation
+      Setting being ignored as requested for this property.
 
-    WARNING: Block Schematic1, Page 2, Symbol XCMP766:
-      Symbol property changed to limited precision PartsDB value:
-                        Resolved PartNumber = 00-0078
-                        Symbol Property: Value = 1,5K 
-     Limited Precision PartsDB Property: Value = 1.5K 
+    WARNING: Block Schematic1, Page 1, Symbol XCMP720:
+      Symbol / PartsDB property mismatch:
+      Resolved PartNumber = 40-0293
+      Symbol Property: Cout HT = 13,68
+     PartsDB Property: Cout HT = 13.68
+     The symbol property value matches the PartsDB value with the Notation
+      Setting being ignored as requested for this property.
 
-    WARNING: Block Schematic1, Page 3, Symbol XCMP789:
-      Symbol property changed to limited precision PartsDB value:
-                        Resolved PartNumber = 70-0066
-                        Symbol Property: Part Label = BLUE_CONN
-     Limited Precision PartsDB Property: Part Label = S2B-PH-SM4-TB
+    WARNING: Block Schematic1, Page 1, Symbol XCMP718:
+      Symbol / PartsDB property mismatch:
+      Resolved PartNumber = 40-0293
+      Symbol Property: Cout HT = 13,68
+     PartsDB Property: Cout HT = 13.68
+     The symbol property value matches the PartsDB value with the Notation
+      Setting being ignored as requested for this property.
 
-    WARNING: Block Schematic1, Page 3, Symbol XCMP788:
-      Symbol property changed to limited precision PartsDB value:
-                        Resolved PartNumber = 70-0066
-                        Symbol Property: Part Label = GREEN_CONN
-     Limited Precision PartsDB Property: Part Label = S2B-PH-SM4-TB
+    WARNING: Block Schematic1, Page 4, Symbol XCMP824:
+      Symbol / PartsDB property mismatch:
+      Resolved PartNumber = 81-0013
+      Symbol Property: Cout HT = 1,81
+     PartsDB Property: Cout HT = 1.81
+     The symbol property value matches the PartsDB value with the Notation
+      Setting being ignored as requested for this property.
 
-    WARNING: Block Schematic1, Page 3, Symbol XCMP786:
-      Symbol property changed to limited precision PartsDB value:
-                        Resolved PartNumber = 70-0066
-                        Symbol Property: Part Label = RED_CONN
-     Limited Precision PartsDB Property: Part Label = S2B-PH-SM4-TB
+    WARNING: Block Schematic1, Page 1, Symbol XCMP812:
+      Symbol / PartsDB property mismatch:
+      Resolved PartNumber = 81-0013
+      Symbol Property: Cout HT = 1,81
+     PartsDB Property: Cout HT = 1.81
+     The symbol property value matches the PartsDB value with the Notation
+      Setting being ignored as requested for this property.
 
-    WARNING: Block Schematic1, Page 3, Symbol XCMP806:
-      Symbol property changed to limited precision PartsDB value:
-                        Resolved PartNumber = 00-0093
-                        Symbol Property: Value = 6,2K 
-     Limited Precision PartsDB Property: Value = 6.2K 
+    WARNING: Block Schematic1, Page 2, Symbol XCMP737:
+      Symbol / PartsDB property mismatch:
+      Resolved PartNumber = 40-0313
+      Symbol Property: Cout HT = 1,17
+     PartsDB Property: Cout HT = 1.17
+     The symbol property value matches the PartsDB value with the Notation
+      Setting being ignored as requested for this property.
 
-    WARNING: Block Schematic1, Page 3, Symbol XCMP802:
-      Symbol property changed to limited precision PartsDB value:
-                        Resolved PartNumber = 00-0093
-                        Symbol Property: Value = 6,2K 
-     Limited Precision PartsDB Property: Value = 6.2K 
+    WARNING: Block Schematic1, Page 2, Symbol XCMP738:
+      Symbol / PartsDB property mismatch:
+      Resolved PartNumber = 70-0102
+      Symbol Property: Cout HT = 2,45
+     PartsDB Property: Cout HT = 2.45
+     The symbol property value matches the PartsDB value with the Notation
+      Setting being ignored as requested for this property.
 
-    WARNING: Block Schematic1, Page 3, Symbol XCMP865:
-      Symbol property changed to limited precision PartsDB value:
-                        Resolved PartNumber = 01-0317
-                        Symbol Property: Value = 1,96K 
-     Limited Precision PartsDB Property: Value = 1.96K 
+    WARNING: Block Schematic1, Page 3, Symbol XCMP781:
+      Symbol / PartsDB property mismatch:
+      Resolved PartNumber = 40-0354
+      Symbol Property: Cout HT = 4,62
+     PartsDB Property: Cout HT = 4.62
+     The symbol property value matches the PartsDB value with the Notation
+      Setting being ignored as requested for this property.
 
-    WARNING: Block Schematic1, Page 3, Symbol XCMP862:
-      Symbol property changed to limited precision PartsDB value:
-                        Resolved PartNumber = 01-0317
-                        Symbol Property: Value = 1,96K 
-     Limited Precision PartsDB Property: Value = 1.96K 
+    WARNING: Block Schematic1, Page 3, Symbol XCMP803:
+      Symbol / PartsDB property mismatch:
+      Resolved PartNumber = 40-0349
+      Symbol Property: Cout HT = 5,53
+     PartsDB Property: Cout HT = 5.53
+     The symbol property value matches the PartsDB value with the Notation
+      Setting being ignored as requested for this property.
 
-    WARNING: Block Schematic1, Page 3, Symbol XCMP858:
-      Symbol property changed to limited precision PartsDB value:
-                        Resolved PartNumber = 01-0317
-                        Symbol Property: Value = 1,96K 
-     Limited Precision PartsDB Property: Value = 1.96K 
+    WARNING: Block Schematic1, Page 3, Symbol XCMP793:
+      Symbol / PartsDB property mismatch:
+      Resolved PartNumber = 40-0349
+      Symbol Property: Cout HT = 5,53
+     PartsDB Property: Cout HT = 5.53
+     The symbol property value matches the PartsDB value with the Notation
+      Setting being ignored as requested for this property.
 
-    WARNING: Block Schematic1, Page 3, Symbol XCMP877:
-      Symbol property changed to limited precision PartsDB value:
-                        Resolved PartNumber = 00-0086
-                        Symbol Property: Value = 3,3K 
-     Limited Precision PartsDB Property: Value = 3.3K 
+    WARNING: Block Schematic1, Page 3, Symbol XCMP828:
+      Symbol / PartsDB property mismatch:
+      Resolved PartNumber = 70-0058
+      Symbol Property: Cout HT = 1,71
+     PartsDB Property: Cout HT = 1.71
+     The symbol property value matches the PartsDB value with the Notation
+      Setting being ignored as requested for this property.
 
-    WARNING: Block Schematic1, Page 3, Symbol XCMP876:
-      Symbol property changed to limited precision PartsDB value:
-                        Resolved PartNumber = 00-0086
-                        Symbol Property: Value = 3,3K 
-     Limited Precision PartsDB Property: Value = 3.3K 
+    WARNING: Block Schematic1, Page 3, Symbol XCMP875:
+      Symbol / PartsDB property mismatch:
+      Resolved PartNumber = 40-0321
+      Symbol Property: Cout HT = 2,89
+     PartsDB Property: Cout HT = 2.89
+     The symbol property value matches the PartsDB value with the Notation
+      Setting being ignored as requested for this property.
 
-    WARNING: Block Schematic1, Page 3, Symbol XCMP871:
-      Symbol property changed to limited precision PartsDB value:
-                        Resolved PartNumber = 00-0086
-                        Symbol Property: Value = 3,3K 
-     Limited Precision PartsDB Property: Value = 3.3K 
+    WARNING: Block Schematic1, Page 3, Symbol XCMP869:
+      Symbol / PartsDB property mismatch:
+      Resolved PartNumber = 40-0321
+      Symbol Property: Cout HT = 2,89
+     PartsDB Property: Cout HT = 2.89
+     The symbol property value matches the PartsDB value with the Notation
+      Setting being ignored as requested for this property.
 
-    WARNING: Block Schematic1, Page 3, Symbol XCMP870:
-      Symbol property changed to limited precision PartsDB value:
-                        Resolved PartNumber = 00-0086
-                        Symbol Property: Value = 3,3K 
-     Limited Precision PartsDB Property: Value = 3.3K 
+    WARNING: Block Schematic1, Page 3, Symbol XCMP863:
+      Symbol / PartsDB property mismatch:
+      Resolved PartNumber = 40-0321
+      Symbol Property: Cout HT = 2,89
+     PartsDB Property: Cout HT = 2.89
+     The symbol property value matches the PartsDB value with the Notation
+      Setting being ignored as requested for this property.
+
+    WARNING: Block Schematic1, Page 3, Symbol XCMP860:
+      Symbol / PartsDB property mismatch:
+      Resolved PartNumber = 40-0321
+      Symbol Property: Cout HT = 2,89
+     PartsDB Property: Cout HT = 2.89
+     The symbol property value matches the PartsDB value with the Notation
+      Setting being ignored as requested for this property.
+
+    WARNING: Block Schematic1, Page 3, Symbol XCMP846:
+      Symbol / PartsDB property mismatch:
+      Resolved PartNumber = 40-0321
+      Symbol Property: Cout HT = 2,89
+     PartsDB Property: Cout HT = 2.89
+     The symbol property value matches the PartsDB value with the Notation
+      Setting being ignored as requested for this property.
+
+    WARNING: Block Schematic1, Page 3, Symbol XCMP874:
+      Symbol / PartsDB property mismatch:
+      Resolved PartNumber = 70-0010
+      Symbol Property: Cout HT = 1,656
+     PartsDB Property: Cout HT = 1.656
+     The symbol property value matches the PartsDB value with the Notation
+      Setting being ignored as requested for this property.
+
+    WARNING: Block Schematic1, Page 3, Symbol XCMP880:
+      Symbol / PartsDB property mismatch:
+      Resolved PartNumber = 70-0011
+      Symbol Property: Cout HT = 1,656
+     PartsDB Property: Cout HT = 1.656
+     The symbol property value matches the PartsDB value with the Notation
+      Setting being ignored as requested for this property.
+
+    WARNING: Block Schematic1, Page 4, Symbol XCMP790:
+      Symbol / PartsDB property mismatch:
+      Resolved PartNumber = 80-0073
+      Symbol Property: Cout HT = 8,53
+     PartsDB Property: Cout HT = 8.53
+     The symbol property value matches the PartsDB value with the Notation
+      Setting being ignored as requested for this property.
+
+    WARNING: Block Schematic1, Page 4, Symbol XCMP823:
+      Symbol / PartsDB property mismatch:
+      Resolved PartNumber = 40-0143
+      Symbol Property: Cout HT = 20,49
+     PartsDB Property: Cout HT = 20.49
+     The symbol property value matches the PartsDB value with the Notation
+      Setting being ignored as requested for this property.
 
      Checking the validity of the packaging of prepackaged schematic
       symbols.  Only the first error in symbols having the same
@@ -900,15 +376,12 @@
 
      Checking Pins....
 
-     Testing of Packaging has been completed with 94 warnings.
+     Testing of Packaging has been completed with 25 warnings.
       Erroneous results may occur if not fixed.
 
      Updating the Common DataBase
 
      A BAM WasIs List: Integration\CDBBackAnno.bam has been created.
-     There have been 74 reference designator changes and 25 pin
-      number changes.
-     The BAM file will list all of the from-to changes.
 
 The Common DataBase has been successfully updated.
 
@@ -919,4 +392,4 @@ The Common DataBase has been successfully updated.
      An unused gate report for gates not in schematic has been written to Integration\UnusedGates.txt
      An augmented pin report has been written to Integration\AugmentedPins.txt.
 
-     There have been 94 warnings.
+     There have been 25 warnings.

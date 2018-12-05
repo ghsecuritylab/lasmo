@@ -1,0 +1,26 @@
+[2018.12.05 13:10:15] [0000m.01s.014ms] [0] WELCOME
+[2018.12.05 13:10:15] [0000m.01s.029ms] [1] iCDB Server ver.2.204, w6NMT3m1DsvvLxNhuorv0Q, build:11282694 created 2018-08-20 09:52:51, sources stamp:w6NMT3m1DsvvLxNhuorv0Q
+[2018.12.05 13:10:15] [0000m.01s.029ms] [1] Copyright 2018 Mentor Graphics Corporation.  All Rights Reserved.
+[2018.12.05 13:10:15] [0000m.01s.029ms] [1] Base flow version [VX.2.4]
+[2018.12.05 13:10:15] [0000m.01s.029ms] [1] Install Id [1845723], Flow Id [X-ENTP VX.2.4], Full Flow Name [Xpedition Enterprise X-ENTP VX.2.4], Exact Access Date [2018/08/01]
+[2018.12.05 13:10:15] [0000m.01s.029ms] [1] Install Id [1845717], Flow Id [X-ENTP DCVX.2.4], Full Flow Name [Xpedition Enterprise X-ENTP VX.2.4], Exact Access Date [2018/08/01]
+[2018.12.05 13:10:15] [0000m.01s.029ms] [1] Machine [PIERRE-PC]  IP [127.0.0.1,137.194.90.94]  User [Pierre]  PID [2064]
+[2018.12.05 13:10:15] [0000m.01s.029ms] [1] Operating system [Microsoft Windows 7 Ultimate Edition, 64-bit Service Pack 1 (build 7601)]
+[2018.12.05 13:10:15] [0000m.01s.029ms] [1] Current working dir [D:\telecom\lasmo\PCB]
+[2018.12.05 13:10:15] [0000m.01s.029ms] [1] PATH [C:\MentorGraphics\EEVX.2.4\SDD_HOME\wg\help;C:\MentorGraphics\EEVX.2.4\SDD_HOME\common\win32\bin;C:\MentorGraphics\EEVX.2.4\SDD_HOME\common\win32\lib;C:\MentorGraphics\EEVX.2.4\MGC_HOME.ixn\bin;C:\MentorGraphics\EEVX.2.4\MGC_HOME.ixn\lib;C:\MentorGraphics\EEVX.2.4\SDD_HOME\wg\win32\lib;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Git\cmd;C:\Program Files\OpenVPN\bin]
+[2018.12.05 13:10:15] [0000m.01s.029ms] [1] SDD_HOME [C:\MentorGraphics\EEVX.2.4\SDD_HOME] on file system [NTFS]
+[2018.12.05 13:10:15] [0000m.01s.029ms] [1] SDD_PLATFORM [win32]
+[2018.12.05 13:10:15] [0000m.01s.029ms] [1] WDIR [C:\WDIR\;C:\MentorGraphics\EEVX.2.4\SDD_HOME\standard;]
+[2018.12.05 13:10:15] [0000m.01s.029ms] [1] Local iCDB working dir [C:\WDIR\iCDB] on file system [NTFS]
+[2018.12.05 13:10:15] [0000m.01s.029ms] [0] Creating database content backup before upgrade
+[2018.12.05 13:10:15] [0000m.01s.232ms] [0] Database content backed up to [D:\telecom\lasmo\PCB\Default\default.icdb\cdbback\2018-12-05 13.10.15-2064.zip] of size [43 835 bytes (42.8 kB)] in [200ms 774us]
+[2018.12.05 13:10:15] [0000m.01s.232ms] [0] Upgrading constraint definitions from version [ce_ee.cns=7.10.63;user.cns=ec49-fb41-b7ae-9a43-92d0-cfbe-2d0c-fb50-c20e-509f-9fef-0fc8]
+[2018.12.05 13:10:15] [0000m.01s.279ms] [0] Loading snapshot [1:DCDV] version [3500]
+[2018.12.05 13:10:15] [0000m.01s.310ms] [0] Snapshot [1:DCDV] loaded in [21ms 388us]
+[2018.12.05 13:10:15] [0000m.01s.310ms] [0] Upgrading constraint definitions for snapshot [1:DCDV]
+[2018.12.05 13:10:15] [0000m.01s.450ms] [0] Constraint definitions for snapshot [1:DCDV] upgraded in [134ms 542us]
+[2018.12.05 13:10:15] [0000m.01s.450ms] [0] Saving snapshot [1:DCDV]
+[2018.12.05 13:10:15] [0000m.01s.466ms] [0] Snapshot [1:DCDV] saved in [18ms 896us]
+[2018.12.05 13:10:16] [0000m.01s.622ms] [0] Constraint definitions upgraded to version [ce_ee.cns=7.10.63;user.cns=0fd9-1d32-f121-3443-7d58-eebc-d58e-eb50-3ec0-2070-40dc-19ca]
+[2018.12.05 13:10:16] [0000m.01s.622ms] [0] DONE
+[2018.12.05 13:10:16] [0000m.01s.622ms] [0] .
