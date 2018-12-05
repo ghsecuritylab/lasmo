@@ -1,67 +1,698 @@
 
-/* Sym: 05451AA8  Path 1: Schematic1  Page 1: Schematic1(1) */
+/* Sym: 03D83928  Path 1: Schematic1  Page 1: Schematic1(1) */
 CHANGE 'Schematic1(1)' 	INSTANCE
-  SELECT COMP XCMP550                 /* Reference Desig is C4 */
+  SELECT COMP XCMP814                 /* Reference Desig is C2 */
     PARAM 'Part Name' = 'CAPCERAM0603' 
-    PARAM 'Value' = '100nF' 
-    PARAM 'Tolerance' = '10%' 
-    PARAM 'Description' = 'Capacitor Ceramic X7R / 100nF / 16V / ±10% / case 0603' 
-    PARAM 'Part Label' = 'CAP C0603 100nF X7R 16V' 
-    PARAM 'Code Fournisseur' = 'Fa : 1414027' 
-    PARAM 'Cout HT' = '0.014' 
-  SELECT COMP XCMP548                 /* Reference Desig is C3 */
-    PARAM 'Part Name' = 'CAPCERAM0603' 
-    PARAM 'Value' = '100nF' 
-    PARAM 'Tolerance' = '10%' 
-    PARAM 'Description' = 'Capacitor Ceramic X7R / 100nF / 16V / ±10% / case 0603' 
-    PARAM 'Part Label' = 'CAP C0603 100nF X7R 16V' 
-    PARAM 'Code Fournisseur' = 'Fa : 1414027' 
-    PARAM 'Cout HT' = '0.014' 
-  SELECT COMP XCMP547                 /* Reference Desig is C2 */
-    PARAM 'Part Name' = 'CAPCERAM0603' 
-    PARAM 'Value' = '100nF' 
-    PARAM 'Tolerance' = '10%' 
-    PARAM 'Description' = 'Capacitor Ceramic X7R / 100nF / 16V / ±10% / case 0603' 
-    PARAM 'Part Label' = 'CAP C0603 100nF X7R 16V' 
-    PARAM 'Code Fournisseur' = 'Fa : 1414027' 
-    PARAM 'Cout HT' = '0.014' 
-  SELECT COMP XCMP544                 /* Reference Desig is C6 */
-    PARAM 'Part Name' = 'CAPCERAM0603' 
-    PARAM 'Value' = '10uF' 
+    PARAM 'Value' = '18pF' 
     PARAM 'Tolerance' = '20%' 
-    PARAM 'Description' = 'Capacitor Ceramic X5R / 10uF / 6.3V / ±20% / case 0603' 
-    PARAM 'Part Label' = 'CAP C0603 10uF X5R 6.3V' 
-    PARAM 'Code Fournisseur' = 'Fa : 1759393 ' 
-    PARAM 'Cout HT' = '0.117' 
+    PARAM 'Description' = 'Capacitor Ceramic 18pF / 10V / ±20% / case 0603' 
+    PARAM 'Part Label' = 'CAP C0603 18pF COG 10V' 
+    PARAM 'Code Fournisseur' = 'Fa : 1759056' 
+    PARAM 'Cout HT' = '0.04' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C2'         /* Reference Desig was (null) */
+  SELECT COMP XCMP813                 /* Reference Desig is C1 */
+    PARAM 'Part Name' = 'CAPCERAM0603' 
+    PARAM 'Value' = '18pF' 
+    PARAM 'Tolerance' = '20%' 
+    PARAM 'Description' = 'Capacitor Ceramic 18pF / 10V / ±20% / case 0603' 
+    PARAM 'Part Label' = 'CAP C0603 18pF COG 10V' 
+    PARAM 'Code Fournisseur' = 'Fa : 1759056' 
+    PARAM 'Cout HT' = '0.04' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C1'         /* Reference Desig was (null) */
+  SELECT COMP XCMP812                 /* Reference Desig is QZ1 */
+    PARAM 'Part Name' = 'QUARTZ' 
+    PARAM 'Tolerance' = '20' 
+    PARAM 'Description' = 'Quartz 8 MHz, +/- 30ppm, 40 ohms, 18pF, case HC49SMD' 
+    PARAM 'Part Label' = '8 MHz' 
+    PARAM 'Code Fournisseur' = 'Fa : 1538763 ' 
+    PARAM 'Cout HT' = '1.81' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'QZ1'         /* Reference Desig was (null) */
+  SELECT COMP XCMP720                 /* Reference Desig is U1 */
+    PARAM 'Part Name' = 'STM32F767VIT6' 
+    PARAM 'Description' = 'ARM-based Cortex-M7 32b MCU+FPU, 462DMIPS, up to 2MB Flash/512+16+4KB RAM, USB OTG HS/FS, ethernet, 18 TIMs, 3 ADCs, 28 com itf, cam, LCD, DSI, ST STM32F767VIT6, case TQFP100' 
+    PARAM 'Part Label' = 'STM32F767VIT6' 
+    PARAM 'Code Fournisseur' = 'Fa : 2535500' 
+    PARAM 'Cout HT' = '13.68' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'U1'         /* Reference Desig was (null) */
+  SELECT COMP XCMP815                 /* Reference Desig is R1 */
+    PARAM 'Part Name' = 'RES_0603_E24' 
+    PARAM 'Value' = '1.1K ' 
+    PARAM 'Tolerance' = '5%' 
+    PARAM 'Description' = 'Resistor 1.1k ohms / 5% / case 0603' 
+    PARAM 'Part Label' = 'RES_1.1k_0603' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R1'         /* Reference Desig was (null) */
+  SELECT COMP XCMP718                 /* Reference Desig is U1 */
+    PARAM 'Part Name' = 'STM32F767VIT6' 
+    PARAM 'Description' = 'ARM-based Cortex-M7 32b MCU+FPU, 462DMIPS, up to 2MB Flash/512+16+4KB RAM, USB OTG HS/FS, ethernet, 18 TIMs, 3 ADCs, 28 com itf, cam, LCD, DSI, ST STM32F767VIT6, case TQFP100' 
+    PARAM 'Part Label' = 'STM32F767VIT6' 
+    PARAM 'Code Fournisseur' = 'Fa : 2535500' 
+    PARAM 'Cout HT' = '13.68' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'U1'         /* Reference Desig was (null) */
   SELECT EXT XCMP681                  /* Reference Desig is J1 */
     PARAM 'Part Name' = 'MINI_SWD_CONNECTOR' 
     PARAM 'Description' = 'Dual row 1.27 CMS 2x5 points connector, Samtec FTSH-105-01-L-DV ' 
     PARAM 'Part Label' = 'FTSH-105-01-L-DV' 
     PARAM 'Code Fournisseur' = 'Fa : 1667759' 
     PARAM 'Cout HT' = '1.96' 
-  SELECT COMP XCMP670                 /* Reference Desig is C5 */
-    PARAM 'Part Name' = 'CAPCERAM0603' 
-    PARAM 'Value' = '100nF' 
-    PARAM 'Tolerance' = '10%' 
-    PARAM 'Description' = 'Capacitor Ceramic X7R / 100nF / 16V / ±10% / case 0603' 
-    PARAM 'Part Label' = 'CAP C0603 100nF X7R 16V' 
-    PARAM 'Code Fournisseur' = 'Fa : 1414027' 
-    PARAM 'Cout HT' = '0.014' 
-  SELECT COMP XCMP716                 /* Reference Desig is U1 */
-    PARAM 'Part Name' = 'STM32F405RG' 
-    PARAM 'Description' = 'ARM Cortex-M4 32b MCU, FPU, 210DMIPS, up to 1MB Flash/192-4KB RAM, USB OTG HS/FS, 17 TIMs, 3 ADCs, ST STM32F405RGT6, case LQFP64' 
-    PARAM 'Part Label' = 'STM32F405RGT6' 
-    PARAM 'Code Fournisseur' = 'Fa : 2333283' 
-    PARAM 'Cout HT' = '12.76' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'J1'         /* Reference Desig was F7J1 */
 
-/* Sym: 05578610  Path 1: Schematic1  Page 2: Schematic1(2) */
+/* Sym: 03D8EFE0  Path 1: Schematic1  Page 2: Schematic1(2) */
 CHANGE 'Schematic1(2)' 	INSTANCE
-  SELECT COMP XCMP717                 /* Reference Desig is C1 */
-    PARAM 'Part Name' = 'CAPCERAM1206' 
-    PARAM 'Value' = '10uF' 
-    PARAM 'Tolerance' = '80%' 
-    PARAM 'Description' = 'Capacitor Ceramic Y5V / 10uF / 10V / ±80% / case 1206 / Murata GJ231MF51A106ZD01L' 
-    PARAM 'Part Label' = 'CAP C1206 10uF Y5V 10V' 
-    PARAM 'Dielectric' = 'Y5V' 
-    PARAM 'Code Fournisseur' = 'RS : 312-3083' 
-    PARAM 'Cout HT' = '0.563' 
+  SELECT COMP XCMP745                 /* Reference Desig is R3 */
+    PARAM 'Part Name' = 'RES_0805_E96' 
+    PARAM 'Value' = '49.9 ' 
+    PARAM 'Tolerance' = '1%' 
+    PARAM 'Description' = 'Resistor 49.9 ohms / 1% / case 0805' 
+    PARAM 'Part Label' = 'RES_49.9_0805' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R3'         /* Reference Desig was (null) */
+  SELECT COMP XCMP742                 /* Reference Desig is C6 */
+    PARAM 'Part Name' = 'CAPCERAM0402' 
+    PARAM 'Value' = '10nF' 
+    PARAM 'Tolerance' = '10%' 
+    PARAM 'Description' = 'Capacitor Ceramic X7R / 10nF / 16V / ±10% / case 0402' 
+    PARAM 'Part Label' = 'CAP C0402 10nF X7R 16V' 
+    PARAM 'Code Fournisseur' = 'Fa : 1758885' 
+    PARAM 'Cout HT' = '0.01' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C6'         /* Reference Desig was (null) */
+  SELECT COMP XCMP741                 /* Reference Desig is C5 */
+    PARAM 'Part Name' = 'CAPCERAM0402' 
+    PARAM 'Value' = '10nF' 
+    PARAM 'Tolerance' = '10%' 
+    PARAM 'Description' = 'Capacitor Ceramic X7R / 10nF / 16V / ±10% / case 0402' 
+    PARAM 'Part Label' = 'CAP C0402 10nF X7R 16V' 
+    PARAM 'Code Fournisseur' = 'Fa : 1758885' 
+    PARAM 'Cout HT' = '0.01' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C5'         /* Reference Desig was (null) */
+  SELECT COMP XCMP740                 /* Reference Desig is L1 */
+    PARAM 'Part Name' = 'FERRITE' 
+    PARAM 'Description' = 'Ferrite bead 600ohms @ 100MHz / 200mA / case 0805 / Murata BLM21A601S' 
+    PARAM 'Part Label' = 'FERRITE' 
+    PARAM 'Code Fournisseur' = 'RS : 230-3862' 
+    PARAM 'Cout HT' = '0.155' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'L1'         /* Reference Desig was (null) */
+  SELECT EXT XCMP738                  /* Reference Desig is J3 */
+    PARAM 'Part Name' = 'RJ45' 
+    PARAM 'Description' = 'RJ45 shielded connector with integrated transformer and terminations, WIZnet RB1-125BAG1A' 
+    PARAM 'Part Label' = 'RB1-125BAG1A' 
+    PARAM 'Code Fournisseur' = 'Mouser : 950-RB1-125BAG1A' 
+    PARAM 'Cout HT' = '2.45' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'J3'         /* Reference Desig was (null) */
+  SELECT COMP XCMP737                 /* Reference Desig is U2 */
+    PARAM 'Part Name' = 'LAN8742A' 
+    PARAM 'Description' = 'RMII 10/100 Ethernet Transceiver with HP Auto-MDIX, Microchip LAN8742A-CZ, case EVQFN24' 
+    PARAM 'Part Label' = 'LAN8742A-CZ' 
+    PARAM 'Code Fournisseur' = 'Mouser : 579-LAN8742A-CZ' 
+    PARAM 'Cout HT' = '1.17' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'U2'         /* Reference Desig was (null) */
+  SELECT COMP XCMP767                 /* Reference Desig is R10 */
+    PARAM 'Part Name' = 'RES_0603_E24' 
+    PARAM 'Value' = '1.5K ' 
+    PARAM 'Tolerance' = '5%' 
+    PARAM 'Description' = 'Resistor 1.5k ohms / 5% / case 0603' 
+    PARAM 'Part Label' = 'RES_1.5k_0603' 
+    PARAM 'Code Fournisseur' = 'Fa : 1160326' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R10'         /* Reference Desig was (null) */
+  SELECT COMP XCMP766                 /* Reference Desig is R9 */
+    PARAM 'Part Name' = 'RES_0603_E24' 
+    PARAM 'Value' = '1.5K ' 
+    PARAM 'Tolerance' = '5%' 
+    PARAM 'Description' = 'Resistor 1.5k ohms / 5% / case 0603' 
+    PARAM 'Part Label' = 'RES_1.5k_0603' 
+    PARAM 'Code Fournisseur' = 'Fa : 1160326' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R9'         /* Reference Desig was (null) */
+  SELECT COMP XCMP764                 /* Reference Desig is R8 */
+    PARAM 'Part Name' = 'RES_0603_E24' 
+    PARAM 'Value' = '33 ' 
+    PARAM 'Tolerance' = '5%' 
+    PARAM 'Description' = 'Resistor 33 ohms / 5% / case 0603' 
+    PARAM 'Part Label' = 'RES_33_0603' 
+    PARAM 'Code Fournisseur' = 'Fa : 2502446' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R8'         /* Reference Desig was (null) */
+  SELECT COMP XCMP763                 /* Reference Desig is C10 */
+    PARAM 'Part Name' = 'CAPCERAM0603' 
+    PARAM 'Value' = '1uF' 
+    PARAM 'Tolerance' = '10%' 
+    PARAM 'Description' = 'Capacitor Ceramic 1uF / X5R / 25V / ±10% / case 0603' 
+    PARAM 'Part Label' = 'CAP C0603 1uF X5R 25V' 
+    PARAM 'Code Fournisseur' = 'Fa : 1828802' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C10'         /* Reference Desig was (null) */
+  SELECT COMP XCMP756                 /* Reference Desig is C9 */
+    PARAM 'Part Name' = 'CAPCERAM0603' 
+    PARAM 'Value' = '22nF' 
+    PARAM 'Tolerance' = '20%' 
+    PARAM 'Description' = 'Capacitor Ceramic X7R / 22nF / 50V / ±20% / case 0603' 
+    PARAM 'Part Label' = 'CAP C0603 22nF X7R 50V' 
+    PARAM 'Code Fournisseur' = 'Fa : 2496847' 
+    PARAM 'Cout HT' = '0.05' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C9'         /* Reference Desig was (null) */
+  SELECT COMP XCMP755                 /* Reference Desig is R7 */
+    PARAM 'Part Name' = 'RES_0603_E96' 
+    PARAM 'Value' = '12.1K ' 
+    PARAM 'Tolerance' = '1%' 
+    PARAM 'Description' = 'Resistor 12.1k ohms / 1% / case 0603' 
+    PARAM 'Part Label' = 'RES_12.1k_0603' 
+    PARAM 'Code Fournisseur' = 'Fa : 1170896' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R7'         /* Reference Desig was (null) */
+  SELECT COMP XCMP750                 /* Reference Desig is C8 */
+    PARAM 'Part Name' = 'CAPCERAM0603' 
+    PARAM 'Value' = '470pF' 
+    PARAM 'Tolerance' = '10%' 
+    PARAM 'Description' = 'Capacitor Ceramic X7R / 470pF / 16V / ±10% / case 0603' 
+    PARAM 'Part Label' = 'CAP C0603 470pF X7R 16V' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C8'         /* Reference Desig was (null) */
+  SELECT COMP XCMP749                 /* Reference Desig is C7 */
+    PARAM 'Part Name' = 'CAPCERAM0402' 
+    PARAM 'Value' = '10nF' 
+    PARAM 'Tolerance' = '10%' 
+    PARAM 'Description' = 'Capacitor Ceramic X7R / 10nF / 16V / ±10% / case 0402' 
+    PARAM 'Part Label' = 'CAP C0402 10nF X7R 16V' 
+    PARAM 'Code Fournisseur' = 'Fa : 1758885' 
+    PARAM 'Cout HT' = '0.01' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C7'         /* Reference Desig was (null) */
+  SELECT COMP XCMP748                 /* Reference Desig is R6 */
+    PARAM 'Part Name' = 'RES_0805_E96' 
+    PARAM 'Value' = '49.9 ' 
+    PARAM 'Tolerance' = '1%' 
+    PARAM 'Description' = 'Resistor 49.9 ohms / 1% / case 0805' 
+    PARAM 'Part Label' = 'RES_49.9_0805' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R6'         /* Reference Desig was (null) */
+  SELECT COMP XCMP747                 /* Reference Desig is R5 */
+    PARAM 'Part Name' = 'RES_0805_E96' 
+    PARAM 'Value' = '49.9 ' 
+    PARAM 'Tolerance' = '1%' 
+    PARAM 'Description' = 'Resistor 49.9 ohms / 1% / case 0805' 
+    PARAM 'Part Label' = 'RES_49.9_0805' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R5'         /* Reference Desig was (null) */
+  SELECT COMP XCMP746                 /* Reference Desig is R4 */
+    PARAM 'Part Name' = 'RES_0805_E96' 
+    PARAM 'Value' = '49.9 ' 
+    PARAM 'Tolerance' = '1%' 
+    PARAM 'Description' = 'Resistor 49.9 ohms / 1% / case 0805' 
+    PARAM 'Part Label' = 'RES_49.9_0805' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R4'         /* Reference Desig was (null) */
+  SELECT COMP XCMP778                 /* Reference Desig is R19 */
+    PARAM 'Part Name' = 'RES_0603_E96' 
+    PARAM 'Value' = '332 ' 
+    PARAM 'Tolerance' = '1%' 
+    PARAM 'Description' = 'Resistor 332 ohms / 1% / case 0603' 
+    PARAM 'Part Label' = 'RES_332_0603' 
+    PARAM 'Code Fournisseur' = 'Fa : 2059305' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R19'         /* Reference Desig was (null) */
+  SELECT COMP XCMP777                 /* Reference Desig is R18 */
+    PARAM 'Part Name' = 'RES_0603_E96' 
+    PARAM 'Value' = '332 ' 
+    PARAM 'Tolerance' = '1%' 
+    PARAM 'Description' = 'Resistor 332 ohms / 1% / case 0603' 
+    PARAM 'Part Label' = 'RES_332_0603' 
+    PARAM 'Code Fournisseur' = 'Fa : 2059305' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R18'         /* Reference Desig was (null) */
+  SELECT COMP XCMP776                 /* Reference Desig is R17 */
+    PARAM 'Part Name' = 'RES_0603_E96' 
+    PARAM 'Value' = '10 ' 
+    PARAM 'Tolerance' = '1%' 
+    PARAM 'Description' = 'Resistor 10.0 ohms / 1% / case 0603' 
+    PARAM 'Part Label' = 'RES_10.0_0603' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R17'         /* Reference Desig was (null) */
+  SELECT COMP XCMP775                 /* Reference Desig is R16 */
+    PARAM 'Part Name' = 'RES_0603_E96' 
+    PARAM 'Value' = '10 ' 
+    PARAM 'Tolerance' = '1%' 
+    PARAM 'Description' = 'Resistor 10.0 ohms / 1% / case 0603' 
+    PARAM 'Part Label' = 'RES_10.0_0603' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R16'         /* Reference Desig was (null) */
+  SELECT COMP XCMP774                 /* Reference Desig is R15 */
+    PARAM 'Part Name' = 'RES_0603_E96' 
+    PARAM 'Value' = '10 ' 
+    PARAM 'Tolerance' = '1%' 
+    PARAM 'Description' = 'Resistor 10.0 ohms / 1% / case 0603' 
+    PARAM 'Part Label' = 'RES_10.0_0603' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R15'         /* Reference Desig was (null) */
+  SELECT COMP XCMP773                 /* Reference Desig is R14 */
+    PARAM 'Part Name' = 'RES_0603_E96' 
+    PARAM 'Value' = '10 ' 
+    PARAM 'Tolerance' = '1%' 
+    PARAM 'Description' = 'Resistor 10.0 ohms / 1% / case 0603' 
+    PARAM 'Part Label' = 'RES_10.0_0603' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R14'         /* Reference Desig was (null) */
+  SELECT COMP XCMP770                 /* Reference Desig is R11 */
+    PARAM 'Part Name' = 'RES_0603_E24' 
+    PARAM 'Value' = '10K ' 
+    PARAM 'Tolerance' = '5%' 
+    PARAM 'Description' = 'Resistor 10k ohms / 5% / case 0603' 
+    PARAM 'Part Label' = 'RES_10k_0603' 
+    PARAM 'Code Fournisseur' = 'Fa : 9331700' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R11'         /* Reference Desig was (null) */
+
+/* Sym: 03D94830  Path 1: Schematic1  Page 3: Schematic1(3) */
+CHANGE 'Schematic1(3)' 	INSTANCE
+  SELECT EXT XCMP786                  /* Reference Desig is J4 */
+    PARAM 'Part Name' = 'JST_2PT_S2B-PH-SM4-TB' 
+    PARAM 'Description' = 'Embase m‚le CMS JST 2 broches, 2mm, avec dÈtrompeur, ‡ sortie horizontale, S2B-PH-SM4-TB' 
+    PARAM 'Part Label' = 'S2B-PH-SM4-TB' 
+    PARAM 'Code Fournisseur' = 'Fa : 9492615' 
+    PARAM 'Cout HT' = '0.36' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'J4'         /* Reference Desig was (null) */
+  SELECT COMP XCMP781                 /* Reference Desig is U3 */
+    PARAM 'Part Name' = 'MAX5105' 
+    PARAM 'Description' = 'Non volatile 8 bits quand DAC, MAX5106EEP, case QSOP20' 
+    PARAM 'Part Label' = 'MAX5105EEP' 
+    PARAM 'Code Fournisseur' = 'Mouser : 700-MAX5105EEP' 
+    PARAM 'Cout HT' = '4.62' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'U3'         /* Reference Desig was (null) */
+  SELECT EXT XCMP828                  /* Reference Desig is J7 */
+    PARAM 'Part Name' = 'MICROSD' 
+    PARAM 'Description' = 'Connecteur MicroSD, ‡ charniËre, JAE ST1W008S4ER1500' 
+    PARAM 'Part Label' = 'JAE_ST1W008S4ER1500' 
+    PARAM 'Code Fournisseur' = 'Mouser : 656-ST1W008S4ER1500' 
+    PARAM 'Cout HT' = '1.71' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'J7'         /* Reference Desig was (null) */
+  SELECT COMP XCMP806                 /* Reference Desig is R21 */
+    PARAM 'Part Name' = 'RES_0603_E24' 
+    PARAM 'Value' = '6.2K ' 
+    PARAM 'Tolerance' = '5%' 
+    PARAM 'Description' = 'Resistor 6.2k ohms / 5% / case 0603' 
+    PARAM 'Part Label' = 'RES_6.2k_0603' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R21'         /* Reference Desig was (null) */
+  SELECT COMP XCMP803                 /* Reference Desig is U5 */
+    PARAM 'Part Name' = 'ADA4941-1' 
+    PARAM 'Description' = 'Unipolar to differential 18b ADC driver, single supply, Analog Devices  ADA4941-1YRZ, case SO8' 
+    PARAM 'Part Label' = 'ADA4941-1YRZ' 
+    PARAM 'Code Fournisseur' = 'DG : ADA4941-1YRZ-ND' 
+    PARAM 'Cout HT' = '5.53' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'U5'         /* Reference Desig was (null) */
+  SELECT COMP XCMP802                 /* Reference Desig is R20 */
+    PARAM 'Part Name' = 'RES_0603_E24' 
+    PARAM 'Value' = '6.2K ' 
+    PARAM 'Tolerance' = '5%' 
+    PARAM 'Description' = 'Resistor 6.2k ohms / 5% / case 0603' 
+    PARAM 'Part Label' = 'RES_6.2k_0603' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R20'         /* Reference Desig was (null) */
+  SELECT COMP XCMP801                 /* Reference Desig is R13 */
+    PARAM 'Part Name' = 'RES_0603_E24' 
+    PARAM 'Value' = '10K ' 
+    PARAM 'Tolerance' = '5%' 
+    PARAM 'Description' = 'Resistor 10k ohms / 5% / case 0603' 
+    PARAM 'Part Label' = 'RES_10k_0603' 
+    PARAM 'Code Fournisseur' = 'Fa : 9331700' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R13'         /* Reference Desig was (null) */
+  SELECT COMP XCMP793                 /* Reference Desig is U4 */
+    PARAM 'Part Name' = 'ADA4941-1' 
+    PARAM 'Description' = 'Unipolar to differential 18b ADC driver, single supply, Analog Devices  ADA4941-1YRZ, case SO8' 
+    PARAM 'Part Label' = 'ADA4941-1YRZ' 
+    PARAM 'Code Fournisseur' = 'DG : ADA4941-1YRZ-ND' 
+    PARAM 'Cout HT' = '5.53' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'U4'         /* Reference Desig was (null) */
+  SELECT COMP XCMP797                 /* Reference Desig is R12 */
+    PARAM 'Part Name' = 'RES_0603_E24' 
+    PARAM 'Value' = '10K ' 
+    PARAM 'Tolerance' = '5%' 
+    PARAM 'Description' = 'Resistor 10k ohms / 5% / case 0603' 
+    PARAM 'Part Label' = 'RES_10k_0603' 
+    PARAM 'Code Fournisseur' = 'Fa : 9331700' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R12'         /* Reference Desig was (null) */
+  SELECT EXT XCMP789                  /* Reference Desig is J6 */
+    PARAM 'Part Name' = 'JST_2PT_S2B-PH-SM4-TB' 
+    PARAM 'Description' = 'Embase m‚le CMS JST 2 broches, 2mm, avec dÈtrompeur, ‡ sortie horizontale, S2B-PH-SM4-TB' 
+    PARAM 'Part Label' = 'S2B-PH-SM4-TB' 
+    PARAM 'Code Fournisseur' = 'Fa : 9492615' 
+    PARAM 'Cout HT' = '0.36' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'J6'         /* Reference Desig was (null) */
+  SELECT EXT XCMP788                  /* Reference Desig is J5 */
+    PARAM 'Part Name' = 'JST_2PT_S2B-PH-SM4-TB' 
+    PARAM 'Description' = 'Embase m‚le CMS JST 2 broches, 2mm, avec dÈtrompeur, ‡ sortie horizontale, S2B-PH-SM4-TB' 
+    PARAM 'Part Label' = 'S2B-PH-SM4-TB' 
+    PARAM 'Code Fournisseur' = 'Fa : 9492615' 
+    PARAM 'Cout HT' = '0.36' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'J5'         /* Reference Desig was (null) */
+  SELECT COMP XCMP863                 /* Reference Desig is U6 */
+    PARAM 'Part Name' = 'ADA4500-2' 
+    PARAM 'Description' = '10 MHz, 14.5 nV/ÅVHz, Rail-to-Rail I/O, Zero Input Crossover Distortion Amplifier, 2.7 - 5V, Analog Devices  ADA4500-2ARMZ, case MSOP8' 
+    PARAM 'Part Label' = 'ADA4500-2ARMZ' 
+    PARAM 'Code Fournisseur' = 'Fa : 2254935' 
+    PARAM 'Cout HT' = '2.89' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'U6'         /* Reference Desig was (null) */
+    PIN_PARAM 'S' 4 = '1'                /* was:  */
+    PIN_PARAM 'GND' 4 = '4'                /* was:  */
+    PIN_PARAM 'VCC' 4 = '8'                /* was:  */
+    PIN_PARAM 'I-' 4 = '2'                /* was:  */
+    PIN_PARAM 'I+' 4 = '3'                /* was:  */
+  SELECT COMP XCMP862                 /* Reference Desig is R26 */
+    PARAM 'Part Name' = 'RES_0603_E96' 
+    PARAM 'Value' = '1.96K ' 
+    PARAM 'Tolerance' = '1%' 
+    PARAM 'Description' = 'Resistor 1.96k ohms / 1% / case 0603' 
+    PARAM 'Part Label' = 'RES_1.96k_0603' 
+    PARAM 'Code Fournisseur' = 'RS : 396-7085' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R26'         /* Reference Desig was (null) */
+  SELECT COMP XCMP861                 /* Reference Desig is R23 */
+    PARAM 'Part Name' = 'RES_0603' 
+    PARAM 'Value' = '1K ' 
+    PARAM 'Tolerance' = '0.1%' 
+    PARAM 'Description' = 'Precision resistor, 1kOhms, 0.1%, 0603, Welwin PCF0603R-1K0BI' 
+    PARAM 'Part Label' = 'RES_1k_0603' 
+    PARAM 'Code Fournisseur' = 'Mouser : 756-PCF0603R1K0BI' 
+    PARAM 'Cout HT' = '0.85' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R23'         /* Reference Desig was (null) */
+  SELECT COMP XCMP860                 /* Reference Desig is U6 */
+    PARAM 'Part Name' = 'ADA4500-2' 
+    PARAM 'Description' = '10 MHz, 14.5 nV/ÅVHz, Rail-to-Rail I/O, Zero Input Crossover Distortion Amplifier, 2.7 - 5V, Analog Devices  ADA4500-2ARMZ, case MSOP8' 
+    PARAM 'Part Label' = 'ADA4500-2ARMZ' 
+    PARAM 'Code Fournisseur' = 'Fa : 2254935' 
+    PARAM 'Cout HT' = '2.89' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'U6'         /* Reference Desig was (null) */
+    PIN_PARAM 'S' 4 = '7'                /* was:  */
+    PIN_PARAM 'GND' 4 = '4'                /* was:  */
+    PIN_PARAM 'VCC' 4 = '8'                /* was:  */
+    PIN_PARAM 'I-' 4 = '6'                /* was:  */
+    PIN_PARAM 'I+' 4 = '5'                /* was:  */
+  SELECT COMP XCMP858                 /* Reference Desig is R25 */
+    PARAM 'Part Name' = 'RES_0603_E96' 
+    PARAM 'Value' = '1.96K ' 
+    PARAM 'Tolerance' = '1%' 
+    PARAM 'Description' = 'Resistor 1.96k ohms / 1% / case 0603' 
+    PARAM 'Part Label' = 'RES_1.96k_0603' 
+    PARAM 'Code Fournisseur' = 'RS : 396-7085' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R25'         /* Reference Desig was (null) */
+  SELECT COMP XCMP857                 /* Reference Desig is R22 */
+    PARAM 'Part Name' = 'RES_0603' 
+    PARAM 'Value' = '1K ' 
+    PARAM 'Tolerance' = '0.1%' 
+    PARAM 'Description' = 'Precision resistor, 1kOhms, 0.1%, 0603, Welwin PCF0603R-1K0BI' 
+    PARAM 'Part Label' = 'RES_1k_0603' 
+    PARAM 'Code Fournisseur' = 'Mouser : 756-PCF0603R1K0BI' 
+    PARAM 'Cout HT' = '0.85' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R22'         /* Reference Desig was (null) */
+  SELECT COMP XCMP846                 /* Reference Desig is U8 */
+    PARAM 'Part Name' = 'ADA4500-2' 
+    PARAM 'Description' = '10 MHz, 14.5 nV/ÅVHz, Rail-to-Rail I/O, Zero Input Crossover Distortion Amplifier, 2.7 - 5V, Analog Devices  ADA4500-2ARMZ, case MSOP8' 
+    PARAM 'Part Label' = 'ADA4500-2ARMZ' 
+    PARAM 'Code Fournisseur' = 'Fa : 2254935' 
+    PARAM 'Cout HT' = '2.89' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'U8'         /* Reference Desig was (null) */
+    PIN_PARAM 'S' 4 = '7'                /* was:  */
+    PIN_PARAM 'GND' 4 = '4'                /* was:  */
+    PIN_PARAM 'VCC' 4 = '8'                /* was:  */
+    PIN_PARAM 'I-' 4 = '6'                /* was:  */
+    PIN_PARAM 'I+' 4 = '5'                /* was:  */
+  SELECT EXT XCMP844                  /* Reference Desig is J9 */
+    PARAM 'Part Name' = 'BARETTE' 
+    PARAM 'Description' = 'Jumper 3 points en ligne 2.54mm avec cavalier associe' 
+    PARAM 'Part Label' = 'JUMPER 3PTS' 
+    PARAM 'Cout HT' = '0.2' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'J9'         /* Reference Desig was (null) */
+  SELECT EXT XCMP843                  /* Reference Desig is J8 */
+    PARAM 'Part Name' = 'BARETTE' 
+    PARAM 'Description' = 'Jumper 3 points en ligne 2.54mm avec cavalier associe' 
+    PARAM 'Part Label' = 'JUMPER 3PTS' 
+    PARAM 'Cout HT' = '0.2' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'J8'         /* Reference Desig was (null) */
+  SELECT COMP XCMP877                 /* Reference Desig is R31 */
+    PARAM 'Part Name' = 'RES_0603_E24' 
+    PARAM 'Value' = '3.3K ' 
+    PARAM 'Tolerance' = '5%' 
+    PARAM 'Description' = 'Resistor 3.3k ohms / 5% / case 0603' 
+    PARAM 'Part Label' = 'RES_3.3k_0603' 
+    PARAM 'Code Fournisseur' = 'RS : 322-9428' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R31'         /* Reference Desig was (null) */
+  SELECT COMP XCMP876                 /* Reference Desig is R30 */
+    PARAM 'Part Name' = 'RES_0603_E24' 
+    PARAM 'Value' = '3.3K ' 
+    PARAM 'Tolerance' = '5%' 
+    PARAM 'Description' = 'Resistor 3.3k ohms / 5% / case 0603' 
+    PARAM 'Part Label' = 'RES_3.3k_0603' 
+    PARAM 'Code Fournisseur' = 'RS : 322-9428' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R30'         /* Reference Desig was (null) */
+  SELECT COMP XCMP875                 /* Reference Desig is U7 */
+    PARAM 'Part Name' = 'ADA4500-2' 
+    PARAM 'Description' = '10 MHz, 14.5 nV/ÅVHz, Rail-to-Rail I/O, Zero Input Crossover Distortion Amplifier, 2.7 - 5V, Analog Devices  ADA4500-2ARMZ, case MSOP8' 
+    PARAM 'Part Label' = 'ADA4500-2ARMZ' 
+    PARAM 'Code Fournisseur' = 'Fa : 2254935' 
+    PARAM 'Cout HT' = '2.89' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'U7'         /* Reference Desig was (null) */
+    PIN_PARAM 'S' 4 = '7'                /* was:  */
+    PIN_PARAM 'GND' 4 = '4'                /* was:  */
+    PIN_PARAM 'VCC' 4 = '8'                /* was:  */
+    PIN_PARAM 'I-' 4 = '6'                /* was:  */
+    PIN_PARAM 'I+' 4 = '5'                /* was:  */
+  SELECT EXT XCMP874                  /* Reference Desig is J12 */
+    PARAM 'Part Name' = 'RCA' 
+    PARAM 'Description' = 'RCA Connecteur / Lih Sheng LP-0843-3 ou Keystone 970 a 973 / Noire' 
+    PARAM 'Part Label' = 'RCA BLACK' 
+    PARAM 'Code Fournisseur' = 'RS : 868-828' 
+    PARAM 'Cout HT' = '1.656' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'J12'         /* Reference Desig was (null) */
+  SELECT COMP XCMP873                 /* Reference Desig is R33 */
+    PARAM 'Part Name' = 'RES_0603_E24' 
+    PARAM 'Value' = '2K ' 
+    PARAM 'Tolerance' = '5%' 
+    PARAM 'Description' = 'Resistor 2.0k ohms / 5% / case 0603' 
+    PARAM 'Part Label' = 'RES_2.0k_0603' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R33'         /* Reference Desig was (null) */
+  SELECT COMP XCMP872                 /* Reference Desig is R32 */
+    PARAM 'Part Name' = 'RES_0603_E24' 
+    PARAM 'Value' = '2K ' 
+    PARAM 'Tolerance' = '5%' 
+    PARAM 'Description' = 'Resistor 2.0k ohms / 5% / case 0603' 
+    PARAM 'Part Label' = 'RES_2.0k_0603' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R32'         /* Reference Desig was (null) */
+  SELECT COMP XCMP871                 /* Reference Desig is R29 */
+    PARAM 'Part Name' = 'RES_0603_E24' 
+    PARAM 'Value' = '3.3K ' 
+    PARAM 'Tolerance' = '5%' 
+    PARAM 'Description' = 'Resistor 3.3k ohms / 5% / case 0603' 
+    PARAM 'Part Label' = 'RES_3.3k_0603' 
+    PARAM 'Code Fournisseur' = 'RS : 322-9428' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R29'         /* Reference Desig was (null) */
+  SELECT COMP XCMP870                 /* Reference Desig is R28 */
+    PARAM 'Part Name' = 'RES_0603_E24' 
+    PARAM 'Value' = '3.3K ' 
+    PARAM 'Tolerance' = '5%' 
+    PARAM 'Description' = 'Resistor 3.3k ohms / 5% / case 0603' 
+    PARAM 'Part Label' = 'RES_3.3k_0603' 
+    PARAM 'Code Fournisseur' = 'RS : 322-9428' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R28'         /* Reference Desig was (null) */
+  SELECT COMP XCMP869                 /* Reference Desig is U7 */
+    PARAM 'Part Name' = 'ADA4500-2' 
+    PARAM 'Description' = '10 MHz, 14.5 nV/ÅVHz, Rail-to-Rail I/O, Zero Input Crossover Distortion Amplifier, 2.7 - 5V, Analog Devices  ADA4500-2ARMZ, case MSOP8' 
+    PARAM 'Part Label' = 'ADA4500-2ARMZ' 
+    PARAM 'Code Fournisseur' = 'Fa : 2254935' 
+    PARAM 'Cout HT' = '2.89' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'U7'         /* Reference Desig was (null) */
+    PIN_PARAM 'S' 4 = '1'                /* was:  */
+    PIN_PARAM 'GND' 4 = '4'                /* was:  */
+    PIN_PARAM 'VCC' 4 = '8'                /* was:  */
+    PIN_PARAM 'I-' 4 = '2'                /* was:  */
+    PIN_PARAM 'I+' 4 = '3'                /* was:  */
+  SELECT COMP XCMP865                 /* Reference Desig is R27 */
+    PARAM 'Part Name' = 'RES_0603_E96' 
+    PARAM 'Value' = '1.96K ' 
+    PARAM 'Tolerance' = '1%' 
+    PARAM 'Description' = 'Resistor 1.96k ohms / 1% / case 0603' 
+    PARAM 'Part Label' = 'RES_1.96k_0603' 
+    PARAM 'Code Fournisseur' = 'RS : 396-7085' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R27'         /* Reference Desig was (null) */
+  SELECT COMP XCMP864                 /* Reference Desig is R24 */
+    PARAM 'Part Name' = 'RES_0603' 
+    PARAM 'Value' = '1K ' 
+    PARAM 'Tolerance' = '0.1%' 
+    PARAM 'Description' = 'Precision resistor, 1kOhms, 0.1%, 0603, Welwin PCF0603R-1K0BI' 
+    PARAM 'Part Label' = 'RES_1k_0603' 
+    PARAM 'Code Fournisseur' = 'Mouser : 756-PCF0603R1K0BI' 
+    PARAM 'Cout HT' = '0.85' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R24'         /* Reference Desig was (null) */
+  SELECT EXT XCMP884                  /* Reference Desig is J11 */
+    PARAM 'Part Name' = 'BARETTE' 
+    PARAM 'Description' = 'Jumper 3 points en ligne 2.54mm avec cavalier associe' 
+    PARAM 'Part Label' = 'JUMPER 3PTS' 
+    PARAM 'Cout HT' = '0.2' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'J11'         /* Reference Desig was (null) */
+  SELECT EXT XCMP883                  /* Reference Desig is J10 */
+    PARAM 'Part Name' = 'BARETTE' 
+    PARAM 'Description' = 'Jumper 3 points en ligne 2.54mm avec cavalier associe' 
+    PARAM 'Part Label' = 'JUMPER 3PTS' 
+    PARAM 'Cout HT' = '0.2' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'J10'         /* Reference Desig was (null) */
+  SELECT EXT XCMP880                  /* Reference Desig is J13 */
+    PARAM 'Part Name' = 'RCA' 
+    PARAM 'Description' = 'RCA Connecteur / Lih Sheng LP-0843-3 ou Keystone 970 a 973 / Rouge' 
+    PARAM 'Part Label' = 'RCA RED' 
+    PARAM 'Code Fournisseur' = 'RS : 868-812' 
+    PARAM 'Cout HT' = '1.656' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'J13'         /* Reference Desig was (null) */
+  SELECT COMP XCMP879                 /* Reference Desig is R35 */
+    PARAM 'Part Name' = 'RES_0603_E24' 
+    PARAM 'Value' = '2K ' 
+    PARAM 'Tolerance' = '5%' 
+    PARAM 'Description' = 'Resistor 2.0k ohms / 5% / case 0603' 
+    PARAM 'Part Label' = 'RES_2.0k_0603' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R35'         /* Reference Desig was (null) */
+  SELECT COMP XCMP878                 /* Reference Desig is R34 */
+    PARAM 'Part Name' = 'RES_0603_E24' 
+    PARAM 'Value' = '2K ' 
+    PARAM 'Tolerance' = '5%' 
+    PARAM 'Description' = 'Resistor 2.0k ohms / 5% / case 0603' 
+    PARAM 'Part Label' = 'RES_2.0k_0603' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R34'         /* Reference Desig was (null) */
+
+/* Sym: 03DA2A90  Path 1: Schematic1  Page 4: Schematic1(4) */
+CHANGE 'Schematic1(4)' 	INSTANCE
+  SELECT COMP XCMP790                 /* Reference Desig is U9 */
+    PARAM 'Part Name' = 'ESP32_DEVKITC' 
+    PARAM 'Description' = 'ESP32 DevKitC module, with VROOM submodule.' 
+    PARAM 'Part Label' = 'ESP32_DEVKITC' 
+    PARAM 'Code Fournisseur' = 'Mouser: 356-ESP32-DEVKITC' 
+    PARAM 'Cout HT' = '8.53' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'U9'         /* Reference Desig was (null) */
+  SELECT COMP XCMP825                 /* Reference Desig is C3 */
+    PARAM 'Part Name' = 'CAPCERAM0603' 
+    PARAM 'Value' = '18pF' 
+    PARAM 'Tolerance' = '20%' 
+    PARAM 'Description' = 'Capacitor Ceramic 18pF / 10V / ±20% / case 0603' 
+    PARAM 'Part Label' = 'CAP C0603 18pF COG 10V' 
+    PARAM 'Code Fournisseur' = 'Fa : 1759056' 
+    PARAM 'Cout HT' = '0.04' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C3'         /* Reference Desig was (null) */
+  SELECT COMP XCMP824                 /* Reference Desig is QZ2 */
+    PARAM 'Part Name' = 'QUARTZ' 
+    PARAM 'Tolerance' = '20' 
+    PARAM 'Description' = 'Quartz 8 MHz, +/- 30ppm, 40 ohms, 18pF, case HC49SMD' 
+    PARAM 'Part Label' = '8 MHz' 
+    PARAM 'Code Fournisseur' = 'Fa : 1538763 ' 
+    PARAM 'Cout HT' = '1.81' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'QZ2'         /* Reference Desig was (null) */
+  SELECT COMP XCMP823                 /* Reference Desig is U10 */
+    PARAM 'Part Name' = 'STM32F103RE' 
+    PARAM 'Description' = 'ARM Cortex M3 32-bit MCU, 512 KB Flash, 64kB SRAM, USB, CAN, 8 timers, 2 ADCs, 2 I2C, 3 SPI, 3 USART, ST STM32F103RET6, case LQFP64' 
+    PARAM 'Part Label' = 'STM32F103RET6' 
+    PARAM 'Code Fournisseur' = 'Fa : 1624138' 
+    PARAM 'Cout HT' = '20.49' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'U10'         /* Reference Desig was (null) */
+  SELECT EXT XCMP835                  /* Reference Desig is J2 */
+    PARAM 'Part Name' = 'MINI_SWD_CONNECTOR' 
+    PARAM 'Description' = 'Dual row 1.27 CMS 2x5 points connector, Samtec FTSH-105-01-L-DV ' 
+    PARAM 'Part Label' = 'FTSH-105-01-L-DV' 
+    PARAM 'Code Fournisseur' = 'Fa : 1667759' 
+    PARAM 'Cout HT' = '1.96' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'J2'         /* Reference Desig was (null) */
+  SELECT COMP XCMP827                 /* Reference Desig is R2 */
+    PARAM 'Part Name' = 'RES_0603_E24' 
+    PARAM 'Value' = '1.1K ' 
+    PARAM 'Tolerance' = '5%' 
+    PARAM 'Description' = 'Resistor 1.1k ohms / 5% / case 0603' 
+    PARAM 'Part Label' = 'RES_1.1k_0603' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R2'         /* Reference Desig was (null) */
+  SELECT COMP XCMP826                 /* Reference Desig is C4 */
+    PARAM 'Part Name' = 'CAPCERAM0603' 
+    PARAM 'Value' = '18pF' 
+    PARAM 'Tolerance' = '20%' 
+    PARAM 'Description' = 'Capacitor Ceramic 18pF / 10V / ±20% / case 0603' 
+    PARAM 'Part Label' = 'CAP C0603 18pF COG 10V' 
+    PARAM 'Code Fournisseur' = 'Fa : 1759056' 
+    PARAM 'Cout HT' = '0.04' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C4'         /* Reference Desig was (null) */
