@@ -1,0 +1,115 @@
+[2018.12.05 15:06:32] [0000m.00s.358ms] [0] WELCOME
+[2018.12.05 15:06:32] [0000m.00s.421ms] [1] iCDB Server ver.2.204, w6NMT3m1DsvvLxNhuorv0Q, build:11282694 created 2018-08-20 09:52:51, sources stamp:w6NMT3m1DsvvLxNhuorv0Q
+[2018.12.05 15:06:32] [0000m.00s.421ms] [1] Copyright 2018 Mentor Graphics Corporation.  All Rights Reserved.
+[2018.12.05 15:06:32] [0000m.00s.421ms] [1] Base flow version [VX.2.4]
+[2018.12.05 15:06:32] [0000m.00s.421ms] [1] Install Id [1845723], Flow Id [X-ENTP VX.2.4], Full Flow Name [Xpedition Enterprise X-ENTP VX.2.4], Exact Access Date [2018/08/01]
+[2018.12.05 15:06:32] [0000m.00s.421ms] [1] Install Id [1845717], Flow Id [X-ENTP DCVX.2.4], Full Flow Name [Xpedition Enterprise X-ENTP VX.2.4], Exact Access Date [2018/08/01]
+[2018.12.05 15:06:32] [0000m.00s.452ms] [1] Machine [PIERRE-PC]  IP [127.0.0.1,137.194.90.94]  User [Pierre]  PID [4724]
+[2018.12.05 15:06:32] [0000m.00s.452ms] [1] Operating system [Microsoft Windows 7 Ultimate Edition, 64-bit Service Pack 1 (build 7601)]
+[2018.12.05 15:06:32] [0000m.00s.452ms] [1] Current working dir [D:\telecom\lasmo\PCB]
+[2018.12.05 15:06:32] [0000m.00s.452ms] [1] PATH [C:\MentorGraphics\EEVX.2.4\SDD_HOME\wg\help;C:\MentorGraphics\EEVX.2.4\SDD_HOME\common\win32\bin;C:\MentorGraphics\EEVX.2.4\SDD_HOME\common\win32\lib;C:\MentorGraphics\EEVX.2.4\MGC_HOME.ixn\bin;C:\MentorGraphics\EEVX.2.4\MGC_HOME.ixn\lib;C:\MentorGraphics\EEVX.2.4\SDD_HOME\wg\win32\lib;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Git\cmd;C:\Program Files\OpenVPN\bin]
+[2018.12.05 15:06:32] [0000m.00s.452ms] [1] SDD_HOME [C:\MentorGraphics\EEVX.2.4\SDD_HOME] on file system [NTFS]
+[2018.12.05 15:06:32] [0000m.00s.452ms] [1] SDD_PLATFORM [win32]
+[2018.12.05 15:06:32] [0000m.00s.452ms] [1] WDIR [C:\WDIR\;C:\MentorGraphics\EEVX.2.4\SDD_HOME\standard;]
+[2018.12.05 15:06:32] [0000m.00s.452ms] [1] Local iCDB working dir [C:\WDIR\iCDB] on file system [NTFS]
+[2018.12.05 15:06:32] [0000m.00s.452ms] [1] S: Config file name [ServerWG.cfg]
+[2018.12.05 15:06:32] [0000m.00s.452ms] [2] S: Loading config files
+[2018.12.05 15:06:32] [0000m.00s.468ms] [1] Config file [D:\telecom\lasmo\PCB\Default\default.icdb\cdbsvr\ServerWG.cfg] not found
+[2018.12.05 15:06:32] [0000m.00s.468ms] [1] Config: Non-default value [System.SingleUserMode] = [no]
+[2018.12.05 15:06:32] [0000m.00s.468ms] [3] S: Config loaded
+[2018.12.05 15:06:32] [0000m.00s.514ms] [0] S: Project path [D:\telecom\lasmo\PCB\Default\default.icdb] on file system [HFS Plus]
+[2018.12.05 15:06:32] [0000m.00s.514ms] [1] S: WARNING: No project file (.prj) path specified
+[2018.12.05 15:06:32] [0000m.00s.514ms] [1] S: WARNING: Database auto-repair support DISABLED
+[2018.12.05 15:06:32] [0000m.00s.514ms] [0] S: Multi-user mode (config)
+[2018.12.05 15:06:32] [0000m.00s.514ms] [0] S: Event polling mode autodetection
+[2018.12.05 15:06:32] [0000m.00s.514ms] [0] S: Started up automatically by iCDB Client: PIERRE-PC:Pierre:6084
+[2018.12.05 15:06:32] [0000m.00s.514ms] [0] S: Auto close mode
+[2018.12.05 15:06:32] [0000m.00s.514ms] [0] S: Database ID [158f-3ed3-ea9a-b72d-620c-70cb-20c7-0c50-7c71-2080-80dc-19ca]
+[2018.12.05 15:06:32] [0000m.00s.514ms] [0] PathTranslator: BEGIN dumping
+[2018.12.05 15:06:32] [0000m.00s.514ms] [0] PathTranslator: Local -> global path prefix list
+[2018.12.05 15:06:32] [0000m.00s.514ms] [0] PathTranslator: [C:\Users] -> [\\PIERRE-PC\Users]
+[2018.12.05 15:06:32] [0000m.00s.514ms] [0] PathTranslator: [F:\] -> [\\PIERRE-PC\Users\Pierre\virtual_F]
+[2018.12.05 15:06:32] [0000m.00s.514ms] [0] PathTranslator: Global -> local path prefix list
+[2018.12.05 15:06:32] [0000m.00s.514ms] [0] PathTranslator: [\\PIERRE-PC\Users\Pierre\virtual_F] -> [F:\]
+[2018.12.05 15:06:32] [0000m.00s.514ms] [0] PathTranslator: [\\PIERRE-PC\Users] -> [C:\Users]
+[2018.12.05 15:06:32] [0000m.00s.514ms] [0] PathTranslator: END dumping
+[2018.12.05 15:06:32] [0000m.00s.514ms] [0] S: START
+[2018.12.05 15:06:32] [0000m.00s.514ms] [0] S: Server startup lock file created
+[2018.12.05 15:06:32] [0000m.00s.514ms] [0] S: Listening for client connections on port [10002]
+[2018.12.05 15:06:32] [0000m.00s.514ms] [0] S: Server network ID [Pierre-PC:137.194.90.94,Pierre-PC:10002]
+[2018.12.05 15:06:32] [0000m.00s.514ms] [0] S: Server GUID [e19f-cb41-99a4-6f81-86bd-70cd-6bd7-0c50-f9d0-2080-80dc-19ca]
+[2018.12.05 15:06:32] [0000m.00s.514ms] [0] S: Project GUID [158f-3ed3-ea9a-b72d-620c-70cb-20c7-0c50-7c71-2080-80dc-19ca]
+[2018.12.05 15:06:32] [0000m.00s.530ms] [0] S: Wrote data to server address file
+[2018.12.05 15:06:32] [0000m.00s.530ms] [0] S: Server startup lock file removed
+[2018.12.05 15:06:32] [0000m.00s.530ms] [0] ProjectBackupManager: WARNING: Could not create Project Backup - functionality not initialized
+[2018.12.05 15:06:33] [0000m.01s.060ms] [0] S: Plugins loaded: [PIM] [ENetGen70] 
+[2018.12.05 15:06:33] [0000m.01s.060ms] [1] ServerToolkit: INFO: Plugin not found in SDD_ICDB_BIN [C:\MentorGraphics\EEVX.2.4\SDD_HOME\iCDB\win32\bin]
+[2018.12.05 15:06:33] [0000m.01s.060ms] [1] ServerToolkit: INFO: Plugin not found in SDD_COMMON_BIN [C:\MentorGraphics\EEVX.2.4\SDD_HOME\common\win32\bin]
+[2018.12.05 15:06:33] [0000m.01s.060ms] [1] ServerToolkit: INFO: Plugin not found in PATH
+[2018.12.05 15:06:33] [0000m.01s.060ms] [1] ServerToolkit: INFO: Plugin not found in CWD
+[2018.12.05 15:06:33] [0000m.01s.060ms] [1] ServerToolkit: INFO: returning just plugin exe name!
+[2018.12.05 15:06:33] [0000m.01s.060ms] [0] S: Local disc access time: 276 us
+[2018.12.05 15:06:33] [0000m.01s.060ms] [0] S: File server access time: 268 us
+[2018.12.05 15:06:33] [0000m.01s.076ms] [0] Single file [D:\telecom\lasmo\PCB\Default\default.icdb\icdb.dat] size [83016 (81.1 kB)]
+[2018.12.05 15:06:33] [0000m.01s.076ms] [1] Single file [D:\telecom\lasmo\PCB\Default\default.icdb\icdb.dat] opened in read-write mode
+[2018.12.05 15:06:33] [0000m.01s.076ms] [0] SingleFile: [0000-0000-0000-0000] SFI header version check [1009] [1009]
+[2018.12.05 15:06:33] [0000m.01s.076ms] [0] Database GUARD OK: [83016]
+[2018.12.05 15:06:33] [0000m.01s.076ms] [0] SingleFile: [0000-0000-0000-0000] SFI header version check [1009] [1009]
+[2018.12.05 15:06:33] [0000m.01s.076ms] [0] Database GUARD OK: [83016]
+[2018.12.05 15:06:33] [0000m.01s.076ms] [0] SingleFile: [0000-0000-0000-0000] SFI header version check [1009] [1009]
+[2018.12.05 15:06:33] [0000m.01s.076ms] [0] Database GUARD OK: [83016]
+[2018.12.05 15:06:33] [0000m.01s.076ms] [0] SingleFile: [0000-0000-0000-0000] SFI header version check [1009] [1009]
+[2018.12.05 15:06:33] [0000m.01s.076ms] [0] Database GUARD OK: [83016]
+[2018.12.05 15:06:33] [0000m.01s.076ms] [0] SingleFile: [0000-0000-0000-0000] SFI header version check [1009] [1009]
+[2018.12.05 15:06:33] [0000m.01s.076ms] [0] Database GUARD OK: [83016]
+[2018.12.05 15:06:33] [0000m.01s.076ms] [0] SingleFile: [e30d-de10-9b2f-dc48] SFI version check [1009] [1009]
+[2018.12.05 15:06:33] [0000m.01s.092ms] [0] SingleFile: [e30d-de10-9b2f-dc48] Database SFI header has been read in [5ms 841us]
+[2018.12.05 15:06:33] [0000m.01s.107ms] [0] iCDB Server PI: Server & plugin session [40]
+[2018.12.05 15:06:33] [0000m.01s.107ms] [0] iCDB Server PI: Opening database [D:\telecom\lasmo\PCB\Default\default.icdb]
+[2018.12.05 15:06:33] [0000m.01s.107ms] [0] iCDB Server PI: Database [D:\telecom\lasmo\PCB\Default\default.icdb] opened
+[2018.12.05 15:06:33] [0000m.01s.326ms] [0] iCDB Database: Checking existence of constraint definitions
+[2018.12.05 15:06:33] [0000m.01s.326ms] [0] iCDB Database: Checking constraint definitions version
+[2018.12.05 15:06:33] [0000m.01s.497ms] [1] iCDB Database: Constraint definitions version [ce_ee.cns=7.10.63;user.cns=0fd9-1d32-f121-3443-7d58-eebc-d58e-eb50-3ec0-2070-40dc-19ca] up to date
+[2018.12.05 15:06:34] [0000m.01s.591ms] [0] iCDB Server PI: Initializing plugins
+[2018.12.05 15:06:34] [0000m.01s.591ms] [0] iCDB Server PI: Plugins initialized
+[2018.12.05 15:06:34] [0000m.01s.591ms] [0] S: iCDB database loaded
+[2018.12.05 15:06:34] [0000m.01s.591ms] [0] S: Starting threads
+[2018.12.05 15:06:34] [0000m.01s.591ms] [0] BT: Listening for broadcast messages on port [10000]
+[2018.12.05 15:06:34] [0000m.01s.591ms] [1] CMT: There are no clients - waiting [10 seconds]
+[2018.12.05 15:06:34] [0000m.01s.591ms] [0] ProjectBackupManager: WARNING: Could not startup Project Backup engine - functionality not initialized
+[2018.12.05 15:06:34] [0000m.01s.606ms] [0] IT: Session [41] for host [Pierre-PC] user [Pierre] client type[0] clsvrPluginID[0] with process ID [6084] created
+[2018.12.05 15:06:34] [0000m.01s.606ms] [0] MWT: WindowProc: WM_NCCREATE
+[2018.12.05 15:06:34] [0000m.01s.606ms] [1] SC[41]: Registered sub-client [DCDV] with ID [1] for session ID [41] host [Pierre-PC] user [Pierre] process ID [6084]
+[2018.12.05 15:06:34] [0000m.01s.622ms] [1] SC[41]: UnRegistered sub-client [DCDV] with ID [1] for session ID [41] host [Pierre-PC] user [Pierre] process ID [6084]
+[2018.12.05 15:06:34] [0000m.01s.700ms] [1] CMT: There are [1] clients now: 41
+[2018.12.05 15:06:34] [0000m.01s.700ms] [1] CMT: Removed client [41]
+[2018.12.05 15:06:34] [0000m.01s.700ms] [1] CMT: There are no clients left - waiting [1 seconds]
+[2018.12.05 15:06:34] [0000m.02s.230ms] [0] IT: Session [42] for host [Pierre-PC] user [Pierre] client type[0] clsvrPluginID[0] with process ID [6084] created
+[2018.12.05 15:06:34] [0000m.02s.230ms] [1] SC[42]: Registered sub-client [DCDV] with ID [1] for session ID [42] host [Pierre-PC] user [Pierre] process ID [6084]
+[2018.12.05 15:06:34] [0000m.02s.246ms] [1] SC[42]: UnRegistered sub-client [DCDV] with ID [1] for session ID [42] host [Pierre-PC] user [Pierre] process ID [6084]
+[2018.12.05 15:06:34] [0000m.02s.355ms] [1] CMT: Removed client [42]
+[2018.12.05 15:06:34] [0000m.02s.355ms] [1] CMT: There are no clients left - waiting [1 seconds]
+[2018.12.05 15:06:36] [0000m.03s.666ms] [0] CMT: Starting server auto-close
+[2018.12.05 15:06:36] [0000m.03s.759ms] [0] S: Closing server
+[2018.12.05 15:06:36] [0000m.03s.775ms] [0] ProjectBackupManager: WARNING: Could not shutdown Project Backup engine - not started yet
+[2018.12.05 15:06:36] [0000m.03s.931ms] [0] iCDB Server PI: Closing plugins
+[2018.12.05 15:06:36] [0000m.03s.931ms] [0] iCDB Server PI: Plugins closed
+[2018.12.05 15:06:36] [0000m.03s.931ms] [0] iCDB Server PI: Unloading database
+[2018.12.05 15:06:36] [0000m.04s.040ms] [0] iCDB Server PI: Saving storage
+[2018.12.05 15:06:36] [0000m.04s.040ms] [0] iCDB Server PI: Closing database
+[2018.12.05 15:06:36] [0000m.04s.040ms] [1] Hole: zero line at 82988 of size 16 bytes.
+[2018.12.05 15:06:36] [0000m.04s.056ms] [1] iCDB Server PI: Stats: Database defragmentation: max[1] avg[1] holes[1%] data[96%]
+[2018.12.05 15:06:36] [0000m.04s.056ms] [1] iCDB Server PI: Stats: Database file size [83016 (81.1 kB)]
+[2018.12.05 15:06:36] [0000m.04s.056ms] [1] Hole: zero line at 82988 of size 16 bytes.
+[2018.12.05 15:06:36] [0000m.04s.102ms] [0] iCDB Server PI: Database closed
+[2018.12.05 15:06:36] [0000m.04s.102ms] [1] iCDB Server PI: Stats: Total iCDB execution time: [77] ticks
+[2018.12.05 15:06:36] [0000m.04s.102ms] [1] iCDB Server PI: Stats: Total iCDB execution time: [31] microseconds
+[2018.12.05 15:06:36] [0000m.04s.102ms] [1] iCDB Server PI: Stats: Total iCDB commands count: [2]
+[2018.12.05 15:06:36] [0000m.04s.102ms] [1] iCDB Server PI: Stats: Average iCDB speed:        [63271] commands per second
+[2018.12.05 15:06:36] [0000m.04s.102ms] [1] iCDB Server PI: Stats: Mem[31399936]
+[2018.12.05 15:06:36] [0000m.04s.102ms] [1] iCDB Server PI: Stats: MemPeak[36614144]
+[2018.12.05 15:06:36] [0000m.04s.102ms] [0] Single file [D:\telecom\lasmo\PCB\Default\default.icdb\icdb.dat] closed with size [83016 (81.1 kB)]
+[2018.12.05 15:06:36] [0000m.04s.134ms] [0] ProjectBackupManager: WARNING: Could not create Project Backup - functionality not initialized
+[2018.12.05 15:06:36] [0000m.04s.321ms] [0] MWT: Destroy the shutdown block reason.
+[2018.12.05 15:06:36] [0000m.04s.321ms] [0] MWT: STOP
+[2018.12.05 15:06:36] [0000m.04s.321ms] [0] S: STOP
