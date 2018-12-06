@@ -1,0 +1,30 @@
+[2018.12.06 12:28:02] [0000m.09s.391ms] [0] WELCOME
+[2018.12.06 12:28:02] [0000m.09s.391ms] [1] iCDB Database ver.2.204, w6NMT3m1DsvvLxNhuorv0Q, build:11282694 created 2018-08-20 09:52:51, sources stamp:w6NMT3m1DsvvLxNhuorv0Q
+[2018.12.06 12:28:02] [0000m.09s.391ms] [1] Copyright 2018 Mentor Graphics Corporation.  All Rights Reserved.
+[2018.12.06 12:28:02] [0000m.09s.391ms] [1] Base flow version [VX.2.4]
+[2018.12.06 12:28:02] [0000m.09s.391ms] [1] Install Id [1845723], Flow Id [X-ENTP VX.2.4], Full Flow Name [Xpedition Enterprise X-ENTP VX.2.4], Exact Access Date [2018/08/01]
+[2018.12.06 12:28:02] [0000m.09s.391ms] [1] Install Id [1845717], Flow Id [X-ENTP DCVX.2.4], Full Flow Name [Xpedition Enterprise X-ENTP VX.2.4], Exact Access Date [2018/08/01]
+[2018.12.06 12:28:02] [0000m.09s.391ms] [1] Machine [PIERRE-PC]  IP [127.0.0.1,137.194.90.94]  User [Pierre]  PID [1952]
+[2018.12.06 12:28:02] [0000m.09s.391ms] [1] Operating system [Microsoft Windows 7 Ultimate Edition, 64-bit Service Pack 1 (build 7601)]
+[2018.12.06 12:28:02] [0000m.09s.391ms] [1] Current working dir [D:\telecom\lasmo\PCB_security]
+[2018.12.06 12:28:02] [0000m.09s.391ms] [1] PATH [C:\MentorGraphics\EEVX.2.4\SDD_HOME\common\win32\bin;C:\MentorGraphics\EEVX.2.4\SDD_HOME\common\win32\lib;C:\MentorGraphics\EEVX.2.4\MGC_HOME.ixn\bin;C:\MentorGraphics\EEVX.2.4\MGC_HOME.ixn\lib;C:\MentorGraphics\EEVX.2.4\SDD_HOME\wg\win32\lib;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Git\cmd;C:\Program Files\OpenVPN\bin]
+[2018.12.06 12:28:02] [0000m.09s.391ms] [1] SDD_HOME [C:\MentorGraphics\EEVX.2.4\SDD_HOME] on file system [NTFS]
+[2018.12.06 12:28:02] [0000m.09s.391ms] [1] SDD_PLATFORM [win32]
+[2018.12.06 12:28:02] [0000m.09s.391ms] [1] WDIR [C:\WDIR\;C:\MentorGraphics\EEVX.2.4\SDD_HOME\standard;]
+[2018.12.06 12:28:02] [0000m.09s.391ms] [1] Local iCDB working dir [C:\WDIR\iCDB] on file system [NTFS]
+[2018.12.06 12:28:02] [0000m.09s.391ms] [3] WARNING: Database [D:\telecom\lasmo\PCB_security\Default\default.icdb\icdb.dat] was manually copied
+[2018.12.06 12:28:02] [0000m.09s.391ms] [3] File change time:        [2018-12-06 12.27.38]
+[2018.12.06 12:28:02] [0000m.09s.391ms] [3] File modification time:  [2018-12-06 12.26.19]
+[2018.12.06 12:28:02] [0000m.09s.391ms] [3] Last change time:        [2018-12-06 12.26.19]
+[2018.12.06 12:28:02] [0000m.09s.391ms] [3] Last database open information:
+[2018.12.06 12:28:02] [0000m.09s.391ms] [3] Time:             [2018-12-06 12.26.19]
+[2018.12.06 12:28:02] [0000m.09s.391ms] [3] Location:         [F:\Project_template\Default\default.icdb\icdb.dat]
+[2018.12.06 12:28:02] [0000m.09s.391ms] [3] Machine:          [PIERRE-PC]
+[2018.12.06 12:28:02] [0000m.09s.391ms] [3] User:             [Pierre]
+[2018.12.06 12:28:02] [0000m.09s.391ms] [3] PID:              [5492]
+[2018.12.06 12:28:02] [0000m.09s.391ms] [3] Application:      [iCDB Server]
+[2018.12.06 12:28:02] [0000m.09s.391ms] [3] Operating system: [Microsoft Windows 7 Ultimate Edition, 64-bit Service Pack 1 (build 7601)]
+[2018.12.06 12:28:02] [0000m.09s.391ms] [3] WARNING: Regenerating database GUID
+[2018.12.06 12:28:02] [0000m.09s.391ms] [3] Previous database GUID [0a57-6ed1-5701-3342-392d-3fb8-92d3-fb50-d837-9646-e330-acad]
+[2018.12.06 12:28:02] [0000m.09s.406ms] [3] Current database GUID  [3b25-dbe5-9fdc-c45c-2c70-90c7-c709-0c50-31c0-2080-80dc-19ca]
+[2018.12.06 12:28:02] [0000m.09s.406ms] [0] .

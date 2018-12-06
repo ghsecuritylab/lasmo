@@ -1,0 +1,169 @@
+
+                                    Packager
+                                    --------
+
+                       10:40 AM Friday, November 16, 2018
+               Job Name: F:\Project_template\Project_template.prj
+
+
+     Packager     Version: 020806.00
+
+        Commandline is: "C:\MentorGraphics\EEVX.2.4\SDD_HOME\wg\win32\bin\package "-uF:\Project_template\Default\default.icdb" -k -CleanBuild -W1PinNets "-jF:\Project_template\Project_template.prj" "
+
+     The Common Database is at "F:\Project_template\Default\default.icdb".
+
+     The Root of this design is "Schematic1".
+
+     The Front End Snapshot of this design is "DCDV".
+
+     The PCB Design Path of this design is at "F:\Project_template\PCB\PCB.pcb".
+
+     The Central Library is at "F:\Central_Libs\ENST.lmc".
+
+     The Disable Repackage status indicates that 
+      Repackaging should be allowed.
+
+     A new Target PDB will be created from the Central Library to satisfy the parts
+      requirements of the iCDB.
+
+     The AllowAlphaRefDes status indicates that reference
+      designators containing all alpha characters should be deleted
+      and the relevant symbols repackaged.
+
+     The cross mapping of symbol pin names to Part Number pin
+      numbers will be checked for packaged symbols and mapped correctly
+      for unpackaged symbols.
+
+     Properties that have been checked off in the Property Definition Editor
+      found at Library Manager/Common Properties will be checked for value
+      differences between the PartsDB and the non-null properties on symbols.
+     Those properties checked off will be transferred from the PartsDB to all
+      symbols, both packaged and unpackaged.  However, the property values
+      transferred will be limited to the precision specified in the Notation
+      Settings dialog.
+     The following properties were checked off in the Property Definition Editor:
+       "Parametric"
+       "Value2"
+       "Attachment"
+       "Verification Statut"
+       "Commentaire"
+       "Option"
+       "ESR"
+       "Imax"
+       "Place"
+       "Cout HT"
+       "Vf"
+       "Code Fournisseur"
+       "Boitier"
+       "Iac max"
+       "Voltage"
+       "Dielectric"
+       "Techno"
+       "IBIS"
+       "Model Suffix"
+       "Part Label"
+       "VHDL Model"
+       "Verilog Model"
+       "Supply Rename"
+       "Description"
+       "Simulation Model"
+       "Ref Designator"
+       "Tolerance"
+       "Part Number"
+       "Value"
+       "Part Name"
+
+	Checking for errors in the ICDB...
+
+	No errors found.  Proceeding with packaging...
+
+
+
+     Common Data Base has been read
+
+     Target PDB Name: Integration\LocalPartsDB.pdb
+
+     Number of Part Numbers: 5
+          Part Numb: 10-0001 -> Vend Part: 10-0001 
+          Part Numb: 10-0057 -> Vend Part: 10-0057 
+          Part Numb: 10-0103 -> Vend Part: 10-0103 
+          Part Numb: 40-0208 -> Vend Part: 40-0208 
+          Part Numb: 70-0081 -> Vend Part: 70-0081 
+
+     Number of Part Names: 0
+
+     Number of Part Labels: 0
+
+
+     Checking for value differences between non-null symbol properties and PartsDB properties,
+      but only for those properties checked off in the Property Definition Editor
+
+    WARNING: Block Schematic1, Page 1, Symbol XCMP716:
+      Symbol / PartsDB property mismatch:
+      Resolved PartNumber = 40-0208
+      Symbol Property: Cout HT = 12,76
+     PartsDB Property: Cout HT = 12.76
+     The symbol property value matches the PartsDB value with the Notation
+      Setting being ignored as requested for this property.
+
+    WARNING: Block Schematic1, Page 1, Symbol XCMP681:
+      Symbol / PartsDB property mismatch:
+      Resolved PartNumber = 70-0081
+      Symbol Property: Cout HT = 1,96
+     PartsDB Property: Cout HT = 1.96
+     The symbol property value matches the PartsDB value with the Notation
+      Setting being ignored as requested for this property.
+
+     Checking the validity of the packaging of prepackaged schematic
+      symbols.  Only the first error in symbols having the same
+      Reference Designator will be reported.
+
+     The packaging of all prepackaged schematic symbols is consistent
+      with the Parts DataBase data for the cross mapping of
+      symbol pin names to Part Number pin numbers.
+      Symbols that were not prepackaged will now be packaged correctly.
+      
+     No errors in Existing Schematic Packaging.
+
+     The Common DataBase has been read and will be packaged.
+     Clustering 8 Symbols:
+               8  *******
+     Clustering is Complete
+
+     Packager Assignments successfully completed
+
+
+
+     7 nets were found containing 24 pins
+     8 components were found
+
+     Parsed netlist - Augmenting..
+
+     Augmented - Adding phantom pins....
+
+     Numbering Nets....
+
+    After augmentation of supply pins, there are 7 nets where 2 nets have only one pin:
+      INFO:  Block Schematic1 Page 1, Pin 10 on Symbol XCMP681: Single pin on net RSTn.
+      INFO:  Block Schematic1 Page 1, Pin 1 on Symbol XCMP550: Single pin on net XSIG011105.
+
+
+     Checking Pins....
+
+     Testing of Packaging has been completed with 2 warnings.
+      Erroneous results may occur if not fixed.
+
+     Updating the Common DataBase
+
+     A BAM WasIs List: Integration\CDBBackAnno.bam has been created.
+
+The Common DataBase has been successfully updated.
+
+     Packager finished successfully.
+     !THE iCDB IS UP-TO-DATE!
+     
+     An unused pin and gate report has been written to Integration\UnusedPins.txt
+     An unused gate report for gates not in schematic has been written to Integration\UnusedGates.txt
+     An augmented pin report has been written to Integration\AugmentedPins.txt.
+
+     There have been 2 warnings.
