@@ -83,11 +83,11 @@ endif
 #
 
 # Define project name here
-PROJECT = LASMO
-CONFDIR := ./F7/config
+PROJECT = LASMO_F7
+CONFDIR := ./config
 
 # Imported source files and paths
-CHIBIOS = vendors/ChibiOS
+CHIBIOS = ../vendors/ChibiOS
 
 # Licensing files.
 include $(CHIBIOS)/os/license/license.mk
@@ -96,7 +96,7 @@ include $(CHIBIOS)/os/common/startup/ARMCMx/compilers/GCC/mk/startup_stm32f4xx.m
 # HAL-OSAL files (optional).
 include $(CHIBIOS)/os/hal/hal.mk
 include $(CHIBIOS)/os/hal/ports/STM32/STM32F4xx/platform.mk
-include 										third_party/board_E407/board.mk
+include 										board_E407/board.mk
 include $(CHIBIOS)/os/hal/osal/rt/osal.mk
 # RTOS files (optional).
 include $(CHIBIOS)/os/rt/rt.mk
@@ -112,20 +112,20 @@ include $(CHIBIOS)/os/hal/lib/streams/streams.mk
 include $(CHIBIOS)/os/various/lwip_bindings/lwip.mk
 
 # Include RTT files and board files
-ALLINC += third_party
+ALLINC += ../third_party
 
 
 # Define linker script file here
 LDSCRIPT= $(STARTUPLD)/STM32F407xG.ld
-ALLCSRC += main_F7.c third_party/RTT/SEGGER_RTT.c \
-           third_party/RTT/SEGGER_RTT_printf.c \
+ALLCSRC += main_F7.c ../third_party/RTT/SEGGER_RTT.c \
+           ../third_party/RTT/SEGGER_RTT_printf.c \
 											$(CHIBIOS)/os/various/evtimer.c
 
 # C sources that can be compiled in ARM or THUMB mode depending on the global
 # setting.
 CSRC = $(ALLCSRC) \
        $(TESTSRC) \
-       F7/src/
+       src/
 
 # C++ sources that can be compiled in ARM or THUMB mode depending on the global
 # setting.
