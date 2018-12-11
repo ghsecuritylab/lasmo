@@ -139,6 +139,7 @@ static THD_FUNCTION(http_server, p) {
 
 void lsm_ethernet_init(void){
   lsm_lwip_init_opt();
+
   lsm_dhcp_init();
 
   chThdCreateStatic(wa_http_server, sizeof(wa_http_server), WEB_THREAD_PRIORITY, http_server, NULL);
