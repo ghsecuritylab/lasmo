@@ -116,10 +116,10 @@ include src/source.mk
 # Include RTT files and board files
 ALLINC += ../third_party includes/
 
+
 # Define linker script file here
 LDSCRIPT= $(STARTUPLD)/STM32F407xG.ld
-
-ALLCSRC += ../third_party/RTT/SEGGER_RTT.c \
+ALLCSRC += F7_main.c F7_galva.c ../third_party/RTT/SEGGER_RTT.c \
            ../third_party/RTT/SEGGER_RTT_printf.c \
            $(CHIBIOS)/os/various/evtimer.c
 
@@ -275,4 +275,3 @@ debug: $(ELF)
 
 .PHONY: startgdbserver shell  rttviewer stopgdbserver debug
 endif
-
