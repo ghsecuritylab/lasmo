@@ -119,7 +119,7 @@ ALLINC += ../third_party includes/
 
 # Define linker script file here
 LDSCRIPT= $(STARTUPLD)/STM32F407xG.ld
-ALLCSRC += F7_main.c F7_galva.c ../third_party/RTT/SEGGER_RTT.c \
+ALLCSRC += main.c galva.c ../third_party/RTT/SEGGER_RTT.c \
            ../third_party/RTT/SEGGER_RTT_printf.c \
            $(CHIBIOS)/os/various/evtimer.c
 
