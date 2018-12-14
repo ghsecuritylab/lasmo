@@ -2,13 +2,13 @@
                                 Autosave Log File
                                 -----------------
 
-                        02:54 PM Sunday, October 21, 2018
-                    Job Name: F:\PROJECT_TEMPLATE\PCB\PCB.pcb
+                       11:40 AM Friday, December 14, 2018
+                   Job Name: D:\telecom\lasmo\PCB\PCB\PCB.pcb
 
 
                                Autosave log closed
                                -------------------
 
-                        02:55 PM Sunday, October 21, 2018
-                    Job Name: F:\PROJECT_TEMPLATE\PCB\PCB.pcb
+                       11:44 AM Friday, December 14, 2018
+                   Job Name: D:\telecom\lasmo\PCB\PCB\PCB.pcb
 

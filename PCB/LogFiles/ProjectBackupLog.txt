@@ -19,3 +19,9 @@
 [2018-11-20 10.31.27] Migrated iCDB content backup file [cdbback\2018-11-16 09.54.47-7580.zip] removed.
 [2018-11-20 10.31.27] Successfully migrated iCDB upgrade backup file [2018-11-16 09.54.47-7580] to Project Backup format [2018-11-16 09.54.47 - upgrade.zip]
 [2018-12-05 12.01.03] Successfully created [Project Repair] backup [2018-12-05 12.01.03 - repair.zip] requested by [DESKTOP-D6MOGOB:alexis].
+[2018-12-12 10.22.05] Migrating iCDB upgrade backups from directory [PCB\Default\default.icdb\cdbback] to Project Backup format.
+[2018-12-12 10.22.05] Migrating iCDB upgrade backup file [2018-12-05 13.10.15-2064].
+[2018-12-12 10.22.06] Successfully created [AutoSave] backup [2018-12-12 10.22.05 - auto.zip] requested by [PIERRE-PC:Pierre].
+[2018-12-14 11.38.14] Migrating iCDB upgrade backups from directory [PCB\Default\default.icdb\cdbback] to Project Backup format.
+[2018-12-14 11.38.14] WARNING: Ignoring iCDB backup file [2018-12-05 13.10.15-2064-pbmf.zip] - will not be migrated.
+[2018-12-14 11.38.14] Successfully created [AutoSave] backup [2018-12-14 11.38.14 - auto.zip] requested by [PIERRE-PC:Pierre].

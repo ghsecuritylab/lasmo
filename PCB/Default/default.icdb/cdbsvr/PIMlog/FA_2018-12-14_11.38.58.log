@@ -1,0 +1,118 @@
+--------------------------------------------------------------------------------
+ Project integration - START (2018-12-14 11:38:58) 
+--------------------------------------------------------------------------------
+FE snapshot name: DCDV
+BE snapshot name: PCB_Layout_Temp
+Top level block: (20-1-5)
+Parameters: FAConstraints,FEWin,
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+ CES synchronization - START (2018-12-14 11:38:58) 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+ TOPOLOGY synchronization - START (2018-12-14 11:38:58) 
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+ TOPOLOGY synchronization - END (2018-12-14 11:38:58) 
+--------------------------------------------------------------------------------
+[Skipped][Addition] - [FE->BE] [P: CesPart,10-0105,(135-1-53)] [O: CesConstraint,PART_TYPE,(135-1-22)]
+[Skipped][Addition] - [FE->BE] [P: CesPart,10-0105,(135-1-53)] [O: CesConstraint,DEF_VALUE,(135-2-22)]
+[Skipped][Addition] - [FE->BE] [P: CesPart,10-0070,(135-2-53)] [O: CesConstraint,PART_TYPE,(135-3-22)]
+[Skipped][Addition] - [FE->BE] [P: CesPart,10-0070,(135-2-53)] [O: CesConstraint,DEF_VALUE,(135-4-22)]
+[Skipped][Addition] - [FE->BE] [P: CesPart,40-0153,(135-3-53)] [O: CesConstraint,PART_TYPE,(135-5-22)]
+[Skipped][Addition] - [FE->BE] [P: CesPart,10-0120,(135-4-53)] [O: CesConstraint,PART_TYPE,(135-6-22)]
+[Skipped][Addition] - [FE->BE] [P: CesPart,10-0120,(135-4-53)] [O: CesConstraint,DEF_VALUE,(135-7-22)]
+[Skipped][Addition] - [FE->BE] [P: CesPart,50-0044,(135-5-53)] [O: CesConstraint,PART_TYPE,(135-8-22)]
+[Skipped][Addition] - [FE->BE] [P: CesPart,50-0044,(135-5-53)] [O: CesConstraint,DEF_VALUE,(135-9-22)]
+[Skipped][Addition] - [FE->BE] [P: CesPart,40-0003,(135-6-53)] [O: CesConstraint,PART_TYPE,(135-10-22)]
+[Skipped][Addition] - [FE->BE] [P: CesPart,01-0385,(135-7-53)] [O: CesConstraint,PART_TYPE,(135-11-22)]
+[Skipped][Addition] - [FE->BE] [P: CesPart,01-0385,(135-7-53)] [O: CesConstraint,DEF_VALUE,(135-12-22)]
+[Skipped][Addition] - [FE->BE] [P: CesPart,10-0056,(135-8-53)] [O: CesConstraint,PART_TYPE,(135-13-22)]
+[Skipped][Addition] - [FE->BE] [P: CesPart,10-0056,(135-8-53)] [O: CesConstraint,DEF_VALUE,(135-14-22)]
+[Skipped][Addition] - [FE->BE] [P: CesPart,01-0339,(135-9-53)] [O: CesConstraint,PART_TYPE,(135-15-22)]
+[Skipped][Addition] - [FE->BE] [P: CesPart,01-0339,(135-9-53)] [O: CesConstraint,DEF_VALUE,(135-16-22)]
+[Skipped][Addition] - [FE->BE] [P: CesPart,70-0015,(135-10-53)] [O: CesConstraint,PART_TYPE,(135-17-22)]
+[Skipped][Addition] - [FE->BE] [P: CesPart,01-0433,(135-11-53)] [O: CesConstraint,PART_TYPE,(135-18-22)]
+[Skipped][Addition] - [FE->BE] [P: CesPart,01-0433,(135-11-53)] [O: CesConstraint,DEF_VALUE,(135-19-22)]
+[Skipped][Addition] - [FE->BE] [P: CesPart,20-0001,(135-12-53)] [O: CesConstraint,PART_TYPE,(135-20-22)]
+[Skipped][Addition] - [FE->BE] [P: CesPart,20-0019,(135-13-53)] [O: CesConstraint,PART_TYPE,(135-21-22)]
+[Skipped][Addition] - [FE->BE] [P: CesPart,10-0046,(135-14-53)] [O: CesConstraint,PART_TYPE,(135-22-22)]
+[Skipped][Addition] - [FE->BE] [P: CesPart,10-0046,(135-14-53)] [O: CesConstraint,DEF_VALUE,(135-23-22)]
+[Skipped][Addition] - [FE->BE] [P: CesPart,00-0104,(135-15-53)] [O: CesConstraint,PART_TYPE,(135-24-22)]
+[Skipped][Addition] - [FE->BE] [P: CesPart,00-0104,(135-15-53)] [O: CesConstraint,DEF_VALUE,(135-25-22)]
+[Skipped][Addition] - [FE->BE] [P: CesPart,20-0035,(135-16-53)] [O: CesConstraint,PART_TYPE,(135-26-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,C24,(135-1-51)] [O: CesConstraint,DEF_VALUE,(135-27-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,C25,(135-2-51)] [O: CesConstraint,DEF_VALUE,(135-28-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,C26,(135-3-51)] [O: CesConstraint,DEF_VALUE,(135-29-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,C27,(135-4-51)] [O: CesConstraint,DEF_VALUE,(135-30-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,C28,(135-5-51)] [O: CesConstraint,DEF_VALUE,(135-31-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,C29,(135-7-51)] [O: CesConstraint,DEF_VALUE,(135-32-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,C30,(135-8-51)] [O: CesConstraint,DEF_VALUE,(135-33-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,L2,(135-9-51)] [O: CesConstraint,DEF_VALUE,(135-34-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,L3,(135-10-51)] [O: CesConstraint,DEF_VALUE,(135-35-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R1,(135-13-51)] [O: CesConstraint,DEF_VALUE,(135-36-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R12,(135-14-51)] [O: CesConstraint,DEF_VALUE,(135-37-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R13,(135-15-51)] [O: CesConstraint,DEF_VALUE,(135-38-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R20,(135-16-51)] [O: CesConstraint,DEF_VALUE,(135-39-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R21,(135-17-51)] [O: CesConstraint,DEF_VALUE,(135-40-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R23,(135-18-51)] [O: CesConstraint,DEF_VALUE,(135-41-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R24,(135-19-51)] [O: CesConstraint,DEF_VALUE,(135-42-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R25,(135-20-51)] [O: CesConstraint,DEF_VALUE,(135-43-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R26,(135-21-51)] [O: CesConstraint,DEF_VALUE,(135-44-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R27,(135-22-51)] [O: CesConstraint,DEF_VALUE,(135-45-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R36,(135-23-51)] [O: CesConstraint,DEF_VALUE,(135-46-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R37,(135-24-51)] [O: CesConstraint,DEF_VALUE,(135-47-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,C31,(135-25-51)] [O: CesConstraint,DEF_VALUE,(135-48-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R38,(135-26-51)] [O: CesConstraint,DEF_VALUE,(135-49-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R39,(135-27-51)] [O: CesConstraint,DEF_VALUE,(135-50-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R40,(135-28-51)] [O: CesConstraint,DEF_VALUE,(135-51-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R41,(135-29-51)] [O: CesConstraint,DEF_VALUE,(135-52-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R42,(135-31-51)] [O: CesConstraint,DEF_VALUE,(135-53-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,C32,(135-35-51)] [O: CesConstraint,DEF_VALUE,(135-54-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,C33,(135-36-51)] [O: CesConstraint,DEF_VALUE,(135-55-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R43,(135-37-51)] [O: CesConstraint,DEF_VALUE,(135-56-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,C24,(135-1-51)] [O: CesConstraint,PACKAGED_COMP,(135-57-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,C25,(135-2-51)] [O: CesConstraint,PACKAGED_COMP,(135-58-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,C26,(135-3-51)] [O: CesConstraint,PACKAGED_COMP,(135-59-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,C27,(135-4-51)] [O: CesConstraint,PACKAGED_COMP,(135-60-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,C28,(135-5-51)] [O: CesConstraint,PACKAGED_COMP,(135-61-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,U4,(135-6-51)] [O: CesConstraint,PACKAGED_COMP,(135-62-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,C29,(135-7-51)] [O: CesConstraint,PACKAGED_COMP,(135-63-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,C30,(135-8-51)] [O: CesConstraint,PACKAGED_COMP,(135-64-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,L2,(135-9-51)] [O: CesConstraint,PACKAGED_COMP,(135-65-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,L3,(135-10-51)] [O: CesConstraint,PACKAGED_COMP,(135-66-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,U5,(135-11-51)] [O: CesConstraint,PACKAGED_COMP,(135-67-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,U8,(135-12-51)] [O: CesConstraint,PACKAGED_COMP,(135-68-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R1,(135-13-51)] [O: CesConstraint,PACKAGED_COMP,(135-69-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R12,(135-14-51)] [O: CesConstraint,PACKAGED_COMP,(135-70-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R13,(135-15-51)] [O: CesConstraint,PACKAGED_COMP,(135-71-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R20,(135-16-51)] [O: CesConstraint,PACKAGED_COMP,(135-72-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R21,(135-17-51)] [O: CesConstraint,PACKAGED_COMP,(135-73-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R23,(135-18-51)] [O: CesConstraint,PACKAGED_COMP,(135-74-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R24,(135-19-51)] [O: CesConstraint,PACKAGED_COMP,(135-75-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R25,(135-20-51)] [O: CesConstraint,PACKAGED_COMP,(135-76-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R26,(135-21-51)] [O: CesConstraint,PACKAGED_COMP,(135-77-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R27,(135-22-51)] [O: CesConstraint,PACKAGED_COMP,(135-78-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R36,(135-23-51)] [O: CesConstraint,PACKAGED_COMP,(135-79-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R37,(135-24-51)] [O: CesConstraint,PACKAGED_COMP,(135-80-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,C31,(135-25-51)] [O: CesConstraint,PACKAGED_COMP,(135-81-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R38,(135-26-51)] [O: CesConstraint,PACKAGED_COMP,(135-82-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R39,(135-27-51)] [O: CesConstraint,PACKAGED_COMP,(135-83-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R40,(135-28-51)] [O: CesConstraint,PACKAGED_COMP,(135-84-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R41,(135-29-51)] [O: CesConstraint,PACKAGED_COMP,(135-85-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,J2,(135-30-51)] [O: CesConstraint,PACKAGED_COMP,(135-86-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R42,(135-31-51)] [O: CesConstraint,PACKAGED_COMP,(135-87-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,D2,(135-32-51)] [O: CesConstraint,PACKAGED_COMP,(135-88-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,D3,(135-33-51)] [O: CesConstraint,PACKAGED_COMP,(135-89-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,D4,(135-34-51)] [O: CesConstraint,PACKAGED_COMP,(135-90-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,C32,(135-35-51)] [O: CesConstraint,PACKAGED_COMP,(135-91-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,C33,(135-36-51)] [O: CesConstraint,PACKAGED_COMP,(135-92-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,R43,(135-37-51)] [O: CesConstraint,PACKAGED_COMP,(135-93-22)]
+[Skipped][Addition] - [FE->BE] [P: CesComp,D5,(135-38-51)] [O: CesConstraint,PACKAGED_COMP,(135-94-22)]
+--------------------------------------------------------------------------------
+ CES synchronization - END (2018-12-14 11:38:58) 
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+ Project integration - END (2018-12-14 11:38:58) 
+--------------------------------------------------------------------------------
