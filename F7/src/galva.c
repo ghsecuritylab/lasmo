@@ -10,7 +10,6 @@
 
 // This function must moove the galva to the x or y position in fonction 7557-68
 void lsm_ctrl_galva(int axe, uint16_t value ){
-  SEGGER_RTT_printf(0, "Début fonction ctrl galva\r\n");
   if ((value > MAX_VALUE))
     SEGGER_RTT_printf(0, "Error, out of bounding ! \r\n");
   else if(axe == AXE_X){

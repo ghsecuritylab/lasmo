@@ -7,20 +7,18 @@
 int main(void) {
   halInit();
   chSysInit();
-  SEGGER_RTT_printf(0, "Start ! \r\n");
+  SEGGER_RTT_printf(0, "\r\n---------- Start ! ----------- \r\n");
 
   // RTT configuration
   SEGGER_RTT_ConfigUpBuffer(0, NULL, NULL, 0, SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL);
-  SEGGER_RTT_printf(0, "avant init ! \r\n");
   lsm_galva_init();
-  SEGGER_RTT_printf(0, "apres init ! \r\n");
+
+  //Envoie de donnée ponctuelles
   lsm_ctrl_galvaXY(0,0);
-  SEGGER_RTT_printf(0, "0,0 est envoyé aux galva! \r\n");
-
   lsm_ctrl_galvaXY(2048,2048);
-
   lsm_ctrl_galvaXY(4095,4095);
-  SEGGER_RTT_printf(0, " Tout a ete envoyé ! \r\n");
+
+  lsm_buf_ctrl_galva();
   while(1){
    chThdSleepMilliseconds(10);
   }
