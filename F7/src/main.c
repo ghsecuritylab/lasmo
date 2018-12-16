@@ -15,12 +15,12 @@ int main(void) {
   lsm_galva_init();
   SEGGER_RTT_printf(0, "apres init ! \r\n");
   lsm_ctrl_galvaXY(0,0);
-  SEGGER_RTT_printf(0, "1! \r\n");
+  SEGGER_RTT_printf(0, "0,0 est envoyé aux galva! \r\n");
 
   lsm_ctrl_galvaXY(2048,2048);
-  SEGGER_RTT_printf(0, "2 ! \r\n");
 
   lsm_ctrl_galvaXY(4095,4095);
+  SEGGER_RTT_printf(0, " Tout a ete envoyé ! \r\n");
   while(1){
    chThdSleepMilliseconds(10);
   }
