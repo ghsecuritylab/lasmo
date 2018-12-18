@@ -2,13 +2,13 @@
                                     Packager
                                     --------
 
-                       08:59 PM Tuesday, December 18, 2018
+                       09:15 PM Tuesday, December 18, 2018
                      Job Name: D:\telecom\lasmo\PCB\PCB.prj
 
 
      Packager     Version: 020806.00
 
-        Commandline is: "C:\MentorGraphics\EEVX.2.4\SDD_HOME\wg\win32\bin\package.exe -Replace "-jD:\telecom\lasmo\PCB\PCB.prj""
+        Commandline is: ""C:\MentorGraphics\EEVX.2.4\SDD_HOME\wg\win32\bin\package.exe"  -jD:\telecom\lasmo\PCB\PCB.prj -CleanBuild -NoFill"
 
      The Common Database is at "D:\telecom\lasmo\PCB\Default\default.icdb".
 
@@ -23,9 +23,8 @@
      The Disable Repackage status indicates that 
       Repackaging should be allowed.
 
-     The PDBs listed in the project file will be searched to satisfy the parts
-      requirements of the iCDB and to replace any duplicates found in the
-      Target PDB.
+     A new Target PDB will be created from the Central Library to satisfy the parts
+      requirements of the iCDB.
 
      The AllowAlphaRefDes status indicates that reference
       designators containing all alpha characters should be deleted
@@ -168,7 +167,7 @@
 
 
 
-     99 nets were found containing 398 pins
+     98 nets were found containing 398 pins
      110 components were found
 
      Parsed netlist - Augmenting..
