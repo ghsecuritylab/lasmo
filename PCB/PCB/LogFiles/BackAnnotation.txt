@@ -1,0 +1,35 @@
+
+                                 BackAnnotation
+                                 --------------
+
+                       03:54 PM Tuesday, December 18, 2018
+                   Job Name: D:\telecom\lasmo\PCB\PCB\PCB.pcb
+
+
+  Updating Logic Database...
+
+     Version:  99.00.05
+
+      No changes made to Existing Schematic Packaging.
+
+     The Common DataBase has been successfully updated.
+
+     The Logic DataBase has been updated and the Common DataBase has
+      automatically been brought into sync with the Logic DataBase.
+      Please proceed with your design.
+
+     Finished updating the Logic Database.
+
+     Updating the CDB Properties
+     Finished updating the CDB Properties
+
+     Updating LogicDB Version from 3 to 4.
+
+     Creating a formatted Schematic Netlist (LogFiles\AfterBakAnnoNetlist.txt)...
+     A formatted Schematic Netlist has been created.
+
+            Creating a new netlist text file (LogFiles\KeyinNetList.txt)
+            from the Logic Database (Work\Layout_Temp\LogicDB.lgc)...
+  A new netlist text file has been generated.
+
+     Completed Back Annotation

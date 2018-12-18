@@ -2,7 +2,7 @@
 ! change it at your own peril
 
 !
-! Created 12/14/18 11:44:46
+! Created 12/18/18 15:54:39
 !
 
 .Global_Constants 109 2
@@ -19,7 +19,7 @@
     ..Active_Place_Layer_Top             True
     ..Active_Place_Layer_Bottom          False
     ..Active_Place_Layer_Internal        False
-    ..Active_Route_Layer 1
+    ..Active_Route_Layer 3
     ..Trace_Layer_Color ( 
 	0x00ff6633 0x009933ff	! [1-2] RGB( 51,102,255)  RGB(255, 51,153)
 	0x0066ff99 0x000000ff	! [3-4] RGB(153,255,102)  RGB(255,  0,  0)
@@ -1286,61 +1286,61 @@
 	"UnConnected_Net"	! [1]
 	"(Net0)"	! [2]
 	"(Spacer_Net)"	! [3]
-	"GND"	! [4]
-	"VCC"	! [5]
-	"AUDIO_L"	! [6]
-	"AUDIO_L_p03"	! [7]
-	"AUDIO_R"	! [8]
-	"AUDIO_R_p03"	! [9]
-	"ETH_MDC"	! [10]
-	"ETH_MDIO"	! [11]
-	"F7RSTn"	! [12]
-	"F7RSTn_p02"	! [13]
-	"F7SWCLK"	! [14]
-	"F7SWDAT"	! [15]
-	"GALVA_DRIVERX_IN+"	! [16]
-	"GALVA_DRIVERX_IN-"	! [17]
-	"GALVA_X"	! [18]
-	"GALVA_Y"	! [19]
-	"LASERS_MUTE"	! [20]
-	"LASER_BLUE"	! [21]
-	"LASER_GREEN"	! [22]
-	"LASER_RED"	! [23]
-	"LED1"	! [24]
-	"LED2"	! [25]
-	"MII_RX_ER"	! [26]
-	"RMII_CRS_DV"	! [27]
-	"RMII_REF_CLK"	! [28]
-	"RMII_RXD0"	! [29]
-	"RMII_RXD1"	! [30]
-	"RMII_TXD0"	! [31]
-	"RMII_TXD1"	! [32]
-	"RMII_TX_EN"	! [33]
-	"SD_CK"	! [34]
-	"SD_CMD"	! [35]
-	"SD_D0"	! [36]
-	"SD_D1"	! [37]
-	"SD_D2"	! [38]
-	"SD_D3"	! [39]
-	"SPI_F72ESP_MISO"	! [40]
-	"SPI_F72ESP_MOSI"	! [41]
-	"SPI_F72ESP_NSS"	! [42]
-	"SPI_F72ESP_SCK"	! [43]
-	"SPI_F72F1_MISO"	! [44]
-	"SPI_F72F1_MOSI"	! [45]
-	"SPI_F72F1_NSS"	! [46]
-	"SPI_F72F1_SCK"	! [47]
-	"SPI_F72MAX_MISO"	! [48]
-	"SPI_F72MAX_MOSI"	! [49]
-	"SPI_F72MAX_NSS"	! [50]
-	"SPI_F72MAX_SCK"	! [51]
-	"UART_ESP2F7"	! [52]
-	"UART_F72ESP"	! [53]
-	"VCC-15V"	! [54]
-	"VCC-15V_p04"	! [55]
-	"VCC/2"	! [56]
-	"VCC/2_p04"	! [57]
-	"VCC5V"	! [58]
+	"VCC"	! [4]
+	"VCC5V"	! [5]
+	"GND"	! [6]
+	"AUDIO_L"	! [7]
+	"AUDIO_L_p03"	! [8]
+	"AUDIO_R"	! [9]
+	"AUDIO_R_p03"	! [10]
+	"ETH_MDC"	! [11]
+	"ETH_MDIO"	! [12]
+	"F7RSTn"	! [13]
+	"F7RSTn_p02"	! [14]
+	"F7SWCLK"	! [15]
+	"F7SWDAT"	! [16]
+	"GALVA_DRIVERX_IN+"	! [17]
+	"GALVA_DRIVERX_IN-"	! [18]
+	"GALVA_X"	! [19]
+	"GALVA_Y"	! [20]
+	"LASERS_MUTE"	! [21]
+	"LASER_BLUE"	! [22]
+	"LASER_GREEN"	! [23]
+	"LASER_RED"	! [24]
+	"LED1"	! [25]
+	"LED2"	! [26]
+	"MII_RX_ER"	! [27]
+	"RMII_CRS_DV"	! [28]
+	"RMII_REF_CLK"	! [29]
+	"RMII_RXD0"	! [30]
+	"RMII_RXD1"	! [31]
+	"RMII_TXD0"	! [32]
+	"RMII_TXD1"	! [33]
+	"RMII_TX_EN"	! [34]
+	"SD_CK"	! [35]
+	"SD_CMD"	! [36]
+	"SD_D0"	! [37]
+	"SD_D1"	! [38]
+	"SD_D2"	! [39]
+	"SD_D3"	! [40]
+	"SPI_F72ESP_MISO"	! [41]
+	"SPI_F72ESP_MOSI"	! [42]
+	"SPI_F72ESP_NSS"	! [43]
+	"SPI_F72ESP_SCK"	! [44]
+	"SPI_F72F1_MISO"	! [45]
+	"SPI_F72F1_MOSI"	! [46]
+	"SPI_F72F1_NSS"	! [47]
+	"SPI_F72F1_SCK"	! [48]
+	"SPI_F72MAX_MISO"	! [49]
+	"SPI_F72MAX_MOSI"	! [50]
+	"SPI_F72MAX_NSS"	! [51]
+	"SPI_F72MAX_SCK"	! [52]
+	"UART_ESP2F7"	! [53]
+	"UART_F72ESP"	! [54]
+	"VCC-15V"	! [55]
+	"VCC-15V_p04"	! [56]
+	"VCC/2"	! [57]
+	"VCC/2_p04"	! [58]
 	"VCC5V_p03"	! [59]
 	"VCC5V_p04"	! [60]
 	"VCC15V"	! [61]
@@ -1404,60 +1404,60 @@
     )
     ..Net_Color ( 
 	0x00ffffff 0x00ffffff	! [1-2] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00006699	! [3-4] RGB(255,255,255)  RGB(153,102,  0)
-	0x00009900         -1	! [5-6] RGB(  0,153,  0)  undefined
-	        -1         -1	! [7-8] undefined  undefined
-	        -1         -1	! [9-10] undefined  undefined
-	        -1         -1	! [11-12] undefined  undefined
-	        -1         -1	! [13-14] undefined  undefined
-	        -1         -1	! [15-16] undefined  undefined
-	        -1         -1	! [17-18] undefined  undefined
-	        -1         -1	! [19-20] undefined  undefined
-	        -1         -1	! [21-22] undefined  undefined
-	        -1         -1	! [23-24] undefined  undefined
-	        -1         -1	! [25-26] undefined  undefined
-	        -1         -1	! [27-28] undefined  undefined
-	        -1         -1	! [29-30] undefined  undefined
-	        -1         -1	! [31-32] undefined  undefined
-	        -1         -1	! [33-34] undefined  undefined
-	        -1         -1	! [35-36] undefined  undefined
-	        -1         -1	! [37-38] undefined  undefined
-	        -1         -1	! [39-40] undefined  undefined
-	        -1         -1	! [41-42] undefined  undefined
-	        -1         -1	! [43-44] undefined  undefined
-	        -1         -1	! [45-46] undefined  undefined
-	        -1         -1	! [47-48] undefined  undefined
-	        -1         -1	! [49-50] undefined  undefined
-	        -1         -1	! [51-52] undefined  undefined
-	        -1         -1	! [53-54] undefined  undefined
-	        -1         -1	! [55-56] undefined  undefined
-	        -1         -1	! [57-58] undefined  undefined
-	        -1         -1	! [59-60] undefined  undefined
-	        -1         -1	! [61-62] undefined  undefined
-	        -1         -1	! [63-64] undefined  undefined
-	        -1         -1	! [65-66] undefined  undefined
-	        -1         -1	! [67-68] undefined  undefined
-	        -1         -1	! [69-70] undefined  undefined
-	        -1         -1	! [71-72] undefined  undefined
-	        -1         -1	! [73-74] undefined  undefined
-	        -1         -1	! [75-76] undefined  undefined
-	        -1         -1	! [77-78] undefined  undefined
-	        -1         -1	! [79-80] undefined  undefined
-	        -1         -1	! [81-82] undefined  undefined
-	        -1         -1	! [83-84] undefined  undefined
-	        -1         -1	! [85-86] undefined  undefined
-	        -1         -1	! [87-88] undefined  undefined
-	        -1         -1	! [89-90] undefined  undefined
-	        -1         -1	! [91-92] undefined  undefined
-	        -1         -1	! [93-94] undefined  undefined
-	        -1         -1	! [95-96] undefined  undefined
-	        -1         -1	! [97-98] undefined  undefined
-	        -1         -1	! [99-100] undefined  undefined
-	        -1         -1	! [101-102] undefined  undefined
-	        -1         -1	! [103-104] undefined  undefined
-	        -1         -1	! [105-106] undefined  undefined
-	        -1         -1	! [107-108] undefined  undefined
-	        -1		! [109] undefined
+	0x00ffffff 0x00009900	! [3-4] RGB(255,255,255)  RGB(  0,153,  0)
+	0x00ffffff 0x00006699	! [5-6] RGB(255,255,255)  RGB(153,102,  0)
+	0x00ffffff 0x00ffffff	! [7-8] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [9-10] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [11-12] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [13-14] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [15-16] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [17-18] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [19-20] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [21-22] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [23-24] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [25-26] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [27-28] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [29-30] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [31-32] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [33-34] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [35-36] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [37-38] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [39-40] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [41-42] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [43-44] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [45-46] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [47-48] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [49-50] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [51-52] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [53-54] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [55-56] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [57-58] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [59-60] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [61-62] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [63-64] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [65-66] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [67-68] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [69-70] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [71-72] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [73-74] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [75-76] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [77-78] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [79-80] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [81-82] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [83-84] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [85-86] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [87-88] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [89-90] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [91-92] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [93-94] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [95-96] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [97-98] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [99-100] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [101-102] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [103-104] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [105-106] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [107-108] RGB(255,255,255)  RGB(255,255,255)
+	0x00ffffff		! [109] RGB(255,255,255)
     )
     ..Net_Ptrnidx ( 
 	0 0 0 0 0 0 0 0 0 0 	! [1 - 10]
@@ -1499,17 +1499,17 @@
 	F F F F F F F F F ! [101 - 109]
 	)
     ..Net_Outline ( 
-	T T F T T T T T T T 	! [1 - 10]
-	T T T T T T T T T T 	! [11 - 20]
-	T T T T T T T T T T 	! [21 - 30]
-	T T T T T T T T T T 	! [31 - 40]
-	T T T T T T T T T T 	! [41 - 50]
-	T T T T T T T T T T 	! [51 - 60]
-	T T T T T T T T T T 	! [61 - 70]
-	T T T T T T T T T T 	! [71 - 80]
-	T T T T T T T T T T 	! [81 - 90]
-	T T T T T T T T T T 	! [91 - 100]
-	T T T T T T T T T ! [101 - 109]
+	T T F T F T F F F F 	! [1 - 10]
+	F F F F F F F F F F 	! [11 - 20]
+	F F F F F F F F F F 	! [21 - 30]
+	F F F F F F F F F F 	! [31 - 40]
+	F F F F F F F F F F 	! [41 - 50]
+	F F F F F F F F F F 	! [51 - 60]
+	F F F F F F F F F F 	! [61 - 70]
+	F F F F F F F F F F 	! [71 - 80]
+	F F F F F F F F F F 	! [81 - 90]
+	F F F F F F F F F F 	! [91 - 100]
+	F F F F F F F F F ! [101 - 109]
 	)
     ..Netclass_Color (
 	0x00ffffff	! top     RGB(255,255,255)
@@ -1549,7 +1549,7 @@
 	True  ![1]
     )
     ..Net_On ( 
-	F F F T T F F F F F 	! [1 - 10]
+	F F F F F F F F F F 	! [1 - 10]
 	F F F F F F F F F F 	! [11 - 20]
 	F F F F F F F F F F 	! [21 - 30]
 	F F F F F F F F F F 	! [31 - 40]
@@ -1711,7 +1711,7 @@
 	"Global.Option.ColorByNetClass.Enabled" "1"
 	"Global.Option.ColorByNetClass.NetClasses.Enabled" "0"
 	"Global.Option.ColorByNetClass.Netlines" "1"
-	"Global.Option.ColorByNetClass.Nets.Enabled" "1"
+	"Global.Option.ColorByNetClass.Nets.Enabled" "0"
 	"Global.Option.ColorByNetClass.Pads" "1"
 	"Global.Option.ColorByNetClass.PatternConstrainedNets" "0"
 	"Global.Option.ColorByNetClass.Planes" "1"
@@ -1854,6 +1854,8 @@
 	"[VirtualGlobal].iDC.Layer Display.CollapsedSectionOrder" "2"
 	"[VirtualGlobal].iDC.Layers.1.Collapse" "3"
 	"[VirtualGlobal].iDC.Layers.2.Collapse" "3"
+	"[VirtualGlobal].iDC.Layers.3.Collapse" "3"
+	"[VirtualGlobal].iDC.Layers.4.Collapse" "3"
 	"[VirtualGlobal].iDC.Materials.CollapsedSectionOrder" "8"
 	"[VirtualGlobal].iDC.MountingHoles.Collapsed" "3"
 	"[VirtualGlobal].iDC.MultipleDesigners.Collapsed" "3"
@@ -1889,9 +1891,9 @@
 	"[VirtualGlobal].iDC.SilkscreenItems" "3"
 	"[VirtualGlobal].iDC.SketchPlans.Collapsed" "3"
 	"[VirtualGlobal].iDC.Spacers" "3"
-	"[VirtualGlobal].iDC.SplitViewHeight.0" "138"
-	"[VirtualGlobal].iDC.SplitViewHeight.1" "120"
-	"[VirtualGlobal].iDC.SplitViewHeight.2" "547"
+	"[VirtualGlobal].iDC.SplitViewHeight.0" "126"
+	"[VirtualGlobal].iDC.SplitViewHeight.1" "118"
+	"[VirtualGlobal].iDC.SplitViewHeight.2" "271"
 	"[VirtualGlobal].iDC.Substrate Objects.CollapsedSectionOrder" "3"
 	"[VirtualGlobal].iDC.TestPointItems" "3"
 	"[VirtualGlobal].iDC.TextItems.Collapsed" "3"
@@ -1906,8 +1908,8 @@
 
 .view "PCB"
     ..extrema
-	(-54074947,-19220004)		! (xmin, ymin)
-	(102434961,67065888)		! (xmax, ymax)
+	(-15449185,29564734)		! (xmin, ymin)
+	(204827972,139012788)		! (xmax, ymax)
     ..WindowPlacement
 	0x00000002	! flags
 	0x00000003	! showCmd
@@ -13595,11 +13597,12 @@
 	"Internal.Part.SpecialPlaceOutlineTop.254" "d:1" "e:1" "s:1" "se:1" "c:16776960" "a:100" "p:2" "t:0" "o:1"
 	"Internal.Part.SpecialPlaceOutlineTop.255" "d:1" "e:1" "s:1" "se:1" "c:16776960" "a:100" "p:2" "t:0" "o:1"
 	"Internal.Part.SpecialPlaceOutlineTop.256" "d:1" "e:1" "s:1" "se:1" "c:16776960" "a:100" "p:2" "t:0" "o:1"
-	"[Net].UnConnected_Net" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
-	"[Net].(Net0)" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
-	"[Net].(Spacer_Net)" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].GND" "d:1" "e:1" "s:1" "se:1" "c:26265" "a:100" "p:0" "t:0" "o:1"
-	"[Net].VCC" "d:1" "e:1" "s:1" "se:1" "c:39168" "a:100" "p:0" "t:0" "o:1"
+	"[Net].UnConnected_Net" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
+	"[Net].(Net0)" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
+	"[Net].(Spacer_Net)" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].VCC" "d:1" "e:0" "s:1" "se:1" "c:39168" "a:100" "p:0" "t:0" "o:1"
+	"[Net].VCC5V" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].GND" "d:1" "e:0" "s:1" "se:1" "c:26265" "a:100" "p:0" "t:0" "o:1"
 	"[Net].AUDIO_L" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].AUDIO_L_p03" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].AUDIO_R" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
@@ -13652,7 +13655,6 @@
 	"[Net].VCC-15V_p04" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].VCC/2" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].VCC/2_p04" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].VCC5V" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].VCC5V_p03" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].VCC5V_p04" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].VCC15V" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"

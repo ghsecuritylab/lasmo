@@ -1,0 +1,13 @@
+
+/* Sym: 05301AF8  Path 1: Schematic1  Page 2: Schematic1(2) */
+CHANGE 'Schematic1(2)' 	INSTANCE
+  SELECT COMP XCMP1008                 /* Reference Desig is R44 */
+    PARAM 'Part Name' = 'RES_0603_E24' 
+    PARAM 'Value' = '1,5K ' 
+    PARAM 'Tolerance' = '5%' 
+    PARAM 'Description' = 'Resistor 1.5k ohms / 5% / case 0603' 
+    PARAM 'Part Label' = 'RES_1.5k_0603' 
+    PARAM 'Code Fournisseur' = 'Fa : 1160326' 
+    PARAM 'Cout HT' = '0.045' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'R44'         /* Reference Desig was (null) */

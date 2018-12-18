@@ -2,7 +2,7 @@
                                Forward Annotation
                                ------------------
 
-                       11:40 AM Friday, December 14, 2018
+                       09:35 PM Monday, December 17, 2018
                    Job Name: D:\telecom\lasmo\PCB\PCB\PCB.pcb
 
 
@@ -33,7 +33,7 @@ Version:  01.01.00
           Part Numb: 00-0104 -> Vend Part: 00-0104 
           Part Numb: 00-0122 -> Vend Part: 00-0122 
           Part Numb: 01-0097 -> Vend Part: 01-0097 
-          Part Numb: 01-0182 -> Vend Part: 01-0182 
+          Part Numb: 01-0214 -> Vend Part: 01-0214 
           Part Numb: 01-0243 -> Vend Part: 01-0243 
           Part Numb: 01-0339 -> Vend Part: 01-0339 
           Part Numb: 01-0385 -> Vend Part: 01-0385 
@@ -256,7 +256,7 @@ Version:  01.01.00
                                      NetLoad
                                      -------
 
-                       11:40 AM Friday, December 14, 2018
+                       09:35 PM Monday, December 17, 2018
                    Job Name: D:\telecom\lasmo\PCB\PCB\PCB.pcb
 
 

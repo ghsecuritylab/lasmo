@@ -2,7 +2,7 @@
                                     Packager
                                     --------
 
-                       09:30 PM Monday, December 17, 2018
+                       09:56 AM Tuesday, December 18, 2018
                      Job Name: D:\telecom\lasmo\PCB\PCB.prj
 
 
@@ -77,6 +77,14 @@
 	No errors found.  Proceeding with packaging...
 
 
+
+    WARNING: Block Schematic1, Page 2, Symbol XCMP1008:
+     Reference designator removal.
+     The Reference Designator "R" is being removed
+     from Symbol.  Such 'all alpha' designators that are
+     not instance properties are usually built into symbols and are 
+     not intended as a request to be packaged in the same pack with 
+     symbols of like designators.
 
      Common Data Base has been read
 
@@ -158,8 +166,8 @@
      No errors in Existing Schematic Packaging.
 
      The Common DataBase has been read and will be packaged.
-     Clustering 114 Symbols:
-             114  *************
+     Clustering 115 Symbols:
+             115  **************
              100  **************************************************
               50  **************************************************
      Clustering is Complete
@@ -168,8 +176,8 @@
 
 
 
-     106 nets were found containing 398 pins
-     109 components were found
+     106 nets were found containing 400 pins
+     110 components were found
 
      Parsed netlist - Augmenting..
 
@@ -179,11 +187,14 @@
 
      Checking Pins....
 
-     Packaging has been successfully tested with no errors or warnings.
+     Testing of Packaging has been completed with 1 warnings.
+      Erroneous results may occur if not fixed.
 
      Updating the Common DataBase
 
      A BAM WasIs List: Integration\CDBBackAnno.bam has been created.
+     There have been 1 reference designator changes.
+     The BAM file will list all of the from-to changes.
 
 The Common DataBase has been successfully updated.
 
@@ -193,3 +204,5 @@ The Common DataBase has been successfully updated.
      An unused pin and gate report has been written to Integration\UnusedPins.txt
      An unused gate report for gates not in schematic has been written to Integration\UnusedGates.txt
      An augmented pin report has been written to Integration\AugmentedPins.txt.
+
+     There have been 1 warnings.

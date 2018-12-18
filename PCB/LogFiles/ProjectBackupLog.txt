@@ -25,3 +25,18 @@
 [2018-12-14 11.38.14] Migrating iCDB upgrade backups from directory [PCB\Default\default.icdb\cdbback] to Project Backup format.
 [2018-12-14 11.38.14] WARNING: Ignoring iCDB backup file [2018-12-05 13.10.15-2064-pbmf.zip] - will not be migrated.
 [2018-12-14 11.38.14] Successfully created [AutoSave] backup [2018-12-14 11.38.14 - auto.zip] requested by [PIERRE-PC:Pierre].
+[2018-12-17 21.33.57] Migrating iCDB upgrade backups from directory [PCB\Default\default.icdb\cdbback] to Project Backup format.
+[2018-12-17 21.33.57] WARNING: Ignoring iCDB backup file [2018-12-05 13.10.15-2064-pbmf.zip] - will not be migrated.
+[2018-12-17 21.33.59] Successfully created [AutoSave] backup [2018-12-17 21.33.57 - auto.zip] requested by [PIERRE-PC:Pierre].
+[2018-12-17 21.33.59] Removing excessive [AutoSave] backup file [D:\telecom\lasmo\PCB\Default\ProjectBackup\backups\2018-10-21 14.54.29 - auto.zip].
+[2018-12-17 21.33.59] [AutoSave] backup file [PCB\Default\ProjectBackup\backups\2018-10-21 14.54.29 - auto.zip] removed.
+[2018-12-18 09.57.48] Migrating iCDB upgrade backups from directory [PCB\Default\default.icdb\cdbback] to Project Backup format.
+[2018-12-18 09.57.48] WARNING: Ignoring iCDB backup file [2018-12-05 13.10.15-2064-pbmf.zip] - will not be migrated.
+[2018-12-18 09.57.50] Successfully created [AutoSave] backup [2018-12-18 09.57.48 - auto.zip] requested by [PIERRE-PC:Pierre].
+[2018-12-18 09.57.50] Removing excessive [AutoSave] backup file [D:\telecom\lasmo\PCB\Default\ProjectBackup\backups\2018-12-12 10.22.05 - auto.zip].
+[2018-12-18 09.57.50] [AutoSave] backup file [PCB\Default\ProjectBackup\backups\2018-12-12 10.22.05 - auto.zip] removed.
+[2018-12-18 15.39.00] Migrating iCDB upgrade backups from directory [PCB\Default\default.icdb\cdbback] to Project Backup format.
+[2018-12-18 15.39.00] WARNING: Ignoring iCDB backup file [2018-12-05 13.10.15-2064-pbmf.zip] - will not be migrated.
+[2018-12-18 15.39.01] Successfully created [AutoSave] backup [2018-12-18 15.39.00 - auto.zip] requested by [PIERRE-PC:Pierre].
+[2018-12-18 15.39.01] Removing excessive [AutoSave] backup file [D:\telecom\lasmo\PCB\Default\ProjectBackup\backups\2018-12-14 11.38.14 - auto.zip].
+[2018-12-18 15.39.01] [AutoSave] backup file [PCB\Default\ProjectBackup\backups\2018-12-14 11.38.14 - auto.zip] removed.
