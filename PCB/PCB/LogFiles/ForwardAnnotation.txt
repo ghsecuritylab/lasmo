@@ -2,7 +2,7 @@
                                Forward Annotation
                                ------------------
 
-                       09:35 PM Monday, December 17, 2018
+                       08:56 PM Tuesday, December 18, 2018
                    Job Name: D:\telecom\lasmo\PCB\PCB\PCB.pcb
 
 
@@ -231,8 +231,8 @@ Version:  01.01.00
 
 
      The Common DataBase has been read and will be packaged.
-     Clustering 114 Symbols:
-             114  *************
+     Clustering 115 Symbols:
+             115  **************
              100  **************************************************
               50  **************************************************
      Clustering is Complete
@@ -241,8 +241,8 @@ Version:  01.01.00
 
 
 
-     106 nets were found containing 398 pins
-     109 components were found
+     99 nets were found containing 398 pins
+     110 components were found
 
      Creating a formatted Schematic Netlist (LogFiles\SchematicNetlist.txt)...
      A formatted Schematic Netlist has been created.
@@ -256,7 +256,7 @@ Version:  01.01.00
                                      NetLoad
                                      -------
 
-                       09:35 PM Monday, December 17, 2018
+                       08:56 PM Tuesday, December 18, 2018
                    Job Name: D:\telecom\lasmo\PCB\PCB\PCB.pcb
 
 
@@ -269,133 +269,44 @@ Version:  02.11.12
 	Schematic reference designator changes will be forward annotated.
 
 
-	WARNING:  "C1" is being forward annotated to "C18".
+	WARNING:  Physical Net "VCC/2" is being renamed to "VCC1_65" to match the change
+	in the schematic.
 
-	WARNING:  "C2" is being forward annotated to "C17".
+	WARNING:  Physical Net "F7RSTn_p01" is being renamed to "F7RSTn_p02" to match the change
+	in the schematic.
 
-	WARNING:  "C3" is being forward annotated to "C16".
+     The following 28 components have not been placed:
 
-	WARNING:  "C4" is being forward annotated to "C15".
-
-     WARNING:  The "C0603" cell used by "C5" in the Layout is not
-      valid for a "10-0059" Part Number.
-      Since this cell is unplaced, it will be removed and reinserted as a
-      valid unplaced cell.
-     INFO: Cell "C0603" is being replaced by cell "C0402".
-
-     The following 109 components have not been placed:
-
-        C1
-        C2
-        C3
-        C4
-        C5
-        C6
-        C7
-        C8
-        C9
-        C10
-        C11
-        C12
-        C13
-        C14
-        C15
-        C16
-        C17
-        C18
-        C19
-        C20
-        C21
-        C22
-        C23
-        C24
-        C25
-        C26
-        C27
-        C28
-        C29
-        C30
-        C31
-        C32
-        C33
         D1
-        D2
-        D3
-        D4
-        D5
         J1
         J2
-        J3
         J4
         J5
         J6
-        J7
         J8
         J9
         J10
         J11
-        J12
-        J13
-        J14
-        L1
-        L2
-        L3
-        QZ1
-        QZ2
         Q1
         R1
         R2
-        R3
-        R4
-        R5
-        R6
-        R7
-        R8
-        R9
-        R10
-        R11
         R12
         R13
-        R14
-        R15
-        R16
         R17
-        R18
-        R19
         R20
         R21
         R22
         R23
         R24
         R25
-        R26
-        R27
         R28
-        R29
         R30
         R31
-        R32
-        R33
-        R34
         R35
-        R36
-        R37
         R38
-        R39
         R40
-        R41
-        R42
-        R43
-        U1
-        U2
-        U3
-        U4
-        U5
-        U6
-        U7
-        U8
 
-     Netload completed successfully with 5 warning(s).
+     Netload completed successfully with 2 warning(s).
      
      Back Annotating...
 
@@ -426,14 +337,22 @@ Version:  02.11.12
 
                  Beginning Netload on the Layout Design.
            ---------------------------------------------------
+	Assigned net VDDA to a trace which was originally on net XSIG020138.
+	Assigned net VDDA to a trace which was originally on net XSIG020138.
+	Assigned net VDDA to a trace which was originally on net XSIG020138.
+	Assigned net VDDA to a trace which was originally on net XSIG020138.
+	Assigned net VDDA to a trace which was originally on net XSIG020138.
+	Assigned net VDDA to a trace which was originally on net XSIG020138.
+	Assigned net VDDA to a trace which was originally on net XSIG020138.
+	Assigned net VDDA to a trace which was originally on net XSIG020138.
+	Assigned net VDDA to a trace which was originally on net XSIG020138.
 
 Some nets were completely deleted from the Layout Design....
-	Deleted net SWCLK, which has no pins, from the Layout Design.
-	Deleted net SWDAT, which has no pins, from the Layout Design.
-	Deleted net RSTn, which has no pins, from the Layout Design.
+	Deleted net VCC/2_p04, which has no pins, from the Layout Design.
+	Deleted net XSIG020138, which has no pins, from the Layout Design.
 
 Forward-Annotation on the Layout Design has been successfully completed.
 
-There were 0 reassignments of nets.
+There were 9 reassignments of nets.
 There were 0 traces broken back.
-There were 3 nets removed from the Layout Design.
+There were 2 nets removed from the Layout Design.

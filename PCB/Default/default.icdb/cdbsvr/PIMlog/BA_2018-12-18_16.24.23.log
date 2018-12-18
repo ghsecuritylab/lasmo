@@ -1,0 +1,483 @@
+--------------------------------------------------------------------------------
+ Project integration - START (2018-12-18 16:24:23) 
+--------------------------------------------------------------------------------
+FE snapshot name: DCDV
+BE snapshot name: PCB_Layout_Temp
+Top level block: (20-1-5)
+Parameters: BAConnectivity,BAConstraints,FEWin,
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+ Connection synchronization - START (2018-12-18 16:24:23) 
+--------------------------------------------------------------------------------
+[Skipped][Modification] - [BE->FE] [O: Block,,(20-1-5)]
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CON10_HE10_SWD;2,(20-1-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(134-1-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(155-1-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,STM32F767VI_PA_PB_PC;9,(20-2-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(93-2-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CON3;2,(108-2-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(134-2-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,STM32F767VI_PD_PE;2,(20-3-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,LED;8,(93-3-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,LMV324_MP;1,(134-3-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,QUARTZ_HC_US;2,(20-4-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,ESP32_DEVKITC;7,(93-4-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,LMV324_MP;1,(134-4-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(20-5-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(93-5-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(108-5-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(134-5-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(20-6-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(93-6-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,SELF_L;2,(134-6-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CON3;2,(93-7-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,LT1765;1,(134-7-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,LAN8742A;15,(20-8-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CON3;2,(93-8-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(134-8-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RJ45_LED2_TRANSFO_SHLD;4,(20-9-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(93-9-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(134-9-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,FERRITE;4,(20-10-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(93-10-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(134-10-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(20-11-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(93-11-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(134-11-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(20-12-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(93-12-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(134-12-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(20-13-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(93-13-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(134-13-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(20-14-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(93-14-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(134-14-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(20-15-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(93-15-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,LMV324_MP;1,(134-15-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(20-16-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(93-16-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,LMV324_MP;1,(134-16-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(20-17-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(93-17-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(134-17-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(20-18-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(93-18-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(134-18-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(20-19-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(93-19-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(134-19-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(20-20-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,QUARTZ_HC_US;2,(93-20-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(134-20-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(93-21-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(134-21-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(93-22-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(134-22-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(93-23-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CON10_188275;2,(134-23-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(20-24-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(93-24-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(134-24-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(20-25-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(93-25-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(134-25-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(20-26-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,SCHOTTKY;8,(134-26-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(20-27-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,PMOS;7,(93-27-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,SCHOTTKY;8,(134-27-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(20-28-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(134-28-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(134-29-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(20-30-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(134-30-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(20-31-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(134-31-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,MAX5105;2,(20-32-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,SELF_L;2,(134-32-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CON2_S2B-PH-SM4-TB;2,(20-33-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,LT1765;1,(134-33-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CON2_S2B-PH-SM4-TB;2,(20-34-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,SCHOTTKY;8,(134-34-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CON2_S2B-PH-SM4-TB;2,(20-35-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(134-35-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CAP_NP;5,(134-36-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(134-37-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(134-38-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,SCHOTTKY;8,(134-39-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(134-40-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(134-41-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,MICROSD_JAE_ST1W008S4ER1500;2,(20-42-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CON3;2,(20-43-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,CON3;2,(20-44-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,LMV324_MP;1,(20-54-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(20-55-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(20-56-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(20-57-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(20-58-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RCA_JACK_S-TS-T;2,(20-59-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,LMV324_MP;1,(20-60-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(20-61-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(20-62-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(20-63-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RES;9,(20-64-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: Block,Schematic1,(20-1-5)] [O: FlatComp,RCA_JACK_S-TS-T;2,(20-65-8)]
+	Property: Cell Name, Operation: Change
+[Ok][Modification] - [BE->FE] [P: FlatComp,CON3;2,(108-2-8)] [O: FlatPin,2,(108-10-11)]
+	Property: Routed Plane Pin, Operation: Modify
+--------------------------------------------------------------------------------
+ Connection synchronization - END (2018-12-18 16:24:23) 
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+ CES synchronization - START (2018-12-18 16:24:23) 
+--------------------------------------------------------------------------------
+[Ok][Deletion] - [BE->FE] [P: CesDesign,CesDesign,(20-1-21)] [O: CesVia,026VIA,(22-1-62)]
+[Ok][Modification] - [BE->FE] [P: CesDesign,CesDesign,(20-1-21)] [O: CesViaSpan,Through,(22-1-27)]
+[Ok][Modification] - [BE->FE] [P: CesDesign,CesDesign,(20-1-21)] [O: CesLayer,DIELECTRIC_05,(22-3-23)]
+[Ok][Modification] - [BE->FE] [P: CesDesign,CesDesign,(20-1-21)] [O: CesLayer,DIELECTRIC_5,(22-5-23)]
+[Ok][Modification] - [BE->FE] [P: CesDesign,CesDesign,(20-1-21)] [O: CesLayer,SIGNAL_2,(22-4-23)]
+[Ok][Addition] - [BE->FE] [P: CesDesign,CesDesign,(20-1-21)] [O: CesLayer,DIELECTRIC_02,(170-3-23)]
+[Ok][Addition] - [BE->FE] [P: CesDesign,CesDesign,(20-1-21)] [O: CesLayer,DIELECTRIC_01,(170-5-23)]
+[Ok][Addition] - [BE->FE] [P: CesDesign,CesDesign,(20-1-21)] [O: CesLayer,VCC,(170-2-23)]
+[Ok][Addition] - [BE->FE] [P: CesDesign,CesDesign,(20-1-21)] [O: CesLayer,GBD,(170-4-23)]
+[Ok][Addition] - [BE->FE] [P: CesSchemeNetClassRule,VCC,(20-1-38)] [O: CesLayerRule,CesLayerRule,(170-1-40)]
+[Ok][Addition] - [BE->FE] [P: CesSchemeNetClassRule,VCC,(20-2-38)] [O: CesLayerRule,CesLayerRule,(170-2-40)]
+[Ok][Addition] - [BE->FE] [P: CesSchemeNetClassRule,GBD,(20-1-38)] [O: CesLayerRule,CesLayerRule,(170-3-40)]
+[Ok][Addition] - [BE->FE] [P: CesSchemeNetClassRule,GBD,(20-2-38)] [O: CesLayerRule,CesLayerRule,(170-4-40)]
+[Ok][Addition] - [BE->FE] [P: CesSchemeClearRule,VCC,(20-1-41)] [O: CesLayerClearRule,CesSchemaClearRule,(170-1-42)]
+[Ok][Addition] - [BE->FE] [P: CesSchemeClearRule,VCC,(20-2-41)] [O: CesLayerClearRule,CesSchemaClearRule,(170-2-42)]
+[Ok][Addition] - [BE->FE] [P: CesSchemeClearRule,GBD,(20-1-41)] [O: CesLayerClearRule,CesSchemaClearRule,(170-3-42)]
+[Ok][Addition] - [BE->FE] [P: CesSchemeClearRule,GBD,(20-2-41)] [O: CesLayerClearRule,CesSchemaClearRule,(170-4-42)]
+
+--------------------------------------------------------------------------------
+ TOPOLOGY synchronization - START (2018-12-18 16:24:23) 
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+ TOPOLOGY synchronization - END (2018-12-18 16:24:23) 
+--------------------------------------------------------------------------------
+[Ok][Modification] - [BE->FE] [P: CesLayer,DIELECTRIC_1,(22-1-23)] [O: CesConstraint,LAYER_TECH,(22-3-22)]
+[Ok][Modification] - [BE->FE] [P: CesLayer,SIGNAL_1,(22-2-23)] [O: CesConstraint,LAYER_PAIR,(22-42-22)]
+[Ok][Modification] - [BE->FE] [P: CesLayer,SIGNAL_1,(22-2-23)] [O: CesConstraint,HEIGHT,(22-44-22)]
+[Ok][Modification] - [BE->FE] [P: CesLayer,DIELECTRIC_05,(22-3-23)] [O: CesConstraint,LAYER_DESC,(22-47-22)]
+[Ok][Modification] - [BE->FE] [P: CesLayer,DIELECTRIC_05,(22-3-23)] [O: CesConstraint,LAYER_TECH,(22-48-22)]
+[Ok][Modification] - [BE->FE] [P: CesLayer,DIELECTRIC_05,(22-3-23)] [O: CesConstraint,HEIGHT,(22-49-22)]
+[Ok][Modification] - [BE->FE] [P: CesLayer,DIELECTRIC_05,(22-3-23)] [O: CesConstraint,DIELCONST,(22-50-22)]
+[Ok][Modification] - [BE->FE] [P: CesLayer,SIGNAL_2,(22-4-23)] [O: CesConstraint,LAYER_DIFFPAIR,(22-88-22)]
+[Ok][Modification] - [BE->FE] [P: CesLayer,SIGNAL_2,(22-4-23)] [O: CesConstraint,HEIGHT,(22-89-22)]
+[Ok][Modification] - [BE->FE] [P: CesLayer,DIELECTRIC_5,(22-5-23)] [O: CesConstraint,LAYER_TECH,(22-93-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerRule,CesLayerRule,(170-2-40)] [O: CesConstraint,DIFF_SPACING,(170-1-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerRule,CesLayerRule,(170-2-40)] [O: CesConstraint,EXP_TRACE_WIDTH,(170-2-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerRule,CesLayerRule,(170-2-40)] [O: CesConstraint,MIN_TRACE_WIDTH,(170-3-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerRule,CesLayerRule,(170-2-40)] [O: CesConstraint,ROUTE,(170-4-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerRule,CesLayerRule,(170-2-40)] [O: CesConstraint,TYP_IMPEDANCE,(170-5-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerRule,CesLayerRule,(170-2-40)] [O: CesConstraint,TYP_TRACE_WIDTH,(170-6-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-2-42)] [O: CesConstraint,BONDPAD_TO_BONDPAD,(170-7-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-2-42)] [O: CesConstraint,BONDPAD_TO_PAD,(170-8-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-2-42)] [O: CesConstraint,BONDPAD_TO_PLANE,(170-9-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-2-42)] [O: CesConstraint,BONDPAD_TO_SMDPAD,(170-10-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-2-42)] [O: CesConstraint,BONDPAD_TO_TRACE,(170-11-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-2-42)] [O: CesConstraint,BONDPAD_TO_VIA,(170-12-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-2-42)] [O: CesConstraint,MASK_TO_PAD,(170-13-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-2-42)] [O: CesConstraint,MASK_TO_RESISTOR,(170-14-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-2-42)] [O: CesConstraint,MASK_TO_TRACE,(170-15-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-2-42)] [O: CesConstraint,MASK_TO_VIA,(170-16-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-2-42)] [O: CesConstraint,PAD_TO_PAD,(170-17-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-2-42)] [O: CesConstraint,PAD_TO_PLANE,(170-18-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-2-42)] [O: CesConstraint,PAD_TO_VIA,(170-19-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-2-42)] [O: CesConstraint,PLANE_TO_PLANE,(170-20-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-2-42)] [O: CesConstraint,RESISTOR_TO_PAD,(170-21-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-2-42)] [O: CesConstraint,RESISTOR_TO_RESISTOR,(170-22-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-2-42)] [O: CesConstraint,RESISTOR_TO_TRACE,(170-23-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-2-42)] [O: CesConstraint,RESISTOR_TO_VIA,(170-24-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-2-42)] [O: CesConstraint,SMDPAD_TO_TRACE,(170-25-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-2-42)] [O: CesConstraint,SMDPAD_TO_VIA,(170-26-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-2-42)] [O: CesConstraint,TRACE_TO_PAD,(170-27-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-2-42)] [O: CesConstraint,TRACE_TO_PLANE,(170-28-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-2-42)] [O: CesConstraint,TRACE_TO_TRACE,(170-29-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-2-42)] [O: CesConstraint,TRACE_TO_VIA,(170-30-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-2-42)] [O: CesConstraint,VIA_TO_PLANE,(170-31-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-2-42)] [O: CesConstraint,VIA_TO_VIA,(170-32-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerRule,CesLayerRule,(170-4-40)] [O: CesConstraint,DIFF_SPACING,(170-33-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerRule,CesLayerRule,(170-4-40)] [O: CesConstraint,EXP_TRACE_WIDTH,(170-34-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerRule,CesLayerRule,(170-4-40)] [O: CesConstraint,MIN_TRACE_WIDTH,(170-35-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerRule,CesLayerRule,(170-4-40)] [O: CesConstraint,ROUTE,(170-36-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerRule,CesLayerRule,(170-4-40)] [O: CesConstraint,TYP_IMPEDANCE,(170-37-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerRule,CesLayerRule,(170-4-40)] [O: CesConstraint,TYP_TRACE_WIDTH,(170-38-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-4-42)] [O: CesConstraint,BONDPAD_TO_BONDPAD,(170-39-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-4-42)] [O: CesConstraint,BONDPAD_TO_PAD,(170-40-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-4-42)] [O: CesConstraint,BONDPAD_TO_PLANE,(170-41-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-4-42)] [O: CesConstraint,BONDPAD_TO_SMDPAD,(170-42-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-4-42)] [O: CesConstraint,BONDPAD_TO_TRACE,(170-43-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-4-42)] [O: CesConstraint,BONDPAD_TO_VIA,(170-44-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-4-42)] [O: CesConstraint,MASK_TO_PAD,(170-45-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-4-42)] [O: CesConstraint,MASK_TO_RESISTOR,(170-46-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-4-42)] [O: CesConstraint,MASK_TO_TRACE,(170-47-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-4-42)] [O: CesConstraint,MASK_TO_VIA,(170-48-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-4-42)] [O: CesConstraint,PAD_TO_PAD,(170-49-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-4-42)] [O: CesConstraint,PAD_TO_PLANE,(170-50-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-4-42)] [O: CesConstraint,PAD_TO_VIA,(170-51-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-4-42)] [O: CesConstraint,PLANE_TO_PLANE,(170-52-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-4-42)] [O: CesConstraint,RESISTOR_TO_PAD,(170-53-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-4-42)] [O: CesConstraint,RESISTOR_TO_RESISTOR,(170-54-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-4-42)] [O: CesConstraint,RESISTOR_TO_TRACE,(170-55-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-4-42)] [O: CesConstraint,RESISTOR_TO_VIA,(170-56-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-4-42)] [O: CesConstraint,SMDPAD_TO_TRACE,(170-57-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-4-42)] [O: CesConstraint,SMDPAD_TO_VIA,(170-58-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-4-42)] [O: CesConstraint,TRACE_TO_PAD,(170-59-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-4-42)] [O: CesConstraint,TRACE_TO_PLANE,(170-60-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-4-42)] [O: CesConstraint,TRACE_TO_TRACE,(170-61-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-4-42)] [O: CesConstraint,TRACE_TO_VIA,(170-62-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-4-42)] [O: CesConstraint,VIA_TO_PLANE,(170-63-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayerClearRule,CesLayerClearRule,(170-4-42)] [O: CesConstraint,VIA_TO_VIA,(170-64-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_1,(22-1-23)] [O: CesConstraint,ATTACHED_DIELECTRIC,(170-65-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_1,(22-1-23)] [O: CesConstraint,ER_FREQ,(170-66-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_1,(22-1-23)] [O: CesConstraint,LOSS_TAN_FREQ,(170-67-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_1,(22-1-23)] [O: CesConstraint,LOSS_TAN,(170-68-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_1,(22-1-23)] [O: CesConstraint,THERMAL_COND,(170-69-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_1,(22-2-23)] [O: CesConstraint,ATTACHED_DIELECTRIC,(170-70-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_1,(22-2-23)] [O: CesConstraint,LAYER_COLOR,(170-71-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_1,(22-2-23)] [O: CesConstraint,CONDUCTOR,(170-72-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_1,(22-2-23)] [O: CesConstraint,TEMP_COEF,(170-73-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_1,(22-2-23)] [O: CesConstraint,POUR_DRAW_STYLE,(170-74-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_1,(22-2-23)] [O: CesConstraint,DIELCONST,(170-75-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_1,(22-2-23)] [O: CesConstraint,ER_FREQ,(170-76-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_1,(22-2-23)] [O: CesConstraint,LOSS_TAN_FREQ,(170-77-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_1,(22-2-23)] [O: CesConstraint,LOSS_TAN,(170-78-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_1,(22-2-23)] [O: CesConstraint,THERMAL_COND,(170-79-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_1,(22-2-23)] [O: CesConstraint,TRACE_WIDTH,(170-80-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_1,(22-2-23)] [O: CesConstraint,TARGET_Z0,(170-81-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_1,(22-2-23)] [O: CesConstraint,ZZ_WIDTH,(170-82-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_1,(22-2-23)] [O: CesConstraint,GAP,(170-83-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_05,(22-3-23)] [O: CesConstraint,ATTACHED_DIELECTRIC,(170-84-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_05,(22-3-23)] [O: CesConstraint,ER_FREQ,(170-85-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_05,(22-3-23)] [O: CesConstraint,LOSS_TAN_FREQ,(170-86-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_05,(22-3-23)] [O: CesConstraint,LOSS_TAN,(170-87-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_05,(22-3-23)] [O: CesConstraint,THERMAL_COND,(170-88-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,LAYER_USAGE,(170-99-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,LAYER_DESC,(170-100-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,ATTACHED_DIELECTRIC,(170-101-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,LAYER_COLOR,(170-102-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,CONDUCTOR,(170-103-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,BULK_RES,(170-104-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,TEMP_COEF,(170-105-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,LAYER_DIFFPAIR,(170-106-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,LAYER_PAIR,(170-107-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,POUR_DRAW_STYLE,(170-108-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,LAYER_PROCESS,(170-109-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,LAYER_TREATED_SIDE,(170-110-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,LAYER_ROUGHNESS_TOP,(170-111-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,LAYER_ROUGHNESS_BOTTOM,(170-112-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,HEIGHT,(170-115-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,DIELCONST,(170-116-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,ER_FREQ,(170-117-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,LOSS_TAN_FREQ,(170-118-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,LOSS_TAN,(170-119-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,THERMAL_COND,(170-120-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,TRACE_WIDTH,(170-121-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,TARGET_Z0,(170-122-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,ZZ_WIDTH,(170-123-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,GAP,(170-124-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_02,(170-3-23)] [O: CesConstraint,LAYER_USAGE,(170-125-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_02,(170-3-23)] [O: CesConstraint,LAYER_DESC,(170-126-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_02,(170-3-23)] [O: CesConstraint,ATTACHED_DIELECTRIC,(170-127-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_02,(170-3-23)] [O: CesConstraint,HEIGHT,(170-128-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_02,(170-3-23)] [O: CesConstraint,DIELCONST,(170-129-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_02,(170-3-23)] [O: CesConstraint,ER_FREQ,(170-130-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_02,(170-3-23)] [O: CesConstraint,LOSS_TAN_FREQ,(170-131-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_02,(170-3-23)] [O: CesConstraint,LOSS_TAN,(170-132-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_02,(170-3-23)] [O: CesConstraint,THERMAL_COND,(170-133-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_02,(170-3-23)] [O: CesConstraint,LAYER_TECH,(170-134-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,LAYER_USAGE,(170-135-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,LAYER_DESC,(170-136-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,ATTACHED_DIELECTRIC,(170-137-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,LAYER_COLOR,(170-138-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,CONDUCTOR,(170-139-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,BULK_RES,(170-140-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,TEMP_COEF,(170-141-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,LAYER_DIFFPAIR,(170-142-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,LAYER_PAIR,(170-143-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,POUR_DRAW_STYLE,(170-144-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,LAYER_PROCESS,(170-145-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,LAYER_TREATED_SIDE,(170-146-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,LAYER_ROUGHNESS_TOP,(170-147-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,LAYER_ROUGHNESS_BOTTOM,(170-148-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,HEIGHT,(170-151-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,DIELCONST,(170-152-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,ER_FREQ,(170-153-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,LOSS_TAN_FREQ,(170-154-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,LOSS_TAN,(170-155-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,THERMAL_COND,(170-156-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,TRACE_WIDTH,(170-157-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,TARGET_Z0,(170-158-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,ZZ_WIDTH,(170-159-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,GAP,(170-160-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_01,(170-5-23)] [O: CesConstraint,LAYER_USAGE,(170-161-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_01,(170-5-23)] [O: CesConstraint,LAYER_DESC,(170-162-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_01,(170-5-23)] [O: CesConstraint,ATTACHED_DIELECTRIC,(170-163-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_01,(170-5-23)] [O: CesConstraint,HEIGHT,(170-164-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_01,(170-5-23)] [O: CesConstraint,DIELCONST,(170-165-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_01,(170-5-23)] [O: CesConstraint,ER_FREQ,(170-166-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_01,(170-5-23)] [O: CesConstraint,LOSS_TAN_FREQ,(170-167-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_01,(170-5-23)] [O: CesConstraint,LOSS_TAN,(170-168-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_01,(170-5-23)] [O: CesConstraint,THERMAL_COND,(170-169-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_01,(170-5-23)] [O: CesConstraint,LAYER_TECH,(170-170-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_2,(22-4-23)] [O: CesConstraint,ATTACHED_DIELECTRIC,(170-181-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_2,(22-4-23)] [O: CesConstraint,LAYER_COLOR,(170-182-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_2,(22-4-23)] [O: CesConstraint,CONDUCTOR,(170-183-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_2,(22-4-23)] [O: CesConstraint,TEMP_COEF,(170-184-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_2,(22-4-23)] [O: CesConstraint,POUR_DRAW_STYLE,(170-185-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_2,(22-4-23)] [O: CesConstraint,DIELCONST,(170-186-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_2,(22-4-23)] [O: CesConstraint,ER_FREQ,(170-187-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_2,(22-4-23)] [O: CesConstraint,LOSS_TAN_FREQ,(170-188-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_2,(22-4-23)] [O: CesConstraint,LOSS_TAN,(170-189-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_2,(22-4-23)] [O: CesConstraint,THERMAL_COND,(170-190-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_2,(22-4-23)] [O: CesConstraint,TRACE_WIDTH,(170-191-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_2,(22-4-23)] [O: CesConstraint,TARGET_Z0,(170-192-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_2,(22-4-23)] [O: CesConstraint,ZZ_WIDTH,(170-193-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,SIGNAL_2,(22-4-23)] [O: CesConstraint,GAP,(170-194-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_5,(22-5-23)] [O: CesConstraint,ATTACHED_DIELECTRIC,(170-195-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_5,(22-5-23)] [O: CesConstraint,ER_FREQ,(170-196-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_5,(22-5-23)] [O: CesConstraint,LOSS_TAN_FREQ,(170-197-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_5,(22-5-23)] [O: CesConstraint,LOSS_TAN,(170-198-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,DIELECTRIC_5,(22-5-23)] [O: CesConstraint,THERMAL_COND,(170-199-22)]
+[Ok][Addition] - [BE->FE] [P: CesDesign,CesDesign,(20-1-21)] [O: CesConstraint,DSN_AUTO_CALCULATE_ER,(170-200-22)]
+[Ok][Addition] - [BE->FE] [P: CesDesign,CesDesign,(20-1-21)] [O: CesConstraint,DSN_SURFACE_ROUGHNESS_ENABLED,(170-201-22)]
+[Ok][Addition] - [BE->FE] [P: CesDesign,CesDesign,(20-1-21)] [O: CesConstraint,DSN_TRAPEZOIDAL_TRACE_SHAPES_ENABLED,(170-202-22)]
+[Ok][Addition] - [BE->FE] [P: CesDesign,CesDesign,(20-1-21)] [O: CesConstraint,DSN_SURFACE_ROUGHNESS_MODEL,(170-203-22)]
+[Ok][Addition] - [BE->FE] [P: CesDesign,CesDesign,(20-1-21)] [O: CesConstraint,DSN_SURFACE_ROUGHNESS_MODEL_FACTOR,(170-204-22)]
+[Ok][Addition] - [BE->FE] [P: CesDesign,CesDesign,(20-1-21)] [O: CesConstraint,DSN_SURFACE_ROUGHNESS_PARAM,(170-205-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,PLANE_TYPE,(171-1-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,PLANE_TYPE,(171-5-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,PLANE_NETS,(204-7-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,PNET_CLEARANCES,(204-8-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,VCC,(170-2-23)] [O: CesConstraint,PNET_UBORDERS,(204-9-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,PLANE_NETS,(204-10-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,PNET_CLEARANCES,(204-11-22)]
+[Ok][Addition] - [BE->FE] [P: CesLayer,GBD,(170-4-23)] [O: CesConstraint,PNET_UBORDERS,(204-12-22)]
+--------------------------------------------------------------------------------
+ CES synchronization - END (2018-12-18 16:24:23) 
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+ VMVariant synchronization - START (2018-12-18 16:24:23) 
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+ VMVariant synchronization - END (2018-12-18 16:24:23) 
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+ Project integration - END (2018-12-18 16:24:23) 
+--------------------------------------------------------------------------------

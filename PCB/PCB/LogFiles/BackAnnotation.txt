@@ -2,7 +2,7 @@
                                  BackAnnotation
                                  --------------
 
-                       03:54 PM Tuesday, December 18, 2018
+                       06:29 PM Tuesday, December 18, 2018
                    Job Name: D:\telecom\lasmo\PCB\PCB\PCB.pcb
 
 
@@ -10,9 +10,11 @@
 
      Version:  99.00.05
 
-      No changes made to Existing Schematic Packaging.
+     No changes made to Existing Schematic Packaging.
 
-     The Common DataBase has been successfully updated.
+
+     There is no symbol data to be back annotated to the schematic source.
+
 
      The Logic DataBase has been updated and the Common DataBase has
       automatically been brought into sync with the Logic DataBase.
