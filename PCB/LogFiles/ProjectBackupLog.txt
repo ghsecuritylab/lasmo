@@ -60,3 +60,5 @@
 [2018-12-19 13.08.48] [AutoSave] backup file [PCB\Default\ProjectBackup\backups\2018-12-18 09.57.48 - auto.zip] removed.
 [2018-12-19 14.03.59] Migrating iCDB upgrade backups from directory [PCB\Default\default.icdb\cdbback] to Project Backup format.
 [2018-12-19 14.03.59] WARNING: Ignoring iCDB backup file [2018-12-05 13.10.15-2064-pbmf.zip] - will not be migrated.
+[2018-12-19 16.31.22] Migrating iCDB upgrade backups from directory [PCB\Default\default.icdb\cdbback] to Project Backup format.
+[2018-12-19 16.31.22] WARNING: Ignoring iCDB backup file [2018-12-05 13.10.15-2064-pbmf.zip] - will not be migrated.
