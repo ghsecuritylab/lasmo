@@ -12,16 +12,8 @@ int main(void) {
   // RTT configuration
   SEGGER_RTT_ConfigUpBuffer(0, NULL, NULL, 0, SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL);
   lsm_galva_init();
-
-  lsm_ctrl_galvaXY(0,0);
-  //Envoie de donnée ponctuelles
-  while (1){
+  lsm_buf_ctrl_galva();
+  while(1){
     chThdSleepMilliseconds(500);
-    lsm_ctrl_galvaXY(1000,1000);
-    chThdSleepMilliseconds(500);
-    lsm_ctrl_galvaXY(2048,2048);
-    chThdSleepMilliseconds(500);
-    lsm_ctrl_galvaXY(4095,4095);
-    chThdSleepMilliseconds(500);
-   }
+  }
 }
