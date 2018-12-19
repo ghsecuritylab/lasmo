@@ -2604,3 +2604,33 @@ Job Name: C:\Users\PAULGWF\Documents\SwARM\hardware\SwARM_Schematics\PCB\PCB.pcb
 ;------------------------------- --------------------------------
 ; STARTING AN IMPLICIT FORWARD ANNOTATION
 ;------------------------------- --------------------------------
+
+;------------------------------- --------------------------------
+; STARTING AN EXPLICIT FORWARD ANNOTATION
+;------------------------------- --------------------------------
+
+                      Renumbered Reference Designator List
+                      ------------------------------------
+
+                      01:26 PM Wednesday, December 19, 2018
+                   Job Name: D:\telecom\lasmo\PCB\PCB\PCB.pcb
+
+
+;------------------------------- --------------------------------
+; STARTING AN IMPLICIT FORWARD ANNOTATION
+;------------------------------- --------------------------------
+
+;------------------------------- --------------------------------
+; STARTING AN EXPLICIT FORWARD ANNOTATION
+;------------------------------- --------------------------------
+
+                      Renumbered Reference Designator List
+                      ------------------------------------
+
+                      02:07 PM Wednesday, December 19, 2018
+                   Job Name: D:\telecom\lasmo\PCB\PCB\PCB.pcb
+
+
+;------------------------------- --------------------------------
+; STARTING AN IMPLICIT FORWARD ANNOTATION
+;------------------------------- --------------------------------

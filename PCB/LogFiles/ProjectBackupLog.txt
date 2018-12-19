@@ -53,3 +53,10 @@
 [2018-12-18 20.56.08] WARNING: Ignoring iCDB backup file [2018-12-05 13.10.15-2064-pbmf.zip] - will not be migrated.
 [2018-12-18 21.06.55] Migrating iCDB upgrade backups from directory [PCB\Default\default.icdb\cdbback] to Project Backup format.
 [2018-12-18 21.06.55] WARNING: Ignoring iCDB backup file [2018-12-05 13.10.15-2064-pbmf.zip] - will not be migrated.
+[2018-12-19 13.08.46] Migrating iCDB upgrade backups from directory [PCB\Default\default.icdb\cdbback] to Project Backup format.
+[2018-12-19 13.08.46] WARNING: Ignoring iCDB backup file [2018-12-05 13.10.15-2064-pbmf.zip] - will not be migrated.
+[2018-12-19 13.08.48] Successfully created [AutoSave] backup [2018-12-19 13.08.46 - auto.zip] requested by [PIERRE-PC:Pierre].
+[2018-12-19 13.08.48] Removing excessive [AutoSave] backup file [D:\telecom\lasmo\PCB\Default\ProjectBackup\backups\2018-12-18 09.57.48 - auto.zip].
+[2018-12-19 13.08.48] [AutoSave] backup file [PCB\Default\ProjectBackup\backups\2018-12-18 09.57.48 - auto.zip] removed.
+[2018-12-19 14.03.59] Migrating iCDB upgrade backups from directory [PCB\Default\default.icdb\cdbback] to Project Backup format.
+[2018-12-19 14.03.59] WARNING: Ignoring iCDB backup file [2018-12-05 13.10.15-2064-pbmf.zip] - will not be migrated.

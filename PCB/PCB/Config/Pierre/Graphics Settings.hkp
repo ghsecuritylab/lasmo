@@ -2,10 +2,10 @@
 ! change it at your own peril
 
 !
-! Created 12/18/18 21:30:06
+! Created 12/19/18 16:22:09
 !
 
-.Global_Constants 101 2
+.Global_Constants 99 2
     ..File_Type Graphics_Settings
     ..Version Version_7
     ..Num_Views 1
@@ -13,13 +13,13 @@
     ..WindowPlacement
 	0x00000002	! flags
 	0x00000003	! showCmd
-	(-1, -1)	! ptMinPosition
+	(-32000, -32000)	! ptMinPosition
 	(-1, -1)	! ptMaxPosition
-	(92, 109) (1034,642)	! ..rcNormalPosition
+	(1863, -434) (2805,99)	! ..rcNormalPosition
     ..Active_Place_Layer_Top             True
     ..Active_Place_Layer_Bottom          False
     ..Active_Place_Layer_Internal        False
-    ..Active_Route_Layer 0
+    ..Active_Route_Layer 3
     ..Trace_Layer_Color ( 
 	0x00ff6633 0x009933ff	! [1-2] RGB( 51,102,255)  RGB(255, 51,153)
 	0x0066ff99 0x000000ff	! [3-4] RGB(153,255,102)  RGB(255,  0,  0)
@@ -1331,59 +1331,57 @@
 	"UART_ESP2F7"	! [46]
 	"UART_F72ESP"	! [47]
 	"VCC-15V"	! [48]
-	"VCC-15V_p04"	! [49]
-	"VCC5V_p03"	! [50]
-	"VCC5V_p04"	! [51]
-	"VCC15V"	! [52]
-	"VCC15V_p04"	! [53]
-	"VDDA"	! [54]
-	"XSIG011191"	! [55]
-	"XSIG011193"	! [56]
-	"XSIG011225"	! [57]
-	"XSIG011226"	! [58]
-	"XSIG011235"	! [59]
-	"XSIG011236"	! [60]
-	"XSIG020019"	! [61]
-	"XSIG020020"	! [62]
-	"XSIG020047"	! [63]
-	"XSIG020048"	! [64]
-	"XSIG020052"	! [65]
-	"XSIG020058"	! [66]
-	"XSIG020100"	! [67]
-	"XSIG020113"	! [68]
-	"XSIG020116"	! [69]
-	"XSIG020117"	! [70]
-	"XSIG020121"	! [71]
-	"XSIG020122"	! [72]
-	"XSIG020132"	! [73]
-	"XSIG020135"	! [74]
-	"XSIG020137"	! [75]
-	"XSIG030038"	! [76]
-	"XSIG030207"	! [77]
-	"XSIG030208"	! [78]
-	"XSIG030214"	! [79]
-	"XSIG030217"	! [80]
-	"XSIG030219"	! [81]
-	"XSIG030223"	! [82]
-	"XSIG030261"	! [83]
-	"XSIG030262"	! [84]
-	"XSIG030268"	! [85]
-	"XSIG030279"	! [86]
-	"XSIG030281"	! [87]
-	"XSIG030284"	! [88]
-	"XSIG030297"	! [89]
-	"XSIG030299"	! [90]
-	"XSIG030303"	! [91]
-	"XSIG040066"	! [92]
-	"XSIG040073"	! [93]
-	"XSIG040075"	! [94]
-	"XSIG040077"	! [95]
-	"XSIG040085"	! [96]
-	"XSIG040090"	! [97]
-	"XSIG040092"	! [98]
-	"XSIG040098"	! [99]
-	"F7RSTn_p02"	! [100]
-	"XSIG030317"	! [101]
+	"VCC15V"	! [49]
+	"VDDA"	! [50]
+	"XSIG011191"	! [51]
+	"XSIG011193"	! [52]
+	"XSIG011225"	! [53]
+	"XSIG011226"	! [54]
+	"XSIG011235"	! [55]
+	"XSIG011236"	! [56]
+	"XSIG020019"	! [57]
+	"XSIG020020"	! [58]
+	"XSIG020047"	! [59]
+	"XSIG020048"	! [60]
+	"XSIG020052"	! [61]
+	"XSIG020058"	! [62]
+	"XSIG020100"	! [63]
+	"XSIG020113"	! [64]
+	"XSIG020116"	! [65]
+	"XSIG020117"	! [66]
+	"XSIG020121"	! [67]
+	"XSIG020122"	! [68]
+	"XSIG020132"	! [69]
+	"XSIG020135"	! [70]
+	"XSIG020137"	! [71]
+	"XSIG030038"	! [72]
+	"XSIG030207"	! [73]
+	"XSIG030208"	! [74]
+	"XSIG030214"	! [75]
+	"XSIG030217"	! [76]
+	"XSIG030219"	! [77]
+	"XSIG030223"	! [78]
+	"XSIG030261"	! [79]
+	"XSIG030262"	! [80]
+	"XSIG030268"	! [81]
+	"XSIG030279"	! [82]
+	"XSIG030281"	! [83]
+	"XSIG030284"	! [84]
+	"XSIG030297"	! [85]
+	"XSIG030299"	! [86]
+	"XSIG030303"	! [87]
+	"XSIG040066"	! [88]
+	"XSIG040073"	! [89]
+	"XSIG040075"	! [90]
+	"XSIG040077"	! [91]
+	"XSIG040085"	! [92]
+	"XSIG040090"	! [93]
+	"XSIG040092"	! [94]
+	"XSIG040098"	! [95]
+	"F7RSTn_p02"	! [96]
+	"XSIG030317"	! [97]
+	"GALVA_DRIVERY_IN+"	! [98]
+	"GALVA_DRIVERY_IN-"	! [99]
     )
     ..Netclass_Names ( 
 	"(Default)"	! [1]
@@ -1444,8 +1442,7 @@
 	0x00ffffff 0x00ffffff	! [93-94] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [95-96] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [97-98] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [99-100] RGB(255,255,255)  RGB(255,255,255)
-	        -1		! [101] undefined
+	0x00ffffff		! [99] RGB(255,255,255)
     )
     ..Net_Ptrnidx ( 
 	0 0 0 0 0 0 0 0 0 0 	! [1 - 10]
@@ -1457,8 +1454,7 @@
 	0 0 0 0 0 0 0 0 0 0 	! [61 - 70]
 	0 0 0 0 0 0 0 0 0 0 	! [71 - 80]
 	0 0 0 0 0 0 0 0 0 0 	! [81 - 90]
-	0 0 0 0 0 0 0 0 0 0 	! [91 - 100]
-	0 ! [101 - 101]
+	0 0 0 0 0 0 0 0 0 ! [91 - 99]
 	)
     ..Net_Alpha ( 
 	100 100 100 100 100 100 100 100 100 100 	! [1 - 10]
@@ -1470,8 +1466,7 @@
 	100 100 100 100 100 100 100 100 100 100 	! [61 - 70]
 	100 100 100 100 100 100 100 100 100 100 	! [71 - 80]
 	100 100 100 100 100 100 100 100 100 100 	! [81 - 90]
-	100 100 100 100 100 100 100 100 100 100 	! [91 - 100]
-	100 ! [101 - 101]
+	100 100 100 100 100 100 100 100 100 ! [91 - 99]
 	)
     ..Net_Nopaque ( 
 	F F F F F F F F F F 	! [1 - 10]
@@ -1483,8 +1478,7 @@
 	F F F F F F F F F F 	! [61 - 70]
 	F F F F F F F F F F 	! [71 - 80]
 	F F F F F F F F F F 	! [81 - 90]
-	F F F F F F F F F F 	! [91 - 100]
-	F ! [101 - 101]
+	F F F F F F F F F ! [91 - 99]
 	)
     ..Net_Outline ( 
 	T T F T T F F F F F 	! [1 - 10]
@@ -1496,8 +1490,7 @@
 	F F F F F F F F F F 	! [61 - 70]
 	F F F F F F F F F F 	! [71 - 80]
 	F F F F F F F F F F 	! [81 - 90]
-	F F F F F F F F F F 	! [91 - 100]
-	T ! [101 - 101]
+	F F F F F F F F F ! [91 - 99]
 	)
     ..Netclass_Color (
 	0x00ffffff	! top     RGB(255,255,255)
@@ -1546,8 +1539,7 @@
 	F F F F F F F F F F 	! [61 - 70]
 	F F F F F F F F F F 	! [71 - 80]
 	F F F F F F F F F F 	! [81 - 90]
-	F F F F F F F F F F 	! [91 - 100]
-	F ! [101 - 101]
+	F F F F F F F F F ! [91 - 99]
 	)
     ..Netclass_On                        False	! top
                                          False	! bottom
@@ -1879,9 +1871,9 @@
 	"[VirtualGlobal].iDC.SilkscreenItems" "3"
 	"[VirtualGlobal].iDC.SketchPlans.Collapsed" "3"
 	"[VirtualGlobal].iDC.Spacers" "3"
-	"[VirtualGlobal].iDC.SplitViewHeight.0" "90"
+	"[VirtualGlobal].iDC.SplitViewHeight.0" "76"
 	"[VirtualGlobal].iDC.SplitViewHeight.1" "264"
-	"[VirtualGlobal].iDC.SplitViewHeight.2" "58"
+	"[VirtualGlobal].iDC.SplitViewHeight.2" "72"
 	"[VirtualGlobal].iDC.Substrate Objects.CollapsedSectionOrder" "3"
 	"[VirtualGlobal].iDC.TestPointItems" "3"
 	"[VirtualGlobal].iDC.TextItems.Collapsed" "3"
@@ -1896,8 +1888,8 @@
 
 .view "PCB"
     ..extrema
-	(87802671,9573232)		! (xmin, ymin)
-	(218006987,74267226)		! (xmax, ymax)
+	(53514805,-7380707)		! (xmin, ymin)
+	(224270641,77640727)		! (xmax, ymax)
     ..WindowPlacement
 	0x00000002	! flags
 	0x00000003	! showCmd
@@ -13635,11 +13627,7 @@
 	"[Net].UART_ESP2F7" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].UART_F72ESP" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].VCC-15V" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].VCC-15V_p04" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].VCC5V_p03" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].VCC5V_p04" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].VCC15V" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].VCC15V_p04" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].VDDA" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].XSIG011191" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].XSIG011193" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
@@ -13688,6 +13676,8 @@
 	"[Net].XSIG040098" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].F7RSTn_p02" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[Net].XSIG030317" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].GALVA_DRIVERY_IN+" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].GALVA_DRIVERY_IN-" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[NetClass].(Default)" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
 	"[NetClass].(SpacerNetClass)" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
 	"[ConstraintClass].(All)" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
