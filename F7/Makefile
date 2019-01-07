@@ -96,7 +96,7 @@ include $(CHIBIOS)/os/common/startup/ARMCMx/compilers/GCC/mk/startup_stm32f4xx.m
 # HAL-OSAL files (optional).
 include $(CHIBIOS)/os/hal/hal.mk
 include $(CHIBIOS)/os/hal/ports/STM32/STM32F4xx/platform.mk
-include 										board_E407/board.mk
+include board_E407/board.mk
 include $(CHIBIOS)/os/hal/osal/rt/osal.mk
 # RTOS files (optional).
 include $(CHIBIOS)/os/rt/rt.mk
@@ -108,24 +108,25 @@ include $(CHIBIOS)/test/oslib/oslib_test.mk
 #Shell files
 include $(CHIBIOS)/os/various/shell/shell.mk
 include $(CHIBIOS)/os/hal/lib/streams/streams.mk
-#LWIP files
-include $(CHIBIOS)/os/various/lwip_bindings/lwip.mk
+#FATFS files
+include $(CHIBIOS)/os/various/fatfs_bindings/fatfs.mk
+# User files
+include src/source.mk
 
-# Include RTT files and board files
+# Include RTT files and board files, and F7-specific headers
 ALLINC += ../third_party
 
 
 # Define linker script file here
 LDSCRIPT= $(STARTUPLD)/STM32F407xG.ld
-ALLCSRC += main_F7.c ../third_party/RTT/SEGGER_RTT.c \
+ALLCSRC += ../third_party/RTT/SEGGER_RTT.c \
            ../third_party/RTT/SEGGER_RTT_printf.c \
-											$(CHIBIOS)/os/various/evtimer.c
+		   $(CHIBIOS)/os/various/evtimer.c
 
 # C sources that can be compiled in ARM or THUMB mode depending on the global
 # setting.
 CSRC = $(ALLCSRC) \
-       $(TESTSRC) \
-       src/
+       $(TESTSRC)
 
 # C++ sources that can be compiled in ARM or THUMB mode depending on the global
 # setting.
@@ -185,7 +186,7 @@ OD   = $(TRGT)objdump
 SZ   = $(TRGT)size
 HEX  = $(CP) -O ihex
 BIN  = $(CP) -O binary
-ELF  = build/ch.elf
+ELF  = build/LASMO_F7.elf
 
 # ARM-specific options here
 AOPT =

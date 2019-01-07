@@ -107,7 +107,7 @@
  * @brief   Enables the MAC subsystem.
  */
 #if !defined(HAL_USE_MAC) || defined(__DOXYGEN__)
-#define HAL_USE_MAC                         TRUE
+#define HAL_USE_MAC                         FALSE
 #endif
 
 /**
@@ -142,7 +142,7 @@
  * @brief   Enables the SDC subsystem.
  */
 #if !defined(HAL_USE_SDC) || defined(__DOXYGEN__)
-#define HAL_USE_SDC                         FALSE
+#define HAL_USE_SDC                         TRUE
 #endif
 
 /**
@@ -370,7 +370,7 @@
  *          at @p FALSE.
  */
 #if !defined(SDC_MMC_SUPPORT) || defined(__DOXYGEN__)
-#define SDC_MMC_SUPPORT                     FALSE
+#define SDC_MMC_SUPPORT                     TRUE
 #endif
 
 /**
