@@ -113,15 +113,15 @@ include $(CHIBIOS)/os/various/fatfs_bindings/fatfs.mk
 # User files
 include src/source.mk
 
-# Include RTT files and board files, and F7-specific headers
-ALLINC += ../third_party
-
+# Include RTT files and board files
+ALLINC += ../third_party includes/
 
 # Define linker script file here
 LDSCRIPT= $(STARTUPLD)/STM32F407xG.ld
+
 ALLCSRC += ../third_party/RTT/SEGGER_RTT.c \
            ../third_party/RTT/SEGGER_RTT_printf.c \
-		   $(CHIBIOS)/os/various/evtimer.c
+           $(CHIBIOS)/os/various/evtimer.c
 
 # C sources that can be compiled in ARM or THUMB mode depending on the global
 # setting.
