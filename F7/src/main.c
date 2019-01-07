@@ -13,9 +13,9 @@ int main(void) {
   SEGGER_RTT_ConfigUpBuffer(0, NULL, NULL, 0, SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL);
   lsm_galva_init();
 
-  lsm_ctrl_galvaXY(0,0);
-  //Envoie de donnée ponctuelles
+  lsm_galva_test();
+
   while (1){
-    lsm_print_line(2048);
+    chThdSleepMilliseconds(100);
   }
 }
