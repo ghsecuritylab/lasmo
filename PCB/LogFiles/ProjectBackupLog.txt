@@ -62,3 +62,19 @@
 [2018-12-19 14.03.59] WARNING: Ignoring iCDB backup file [2018-12-05 13.10.15-2064-pbmf.zip] - will not be migrated.
 [2018-12-19 16.31.22] Migrating iCDB upgrade backups from directory [PCB\Default\default.icdb\cdbback] to Project Backup format.
 [2018-12-19 16.31.22] WARNING: Ignoring iCDB backup file [2018-12-05 13.10.15-2064-pbmf.zip] - will not be migrated.
+[2019-01-06 13.30.41] Migrating iCDB upgrade backups from directory [PCB\Default\default.icdb\cdbback] to Project Backup format.
+[2019-01-06 13.30.41] Migrating iCDB upgrade backup file [2019-01-06 13.05.07-5168].
+[2019-01-06 13.30.41] Successfully created [Constraints Definition Upgrade] backup [2019-01-06 13.05.07 - consDefUpgr.zip] requested by [PIERRE-PC:Pierre].
+[2019-01-06 13.30.41] Migrated iCDB content backup file [cdbback\2019-01-06 13.05.07-5168.zip] removed.
+[2019-01-06 13.30.41] Successfully migrated iCDB upgrade backup file [2019-01-06 13.05.07-5168] to Project Backup format [2019-01-06 13.05.07 - consDefUpgr.zip]
+[2019-01-06 13.30.41] WARNING: Ignoring iCDB backup file [2018-12-05 13.10.15-2064-pbmf.zip] - will not be migrated.
+[2019-01-06 13.30.42] Successfully created [AutoSave] backup [2019-01-06 13.30.41 - auto.zip] requested by [DESKTOP-D6MOGOB:alexis].
+[2019-01-06 20.15.35] Migrating iCDB upgrade backups from directory [PCB\Default\default.icdb\cdbback] to Project Backup format.
+[2019-01-06 20.15.35] WARNING: Ignoring iCDB backup file [2018-12-05 13.10.15-2064-pbmf.zip] - will not be migrated.
+[2019-01-06 20.15.36] Successfully created [AutoSave] backup [2019-01-06 20.15.35 - auto.zip] requested by [DESKTOP-D6MOGOB:alexis].
+[2019-01-07 12.49.36] Migrating iCDB upgrade backups from directory [PCB\Default\default.icdb\cdbback] to Project Backup format.
+[2019-01-07 12.49.36] WARNING: Ignoring iCDB backup file [2018-12-05 13.10.15-2064-pbmf.zip] - will not be migrated.
+[2019-01-07 12.49.38] Successfully created [AutoSave] backup [2019-01-07 12.49.36 - auto.zip] requested by [DESKTOP-D6MOGOB:alexis].
+[2019-01-07 16.49.36] Successfully created [AutoSave] backup [2019-01-07 16.49.36 - auto.zip] requested by [DESKTOP-D6MOGOB:alexis].
+[2019-01-07 16.49.36] Removing excessive [AutoSave] backup file [Z:\LASMO\PCB\Default\ProjectBackup\backups\2019-01-06 13.30.41 - auto.zip].
+[2019-01-07 16.49.36] [AutoSave] backup file [PCB\Default\ProjectBackup\backups\2019-01-06 13.30.41 - auto.zip] removed.

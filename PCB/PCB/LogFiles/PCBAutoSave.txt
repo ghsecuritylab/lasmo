@@ -2,13 +2,25 @@
                                 Autosave Log File
                                 -----------------
 
-                      04:31 PM Wednesday, December 19, 2018
-                   Job Name: D:\telecom\lasmo\PCB\PCB\PCB.pcb
+                        12:49 PM Monday, January 07, 2019
+                       Job Name: Z:\LASMO\PCB\PCB\PCB.pcb
 
+Autosave pending at 12:55:05 Mon  Attempting...
+Autosave completed successfully.  12:55:06 Mon
+Autosave pending at 14:10:07 Mon  Attempting...
+Autosave completed successfully.  14:10:07 Mon
+Autosave pending at 14:15:36 Mon  Attempting...
+Autosave completed successfully.  14:15:37 Mon
+Autosave pending at 16:45:39 Mon  Attempting...
+Autosave completed successfully.  16:45:39 Mon
+Autosave pending at 18:15:39 Mon  Attempting...
+Autosave completed successfully.  18:15:40 Mon
+Autosave pending at 18:25:41 Mon  Attempting...
+Autosave completed successfully.  18:25:42 Mon
 
                                Autosave log closed
                                -------------------
 
-                      04:34 PM Wednesday, December 19, 2018
-                   Job Name: D:\telecom\lasmo\PCB\PCB\PCB.pcb
+                        06:29 PM Monday, January 07, 2019
+                       Job Name: Z:\LASMO\PCB\PCB\PCB.pcb
 

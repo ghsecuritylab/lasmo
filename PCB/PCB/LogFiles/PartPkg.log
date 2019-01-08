@@ -2,21 +2,21 @@
                                     Packager
                                     --------
 
-                      02:07 PM Wednesday, December 19, 2018
-                     Job Name: D:\telecom\lasmo\PCB\PCB.prj
+                        08:16 PM Sunday, January 06, 2019
+                         Job Name: Z:\LASMO\PCB\PCB.prj
 
 
      Packager     Version: 020806.00
 
-        Commandline is: ""C:\MentorGraphics\EEVX.2.4\SDD_HOME\wg\win32\bin\package.exe"  -jD:\telecom\lasmo\PCB\PCB.prj -CleanBuild -NoFill"
+        Commandline is: ""C:\mentorgraphics\EEVX.2.4\SDD_HOME\wg\win32\bin\package.exe"  -jZ:\LASMO\PCB\PCB.prj -CleanBuild -NoFill"
 
-     The Common Database is at "D:\telecom\lasmo\PCB\Default\default.icdb".
+     The Common Database is at "Z:\LASMO\PCB\Default\default.icdb".
 
      The Root of this design is "Schematic1".
 
      The Front End Snapshot of this design is "DCDV".
 
-     The PCB Design Path of this design is at "D:\telecom\lasmo\PCB\PCB\PCB.pcb".
+     The PCB Design Path of this design is at "Z:\LASMO\PCB\PCB\PCB.pcb".
 
      The Central Library is at "F:\Central_Libs\ENST.lmc".
 
@@ -81,7 +81,8 @@
 
      Target PDB Name: Integration\LocalPartsDB.pdb
 
-     Number of Part Numbers: 54
+     Number of Part Numbers: 55
+          Part Numb: 00-0001 -> Vend Part: 00-0001 
           Part Numb: 00-0038 -> Vend Part: 00-0038 
           Part Numb: 00-0078 -> Vend Part: 00-0078 
           Part Numb: 00-0081 -> Vend Part: 00-0081 
@@ -90,29 +91,28 @@
           Part Numb: 00-0098 -> Vend Part: 00-0098 
           Part Numb: 00-0104 -> Vend Part: 00-0104 
           Part Numb: 00-0122 -> Vend Part: 00-0122 
-          Part Numb: 01-0097 -> Vend Part: 01-0097 
+          Part Numb: 00-0129 -> Vend Part: 00-0129 
+          Part Numb: 00-0134 -> Vend Part: 00-0134 
+          Part Numb: 01-0164 -> Vend Part: 01-0164 
           Part Numb: 01-0214 -> Vend Part: 01-0214 
           Part Numb: 01-0243 -> Vend Part: 01-0243 
           Part Numb: 01-0339 -> Vend Part: 01-0339 
           Part Numb: 01-0385 -> Vend Part: 01-0385 
           Part Numb: 01-0393 -> Vend Part: 01-0393 
-          Part Numb: 01-0433 -> Vend Part: 01-0433 
-          Part Numb: 01-1164 -> Vend Part: 01-1164 
           Part Numb: 10-0006 -> Vend Part: 10-0006 
+          Part Numb: 10-0011 -> Vend Part: 10-0011 
           Part Numb: 10-0026 -> Vend Part: 10-0026 
           Part Numb: 10-0030 -> Vend Part: 10-0030 
           Part Numb: 10-0046 -> Vend Part: 10-0046 
-          Part Numb: 10-0056 -> Vend Part: 10-0056 
           Part Numb: 10-0057 -> Vend Part: 10-0057 
-          Part Numb: 10-0059 -> Vend Part: 10-0059 
           Part Numb: 10-0060 -> Vend Part: 10-0060 
+          Part Numb: 10-0068 -> Vend Part: 10-0068 
           Part Numb: 10-0070 -> Vend Part: 10-0070 
-          Part Numb: 10-0071 -> Vend Part: 10-0071 
           Part Numb: 10-0075 -> Vend Part: 10-0075 
+          Part Numb: 10-0095 -> Vend Part: 10-0095 
           Part Numb: 10-0105 -> Vend Part: 10-0105 
           Part Numb: 10-0112 -> Vend Part: 10-0112 
           Part Numb: 10-0120 -> Vend Part: 10-0120 
-          Part Numb: 20-0001 -> Vend Part: 20-0001 
           Part Numb: 20-0019 -> Vend Part: 20-0019 
           Part Numb: 20-0035 -> Vend Part: 20-0035 
           Part Numb: 20-0037 -> Vend Part: 20-0037 
@@ -123,8 +123,9 @@
           Part Numb: 40-0313 -> Vend Part: 40-0313 
           Part Numb: 40-0321 -> Vend Part: 40-0321 
           Part Numb: 40-0354 -> Vend Part: 40-0354 
-          Part Numb: 50-0005 -> Vend Part: 50-0005 
+          Part Numb: 50-0024 -> Vend Part: 50-0024 
           Part Numb: 50-0044 -> Vend Part: 50-0044 
+          Part Numb: 70-0001 -> Vend Part: 70-0001 
           Part Numb: 70-0003 -> Vend Part: 70-0003 
           Part Numb: 70-0010 -> Vend Part: 70-0010 
           Part Numb: 70-0011 -> Vend Part: 70-0011 
@@ -134,7 +135,7 @@
           Part Numb: 70-0081 -> Vend Part: 70-0081 
           Part Numb: 70-0102 -> Vend Part: 70-0102 
           Part Numb: 80-0073 -> Vend Part: 80-0073 
-          Part Numb: 81-0006 -> Vend Part: 81-0006 
+          Part Numb: 81-0007 -> Vend Part: 81-0007 
           Part Numb: 81-0013 -> Vend Part: 81-0013 
 
      Number of Part Names: 0
@@ -157,8 +158,8 @@
      No errors in Existing Schematic Packaging.
 
      The Common DataBase has been read and will be packaged.
-     Clustering 115 Symbols:
-             115  **************
+     Clustering 111 Symbols:
+             111  **********
              100  **************************************************
               50  **************************************************
      Clustering is Complete
@@ -167,8 +168,8 @@
 
 
 
-     96 nets were found containing 398 pins
-     110 components were found
+     90 nets were found containing 386 pins
+     106 components were found
 
      Parsed netlist - Augmenting..
 
