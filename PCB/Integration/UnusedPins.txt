@@ -1,5 +1,5 @@
 
-Schematic unused pins from : Packager  9-Jan-2019  13:11
+Schematic unused pins from : Packager  9-Jan-2019  15:55
 
 ------------------------------------------------------------------------
             Part/Reference             |          Unused pins
@@ -22,6 +22,7 @@ Schematic unused pins from : Packager  9-Jan-2019  13:11
  Part 01-0339                          |
  Part 01-0385                          |
  Part 01-0393                          |
+ Part 01-0398                          |
  Part 10-0006                          |
  Part 10-0011                          |
  Part 10-0026                          |
@@ -44,6 +45,7 @@ Schematic unused pins from : Packager  9-Jan-2019  13:11
  Part 40-0003                          |
   U8                                   | (P)  5
  Part 40-0153                          |
+  U10                                  | (P)  3 2 1
  Part 40-0293                          |
   U1                                   | (P)  25 30 67 68 69 92 93 95
                                        |  96 46 15 17 18 63 64 7 8 9
@@ -53,6 +55,7 @@ Schematic unused pins from : Packager  9-Jan-2019  13:11
  Part 40-0313                          |
  Part 40-0321                          |
  Part 40-0354                          |
+  U3                                   | (P)  17
  Part 40-0364                          |
  Part 40-0365                          |
  Part 50-0024                          |

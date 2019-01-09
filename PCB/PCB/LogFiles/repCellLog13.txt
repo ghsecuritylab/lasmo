@@ -1,0 +1,40 @@
+=======================================================================
+Xpedition Layout - Version 118.0.112.84664
+=======================================================================
+
+RELOAD CELLS
+
+Job Directory:  Z:\LASMO\PCB\PCB\
+
+
+Design Units:(mm)
+
+Replace Cell Log:   repCellLog13.txt
+
+Wed Jan 09 15:52:11 2019
+
+Reference Designator            Cell Name                         New Cell Name
+===============================================================================
+
+
+---------------  RELOAD CELLS  Wed Jan 09 15:52:11 2019  ---------------
+
+
+
+
+---------------  RELOAD CELLS TMP  Wed Jan 09 15:52:11 2019  ---------------
+
+
+J14                             B3B-XH-ALFSN                      B3B-XH-ALFSN                    
+J8                              B3B-XH-ALFSN                      B3B-XH-ALFSN                    
+J9                              B3B-XH-ALFSN                      B3B-XH-ALFSN                    
+
+
+---------------    Wed Jan 09 15:52:11 2019  ---------------
+
+
+
+
+---------------    Wed Jan 09 15:52:11 2019  ---------------
+
+

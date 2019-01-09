@@ -2,13 +2,13 @@
                                     Packager
                                     --------
 
-                      01:11 PM Wednesday, January 09, 2019
+                      03:55 PM Wednesday, January 09, 2019
                          Job Name: Z:\LASMO\PCB\PCB.prj
 
 
      Packager     Version: 020806.00
 
-        Commandline is: "C:\mentorgraphics\EEVX.2.4\SDD_HOME\wg\win32\bin\package "-uZ:\LASMO\PCB\Default\default.icdb" -k -CleanBuild -W1PinNets "-jZ:\LASMO\PCB\PCB.prj" "
+        Commandline is: ""C:\mentorgraphics\EEVX.2.4\SDD_HOME\wg\win32\bin\package.exe"  -jZ:\LASMO\PCB\PCB.prj -CleanBuild -NoFill"
 
      The Common Database is at "Z:\LASMO\PCB\Default\default.icdb".
 
@@ -37,10 +37,8 @@
      Properties that have been checked off in the Property Definition Editor
       found at Library Manager/Common Properties will be checked for value
       differences between the PartsDB and the non-null properties on symbols.
-     Those properties checked off will be transferred from the PartsDB to all
-      symbols, both packaged and unpackaged.  However, the property values
-      transferred will be limited to the precision specified in the Notation
-      Settings dialog.
+     Those properties checked off (other than Part Number)
+      will not be transferred from the PartsDB to symbols.
      The following properties were checked off in the Property Definition Editor:
        "Parametric"
        "Value2"
@@ -79,59 +77,11 @@
 
 
 
-    WARNING: Block Schematic1, Page 3, Symbol XCMP1056:
-     Reference designator removal.
-     The Reference Designator "J" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 3, Symbol XCMP1058:
-     Reference designator removal.
-     The Reference Designator "J" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 4, Symbol XCMP1050:
-     Reference designator removal.
-     The Reference Designator "U" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 4, Symbol XCMP1051:
-     Reference designator removal.
-     The Reference Designator "U" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 4, Symbol XCMP1053:
-     Reference designator removal.
-     The Reference Designator "C" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
-    WARNING: Block Schematic1, Page 4, Symbol XCMP1054:
-     Reference designator removal.
-     The Reference Designator "C" is being removed
-     from Symbol.  Such 'all alpha' designators that are
-     not instance properties are usually built into symbols and are 
-     not intended as a request to be packaged in the same pack with 
-     symbols of like designators.
-
      Common Data Base has been read
 
      Target PDB Name: Integration\LocalPartsDB.pdb
 
-     Number of Part Numbers: 59
+     Number of Part Numbers: 60
           Part Numb: 00-0001 -> Vend Part: 00-0001 
           Part Numb: 00-0038 -> Vend Part: 00-0038 
           Part Numb: 00-0078 -> Vend Part: 00-0078 
@@ -149,6 +99,7 @@
           Part Numb: 01-0339 -> Vend Part: 01-0339 
           Part Numb: 01-0385 -> Vend Part: 01-0385 
           Part Numb: 01-0393 -> Vend Part: 01-0393 
+          Part Numb: 01-0398 -> Vend Part: 01-0398 
           Part Numb: 10-0006 -> Vend Part: 10-0006 
           Part Numb: 10-0011 -> Vend Part: 10-0011 
           Part Numb: 10-0026 -> Vend Part: 10-0026 
@@ -212,8 +163,8 @@
      No errors in Existing Schematic Packaging.
 
      The Common DataBase has been read and will be packaged.
-     Clustering 115 Symbols:
-             115  **************
+     Clustering 124 Symbols:
+             124  ***********************
              100  **************************************************
               50  **************************************************
      Clustering is Complete
@@ -222,8 +173,8 @@
 
 
 
-     94 nets were found containing 396 pins
-     110 components were found
+     97 nets were found containing 422 pins
+     117 components were found
 
      Parsed netlist - Augmenting..
 
@@ -231,20 +182,13 @@
 
      Numbering Nets....
 
-    After augmentation of supply pins, there are 94 nets where 1 nets have only one pin:
-      INFO:  Block Schematic1 Page 3, Pin OUT3 on Symbol XCMP781: Single pin on net XSIG030038.
-
-
      Checking Pins....
 
-     Testing of Packaging has been completed with 6 warnings.
-      Erroneous results may occur if not fixed.
+     Packaging has been successfully tested with no errors or warnings.
 
      Updating the Common DataBase
 
      A BAM WasIs List: Integration\CDBBackAnno.bam has been created.
-     There have been 6 reference designator changes.
-     The BAM file will list all of the from-to changes.
 
 The Common DataBase has been successfully updated.
 
@@ -254,5 +198,3 @@ The Common DataBase has been successfully updated.
      An unused pin and gate report has been written to Integration\UnusedPins.txt
      An unused gate report for gates not in schematic has been written to Integration\UnusedGates.txt
      An augmented pin report has been written to Integration\AugmentedPins.txt.
-
-     There have been 6 warnings.

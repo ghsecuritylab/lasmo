@@ -2,7 +2,7 @@
                                     Packager
                                     --------
 
-                        08:16 PM Sunday, January 06, 2019
+                      03:55 PM Wednesday, January 09, 2019
                          Job Name: Z:\LASMO\PCB\PCB.prj
 
 
@@ -81,7 +81,7 @@
 
      Target PDB Name: Integration\LocalPartsDB.pdb
 
-     Number of Part Numbers: 55
+     Number of Part Numbers: 60
           Part Numb: 00-0001 -> Vend Part: 00-0001 
           Part Numb: 00-0038 -> Vend Part: 00-0038 
           Part Numb: 00-0078 -> Vend Part: 00-0078 
@@ -99,10 +99,12 @@
           Part Numb: 01-0339 -> Vend Part: 01-0339 
           Part Numb: 01-0385 -> Vend Part: 01-0385 
           Part Numb: 01-0393 -> Vend Part: 01-0393 
+          Part Numb: 01-0398 -> Vend Part: 01-0398 
           Part Numb: 10-0006 -> Vend Part: 10-0006 
           Part Numb: 10-0011 -> Vend Part: 10-0011 
           Part Numb: 10-0026 -> Vend Part: 10-0026 
           Part Numb: 10-0030 -> Vend Part: 10-0030 
+          Part Numb: 10-0038 -> Vend Part: 10-0038 
           Part Numb: 10-0046 -> Vend Part: 10-0046 
           Part Numb: 10-0057 -> Vend Part: 10-0057 
           Part Numb: 10-0060 -> Vend Part: 10-0060 
@@ -123,6 +125,8 @@
           Part Numb: 40-0313 -> Vend Part: 40-0313 
           Part Numb: 40-0321 -> Vend Part: 40-0321 
           Part Numb: 40-0354 -> Vend Part: 40-0354 
+          Part Numb: 40-0364 -> Vend Part: 40-0364 
+          Part Numb: 40-0365 -> Vend Part: 40-0365 
           Part Numb: 50-0024 -> Vend Part: 50-0024 
           Part Numb: 50-0044 -> Vend Part: 50-0044 
           Part Numb: 70-0001 -> Vend Part: 70-0001 
@@ -134,6 +138,7 @@
           Part Numb: 70-0066 -> Vend Part: 70-0066 
           Part Numb: 70-0081 -> Vend Part: 70-0081 
           Part Numb: 70-0102 -> Vend Part: 70-0102 
+          Part Numb: 70-0112 -> Vend Part: 70-0112 
           Part Numb: 80-0073 -> Vend Part: 80-0073 
           Part Numb: 81-0007 -> Vend Part: 81-0007 
           Part Numb: 81-0013 -> Vend Part: 81-0013 
@@ -158,8 +163,8 @@
      No errors in Existing Schematic Packaging.
 
      The Common DataBase has been read and will be packaged.
-     Clustering 111 Symbols:
-             111  **********
+     Clustering 124 Symbols:
+             124  ***********************
              100  **************************************************
               50  **************************************************
      Clustering is Complete
@@ -168,8 +173,8 @@
 
 
 
-     90 nets were found containing 386 pins
-     106 components were found
+     97 nets were found containing 422 pins
+     117 components were found
 
      Parsed netlist - Augmenting..
 

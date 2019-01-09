@@ -2,10 +2,10 @@
 ! change it at your own peril
 
 !
-! Created 01/07/19 18:29:20
+! Created 01/09/19 15:59:56
 !
 
-.Global_Constants 93 2
+.Global_Constants 100 2
     ..File_Type Graphics_Settings
     ..Version Version_7
     ..Num_Views 1
@@ -15,7 +15,7 @@
 	0x00000003	! showCmd
 	(-1, -1)	! ptMinPosition
 	(-1, -1)	! ptMaxPosition
-	(498, 319) (1920,955)	! ..rcNormalPosition
+	(157, 4) (1217,522)	! ..rcNormalPosition
     ..Active_Place_Layer_Top             True
     ..Active_Place_Layer_Bottom          False
     ..Active_Place_Layer_Internal        False
@@ -1300,82 +1300,89 @@
 	"GALVA_X"	! [15]
 	"GALVA_Y"	! [16]
 	"LASERS_MUTE"	! [17]
-	"LASER_BLUE"	! [18]
-	"LASER_GREEN"	! [19]
-	"LASER_RED"	! [20]
-	"RMII_CRS_DV"	! [21]
-	"RMII_REF_CLK"	! [22]
-	"RMII_TX_EN"	! [23]
-	"SD_CK"	! [24]
-	"SD_CMD"	! [25]
-	"SD_D0"	! [26]
-	"SD_D1"	! [27]
-	"SD_D2"	! [28]
-	"SD_D3"	! [29]
-	"SPI_F72F1_MISO"	! [30]
-	"SPI_F72F1_MOSI"	! [31]
-	"SPI_F72F1_NSS"	! [32]
-	"SPI_F72F1_SCK"	! [33]
-	"SPI_F72MAX_MISO"	! [34]
-	"SPI_F72MAX_MOSI"	! [35]
-	"SPI_F72MAX_NSS"	! [36]
-	"SPI_F72MAX_SCK"	! [37]
-	"UART_ESP2F7"	! [38]
-	"UART_F72ESP"	! [39]
-	"VCC-15V"	! [40]
-	"VCC15V"	! [41]
-	"XSIG011191"	! [42]
-	"XSIG011193"	! [43]
-	"XSIG011225"	! [44]
-	"XSIG011226"	! [45]
-	"XSIG011235"	! [46]
-	"XSIG011236"	! [47]
-	"XSIG030038"	! [48]
-	"XSIG030207"	! [49]
-	"XSIG030208"	! [50]
-	"XSIG030214"	! [51]
-	"XSIG030217"	! [52]
-	"XSIG030219"	! [53]
-	"XSIG030223"	! [54]
-	"XSIG030261"	! [55]
-	"XSIG030262"	! [56]
-	"XSIG030268"	! [57]
-	"XSIG030279"	! [58]
-	"XSIG030281"	! [59]
-	"XSIG030284"	! [60]
-	"XSIG030297"	! [61]
-	"XSIG030299"	! [62]
-	"XSIG030303"	! [63]
-	"XSIG040085"	! [64]
-	"XSIG040090"	! [65]
-	"XSIG040092"	! [66]
-	"XSIG040098"	! [67]
-	"F7RSTn"	! [68]
-	"XSIG030317"	! [69]
-	"GALVA_DRIVERY_P"	! [70]
-	"GALVA_DRIVERY_N"	! [71]
-	"PHY_RSTn"	! [72]
-	"RMII_RX_D0"	! [73]
-	"RMII_RX_D1"	! [74]
-	"RMII_TX_D0"	! [75]
-	"RMII_TX_D1"	! [76]
-	"VDDA_ETH"	! [77]
-	"XSIG011257"	! [78]
-	"XSIG020149"	! [79]
-	"XSIG020150"	! [80]
-	"XSIG020152"	! [81]
-	"XSIG020154"	! [82]
-	"XSIG020156"	! [83]
-	"XSIG020172"	! [84]
-	"XSIG020178"	! [85]
-	"XSIG020181"	! [86]
-	"XSIG020183"	! [87]
-	"XSIG020192"	! [88]
-	"XSIG020194"	! [89]
-	"XSIG020196"	! [90]
-	"XSIG020198"	! [91]
-	"XSIG020212"	! [92]
-	"XSIG040065"	! [93]
+	"RMII_CRS_DV"	! [18]
+	"RMII_REF_CLK"	! [19]
+	"RMII_TX_EN"	! [20]
+	"SD_CK"	! [21]
+	"SD_CMD"	! [22]
+	"SD_D0"	! [23]
+	"SD_D1"	! [24]
+	"SD_D2"	! [25]
+	"SD_D3"	! [26]
+	"SPI_F72F1_MISO"	! [27]
+	"SPI_F72F1_MOSI"	! [28]
+	"SPI_F72F1_NSS"	! [29]
+	"SPI_F72F1_SCK"	! [30]
+	"SPI_F72MAX_MISO"	! [31]
+	"SPI_F72MAX_MOSI"	! [32]
+	"SPI_F72MAX_NSS"	! [33]
+	"SPI_F72MAX_SCK"	! [34]
+	"UART_ESP2F7"	! [35]
+	"UART_F72ESP"	! [36]
+	"XSIG011191"	! [37]
+	"XSIG011193"	! [38]
+	"XSIG011225"	! [39]
+	"XSIG011226"	! [40]
+	"XSIG011235"	! [41]
+	"XSIG011236"	! [42]
+	"XSIG030207"	! [43]
+	"XSIG030208"	! [44]
+	"XSIG030214"	! [45]
+	"XSIG030217"	! [46]
+	"XSIG030219"	! [47]
+	"XSIG030223"	! [48]
+	"XSIG030261"	! [49]
+	"XSIG030262"	! [50]
+	"XSIG030268"	! [51]
+	"XSIG030279"	! [52]
+	"XSIG030281"	! [53]
+	"XSIG030284"	! [54]
+	"XSIG030297"	! [55]
+	"XSIG030299"	! [56]
+	"XSIG030303"	! [57]
+	"XSIG040085"	! [58]
+	"XSIG040090"	! [59]
+	"XSIG040092"	! [60]
+	"XSIG040098"	! [61]
+	"F7RSTn"	! [62]
+	"XSIG030317"	! [63]
+	"GALVA_DRIVERY_P"	! [64]
+	"GALVA_DRIVERY_N"	! [65]
+	"PHY_RSTn"	! [66]
+	"RMII_RX_D0"	! [67]
+	"RMII_RX_D1"	! [68]
+	"RMII_TX_D0"	! [69]
+	"RMII_TX_D1"	! [70]
+	"VDDA_ETH"	! [71]
+	"XSIG011257"	! [72]
+	"XSIG020149"	! [73]
+	"XSIG020150"	! [74]
+	"XSIG020152"	! [75]
+	"XSIG020154"	! [76]
+	"XSIG020156"	! [77]
+	"XSIG020172"	! [78]
+	"XSIG020178"	! [79]
+	"XSIG020181"	! [80]
+	"XSIG020183"	! [81]
+	"XSIG020192"	! [82]
+	"XSIG020194"	! [83]
+	"XSIG020196"	! [84]
+	"XSIG020198"	! [85]
+	"XSIG020212"	! [86]
+	"XSIG040065"	! [87]
+	"VCC-12V"	! [88]
+	"VCC12V"	! [89]
+	"XSIG040083"	! [90]
+	"XSIG040108"	! [91]
+	"XSIG030332"	! [92]
+	"XSIG030333"	! [93]
+	"XSIG030338"	! [94]
+	"XSIG030339"	! [95]
+	"XSIG030344"	! [96]
+	"XSIG030345"	! [97]
+	"XSIG030348"	! [98]
+	"XSIG030350"	! [99]
+	"XSIG030352"	! [100]
     )
     ..Netclass_Names ( 
 	"(Default)"	! [1]
@@ -1422,18 +1429,21 @@
 	0x00ffffff 0x00ffffff	! [65-66] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [67-68] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [69-70] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [71-72] RGB(255,255,255)  RGB(255,255,255)
+	0x009999ff 0x00ffffff	! [71-72] RGB(255,153,153)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [73-74] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [75-76] RGB(255,255,255)  RGB(255,255,255)
-	0x009999ff 0x00ffffff	! [77-78] RGB(255,153,153)  RGB(255,255,255)
+	0x00ffffff 0x00ffffff	! [77-78] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [79-80] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [81-82] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [83-84] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [85-86] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [87-88] RGB(255,255,255)  RGB(255,255,255)
 	0x00ffffff 0x00ffffff	! [89-90] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff 0x00ffffff	! [91-92] RGB(255,255,255)  RGB(255,255,255)
-	0x00ffffff		! [93] RGB(255,255,255)
+	0x00ffffff         -1	! [91-92] RGB(255,255,255)  undefined
+	        -1         -1	! [93-94] undefined  undefined
+	        -1         -1	! [95-96] undefined  undefined
+	        -1         -1	! [97-98] undefined  undefined
+	        -1         -1	! [99-100] undefined  undefined
     )
     ..Net_Ptrnidx ( 
 	0 0 0 0 0 0 0 0 0 0 	! [1 - 10]
@@ -1445,7 +1455,7 @@
 	0 0 0 0 0 0 0 0 0 0 	! [61 - 70]
 	0 0 0 0 0 0 0 0 0 0 	! [71 - 80]
 	0 0 0 0 0 0 0 0 0 0 	! [81 - 90]
-	0 0 0 ! [91 - 93]
+	0 0 0 0 0 0 0 0 0 0 	! [91 - 100]
 	)
     ..Net_Alpha ( 
 	100 100 100 100 100 100 100 100 100 100 	! [1 - 10]
@@ -1457,7 +1467,7 @@
 	100 100 100 100 100 100 100 100 100 100 	! [61 - 70]
 	100 100 100 100 100 100 100 100 100 100 	! [71 - 80]
 	100 100 100 100 100 100 100 100 100 100 	! [81 - 90]
-	100 100 100 ! [91 - 93]
+	100 100 100 100 100 100 100 100 100 100 	! [91 - 100]
 	)
     ..Net_Nopaque ( 
 	F F F F F F F F F F 	! [1 - 10]
@@ -1469,7 +1479,7 @@
 	F F F F F F F F F F 	! [61 - 70]
 	F F F F F F F F F F 	! [71 - 80]
 	F F F F F F F F F F 	! [81 - 90]
-	F F F ! [91 - 93]
+	F F F F F F F F F F 	! [91 - 100]
 	)
     ..Net_Outline ( 
 	T T F T T F F F F F 	! [1 - 10]
@@ -1481,7 +1491,7 @@
 	F F F F F F F F F F 	! [61 - 70]
 	F F F F F F F F F F 	! [71 - 80]
 	F F F F F F F F F F 	! [81 - 90]
-	F F F ! [91 - 93]
+	F T T T T T T T T T 	! [91 - 100]
 	)
     ..Netclass_Color (
 	0x00ffffff	! top     RGB(255,255,255)
@@ -1521,16 +1531,16 @@
 	True  ![1]
     )
     ..Net_On ( 
-	F F F T T F F F F F 	! [1 - 10]
+	F F F F F F F F F F 	! [1 - 10]
 	F F F F F F F F F F 	! [11 - 20]
 	F F F F F F F F F F 	! [21 - 30]
 	F F F F F F F F F F 	! [31 - 40]
 	F F F F F F F F F F 	! [41 - 50]
 	F F F F F F F F F F 	! [51 - 60]
 	F F F F F F F F F F 	! [61 - 70]
-	F F F F F F T F F F 	! [71 - 80]
+	F F F F F F F F F F 	! [71 - 80]
 	F F F F F F F F F F 	! [81 - 90]
-	F F F ! [91 - 93]
+	F F F F F F F F F F 	! [91 - 100]
 	)
     ..Netclass_On                        False	! top
                                          False	! bottom
@@ -1682,7 +1692,7 @@
 	"Global.Option.ColorByNetClass.Enabled" "1"
 	"Global.Option.ColorByNetClass.NetClasses.Enabled" "0"
 	"Global.Option.ColorByNetClass.Netlines" "1"
-	"Global.Option.ColorByNetClass.Nets.Enabled" "1"
+	"Global.Option.ColorByNetClass.Nets.Enabled" "0"
 	"Global.Option.ColorByNetClass.Pads" "1"
 	"Global.Option.ColorByNetClass.PatternConstrainedNets" "0"
 	"Global.Option.ColorByNetClass.Planes" "1"
@@ -1864,9 +1874,9 @@
 	"[VirtualGlobal].iDC.SilkscreenItems" "3"
 	"[VirtualGlobal].iDC.SketchPlans.Collapsed" "3"
 	"[VirtualGlobal].iDC.Spacers" "3"
-	"[VirtualGlobal].iDC.SplitViewHeight.0" "140"
-	"[VirtualGlobal].iDC.SplitViewHeight.1" "194"
-	"[VirtualGlobal].iDC.SplitViewHeight.2" "309"
+	"[VirtualGlobal].iDC.SplitViewHeight.0" "134"
+	"[VirtualGlobal].iDC.SplitViewHeight.1" "74"
+	"[VirtualGlobal].iDC.SplitViewHeight.2" "439"
 	"[VirtualGlobal].iDC.Substrate Objects.CollapsedSectionOrder" "3"
 	"[VirtualGlobal].iDC.TestPointItems" "3"
 	"[VirtualGlobal].iDC.TextItems.Collapsed" "3"
@@ -1881,8 +1891,8 @@
 
 .view "PCB"
     ..extrema
-	(42015083,-12194985)		! (xmin, ymin)
-	(248943083,70101015)		! (xmax, ymax)
+	(34077083,-19511985)		! (xmin, ymin)
+	(344469083,104580015)		! (xmax, ymax)
     ..WindowPlacement
 	0x00000002	! flags
 	0x00000003	! showCmd
@@ -13570,99 +13580,106 @@
 	"Internal.Part.SpecialPlaceOutlineTop.254" "d:1" "e:1" "s:1" "se:1" "c:16776960" "a:100" "p:2" "t:0" "o:1"
 	"Internal.Part.SpecialPlaceOutlineTop.255" "d:1" "e:1" "s:1" "se:1" "c:16776960" "a:100" "p:2" "t:0" "o:1"
 	"Internal.Part.SpecialPlaceOutlineTop.256" "d:1" "e:1" "s:1" "se:1" "c:16776960" "a:100" "p:2" "t:0" "o:1"
-	"[Net].UnConnected_Net" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
-	"[Net].(Net0)" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
-	"[Net].(Spacer_Net)" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].GND" "d:1" "e:1" "s:1" "se:1" "c:26265" "a:100" "p:0" "t:0" "o:1"
-	"[Net].VCC" "d:1" "e:1" "s:1" "se:1" "c:39168" "a:100" "p:0" "t:0" "o:1"
-	"[Net].VCC5V" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].AUDIO_L" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].AUDIO_R" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].ETH_MDC" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].ETH_MDIO" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].SWCLK" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].SWDIO" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].GALVA_DRIVERX_P" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].GALVA_DRIVERX_N" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].GALVA_X" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].GALVA_Y" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].LASERS_MUTE" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].LASER_BLUE" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].LASER_GREEN" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].LASER_RED" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].RMII_CRS_DV" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].RMII_REF_CLK" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].RMII_TX_EN" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].SD_CK" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].SD_CMD" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].SD_D0" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].SD_D1" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].SD_D2" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].SD_D3" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].SPI_F72F1_MISO" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].SPI_F72F1_MOSI" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].SPI_F72F1_NSS" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].SPI_F72F1_SCK" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].SPI_F72MAX_MISO" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].SPI_F72MAX_MOSI" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].SPI_F72MAX_NSS" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].SPI_F72MAX_SCK" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].UART_ESP2F7" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].UART_F72ESP" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].VCC-15V" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].VCC15V" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG011191" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG011193" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG011225" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG011226" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG011235" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG011236" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG030038" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG030207" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG030208" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG030214" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG030217" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG030219" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG030223" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG030261" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG030262" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG030268" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG030279" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG030281" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG030284" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG030297" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG030299" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG030303" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG040085" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG040090" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG040092" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG040098" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].F7RSTn" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG030317" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].GALVA_DRIVERY_P" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].GALVA_DRIVERY_N" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].PHY_RSTn" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].RMII_RX_D0" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].RMII_RX_D1" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].RMII_TX_D0" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].RMII_TX_D1" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].VDDA_ETH" "d:1" "e:1" "s:1" "se:1" "c:10066431" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG011257" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG020149" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG020150" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG020152" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG020154" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG020156" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG020172" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG020178" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG020181" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG020183" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG020192" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG020194" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG020196" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG020198" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG020212" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
-	"[Net].XSIG040065" "d:0" "e:1" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].UnConnected_Net" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
+	"[Net].(Net0)" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
+	"[Net].(Spacer_Net)" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].GND" "d:1" "e:0" "s:1" "se:1" "c:26265" "a:100" "p:0" "t:0" "o:1"
+	"[Net].VCC" "d:1" "e:0" "s:1" "se:1" "c:39168" "a:100" "p:0" "t:0" "o:1"
+	"[Net].VCC5V" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].AUDIO_L" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].AUDIO_R" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].ETH_MDC" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].ETH_MDIO" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].SWCLK" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].SWDIO" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].GALVA_DRIVERX_P" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].GALVA_DRIVERX_N" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].GALVA_X" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].GALVA_Y" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].LASERS_MUTE" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].RMII_CRS_DV" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].RMII_REF_CLK" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].RMII_TX_EN" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].SD_CK" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].SD_CMD" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].SD_D0" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].SD_D1" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].SD_D2" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].SD_D3" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].SPI_F72F1_MISO" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].SPI_F72F1_MOSI" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].SPI_F72F1_NSS" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].SPI_F72F1_SCK" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].SPI_F72MAX_MISO" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].SPI_F72MAX_MOSI" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].SPI_F72MAX_NSS" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].SPI_F72MAX_SCK" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].UART_ESP2F7" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].UART_F72ESP" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG011191" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG011193" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG011225" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG011226" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG011235" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG011236" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG030207" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG030208" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG030214" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG030217" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG030219" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG030223" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG030261" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG030262" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG030268" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG030279" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG030281" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG030284" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG030297" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG030299" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG030303" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG040085" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG040090" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG040092" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG040098" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].F7RSTn" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG030317" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].GALVA_DRIVERY_P" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].GALVA_DRIVERY_N" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].PHY_RSTn" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].RMII_RX_D0" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].RMII_RX_D1" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].RMII_TX_D0" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].RMII_TX_D1" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].VDDA_ETH" "d:1" "e:0" "s:1" "se:1" "c:10066431" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG011257" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG020149" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG020150" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG020152" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG020154" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG020156" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG020172" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG020178" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG020181" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG020183" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG020192" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG020194" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG020196" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG020198" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG020212" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG040065" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].VCC-12V" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].VCC12V" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG040083" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG040108" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG030332" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG030333" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG030338" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG030339" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG030344" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG030345" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG030348" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG030350" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
+	"[Net].XSIG030352" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:0"
 	"[NetClass].(Default)" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
 	"[NetClass].(SpacerNetClass)" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"
 	"[ConstraintClass].(All)" "d:0" "e:0" "s:1" "se:1" "c:16777215" "a:100" "p:0" "t:0" "o:1"

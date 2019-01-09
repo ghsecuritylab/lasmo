@@ -2,7 +2,7 @@
                                Forward Annotation
                                ------------------
 
-                        08:16 PM Sunday, January 06, 2019
+                      03:55 PM Wednesday, January 09, 2019
                        Job Name: Z:\LASMO\PCB\PCB\PCB.pcb
 
 
@@ -23,7 +23,7 @@ Version:  01.01.00
 
      Target PDB Name: Work\Layout_Temp\PartsDB.pdb
 
-     Number of Part Numbers: 55
+     Number of Part Numbers: 60
           Part Numb: 00-0001 -> Vend Part: 00-0001 
           Part Numb: 00-0038 -> Vend Part: 00-0038 
           Part Numb: 00-0078 -> Vend Part: 00-0078 
@@ -41,10 +41,12 @@ Version:  01.01.00
           Part Numb: 01-0339 -> Vend Part: 01-0339 
           Part Numb: 01-0385 -> Vend Part: 01-0385 
           Part Numb: 01-0393 -> Vend Part: 01-0393 
+          Part Numb: 01-0398 -> Vend Part: 01-0398 
           Part Numb: 10-0006 -> Vend Part: 10-0006 
           Part Numb: 10-0011 -> Vend Part: 10-0011 
           Part Numb: 10-0026 -> Vend Part: 10-0026 
           Part Numb: 10-0030 -> Vend Part: 10-0030 
+          Part Numb: 10-0038 -> Vend Part: 10-0038 
           Part Numb: 10-0046 -> Vend Part: 10-0046 
           Part Numb: 10-0057 -> Vend Part: 10-0057 
           Part Numb: 10-0060 -> Vend Part: 10-0060 
@@ -65,6 +67,8 @@ Version:  01.01.00
           Part Numb: 40-0313 -> Vend Part: 40-0313 
           Part Numb: 40-0321 -> Vend Part: 40-0321 
           Part Numb: 40-0354 -> Vend Part: 40-0354 
+          Part Numb: 40-0364 -> Vend Part: 40-0364 
+          Part Numb: 40-0365 -> Vend Part: 40-0365 
           Part Numb: 50-0024 -> Vend Part: 50-0024 
           Part Numb: 50-0044 -> Vend Part: 50-0044 
           Part Numb: 70-0001 -> Vend Part: 70-0001 
@@ -76,6 +80,7 @@ Version:  01.01.00
           Part Numb: 70-0066 -> Vend Part: 70-0066 
           Part Numb: 70-0081 -> Vend Part: 70-0081 
           Part Numb: 70-0102 -> Vend Part: 70-0102 
+          Part Numb: 70-0112 -> Vend Part: 70-0112 
           Part Numb: 80-0073 -> Vend Part: 80-0073 
           Part Numb: 81-0007 -> Vend Part: 81-0007 
           Part Numb: 81-0013 -> Vend Part: 81-0013 
@@ -106,8 +111,8 @@ Version:  01.01.00
 
 
      The Common DataBase has been read and will be packaged.
-     Clustering 111 Symbols:
-             111  **********
+     Clustering 124 Symbols:
+             124  ***********************
              100  **************************************************
               50  **************************************************
      Clustering is Complete
@@ -116,8 +121,8 @@ Version:  01.01.00
 
 
 
-     90 nets were found containing 386 pins
-     106 components were found
+     97 nets were found containing 422 pins
+     117 components were found
 
      Creating a formatted Schematic Netlist (LogFiles\SchematicNetlist.txt)...
      A formatted Schematic Netlist has been created.
@@ -131,7 +136,7 @@ Version:  01.01.00
                                      NetLoad
                                      -------
 
-                        08:16 PM Sunday, January 06, 2019
+                      03:56 PM Wednesday, January 09, 2019
                        Job Name: Z:\LASMO\PCB\PCB\PCB.pcb
 
 
@@ -144,129 +149,17 @@ Version:  02.11.12
 	Schematic reference designator changes will be forward annotated.
 
 
-	WARNING:  Physical Net "F7SWCLK" is being renamed to "SWCLK" to match the change
-	in the schematic.
+     The following 7 components have not been placed:
 
-	WARNING:  Physical Net "F7SWDAT" is being renamed to "SWDIO" to match the change
-	in the schematic.
+        R42
+        R47
+        R48
+        R49
+        R50
+        R51
+        U10
 
-	WARNING:  Physical Net "GALVA_DRIVERX_IN+" is being renamed to "GALVA_DRIVERX_P" to match the change
-	in the schematic.
-
-	WARNING:  Physical Net "GALVA_DRIVERX_IN-" is being renamed to "GALVA_DRIVERX_N" to match the change
-	in the schematic.
-
-	WARNING:  Physical Net "F7RSTn_p02" is being renamed to "F7RSTn" to match the change
-	in the schematic.
-
-	WARNING:  Physical Net "GALVA_DRIVERY_IN+" is being renamed to "GALVA_DRIVERY_P" to match the change
-	in the schematic.
-
-	WARNING:  Physical Net "GALVA_DRIVERY_IN-" is being renamed to "GALVA_DRIVERY_N" to match the change
-	in the schematic.
-
-     WARNING:  One net "F7RSTn" is being reset to "(Net0)-1" because a
-      net by this name has already been entered in the layout.
-
-	WARNING:  "R10" is being forward annotated to "R11".
-
-     WARNING:  The "L080505" cell used by "L1" in Layout does not
-      not match the "L0805" cell specified in the schematic.
-
-     WARNING:  The "L080505" cell used by "L1" in the Layout is not
-      valid for a "50-0024" Part Number.
-     INFO: Cell "L080505" is being replaced by cell "L0805".
-
-	WARNING:  "D2" is being removed from the Layout since it is no longer in the schematic.
-
-     WARNING:  The "XAL50" cell used by "L2" in Layout does not
-      not match the "L0805" cell specified in the schematic.
-
-     WARNING:  The "XAL50" cell used by "L2" in the Layout is not
-      valid for a "50-0024" Part Number.
-     INFO: Cell "XAL50" is being replaced by cell "L0805".
-
-	WARNING:  "D3" is being removed from the Layout since it is no longer in the schematic.
-
-     WARNING:  The "R0805" cell used by "R3" in Layout does not
-      not match the "R0603" cell specified in the schematic.
-
-     WARNING:  The "R0805" cell used by "R3" in the Layout is not
-      valid for a "00-0098" Part Number.
-     INFO: Cell "R0805" is being replaced by cell "R0603".
-
-     WARNING:  The "R0805" cell used by "R4" in Layout does not
-      not match the "R0603" cell specified in the schematic.
-
-     WARNING:  The "R0805" cell used by "R4" in the Layout is not
-      valid for a "00-0098" Part Number.
-     INFO: Cell "R0805" is being replaced by cell "R0603".
-
-     WARNING:  The "C0402" cell used by "C5" in Layout does not
-      not match the "C0603" cell specified in the schematic.
-
-     WARNING:  The "C0402" cell used by "C5" in the Layout is not
-      valid for a "10-0120" Part Number.
-     INFO: Cell "C0402" is being replaced by cell "C0603".
-
-     WARNING:  The "R0805" cell used by "R5" in Layout does not
-      not match the "R0603" cell specified in the schematic.
-
-     WARNING:  The "R0805" cell used by "R5" in the Layout is not
-      valid for a "00-0098" Part Number.
-     INFO: Cell "R0805" is being replaced by cell "R0603".
-
-	WARNING:  "U5" is being removed from the Layout since it is no longer in the schematic.
-
-     WARNING:  The "C0402" cell used by "C6" in Layout does not
-      not match the "C0603" cell specified in the schematic.
-
-     WARNING:  The "C0402" cell used by "C6" in the Layout is not
-      valid for a "10-0112" Part Number.
-     INFO: Cell "C0402" is being replaced by cell "C0603".
-
-     WARNING:  The "R0805" cell used by "R6" in Layout does not
-      not match the "R0603" cell specified in the schematic.
-
-     WARNING:  The "R0805" cell used by "R6" in the Layout is not
-      valid for a "00-0098" Part Number.
-     INFO: Cell "R0805" is being replaced by cell "R0603".
-
-     WARNING:  The "C0402" cell used by "C7" in Layout does not
-      not match the "C0603" cell specified in the schematic.
-
-     WARNING:  The "C0402" cell used by "C7" in the Layout is not
-      valid for a "10-0057" Part Number.
-     INFO: Cell "C0402" is being replaced by cell "C0603".
-
-	WARNING:  The old version of "R11" is being removed from the Layout.
-
-     WARNING:  The "C0402" cell used by "C24" in the Layout is not
-      valid for a "10-0095" Part Number.
-     INFO: Cell "C0402" is being replaced by cell "C1210".
-
-	WARNING:  "C26" is being removed from the Layout since it is no longer in the schematic.
-
-	WARNING:  "C28" is being removed from the Layout since it is no longer in the schematic.
-
-	WARNING:  "C31" is being removed from the Layout since it is no longer in the schematic.
-
-	WARNING:  "C29" is being removed from the Layout since it is no longer in the schematic.
-
-	WARNING:  "C32" is being removed from the Layout since it is no longer in the schematic.
-
-	WARNING:  "R42" is being removed from the Layout since it is no longer in the schematic.
-
-     The following 6 components have not been placed:
-
-        C34
-        C35
-        J15
-        R10
-        R45
-        R46
-
-     Netload completed successfully with 38 warning(s).
+     Netload completed successfully with 0 warning(s).
      
      Back Annotating...
 
@@ -297,144 +190,17 @@ Version:  02.11.12
 
                  Beginning Netload on the Layout Design.
            ---------------------------------------------------
-	Broke back a trace from the point (87240912, 40455530).
-	Broke back a trace from the point (87240912, 42995530).
-	Assigned net GND to a trace which was originally on net RMII_RXD0.
-	Broke back a trace from the point (145833132, 21745004).
-	Assigned net VCC to a via which was originally on net VCC5V.
-	Assigned net VCC to a trace which was originally on net VCC5V.
-	Assigned net XSIG011257 to a trace which was originally on net VCC.
-	Assigned net XSIG011257 to a trace which was originally on net VCC.
-	Broke back a trace from the point (141738292, 15213705).
-	Broke back a trace from the point (142333132, 17245004).
-	Assigned net VCC to a via which was originally on net VCC5V.
-	Assigned net VCC to a trace which was originally on net VCC5V.
-	Assigned net RMII_REF_CLK to a trace which was originally on net VCC.
-	Broke back a trace from the point (152931074, 22923445).
-	Assigned net VCC to a trace which was originally on net VCC5V.
-	Assigned net VCC to a trace which was originally on net VCC5V.
-	Assigned net VCC to a via which was originally on net VCC5V.
-	Assigned net VCC to a trace which was originally on net VCC5V.
-	Assigned net VCC to a via which was originally on net VCC5V.
-	Assigned net VCC to a trace which was originally on net VCC5V.
-	Assigned net VCC to a trace which was originally on net VCC5V.
-	Assigned net VCC to a trace which was originally on net VCC5V.
-	Assigned net VDDA_ETH to a trace which was originally on net XSIG020047.
-	Assigned net VCC to a trace which was originally on net XSIG020047.
-	Broke back a trace from the point (158466456, 28167034).
-	Broke back a trace from the point (157763023, 26273273).
-	Assigned net VCC to a via which was originally on net VCC5V.
-	Assigned net VCC to a trace which was originally on net VCC5V.
-	Assigned net XSIG020150 to a trace which was originally on net LED2.
-	Assigned net XSIG020150 to a via which was originally on net LED2.
-	Assigned net XSIG020150 to a trace which was originally on net LED2.
-	Assigned net XSIG020150 to a trace which was originally on net LED2.
-	Broke back a trace from the point (171781680, 23041099).
-	Broke back a trace from the point (156701496, 19260132).
-	Assigned net XSIG020172 to a trace which was originally on net RMII_CRS_DV.
-	Broke back a trace from the point (150330748, 21267966).
-	Broke back a trace from the point (152902276, 19282218).
-	Assigned net RMII_CRS_DV to a trace which was originally on net XSIG020117.
-	Broke back a trace from the point (154302276, 19282218).
-	Assigned net SD_D3 to a trace which was originally on net XSIG020135.
-	Broke back a trace from the point (158263023, 22373273).
-	Assigned net XSIG040065 to a trace which was originally on net VCC15V.
-	Broke back a trace from the point (165394973, 62710744).
-	Assigned net VCC15V to a trace which was originally on net XSIG040077.
-	Assigned net VCC15V to a trace which was originally on net XSIG040077.
-	Assigned net RMII_RX_D0 to a trace which was originally on net XSIG020113.
-	Broke back a trace from the point (154346896, 26213592).
-	Assigned net RMII_RX_D1 to a trace which was originally on net RMII_RXD1.
-	Broke back a trace from the point (152954939, 28095569).
-	Assigned net RMII_RX_D1 to a trace which was originally on net XSIG020116.
-	Broke back a trace from the point (154354939, 28095569).
-	Assigned net RMII_TX_D0 to a trace which was originally on net RMII_TXD0.
-	Assigned net RMII_TX_D0 to a via which was originally on net RMII_TXD0.
-	Assigned net RMII_TX_D0 to a trace which was originally on net RMII_TXD0.
-	Assigned net RMII_TX_D0 to a via which was originally on net RMII_TXD0.
-	Assigned net RMII_TX_D0 to a trace which was originally on net RMII_TXD0.
-	Assigned net RMII_TX_D1 to a trace which was originally on net RMII_TXD1.
-	Assigned net RMII_TX_D1 to a via which was originally on net RMII_TXD1.
-	Assigned net RMII_TX_D1 to a trace which was originally on net RMII_TXD1.
-	Assigned net RMII_TX_D1 to a via which was originally on net RMII_TXD1.
-	Assigned net RMII_TX_D1 to a trace which was originally on net RMII_TXD1.
-	Assigned net VDDA_ETH to a trace which was originally on net VDDA.
-	Assigned net VDDA_ETH to a trace which was originally on net VDDA.
-	Assigned net VDDA_ETH to a trace which was originally on net VDDA.
-	Assigned net VDDA_ETH to a trace which was originally on net VDDA.
-	Assigned net VDDA_ETH to a trace which was originally on net VDDA.
-	Assigned net VDDA_ETH to a trace which was originally on net VDDA.
-	Assigned net VDDA_ETH to a trace which was originally on net VDDA.
-	Assigned net VDDA_ETH to a trace which was originally on net VDDA.
-	Assigned net VDDA_ETH to a trace which was originally on net VDDA.
-	Assigned net VDDA_ETH to a trace which was originally on net VDDA.
-	Assigned net XSIG020183 to a trace which was originally on net XSIG020121.
-	Assigned net VDDA_ETH to a trace which was originally on net XSIG020121.
-	Broke back a trace from the point (162818256, 40176156).
-	Broke back a trace from the point (158263023, 26273273).
-	Assigned net XSIG020181 to a trace which was originally on net XSIG020122.
-	Assigned net VDDA_ETH to a trace which was originally on net XSIG020122.
-	Broke back a trace from the point (162818256, 30776156).
-	Broke back a trace from the point (158763023, 26273273).
-	Assigned net VDDA_ETH to a trace which was originally on net XSIG020100.
-	Broke back a trace from the point (189784989, 34351998).
-	Assigned net VDDA_ETH to a trace which was originally on net XSIG020132.
-	Broke back a trace from the point (189784989, 24241998).
-	Assigned net XSIG020149 to a trace which was originally on net LED1.
-	Assigned net XSIG020149 to a via which was originally on net LED1.
-	Assigned net XSIG020149 to a trace which was originally on net LED1.
-	Assigned net XSIG020156 to a trace which was originally on net XSIG020048.
-	Broke back a trace from the point (163014636, 25533593).
-	Assigned net XSIG020192 to a trace which was originally on net XSIG020019.
-	Assigned net XSIG020192 to a trace which was originally on net XSIG020019.
-	Assigned net XSIG020192 to a via which was originally on net XSIG020019.
-	Assigned net XSIG020192 to a trace which was originally on net XSIG020019.
-	Assigned net XSIG020194 to a trace which was originally on net XSIG020020.
-	Assigned net XSIG020194 to a trace which was originally on net XSIG020020.
-	Assigned net XSIG020194 to a via which was originally on net XSIG020020.
-	Assigned net XSIG020194 to a trace which was originally on net XSIG020020.
-	Assigned net XSIG020196 to a trace which was originally on net XSIG020058.
-	Assigned net XSIG020196 to a trace which was originally on net XSIG020058.
-	Assigned net XSIG020196 to a via which was originally on net XSIG020058.
-	Assigned net XSIG020196 to a trace which was originally on net XSIG020058.
-	Assigned net XSIG020198 to a trace which was originally on net XSIG020052.
-	Assigned net XSIG020198 to a trace which was originally on net XSIG020052.
-	Assigned net XSIG020198 to a via which was originally on net XSIG020052.
-	Assigned net XSIG020198 to a trace which was originally on net XSIG020052.
-	Assigned net XSIG020212 to a trace which was originally on net XSIG020137.
 
 Some nets were completely deleted from the Layout Design....
-	Deleted net (Net0)-1, which has no pins, from the Layout Design.
-	Deleted net LED1, which has no pins, from the Layout Design.
-	Deleted net LED2, which has no pins, from the Layout Design.
-	Deleted net MII_RX_ER, which has no pins, from the Layout Design.
-	Deleted net RMII_RXD0, which has no pins, from the Layout Design.
-	Deleted net RMII_RXD1, which has no pins, from the Layout Design.
-	Deleted net RMII_TXD0, which has no pins, from the Layout Design.
-	Deleted net RMII_TXD1, which has no pins, from the Layout Design.
-	Deleted net VDDA, which has no pins, from the Layout Design.
-	Deleted net XSIG020019, which has no pins, from the Layout Design.
-	Deleted net XSIG020020, which has no pins, from the Layout Design.
-	Deleted net XSIG020047, which has no pins, from the Layout Design.
-	Deleted net XSIG020048, which has no pins, from the Layout Design.
-	Deleted net XSIG020052, which has no pins, from the Layout Design.
-	Deleted net XSIG020058, which has no pins, from the Layout Design.
-	Deleted net XSIG020100, which has no pins, from the Layout Design.
-	Deleted net XSIG020113, which has no pins, from the Layout Design.
-	Deleted net XSIG020116, which has no pins, from the Layout Design.
-	Deleted net XSIG020117, which has no pins, from the Layout Design.
-	Deleted net XSIG020121, which has no pins, from the Layout Design.
-	Deleted net XSIG020122, which has no pins, from the Layout Design.
-	Deleted net XSIG020132, which has no pins, from the Layout Design.
-	Deleted net XSIG020135, which has no pins, from the Layout Design.
-	Deleted net XSIG020137, which has no pins, from the Layout Design.
-	Deleted net XSIG040066, which has no pins, from the Layout Design.
-	Deleted net XSIG040073, which has no pins, from the Layout Design.
-	Deleted net XSIG040075, which has no pins, from the Layout Design.
-	Deleted net XSIG040077, which has no pins, from the Layout Design.
+	Deleted net LASER_BLUE, which has no pins, from the Layout Design.
+	Deleted net LASER_GREEN, which has no pins, from the Layout Design.
+	Deleted net LASER_RED, which has no pins, from the Layout Design.
+	Deleted net VCC-15V, which has no pins, from the Layout Design.
+	Deleted net VCC15V, which has no pins, from the Layout Design.
+	Deleted net XSIG030038, which has no pins, from the Layout Design.
 
 Forward-Annotation on the Layout Design has been successfully completed.
 
-There were 80 reassignments of nets.
-There were 25 traces broken back.
-There were 28 nets removed from the Layout Design.
+There were 0 reassignments of nets.
+There were 0 traces broken back.
+There were 6 nets removed from the Layout Design.
