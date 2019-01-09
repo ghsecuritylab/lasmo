@@ -2,8 +2,8 @@
                                  BackAnnotation
                                  --------------
 
-                       06:29 PM Tuesday, December 18, 2018
-                   Job Name: D:\telecom\lasmo\PCB\PCB\PCB.pcb
+                       12:08 AM Thursday, January 10, 2019
+                       Job Name: Z:\LASMO\PCB\PCB\PCB.pcb
 
 
   Updating Logic Database...
@@ -25,7 +25,7 @@
      Updating the CDB Properties
      Finished updating the CDB Properties
 
-     Updating LogicDB Version from 3 to 4.
+     Updating LogicDB Version from 2 to 3.
 
      Creating a formatted Schematic Netlist (LogFiles\AfterBakAnnoNetlist.txt)...
      A formatted Schematic Netlist has been created.

@@ -2,7 +2,7 @@
                                Forward Annotation
                                ------------------
 
-                      03:55 PM Wednesday, January 09, 2019
+                       12:16 AM Thursday, January 10, 2019
                        Job Name: Z:\LASMO\PCB\PCB\PCB.pcb
 
 
@@ -23,7 +23,7 @@ Version:  01.01.00
 
      Target PDB Name: Work\Layout_Temp\PartsDB.pdb
 
-     Number of Part Numbers: 60
+     Number of Part Numbers: 61
           Part Numb: 00-0001 -> Vend Part: 00-0001 
           Part Numb: 00-0038 -> Vend Part: 00-0038 
           Part Numb: 00-0078 -> Vend Part: 00-0078 
@@ -43,6 +43,7 @@ Version:  01.01.00
           Part Numb: 01-0393 -> Vend Part: 01-0393 
           Part Numb: 01-0398 -> Vend Part: 01-0398 
           Part Numb: 10-0006 -> Vend Part: 10-0006 
+          Part Numb: 10-0007 -> Vend Part: 10-0007 
           Part Numb: 10-0011 -> Vend Part: 10-0011 
           Part Numb: 10-0026 -> Vend Part: 10-0026 
           Part Numb: 10-0030 -> Vend Part: 10-0030 
@@ -52,10 +53,10 @@ Version:  01.01.00
           Part Numb: 10-0060 -> Vend Part: 10-0060 
           Part Numb: 10-0068 -> Vend Part: 10-0068 
           Part Numb: 10-0070 -> Vend Part: 10-0070 
-          Part Numb: 10-0075 -> Vend Part: 10-0075 
           Part Numb: 10-0095 -> Vend Part: 10-0095 
-          Part Numb: 10-0105 -> Vend Part: 10-0105 
+          Part Numb: 10-0110 -> Vend Part: 10-0110 
           Part Numb: 10-0112 -> Vend Part: 10-0112 
+          Part Numb: 10-0113 -> Vend Part: 10-0113 
           Part Numb: 10-0120 -> Vend Part: 10-0120 
           Part Numb: 20-0019 -> Vend Part: 20-0019 
           Part Numb: 20-0035 -> Vend Part: 20-0035 
@@ -75,7 +76,7 @@ Version:  01.01.00
           Part Numb: 70-0003 -> Vend Part: 70-0003 
           Part Numb: 70-0010 -> Vend Part: 70-0010 
           Part Numb: 70-0011 -> Vend Part: 70-0011 
-          Part Numb: 70-0015 -> Vend Part: 70-0015 
+          Part Numb: 70-0053 -> Vend Part: 70-0053 
           Part Numb: 70-0058 -> Vend Part: 70-0058 
           Part Numb: 70-0066 -> Vend Part: 70-0066 
           Part Numb: 70-0081 -> Vend Part: 70-0081 
@@ -83,7 +84,7 @@ Version:  01.01.00
           Part Numb: 70-0112 -> Vend Part: 70-0112 
           Part Numb: 80-0073 -> Vend Part: 80-0073 
           Part Numb: 81-0007 -> Vend Part: 81-0007 
-          Part Numb: 81-0013 -> Vend Part: 81-0013 
+          Part Numb: 83-0028 -> Vend Part: 83-0028 
 
      Number of Part Names: 0
 
@@ -111,8 +112,8 @@ Version:  01.01.00
 
 
      The Common DataBase has been read and will be packaged.
-     Clustering 124 Symbols:
-             124  ***********************
+     Clustering 126 Symbols:
+             126  *************************
              100  **************************************************
               50  **************************************************
      Clustering is Complete
@@ -121,8 +122,8 @@ Version:  01.01.00
 
 
 
-     97 nets were found containing 422 pins
-     117 components were found
+     97 nets were found containing 425 pins
+     119 components were found
 
      Creating a formatted Schematic Netlist (LogFiles\SchematicNetlist.txt)...
      A formatted Schematic Netlist has been created.
@@ -136,7 +137,7 @@ Version:  01.01.00
                                      NetLoad
                                      -------
 
-                      03:56 PM Wednesday, January 09, 2019
+                       12:16 AM Thursday, January 10, 2019
                        Job Name: Z:\LASMO\PCB\PCB\PCB.pcb
 
 
@@ -149,15 +150,9 @@ Version:  02.11.12
 	Schematic reference designator changes will be forward annotated.
 
 
-     The following 7 components have not been placed:
+     The following 1 components have not been placed:
 
-        R42
-        R47
-        R48
-        R49
-        R50
-        R51
-        U10
+        R44
 
      Netload completed successfully with 0 warning(s).
      
@@ -191,16 +186,8 @@ Version:  02.11.12
                  Beginning Netload on the Layout Design.
            ---------------------------------------------------
 
-Some nets were completely deleted from the Layout Design....
-	Deleted net LASER_BLUE, which has no pins, from the Layout Design.
-	Deleted net LASER_GREEN, which has no pins, from the Layout Design.
-	Deleted net LASER_RED, which has no pins, from the Layout Design.
-	Deleted net VCC-15V, which has no pins, from the Layout Design.
-	Deleted net VCC15V, which has no pins, from the Layout Design.
-	Deleted net XSIG030038, which has no pins, from the Layout Design.
-
 Forward-Annotation on the Layout Design has been successfully completed.
 
 There were 0 reassignments of nets.
 There were 0 traces broken back.
-There were 6 nets removed from the Layout Design.
+There were 0 nets removed from the Layout Design.

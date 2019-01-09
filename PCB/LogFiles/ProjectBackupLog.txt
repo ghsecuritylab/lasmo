@@ -85,3 +85,14 @@
 [2019-01-09 15.49.23] Successfully migrated iCDB upgrade backup file [2019-01-09 11.33.55-4452] to Project Backup format [2019-01-09 11.33.55 - consDefUpgr.zip]
 [2019-01-09 15.49.23] WARNING: Ignoring iCDB backup file [2018-12-05 13.10.15-2064-pbmf.zip] - will not be migrated.
 [2019-01-09 15.49.24] Successfully created [AutoSave] backup [2019-01-09 15.49.23 - auto.zip] requested by [DESKTOP-D6MOGOB:alexis].
+[2019-01-09 21.58.58] Migrating iCDB upgrade backups from directory [PCB\Default\default.icdb\cdbback] to Project Backup format.
+[2019-01-09 21.58.58] Migrating iCDB upgrade backup file [2019-01-09 21.58.24-8976].
+[2019-01-09 21.58.59] Successfully created [Constraints Definition Upgrade] backup [2019-01-09 21.58.24 - consDefUpgr.zip] requested by [DESKTOP-D6MOGOB:alexis].
+[2019-01-09 21.58.59] Removing excessive [Constraints Definition Upgrade] backup file [Z:\LASMO\PCB\Default\ProjectBackup\backups\2019-01-06 13.05.07 - consDefUpgr.zip].
+[2019-01-09 21.58.59] [Constraints Definition Upgrade] backup file [PCB\Default\ProjectBackup\backups\2019-01-06 13.05.07 - consDefUpgr.zip] removed.
+[2019-01-09 21.58.59] Migrated iCDB content backup file [cdbback\2019-01-09 21.58.24-8976.zip] removed.
+[2019-01-09 21.58.59] Successfully migrated iCDB upgrade backup file [2019-01-09 21.58.24-8976] to Project Backup format [2019-01-09 21.58.24 - consDefUpgr.zip]
+[2019-01-09 21.58.59] WARNING: Ignoring iCDB backup file [2018-12-05 13.10.15-2064-pbmf.zip] - will not be migrated.
+[2019-01-09 21.59.00] Successfully created [AutoSave] backup [2019-01-09 21.58.59 - auto.zip] requested by [DESKTOP-D6MOGOB:alexis].
+[2019-01-09 21.59.00] Removing excessive [AutoSave] backup file [Z:\LASMO\PCB\Default\ProjectBackup\backups\2019-01-06 20.15.35 - auto.zip].
+[2019-01-09 21.59.00] [AutoSave] backup file [PCB\Default\ProjectBackup\backups\2019-01-06 20.15.35 - auto.zip] removed.
