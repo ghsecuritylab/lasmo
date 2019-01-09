@@ -2,13 +2,13 @@
                                     Packager
                                     --------
 
-                        08:16 PM Sunday, January 06, 2019
+                      01:11 PM Wednesday, January 09, 2019
                          Job Name: Z:\LASMO\PCB\PCB.prj
 
 
      Packager     Version: 020806.00
 
-        Commandline is: ""C:\mentorgraphics\EEVX.2.4\SDD_HOME\wg\win32\bin\package.exe"  -jZ:\LASMO\PCB\PCB.prj -CleanBuild -NoFill"
+        Commandline is: "C:\mentorgraphics\EEVX.2.4\SDD_HOME\wg\win32\bin\package "-uZ:\LASMO\PCB\Default\default.icdb" -k -CleanBuild -W1PinNets "-jZ:\LASMO\PCB\PCB.prj" "
 
      The Common Database is at "Z:\LASMO\PCB\Default\default.icdb".
 
@@ -37,8 +37,10 @@
      Properties that have been checked off in the Property Definition Editor
       found at Library Manager/Common Properties will be checked for value
       differences between the PartsDB and the non-null properties on symbols.
-     Those properties checked off (other than Part Number)
-      will not be transferred from the PartsDB to symbols.
+     Those properties checked off will be transferred from the PartsDB to all
+      symbols, both packaged and unpackaged.  However, the property values
+      transferred will be limited to the precision specified in the Notation
+      Settings dialog.
      The following properties were checked off in the Property Definition Editor:
        "Parametric"
        "Value2"
@@ -77,11 +79,59 @@
 
 
 
+    WARNING: Block Schematic1, Page 3, Symbol XCMP1056:
+     Reference designator removal.
+     The Reference Designator "J" is being removed
+     from Symbol.  Such 'all alpha' designators that are
+     not instance properties are usually built into symbols and are 
+     not intended as a request to be packaged in the same pack with 
+     symbols of like designators.
+
+    WARNING: Block Schematic1, Page 3, Symbol XCMP1058:
+     Reference designator removal.
+     The Reference Designator "J" is being removed
+     from Symbol.  Such 'all alpha' designators that are
+     not instance properties are usually built into symbols and are 
+     not intended as a request to be packaged in the same pack with 
+     symbols of like designators.
+
+    WARNING: Block Schematic1, Page 4, Symbol XCMP1050:
+     Reference designator removal.
+     The Reference Designator "U" is being removed
+     from Symbol.  Such 'all alpha' designators that are
+     not instance properties are usually built into symbols and are 
+     not intended as a request to be packaged in the same pack with 
+     symbols of like designators.
+
+    WARNING: Block Schematic1, Page 4, Symbol XCMP1051:
+     Reference designator removal.
+     The Reference Designator "U" is being removed
+     from Symbol.  Such 'all alpha' designators that are
+     not instance properties are usually built into symbols and are 
+     not intended as a request to be packaged in the same pack with 
+     symbols of like designators.
+
+    WARNING: Block Schematic1, Page 4, Symbol XCMP1053:
+     Reference designator removal.
+     The Reference Designator "C" is being removed
+     from Symbol.  Such 'all alpha' designators that are
+     not instance properties are usually built into symbols and are 
+     not intended as a request to be packaged in the same pack with 
+     symbols of like designators.
+
+    WARNING: Block Schematic1, Page 4, Symbol XCMP1054:
+     Reference designator removal.
+     The Reference Designator "C" is being removed
+     from Symbol.  Such 'all alpha' designators that are
+     not instance properties are usually built into symbols and are 
+     not intended as a request to be packaged in the same pack with 
+     symbols of like designators.
+
      Common Data Base has been read
 
      Target PDB Name: Integration\LocalPartsDB.pdb
 
-     Number of Part Numbers: 55
+     Number of Part Numbers: 59
           Part Numb: 00-0001 -> Vend Part: 00-0001 
           Part Numb: 00-0038 -> Vend Part: 00-0038 
           Part Numb: 00-0078 -> Vend Part: 00-0078 
@@ -103,6 +153,7 @@
           Part Numb: 10-0011 -> Vend Part: 10-0011 
           Part Numb: 10-0026 -> Vend Part: 10-0026 
           Part Numb: 10-0030 -> Vend Part: 10-0030 
+          Part Numb: 10-0038 -> Vend Part: 10-0038 
           Part Numb: 10-0046 -> Vend Part: 10-0046 
           Part Numb: 10-0057 -> Vend Part: 10-0057 
           Part Numb: 10-0060 -> Vend Part: 10-0060 
@@ -123,6 +174,8 @@
           Part Numb: 40-0313 -> Vend Part: 40-0313 
           Part Numb: 40-0321 -> Vend Part: 40-0321 
           Part Numb: 40-0354 -> Vend Part: 40-0354 
+          Part Numb: 40-0364 -> Vend Part: 40-0364 
+          Part Numb: 40-0365 -> Vend Part: 40-0365 
           Part Numb: 50-0024 -> Vend Part: 50-0024 
           Part Numb: 50-0044 -> Vend Part: 50-0044 
           Part Numb: 70-0001 -> Vend Part: 70-0001 
@@ -134,6 +187,7 @@
           Part Numb: 70-0066 -> Vend Part: 70-0066 
           Part Numb: 70-0081 -> Vend Part: 70-0081 
           Part Numb: 70-0102 -> Vend Part: 70-0102 
+          Part Numb: 70-0112 -> Vend Part: 70-0112 
           Part Numb: 80-0073 -> Vend Part: 80-0073 
           Part Numb: 81-0007 -> Vend Part: 81-0007 
           Part Numb: 81-0013 -> Vend Part: 81-0013 
@@ -158,8 +212,8 @@
      No errors in Existing Schematic Packaging.
 
      The Common DataBase has been read and will be packaged.
-     Clustering 111 Symbols:
-             111  **********
+     Clustering 115 Symbols:
+             115  **************
              100  **************************************************
               50  **************************************************
      Clustering is Complete
@@ -168,8 +222,8 @@
 
 
 
-     90 nets were found containing 386 pins
-     106 components were found
+     94 nets were found containing 396 pins
+     110 components were found
 
      Parsed netlist - Augmenting..
 
@@ -177,13 +231,20 @@
 
      Numbering Nets....
 
+    After augmentation of supply pins, there are 94 nets where 1 nets have only one pin:
+      INFO:  Block Schematic1 Page 3, Pin OUT3 on Symbol XCMP781: Single pin on net XSIG030038.
+
+
      Checking Pins....
 
-     Packaging has been successfully tested with no errors or warnings.
+     Testing of Packaging has been completed with 6 warnings.
+      Erroneous results may occur if not fixed.
 
      Updating the Common DataBase
 
      A BAM WasIs List: Integration\CDBBackAnno.bam has been created.
+     There have been 6 reference designator changes.
+     The BAM file will list all of the from-to changes.
 
 The Common DataBase has been successfully updated.
 
@@ -193,3 +254,5 @@ The Common DataBase has been successfully updated.
      An unused pin and gate report has been written to Integration\UnusedPins.txt
      An unused gate report for gates not in schematic has been written to Integration\UnusedGates.txt
      An augmented pin report has been written to Integration\AugmentedPins.txt.
+
+     There have been 6 warnings.
