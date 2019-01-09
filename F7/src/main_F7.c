@@ -2,9 +2,10 @@
 #include "hal.h"
 #include "RTT/SEGGER_RTT.h"
 #include "RTT/SEGGER_RTT_Conf.h"
-#include "F7/galva.h"
 
+#include "F7/galva.h"
 #include "F7/sd.h"
+#include "F7/max5105.h"
 
 int main(void) {
   halInit();
@@ -18,6 +19,8 @@ int main(void) {
   lsm_galva_test();
 
   lsm_sd_init();
+
+  lsm_max5105_init();
 
   while(1){
     chThdSleepMilliseconds(10);
