@@ -2,7 +2,7 @@
                                     Packager
                                     --------
 
-                       12:16 AM Thursday, January 10, 2019
+                       01:02 PM Thursday, January 10, 2019
                          Job Name: Z:\LASMO\PCB\PCB.prj
 
 
@@ -82,7 +82,6 @@
      Target PDB Name: Integration\LocalPartsDB.pdb
 
      Number of Part Numbers: 61
-          Part Numb: 00-0001 -> Vend Part: 00-0001 
           Part Numb: 00-0038 -> Vend Part: 00-0038 
           Part Numb: 00-0078 -> Vend Part: 00-0078 
           Part Numb: 00-0081 -> Vend Part: 00-0081 
@@ -108,15 +107,16 @@
           Part Numb: 10-0038 -> Vend Part: 10-0038 
           Part Numb: 10-0046 -> Vend Part: 10-0046 
           Part Numb: 10-0057 -> Vend Part: 10-0057 
-          Part Numb: 10-0060 -> Vend Part: 10-0060 
           Part Numb: 10-0068 -> Vend Part: 10-0068 
           Part Numb: 10-0070 -> Vend Part: 10-0070 
           Part Numb: 10-0095 -> Vend Part: 10-0095 
+          Part Numb: 10-0106 -> Vend Part: 10-0106 
           Part Numb: 10-0110 -> Vend Part: 10-0110 
           Part Numb: 10-0112 -> Vend Part: 10-0112 
           Part Numb: 10-0113 -> Vend Part: 10-0113 
           Part Numb: 10-0120 -> Vend Part: 10-0120 
           Part Numb: 20-0019 -> Vend Part: 20-0019 
+          Part Numb: 20-0022 -> Vend Part: 20-0022 
           Part Numb: 20-0035 -> Vend Part: 20-0035 
           Part Numb: 20-0037 -> Vend Part: 20-0037 
           Part Numb: 30-0025 -> Vend Part: 30-0025 
@@ -164,8 +164,8 @@
      No errors in Existing Schematic Packaging.
 
      The Common DataBase has been read and will be packaged.
-     Clustering 126 Symbols:
-             126  *************************
+     Clustering 129 Symbols:
+             129  ****************************
              100  **************************************************
               50  **************************************************
      Clustering is Complete
@@ -174,8 +174,8 @@
 
 
 
-     97 nets were found containing 425 pins
-     119 components were found
+     97 nets were found containing 433 pins
+     121 components were found
 
      Parsed netlist - Augmenting..
 

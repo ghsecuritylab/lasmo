@@ -1,11 +1,10 @@
 
-Schematic unused pins from : Packager  10-Jan-2019  00:16
+Schematic unused pins from : Packager  10-Jan-2019  13:02
 
 ------------------------------------------------------------------------
             Part/Reference             |          Unused pins
                                        |  (G) - Gate, (P) - Partial Gate
 ------------------------------------------------------------------------
- Part 00-0001                          |
  Part 00-0038                          |
  Part 00-0078                          |
  Part 00-0081                          |
@@ -31,22 +30,23 @@ Schematic unused pins from : Packager  10-Jan-2019  00:16
  Part 10-0038                          |
  Part 10-0046                          |
  Part 10-0057                          |
- Part 10-0060                          |
  Part 10-0068                          |
  Part 10-0070                          |
  Part 10-0095                          |
+ Part 10-0106                          |
  Part 10-0110                          |
  Part 10-0112                          |
  Part 10-0113                          |
  Part 10-0120                          |
  Part 20-0019                          |
+ Part 20-0022                          |
  Part 20-0035                          |
  Part 20-0037                          |
  Part 30-0025                          |
  Part 40-0003                          |
   U8                                   | (P)  5
  Part 40-0153                          |
-  U10                                  | (P)  3 2 1
+  U10                                  | (P)  1
  Part 40-0293                          |
   U1                                   | (P)  25 30 67 68 69 92 93 95
                                        |  96 46 15 17 18 63 64 7 8 9

@@ -1,12 +1,1 @@
-Unused gates that are not in schematic from : Packager  10-Jan-2019  00:16
-BEGIN_PART_NUM 40-0153
-BEGIN_REF U10
-BEGIN_COMMITTED_GATE
-COMMON_PIN 11 GND
-PIN 3
-PIN 2
-PIN 1
-COMMON_PIN 4 VCC12V
-END_GATE
-END_REF
-END_PART_NUM
+Unused gates that are not in schematic from : Packager  10-Jan-2019  13:02
