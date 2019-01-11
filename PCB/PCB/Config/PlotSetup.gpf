@@ -1,7 +1,7 @@
 .FILETYPE GerberPlotSetupFile
 .VERSION "VB99.0"
-.CREATOR "Expedition PCB Gerber Output"
-.DATE "Tuesday, December 20, 2016 02:00 PM"
+.CREATOR "Xpedition Layout Gerber Output"
+.DATE "Friday, January 11, 2019 01:49 AM"
 
 .BaseUnits "1NM"
 
@@ -32,6 +32,29 @@
  ..HeaderText
    ...CommentLine "Mentor Graphics Example Gerber Output Definition"
  ..BoardItem SoldermaskBottom
+ ..CellType Buried
+ ..CellType Connector
+ ..CellType DiscreteAxial
+ ..CellType DiscreteChip
+ ..CellType DiscreteOther
+ ..CellType DiscreteRadial
+ ..CellType EdgeConnector
+ ..CellType EmbeddedPassive
+ ..CellType General
+ ..CellType Graphic
+ ..CellType ICBareDie
+ ..CellType ICBGA
+ ..CellType ICDIP
+ ..CellType ICFlipChip
+ ..CellType ICLCC
+ ..CellType ICOther
+ ..CellType ICPGA
+ ..CellType ICPLCC
+ ..CellType ICSIP
+ ..CellType ICSOIC
+ ..CellType Jumper
+ ..CellType Mechanical
+ ..CellType TestPoint
 
 .GerberOutputFile "SolderPasteTop.gdo"
  ..ProcessFile Yes
@@ -48,66 +71,6 @@
  ..HeaderText
    ...CommentLine "Mentor Graphics Example Gerber Output Definition"
  ..BoardItem SolderpasteBottom
-
-.GerberOutputFile "SilkScreenTop.gdo"
- ..ProcessFile Yes
- ..FlashPads Yes
- ..GerberOutputPath "Output\\Gerber\\SilkScreenTop.gdo"
- ..BoardItem AlteredSilkscreenTop
- ..BoardItem BoardOutline
- ..CellType Buried
- ..CellType Connector
- ..CellType DiscreteAxial
- ..CellType DiscreteChip
- ..CellType DiscreteOther
- ..CellType DiscreteRadial
- ..CellType EdgeConnector
- ..CellType EmbeddedPassive
- ..CellType General
- ..CellType Graphic
- ..CellType ICBareDie
- ..CellType ICBGA
- ..CellType ICDIP
- ..CellType ICFlipChip
- ..CellType ICLCC
- ..CellType ICOther
- ..CellType ICPGA
- ..CellType ICPLCC
- ..CellType ICSIP
- ..CellType ICSOIC
- ..CellType Jumper
- ..CellType Mechanical
- ..CellType TestPoint
-
-.GerberOutputFile "SilkScreenBottom.gdo"
- ..ProcessFile Yes
- ..FlashPads Yes
- ..GerberOutputPath "Output\\Gerber\\SilkScreenBottom.gdo"
- ..BoardItem AlteredSilkscreenBottom
- ..BoardItem BoardOutline
- ..CellType Buried
- ..CellType Connector
- ..CellType DiscreteAxial
- ..CellType DiscreteChip
- ..CellType DiscreteOther
- ..CellType DiscreteRadial
- ..CellType EdgeConnector
- ..CellType EmbeddedPassive
- ..CellType General
- ..CellType Graphic
- ..CellType ICBareDie
- ..CellType ICBGA
- ..CellType ICDIP
- ..CellType ICFlipChip
- ..CellType ICLCC
- ..CellType ICOther
- ..CellType ICPGA
- ..CellType ICPLCC
- ..CellType ICSIP
- ..CellType ICSOIC
- ..CellType Jumper
- ..CellType Mechanical
- ..CellType TestPoint
 
 .GerberOutputFile "EtchLayerTop.gdo"
  ..ProcessFile Yes

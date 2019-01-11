@@ -2,15 +2,11 @@
                                 Circuit Paste log
                                 -----------------
 
-                       01:56 PM Sunday, November 12, 2017
-                   Job Name: C:\t\Project_template\PCB\PCB.pcb
+                        01:28 AM Friday, January 11, 2019
+                       Job Name: Z:\LASMO\PCB\PCB\PCB.pcb
 
          Clipboard: C:\Users\alexi\AppData\Local\Temp\mgc_icc_clipboard_tmp\Layout\
     
-
-    UNMAPPED NETS:
-           GND
-    1 unmapped net(s) found
 
 
 Checking Ref Des Map
@@ -56,8 +52,7 @@ Loading net items
 -----------------
 
 Loading of Net items complete
-    1 objects were created
-        1 plane shapes
+    0 objects were created
 
 
 Loading Fiducials
@@ -78,7 +73,7 @@ Loading Texts
 -------------
 
 Text loading complete
-    0 texts were created
+    1 texts were created
 
 
 Loading Drawings

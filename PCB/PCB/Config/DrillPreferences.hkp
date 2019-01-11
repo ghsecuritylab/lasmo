@@ -1,7 +1,7 @@
 .FILETYPE NC_DRILL_PREFERENCES
-.VERSION "WG2004"
+.VERSION "2.0"
 .CREATOR "Mentor Graphics Corporation"
-.DATE "Tuesday December 20 13:59:55 2016"
+.DATE "Friday January 11 01:43:12 2019"
 
 .Units mm
 
@@ -56,11 +56,25 @@
   ..FCFData
    ...HoleFCF "Rnd 0.3 +Tol 0.05 -Tol -0.1"
     ....valFCF "" "" "" "" ""
+   ...HoleFCF "Rnd 0.9 +Tol 0.1 -Tol -0.05"
+    ....valFCF "" "" "" "" ""
    ...HoleFCF "Rnd 1 +Tol 0.1 -Tol -0.05"
     ....valFCF "" "" "" "" ""
-   ...HoleFCF "Rnd 1.1 +Tol 0.15 -Tol -0.1"
+   ...HoleFCF "Rnd 1.3 +/-Tol 0.1 Non-Plated"
     ....valFCF "" "" "" "" ""
    ...HoleFCF "Rnd 1.5 +/-Tol 0.1 Non-Plated"
+    ....valFCF "" "" "" "" ""
+   ...HoleFCF "Rnd 1.5 +Tol 0.15 -Tol -0.1"
+    ....valFCF "" "" "" "" ""
+   ...HoleFCF "Rnd 3.4 +/-Tol 0.025 Non-Plated"
+    ....valFCF "" "" "" "" ""
+   ...HoleFCF "Slot 1x2.8 +Tol 0.15 -Tol -0.1"
+    ....valFCF "" "" "" "" ""
+   ...HoleFCF "Slot 2.8x1 +Tol 0.15 -Tol -0.1"
+    ....valFCF "" "" "" "" ""
+   ...HoleFCF "Slot 2.8x1.2 +Tol 0.15 -Tol -0.1"
+    ....valFCF "" "" "" "" ""
+   ...HoleFCF "Slot 3.3x1 +Tol 0.15 -Tol -0.1"
     ....valFCF "" "" "" "" ""
 .SymbolScheme    "Default"
 .SchemeLocation    "Loc"

@@ -101,3 +101,8 @@
 [2019-01-10 11.42.54] Successfully created [AutoSave] backup [2019-01-10 11.42.52 - auto.zip] requested by [DESKTOP-D6MOGOB:alexis].
 [2019-01-10 11.42.54] Removing excessive [AutoSave] backup file [Z:\LASMO\PCB\Default\ProjectBackup\backups\2019-01-07 12.49.36 - auto.zip].
 [2019-01-10 11.42.54] [AutoSave] backup file [PCB\Default\ProjectBackup\backups\2019-01-07 12.49.36 - auto.zip] removed.
+[2019-01-10 22.34.45] Migrating iCDB upgrade backups from directory [PCB\Default\default.icdb\cdbback] to Project Backup format.
+[2019-01-10 22.34.45] WARNING: Ignoring iCDB backup file [2018-12-05 13.10.15-2064-pbmf.zip] - will not be migrated.
+[2019-01-10 22.34.47] Successfully created [AutoSave] backup [2019-01-10 22.34.45 - auto.zip] requested by [DESKTOP-D6MOGOB:alexis].
+[2019-01-10 22.34.47] Removing excessive [AutoSave] backup file [Z:\LASMO\PCB\Default\ProjectBackup\backups\2019-01-07 16.49.36 - auto.zip].
+[2019-01-10 22.34.47] [AutoSave] backup file [PCB\Default\ProjectBackup\backups\2019-01-07 16.49.36 - auto.zip] removed.

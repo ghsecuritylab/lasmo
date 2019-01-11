@@ -2,7 +2,7 @@
                                Forward Annotation
                                ------------------
 
-                       01:02 PM Thursday, January 10, 2019
+                       11:55 PM Thursday, January 10, 2019
                        Job Name: Z:\LASMO\PCB\PCB\PCB.pcb
 
 
@@ -137,7 +137,7 @@ Version:  01.01.00
                                      NetLoad
                                      -------
 
-                       01:02 PM Thursday, January 10, 2019
+                       11:55 PM Thursday, January 10, 2019
                        Job Name: Z:\LASMO\PCB\PCB\PCB.pcb
 
 
@@ -150,15 +150,7 @@ Version:  02.11.12
 	Schematic reference designator changes will be forward annotated.
 
 
-     WARNING:  The "C0402" cell used by "C21" in the Layout is not
-      valid for a "10-0068" Part Number.
-     INFO: Cell "C0402" is being replaced by cell "C0603".
-
-     The following 1 components have not been placed:
-
-        R44
-
-     Netload completed successfully with 1 warning(s).
+     Netload completed successfully with 0 warning(s).
      
      Back Annotating...
 
@@ -189,9 +181,10 @@ Version:  02.11.12
 
                  Beginning Netload on the Layout Design.
            ---------------------------------------------------
+	Assigned net (Net0) to a trace which was originally on net PHY_RSTn.
 
 Forward-Annotation on the Layout Design has been successfully completed.
 
-There were 0 reassignments of nets.
+There were 1 reassignments of nets.
 There were 0 traces broken back.
 There were 0 nets removed from the Layout Design.
