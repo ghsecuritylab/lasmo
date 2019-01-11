@@ -9,6 +9,7 @@
 #include "F7/sd.h"
 #include "F7/lasers.h"
 #include "F7/decoder.h"
+#include "F7/uart.h"
 
 int main(void) {
   halInit();
@@ -34,7 +35,11 @@ int main(void) {
   /* lasers_sd_mute(1, 1); */
   /* lsm_lasers_test(); */
 
-  //lsm_decoder_test("TheRiddle/theriddle.ild");
+	//lsm_lasers_init();
+	//lsm_lasers_test();
+
+  lsm_uart_init();
+	lsm_uart_rx();
 
   while(1){
     chThdSleepMilliseconds(10);

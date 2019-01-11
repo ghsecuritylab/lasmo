@@ -1,0 +1,9 @@
+#ifndef UART_H
+#define UART_H
+
+
+void lsm_uart_init(void);
+void lsm_uart_test(void);
+void lsm_uart_rx(void);
+
+#endif

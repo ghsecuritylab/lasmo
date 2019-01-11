@@ -7,7 +7,8 @@ USRSRC = src/main_F7.c \
 				 src/max5105.c \
 				 src/lasers.c  \
 				 src/decoder.c \
-				 src/shell_rtt.c
+				 src/shell_rtt.c \
+				 src/uart.c
 
 # Required includes directory
 USRINC = includes
