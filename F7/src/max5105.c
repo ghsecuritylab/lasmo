@@ -1,6 +1,9 @@
 #include "ch.h"
 #include "hal.h"
 
+#include "RTT/SEGGER_RTT.h"
+#include "RTT/SEGGER_RTT_Conf.h"
+
 #include "F7/max5105.h"
 
 static const SPIConfig hs_spicfg = {
@@ -8,8 +11,9 @@ static const SPIConfig hs_spicfg = {
   NULL,
   SPI1_NSS_GPIO,
   SPI1_NSS_PIN,
-  SPI_CR1_CPOL | SPI_CR1_BR_0,
-  SPI_CR2_DS_2 | SPI_CR2_DS_1 | SPI_CR2_DS_0
+  SPI_CR1_BR_2 | SPI_CR1_BR_1,
+  /* SPI_CR2_DS_2 | SPI_CR2_DS_1 | SPI_CR2_DS_0 */
+  0x700
 };
 
 #define SPI_BUFFERS_SIZE    2
@@ -31,11 +35,17 @@ void lsm_max5105_swap_bufs(void){
   spiExchange(&SPID1, SPI_BUFFERS_SIZE, txbuf, rxbuf);
   spiUnselect(&SPID1);
 
-  spiReleaseBus(&SPID2);
+  spiReleaseBus(&SPID1);
 }
 
 void lsm_max5105_test(void){
-  for (i = 0; i < SPI_BUFFERS_SIZE; i++)
-    txbuf[i] = (uint8_t)i;
+  while(1){
+    txbuf[0] = 0xAB;
+    txbuf[1] = 0xCD;
+    lsm_max5105_swap_bufs();
+    txbuf[0] = 0xFF;
+    txbuf[1] = 0xFF;
+    lsm_max5105_swap_bufs();
+  }
 }
 
