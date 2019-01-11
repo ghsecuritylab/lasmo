@@ -227,9 +227,22 @@ ULIBS =
 # End of user defines
 ##############################################################################
 
+
+# DETECT OS
+UNAME_S := $(shell uname -s)
+ifeq ($(UNAME_S),Linux)
+	OSFLAG := LINUX
+endif
+ifeq ($(UNAME_S),Darwin)
+	OSFLAG := OSX
+endif
+############################
+
+
 RULESPATH = $(CHIBIOS)/os/common/startup/ARMCMx/compilers/GCC
 include $(RULESPATH)/rules.mk
 
+ifeq ($(OSFLAG),LINUX)
 startgdbserver:
 	@pidof JLinkGDBServer > /dev/null || JLinkGDBServer -if swd -speed auto -device STM32F407ZG
 
@@ -243,3 +256,23 @@ debug: $(ELF) startgdbserver
 	$(GDB) $(ELF)
 
 .PHONY: startgdbserver stopgdbserver debug
+endif
+ifeq ($(OSFLAG),OSX)
+startgdbserver:
+	JLinkGDBServer -if swd -speed auto -device STM32F407ZG
+
+shell:
+	picocom /dev/cu.usbmodem5001 -b 115200
+
+rttviewer:
+	JLinkRTTClient
+
+stopgdbserver:
+	@pidof JLinkGDBServer > /dev/null && killall JLinkGDBServer || true
+
+debug: $(ELF)
+	$(GDB) $(ELF)
+
+.PHONY: startgdbserver shell  rttviewer stopgdbserver debug
+endif
+
