@@ -8,6 +8,12 @@
 #define MAX_VALUE 4095
 #define DAC_BUFFER_SIZE 360
 
+//THE MODE IS DIFFERENT IN FONCTION OF THE USING OF THE DAC
+#define DUAL_MODE DAC_DHRM_12BIT_RIGHT_DUAL
+#define BUFFER_MODE DAC_DHRM_12BIT_RIGHT
+
+//D10 is for the output of DAC1 and D13 is for the output DAC2
+
 // This function must moove the galva to the x or y position in fonction 7557-68
 void lsm_ctrl_galva(int axe, uint16_t value ){
   if ((value > MAX_VALUE))
@@ -33,7 +39,7 @@ void lsm_ctrl_galvaXY(int16_t x_value, uint16_t y_value){
 
 static const DACConfig dac1cfg1 = {
   .init         = 2047U,
-  .datamode     = DAC_DHRM_12BIT_RIGHT_DUAL,
+  .datamode     = BUFFER_MODE,
   .cr           = 0
 };
 
@@ -54,11 +60,13 @@ void lsm_galva_init(void){
 // If we want to use the maximum performance of the scanner, it can moove until 20°
 // and has until 2048 values of the DAC input.
 void lsm_print_line(int16_t x_value){
-  lsm_ctrl_galva(AXE_X, x_value);
-  chThdSleepMilliseconds(10);
-  for (int i = 0 ; i < 2048 ; i = i+2){
-    lsm_ctrl_galva(AXE_Y,i);
-    chThdSleepMicroseconds(35);
+  while(1){
+    lsm_ctrl_galva(AXE_X, x_value);
+    chThdSleepMilliseconds(10);
+    for (int i = 0 ; i < 2048 ; i = i+2){
+      lsm_ctrl_galva(AXE_Y,i);
+      chThdSleepMicroseconds(35);
+    }
   }
 }
 
@@ -109,9 +117,9 @@ static void end_cb(DACDriver *dacp, dacsample_t *buffer, size_t n) {
   (void)dacp;
   nz++;
   if (dac_buffer_sin == buffer)
-  nx += n;
+    nx += n;
   else
-  ny += n;
+    ny += n;
 }
 
 // GPT6 configuration.
@@ -128,6 +136,7 @@ static const DACConversionGroup dacgrp1 = {
   .error_cb     = error_cb,
   .trigger      = DAC_TRG(0)
 };
+
 
 void lsm_sin_ctrl_galva(void){
   gptStart(&GPTD6, &gptcfg1);
