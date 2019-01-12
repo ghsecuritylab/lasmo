@@ -12,6 +12,10 @@
 #define MAX_READ    0x30
 #define MAX_LOAD    0x38
 
+#define SPI_BUFFERS_SIZE    2
+static uint8_t txbuf[SPI_BUFFERS_SIZE];
+static uint8_t rxbuf[SPI_BUFFERS_SIZE];
+
 static const SPIConfig hs_spicfg = {
   false,
   NULL,
@@ -21,10 +25,6 @@ static const SPIConfig hs_spicfg = {
   /* SPI_CR2_DS_2 | SPI_CR2_DS_1 | SPI_CR2_DS_0 */
   0x700
 };
-
-#define SPI_BUFFERS_SIZE    2
-static uint8_t txbuf[SPI_BUFFERS_SIZE];
-static uint8_t rxbuf[SPI_BUFFERS_SIZE];
 
 static void lsm_max5105_swap_bufs(void){
   spiAcquireBus(&SPID1);
@@ -47,17 +47,6 @@ void lsm_max5105_init(void){
   lsm_max5105_wr_upd(MAX_SD_MUTE_ADDR,MAX_SHUTDOWN_ALL | MAX_MUTE_ALL);
 }
 
-void lsm_max5105_write(uint8_t addr, uint8_t data){
-    txbuf[0] = MAX_WRITE | addr;
-    txbuf[1] = data;
-    lsm_max5105_swap_bufs();
-}
-
-void lsm_max5105_wr_upd(uint8_t addr, uint8_t data){
-    txbuf[0] = MAX_WR_UPD | addr;
-    txbuf[1] = data;
-    lsm_max5105_swap_bufs();
-}
 
 void lsm_max5105_load(uint8_t addr){
     txbuf[0] = MAX_LOAD | addr;
@@ -70,6 +59,19 @@ uint8_t lsm_max5105_read(uint8_t addr){
     return rxbuf[1];
 }
 
+void lsm_max5105_wr_upd(uint8_t addr, uint8_t data){
+    txbuf[0] = MAX_WR_UPD | addr;
+    txbuf[1] = data;
+    lsm_max5105_swap_bufs();
+}
+
+void lsm_max5105_write(uint8_t addr, uint8_t data){
+    txbuf[0] = MAX_WRITE | addr;
+    txbuf[1] = data;
+    lsm_max5105_swap_bufs();
+}
+
+/* TEST CODE */
 static THD_WORKING_AREA(lsm_test_thread_wa, 256);
 static THD_FUNCTION(lsm_test_thread_fct, p){
   (void)p;
