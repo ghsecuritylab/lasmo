@@ -5,7 +5,7 @@
 
 #include "F7/galva.h"
 #include "F7/sd.h"
-#include "F7/max5105.h"
+#include "F7/lasers.h"
 
 int main(void) {
   halInit();
@@ -20,12 +20,15 @@ int main(void) {
 
   //lsm_sd_init();
 
-  lsm_max5105_init();
-  lsm_max5105_test();
+  //lsm_max5105_init();
+  //lsm_max5105_test();
+
+  lsm_lasers_init();
+  lsm_lasers_test();
 
   while(1){
     chThdSleepMilliseconds(10);
-    if(fs_ready == 0)
-      lsm_sd_test();
+    /* if(fs_ready == 0) */
+      /* lsm_sd_test(); */
   }
 }
