@@ -1377,4 +1377,17 @@ extern "C" {
 #endif
 #endif /* _FROM_ASM_ */
 
+/*===========================================================================*/
+/* SPI1                                                                      */
+/*===========================================================================*/
+#define SPI1_NSS_GPIO    GPIOA
+#define SPI1_MOSI_GPIO   GPIOB
+#define SPI1_MISO_GPIO   GPIOA
+#define SPI1_SCK_GPIO    GPIOA
+
+#define SPI1_NSS_PIN     GPIOA_PIN4
+#define SPI1_MOSI_PIN    GPIOB_PIN5
+#define SPI1_MISO_PIN    GPIOA_PIN6
+#define SPI1_SCK_PIN     GPIOA_PIN5
+
 #endif /* BOARD_H */
