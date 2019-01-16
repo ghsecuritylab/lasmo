@@ -53,7 +53,7 @@
 #define STM32_LSEDRV                (3U << 3U)
 
 #if !defined(STM32_HSECLK)
-#define STM32_HSECLK                25000000U
+#define STM32_HSECLK                8000000U
 #endif
 
 #define STM32_HSE_BYPASS
@@ -448,7 +448,7 @@
                                      PIN_ODR_HIGH(GPIOB_RMII_TXD0)        | \
                                      PIN_ODR_HIGH(GPIOB_RMII_TXD1)        | \
                                      PIN_ODR_HIGH(GPIOB_SPI2_MISO)        | \
-                                     PIN_ODR_HIGH(GPIOB_SPI2_MOSI)          ) 
+                                     PIN_ODR_HIGH(GPIOB_SPI2_MOSI)          )
 #define VAL_GPIOB_AFRL              (PIN_AFIO_AF(GPIOB_ADC12_IN8, 0U)     | \
                                      PIN_AFIO_AF(GPIOB_ADC12_IN9, 0U)     | \
                                      PIN_AFIO_AF(GPIOB_PIN2, 0U)          | \
@@ -456,7 +456,7 @@
                                      PIN_AFIO_AF(GPIOB_SPI1_MISO, 5U)     | \
                                      PIN_AFIO_AF(GPIOB_SPI1_MOSI, 5U)     | \
                                      PIN_AFIO_AF(GPIOB_PIN6, 0U)          | \
-                                     PIN_AFIO_AF(GPIOB_PIN7, 0U)          | \
+                                     PIN_AFIO_AF(GPIOB_PIN7, 0U)            )
 #define VAL_GPIOB_AFRH              (PIN_AFIO_AF(GPIOB_PIN8, 0U)          | \
                                      PIN_AFIO_AF(GPIOB_PIN9, 0U)          | \
                                      PIN_AFIO_AF(GPIOB_PIN10, 0U)         | \
@@ -469,19 +469,19 @@
 /*
  * GPIOC setup:
  *
- * PC0  - PIN0                      (input pullup).     
+ * PC0  - PIN0                      (input pullup)
  * PC1  - RMII_MDC                  (alternate 11).
- * PC2  - PIN2                      (input pullup).   
+ * PC2  - PIN2                      (input pullup).
  * PC3  - PIN3                      (input pullup).
  * PC4  - RMII_RXD0                 (alternate 11).
  * PC5  - RMII_RXD1                 (alternate 11).
- * PC6  - PIN6                      (input pullup). 
+ * PC6  - PIN6                      (input pullup).
  * PC7  - PIN7                      (input pullup).
- * PC8  - SD_D0                     (alternate 12). 
- * PC9  - SD_D1                     (alternate 12). 
- * PC10 - SD_D2                     (alternate 12). 
- * PC11 - SD_D3                     (alternate 12). 
- * PC12 - SD_CK                     (alternate 12). 
+ * PC8  - SD_D0                     (alternate 12).
+ * PC9  - SD_D1                     (alternate 12).
+ * PC10 - SD_D2                     (alternate 12).
+ * PC11 - SD_D3                     (alternate 12).
+ * PC12 - SD_CK                     (alternate 12).
  * PC13 - PIN13                     (input pullup).
  * PC14 - OSC32_IN                  (input floating).
  * PC15 - OSC32_OUT                 (input floating).
@@ -573,7 +573,7 @@
                                      PIN_AFIO_AF(GPIOC_RMII_RXD0, 11U)      | \
                                      PIN_AFIO_AF(GPIOC_RMII_RXD1, 11U)      | \
                                      PIN_AFIO_AF(GPIOC_PIN6, 0U)            | \
-                                     PIN_AFIO_AF(GPIOC_PIN7, 0U)            | \
+                                     PIN_AFIO_AF(GPIOC_PIN7, 0U)              )
 #define VAL_GPIOC_AFRH              (PIN_AFIO_AF(GPIOC_SD_D0, 12U)          | \
                                      PIN_AFIO_AF(GPIOC_SD_D1, 12U)          | \
                                      PIN_AFIO_AF(GPIOC_SD_D2, 12U)          | \
@@ -690,7 +690,7 @@
                                      PIN_AFIO_AF(GPIOD_PIN4, 0U)        | \
                                      PIN_AFIO_AF(GPIOD_PIN5, 0U)        | \
                                      PIN_AFIO_AF(GPIOD_PIN6, 0U)        | \
-                                     PIN_AFIO_AF(GPIOD_PIN7, 0U)        | \
+                                     PIN_AFIO_AF(GPIOD_PIN7, 0U)          )
 #define VAL_GPIOD_AFRH              (PIN_AFIO_AF(GPIOD_PIN8, 0U)        | \
                                      PIN_AFIO_AF(GPIOD_PIN9, 0U)        | \
                                      PIN_AFIO_AF(GPIOD_PIN10, 0U)       | \
@@ -807,7 +807,7 @@
                                      PIN_AFIO_AF(GPIOE_PIN4, 0U)        | \
                                      PIN_AFIO_AF(GPIOE_PIN5, 0U)        | \
                                      PIN_AFIO_AF(GPIOE_PIN6, 0U)        | \
-                                     PIN_AFIO_AF(GPIOE_PIN7, 0U)        | \
+                                     PIN_AFIO_AF(GPIOE_PIN7, 0U)          )
 #define VAL_GPIOE_AFRH              (PIN_AFIO_AF(GPIOE_PIN8, 0U)        | \
                                      PIN_AFIO_AF(GPIOE_PIN9, 0U)        | \
                                      PIN_AFIO_AF(GPIOE_PIN10, 0U)       | \
@@ -822,13 +822,13 @@
 /*===========================================================================*/
 #define SPI1_NSS_GPIO    GPIOA
 #define SPI1_MOSI_GPIO   GPIOB
-#define SPI1_MISO_GPIO   GPIOBA
-#define SPI1_SCK_GPIO    GPIOA
+#define SPI1_MISO_GPIO   GPIOB
+#define SPI1_SCK_GPIO    GPIOB
 
 #define SPI1_NSS_PIN     GPIOA_SPI1_NSS
 #define SPI1_MOSI_PIN    GPIOB_SPI1_MOSI
 #define SPI1_MISO_PIN    GPIOB_SPI1_MISO
-#define SPI1_SCK_PIN     GPIOA_SPI1_SCK
+#define SPI1_SCK_PIN     GPIOB_SPI1_SCK
 
 /*===========================================================================*/
 /* External declarations.                                                    */

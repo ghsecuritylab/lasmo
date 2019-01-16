@@ -1,8 +1,8 @@
 # List of all the board related files.
-BOARDSRC = $(CHIBIOS)/os/hal/boards/ST_STM32F769I_DISCOVERY/board.c
+BOARDSRC = board_LASMO/board.c
 
 # Required include directories
-BOARDINC = $(CHIBIOS)/os/hal/boards/ST_STM32F769I_DISCOVERY
+BOARDINC = board_LASMO
 
 # Shared variables
 ALLCSRC += $(BOARDSRC)

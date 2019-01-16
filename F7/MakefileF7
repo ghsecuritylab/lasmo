@@ -10,7 +10,7 @@ endif
 
 # C specific options here (added to USE_OPT).
 ifeq ($(USE_COPT),)
-  USE_COPT =
+  USE_COPT = 
 endif
 
 # C++ specific options here (added to USE_OPT).
@@ -25,7 +25,7 @@ endif
 
 # Linker extra options here.
 ifeq ($(USE_LDOPT),)
-  USE_LDOPT =
+  USE_LDOPT = 
 endif
 
 # Enable this if you want link time optimizations (LTO)
@@ -74,6 +74,11 @@ ifeq ($(USE_FPU),)
   USE_FPU = no
 endif
 
+# FPU-related options.
+ifeq ($(USE_FPU_OPT),)
+  USE_FPU_OPT = -mfloat-abi=$(USE_FPU) -mfpu=fpv5-d16
+endif
+
 #
 # Architecture or project specific options
 ##############################################################################
@@ -83,8 +88,8 @@ endif
 #
 
 # Define project name here
-PROJECT = LASMO_F4
-CONFDIR := ./configF4
+PROJECT = LASMO_F7
+CONFDIR := ./configF7
 
 # Imported source files and paths
 CHIBIOS = ../vendors/ChibiOS
@@ -92,11 +97,11 @@ CHIBIOS = ../vendors/ChibiOS
 # Licensing files.
 include $(CHIBIOS)/os/license/license.mk
 # Startup files.
-include $(CHIBIOS)/os/common/startup/ARMCMx/compilers/GCC/mk/startup_stm32f4xx.mk
+include $(CHIBIOS)/os/common/startup/ARMCMx/compilers/GCC/mk/startup_stm32f7xx.mk
 # HAL-OSAL files (optional).
 include $(CHIBIOS)/os/hal/hal.mk
-include $(CHIBIOS)/os/hal/ports/STM32/STM32F4xx/platform.mk
-include board_E407/board.mk
+include $(CHIBIOS)/os/hal/ports/STM32/STM32F7xx/platform.mk
+include board_LASMO/board.mk
 include $(CHIBIOS)/os/hal/osal/rt/osal.mk
 # RTOS files (optional).
 include $(CHIBIOS)/os/rt/rt.mk
@@ -113,15 +118,13 @@ include $(CHIBIOS)/os/various/fatfs_bindings/fatfs.mk
 # User files
 include src/source.mk
 
-# Include RTT files and board files
 ALLINC += ../third_party includes/
-
-# Define linker script file here
-LDSCRIPT= $(STARTUPLD)/STM32F407xG.ld
-
 ALLCSRC += ../third_party/RTT/SEGGER_RTT.c \
            ../third_party/RTT/SEGGER_RTT_printf.c \
            $(CHIBIOS)/os/various/evtimer.c
+
+# Define linker script file here
+LDSCRIPT= $(STARTUPLD)/STM32F76xxI.ld
 
 # C sources that can be compiled in ARM or THUMB mode depending on the global
 # setting.
@@ -156,6 +159,7 @@ TCPPSRC =
 ASMSRC = $(ALLASMSRC)
 ASMXSRC = $(ALLXASMSRC)
 
+
 INCDIR = $(ALLINC) $(TESTINC) $(CONFDIR)
 
 #
@@ -166,7 +170,7 @@ INCDIR = $(ALLINC) $(TESTINC) $(CONFDIR)
 # Compiler settings
 #
 
-MCU  = cortex-m4
+MCU  = cortex-m7
 
 #TRGT = arm-elf-
 TRGT = arm-none-eabi-
@@ -227,7 +231,6 @@ ULIBS =
 # End of user defines
 ##############################################################################
 
-
 # DETECT OS
 UNAME_S := $(shell uname -s)
 ifeq ($(UNAME_S),Linux)
@@ -244,7 +247,7 @@ include $(RULESPATH)/rules.mk
 
 ifeq ($(OSFLAG),LINUX)
 startgdbserver:
-	@pidof JLinkGDBServer > /dev/null || JLinkGDBServer -if swd -speed auto -device STM32F407ZG
+	@pidof JLinkGDBServer > /dev/null || JLinkGDBServer -if swd -speed auto -device STM32F767VI
 
 shell:
 	tio -b 115200 /dev/ttyACM0
@@ -259,7 +262,7 @@ debug: $(ELF) startgdbserver
 endif
 ifeq ($(OSFLAG),OSX)
 startgdbserver:
-	JLinkGDBServer -if swd -speed auto -device STM32F407ZG
+	JLinkGDBServer -if swd -speed auto -device STM32F767VI
 
 shell:
 	picocom /dev/cu.usbmodem5001 -b 115200
