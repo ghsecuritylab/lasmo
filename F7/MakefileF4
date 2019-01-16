@@ -186,7 +186,7 @@ OD   = $(TRGT)objdump
 SZ   = $(TRGT)size
 HEX  = $(CP) -O ihex
 BIN  = $(CP) -O binary
-ELF  = build/LASMO_F7.elf
+ELF  = build/$(PROJECT).elf
 
 # ARM-specific options here
 AOPT =
