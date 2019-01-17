@@ -5,12 +5,14 @@
 #include "F7/galva.h"
 #define PORTDAC1  4
 #define PORTDAC2  5
+#define CHANNEL1  0U
+#define CHANNEL2  1U
 #define MAX_VALUE 4095
 #define DAC_BUFFER_SIZE 360
 
 //THE MODE IS DIFFERENT IN FONCTION OF THE USING OF THE DAC
 #define DUAL_MODE DAC_DHRM_12BIT_RIGHT_DUAL
-#define BUFFER_MODE DAC_DHRM_12BIT_RIGHT
+#define MONO_MODE DAC_DHRM_12BIT_RIGHT
 
 //D10 is for the output of DAC1 and D13 is for the output DAC2
 
@@ -19,16 +21,18 @@ void lsm_ctrl_galva(int axe, uint16_t value ){
   if ((value > MAX_VALUE))
     SEGGER_RTT_printf(0, "Error, out of bounding ! \r\n");
   else if(axe == AXE_X){
-    dacAcquireBus 	(&DACD1 );
+    dacAcquireBus(&DACD1 );
     dacPutChannelX(&DACD1, CHANNEL1, value);
     SEGGER_RTT_printf(0, "The value %d is writing in the DAC Channel1\r\n", value );
-    dacReleaseBus 	(&DACD1 );
+    dacReleaseBus(&DACD1 );
    }
    else if( axe == AXE_Y){
-     dacAcquireBus 	(&DACD1 );
+    SEGGER_RTT_printf(0, "Test 0\n", value );
+     dacAcquireBus(&DACD1 );
+    SEGGER_RTT_printf(0, "Test 1\n", value );
      dacPutChannelX( &DACD1, CHANNEL2, value);
      SEGGER_RTT_printf(0, "The value %d is writing in the DAC Channel2\r\n", value );
-     dacReleaseBus 	(&DACD1 );
+     dacReleaseBus(&DACD1 );
    }
 }
 
@@ -39,7 +43,7 @@ void lsm_ctrl_galvaXY(int16_t x_value, uint16_t y_value){
 
 static const DACConfig dac1cfg1 = {
   .init         = 2047U,
-  .datamode     = BUFFER_MODE,
+  .datamode     = MONO_MODE,
   .cr           = 0
 };
 
@@ -146,5 +150,16 @@ void lsm_sin_ctrl_galva(void){
 }
 
 void lsm_galva_test(void){
-  lsm_sin_ctrl_galva();
+  SEGGER_RTT_printf(0, "Begin of a triangle signal on X and Y\n");
+  while(1){
+    for(uint16_t x=0 ; x < 4092 ; x+=4){
+      lsm_ctrl_galvaXY(x,x);
+      chThdSleepMilliseconds(1);
+    }
+    for(uint16_t x=4092 ; x >0 ; x-=4){
+      lsm_ctrl_galvaXY(x,x);
+      chThdSleepMilliseconds(1);
+    }
+  }
 }
+
