@@ -1378,6 +1378,21 @@ extern "C" {
 #endif /* _FROM_ASM_ */
 
 /*===========================================================================*/
+/* ADC                                                                       */
+/*===========================================================================*/
+
+#define ADC_TRIG_ORIG     8
+#define ADC_SAMPLE_RATE   ( ADC_SMPR2_SMP_AN4(ADC_SAMPLE_144) | ADC_SMPR2_SMP_AN5(ADC_SAMPLE_144) )
+#define ADC_CONV_SEQUENCE ( ADC_SQR3_SQ2_N(ADC_CHANNEL_IN4) | ADC_SQR3_SQ1_N(ADC_CHANNEL_IN5) )
+
+#define ADC_RIGHT_PORT GPIOF
+#define ADC_LEFT_PORT  GPIOF
+#define ADC_RIGHT_PIN  GPIOF_PIN6
+#define ADC_LEFT_PIN   GPIOF_PIN7
+#define ADC_DRIVER     ADCD3
+#define ADC_GPT        GPTD3
+
+/*===========================================================================*/
 /* SPI1                                                                      */
 /*===========================================================================*/
 #define SPI1_NSS_GPIO    GPIOA

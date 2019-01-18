@@ -45,7 +45,7 @@ static void poll_timer_handler(void *p) {
 
 ///////////// Read/write functions
 
-#define BUFF_SIZE 512
+#define BUFF_SIZE 1024
 
 // FS object
 static FATFS SDC_FS;
@@ -110,7 +110,7 @@ void lsm_print_tree(void){
 
 ////////////////// User thread and functions
 
-static THD_WORKING_AREA(lsm_wa_sd_thread, 1024);
+static THD_WORKING_AREA(lsm_wa_sd_thread, 4096);
 
 static THD_FUNCTION(lsm_sd_thread, arg) {
   (void)arg;
@@ -162,6 +162,29 @@ void lsm_remove_handler(eventid_t id){
   SEGGER_RTT_WriteString(0, "Carte SD déconnectée!\r\n");
 }
 
+UINT lsm_sd_write_file(FIL* fp, void* data, int datalen){
+  FRESULT err;
+  UINT bytes_written;
+
+  err = f_write(fp, data, datalen, &bytes_written);
+  chThdSleepMilliseconds(512);
+
+  static char test_write[80];
+
+  f_lseek(fp, 0);
+  lsm_sd_read_file(fp, test_write, 80);
+  SEGGER_RTT_printf(0, "Written on the file : %s\r\n", test_write);
+
+  if(err){
+    SEGGER_RTT_printf(0, "lsm_sd_write_file: Write error: error #%d\r\n", err);
+    return 0;
+  } else {
+    SEGGER_RTT_printf(0, "lsm_sd_write_file: Info: Successfully wrote %d bytes to test file.\r\n", bytes_written);
+    return bytes_written;
+  }
+
+}
+
 UINT lsm_sd_read_file(FIL* fp, char* buff, int buflen){
   FRESULT err;
   UINT bytes_read;
@@ -197,21 +220,35 @@ void lsm_sd_test(void){
     return;
   }
 
+  SEGGER_RTT_printf(0, "lsm_sd_test: Info: Printing tree of the SD card...\r\n");
+
+  lsm_print_tree();
+
+  SEGGER_RTT_WriteString(0, "\r\n");
+
   // Example of use of lsm_sd_read_file (reading a file on the SD card and printing it on the RTT)
   FRESULT err;
   FIL test_file;
+  FIL test_file_write;
   UINT bytes_read;
   FSIZE_t offset = 0;
   static char buff[BUFF_SIZE];
 
   err = f_open(&test_file, TEST_FILE, FA_READ | FA_OPEN_EXISTING);
+
   if(err != FR_OK) {
-    if(err == FR_NO_FILE)           SEGGER_RTT_WriteString(0, "lsm_sd_read_file: File Error: File not found\r\n");
+    if(err == FR_NO_FILE)           SEGGER_RTT_WriteString(0, "lsm_sd_read_file: File Error: File not found, add file \'"TEST_FILE"\' into your root directory on the SD card.\r\n");
     else if(err == FR_INVALID_NAME) SEGGER_RTT_WriteString(0, "lsm_sd_read_file: File Error: Invalid path\r\n");
     else if(err == FR_NO_PATH)      SEGGER_RTT_WriteString(0, "lsm_sd_read_file: File Error: Directory not found\r\n");
     else                            SEGGER_RTT_printf(0, "lsm_sd_read_file: File error: #%d\r\n", err);
     return;
   }
+
+  err = f_open(&test_file_write, "Test2.txt", FA_READ | FA_WRITE | FA_OPEN_ALWAYS);
+
+  lsm_sd_write_file(&test_file_write, "&random_nb", 80);
+
+  f_close(&test_file_write);
 
   while (1) {
     bytes_read = lsm_sd_read_file_with_offset(&test_file, buff, BUFF_SIZE-1, offset); // BUFF_SIZE-1 because we need space for the null character

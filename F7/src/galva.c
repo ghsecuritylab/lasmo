@@ -33,7 +33,7 @@ void lsm_ctrl_galvaXY(int16_t x_value, uint16_t y_value){
 
 static const DACConfig dac1cfg1 = {
   .init         = 2047U,
-  .datamode     = DAC_DHRM_12BIT_RIGHT_DUAL,
+  .datamode     = DAC_DHRM_12BIT_RIGHT,
   .cr           = 0
 };
 
