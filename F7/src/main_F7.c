@@ -2,6 +2,7 @@
 #include "hal.h"
 #include "RTT/SEGGER_RTT.h"
 #include "RTT/SEGGER_RTT_Conf.h"
+#include "ShellRTT/shell_rtt.h"
 
 #include "F7/adc.h"
 #include "F7/galva.h"
@@ -15,6 +16,7 @@ int main(void) {
   chSysInit();
   SEGGER_RTT_printf(0, "\r\n---------- Start ! ----------- \r\n");
 
+  shell_rtt_init();
   // RTT configuration
   SEGGER_RTT_ConfigUpBuffer(0, NULL, NULL, 0, SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL);
 
