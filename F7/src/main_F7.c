@@ -21,8 +21,8 @@ int main(void) {
 
   shell_rtt_init();
 
-  //lsm_galva_init();
-  //lsm_galva_test();
+  /* lsm_galva_init(); */
+  /* lsm_galva_test(); */
 
   //lsm_adc_init();
 
