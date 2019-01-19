@@ -8,6 +8,18 @@
 #include "RTT/SEGGER_RTT.h"
 #include "RTT/SEGGER_RTT_Conf.h"
 
+// Will be removed when types.h is imported
+
+#define LSM_ILDA_FROM_SD       1
+#define LSM_ILDA_FROM_ETHERNET 2
+#define LSM_ILDA_FROM_WIFI     3
+#define LSM_ILDA_IS_SYNC       4
+
+typedef struct ILDA_FILE {
+  uint8_t flags;
+  FIL orig_file;
+} lsm_ilda_file;
+
 // Availability of the filesystem
 extern int fs_ready;
 
@@ -16,7 +28,11 @@ void lsm_sd_init(void);
 void lsm_sd_test(void);
 
 // Print directory
-void lsm_print_tree(void);
+void lsm_sd_print_tree(void);
+
+// File open/close functions for the decoder files (open files in read-only mode)
+int lsm_sd_open_file(lsm_ilda_file* fp, char* path);
+int lsm_sd_close_file(lsm_ilda_file* fp);
 
 // Writes data to the specified file
 UINT lsm_sd_write_file(FIL* fp, void* data, int datalen);
@@ -27,11 +43,11 @@ UINT lsm_sd_write_file(FIL* fp, void* data, int datalen);
  *       time the function is called of the number of bytes read.
  *
  */
-UINT lsm_sd_read_file(FIL* fp, char* buff, int buflen);
-UINT lsm_sd_read_file_with_offset(FIL* fp, char* buff, int buflen, FSIZE_t offset);
+UINT lsm_sd_read_file(lsm_ilda_file* fp, char* buff, int buflen);
+UINT lsm_sd_read_file_with_offset(lsm_ilda_file* fp, char* buff, int buflen, FSIZE_t offset);
 
 // Event handler for insertion and removal of SD card
-void lsm_insert_handler(eventid_t id);
-void lsm_remove_handler(eventid_t id);
+void lsm_sd_insert_handler(eventid_t id);
+void lsm_sd_remove_handler(eventid_t id);
 
 #endif

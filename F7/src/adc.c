@@ -99,6 +99,8 @@ static THD_FUNCTION(lsm_adc_test_thread, arg) {
 
 //The test continuously prints the sampled value in the input pins in millivolts on the RTT
 void lsm_adc_test(void){
+  lsm_adc_init();
+
   adcStartConversion(&ADC_DRIVER, &adc_grp_cfg, buffer_adc, ADC_BUF_DEPTH);
   gptStartContinuous(&ADC_GPT, 1);
 
