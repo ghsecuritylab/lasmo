@@ -86,13 +86,13 @@ endif
 ##############################################################################
 # Project, sources and paths
 #
-
+PROJECT_PATH = ..
 # Define project name here
 PROJECT = LASMO_F7
 CONFDIR := ./configF7
 
 # Imported source files and paths
-CHIBIOS = ../vendors/ChibiOS
+CHIBIOS = $(PROJECT_PATH)/vendors/ChibiOS
 
 # Licensing files.
 include $(CHIBIOS)/os/license/license.mk
@@ -115,13 +115,13 @@ include $(CHIBIOS)/os/various/shell/shell.mk
 include $(CHIBIOS)/os/hal/lib/streams/streams.mk
 #FATFS files
 include $(CHIBIOS)/os/various/fatfs_bindings/fatfs.mk
+#evtimer files
+ALLCSRC += $(CHIBIOS)/os/various/evtimer.c
 # User files
 include src/source.mk
+ALLINC += includes/
 
-ALLINC += ../third_party includes/
-ALLCSRC += ../third_party/RTT/SEGGER_RTT.c \
-           ../third_party/RTT/SEGGER_RTT_printf.c \
-           $(CHIBIOS)/os/various/evtimer.c
+include $(PROJECT_PATH)/third_party/third_party.mk
 
 # Define linker script file here
 LDSCRIPT= $(STARTUPLD)/STM32F76xxI.ld

@@ -384,7 +384,7 @@
                                      PIN_MODE_ALTERNATE(GPIOB_RMII_TXD0)  | \
                                      PIN_MODE_ALTERNATE(GPIOB_RMII_TXD1)  | \
                                      PIN_MODE_ALTERNATE(GPIOB_SPI2_MISO)  | \
-                                     PIN_MODE_ALTERNATE(GPIOB_SPI2_MOSI)    ) 
+                                     PIN_MODE_ALTERNATE(GPIOB_SPI2_MOSI)    )
 #define VAL_GPIOB_OTYPER            (PIN_OTYPE_PUSHPULL(GPIOB_ADC12_IN8)  | \
                                      PIN_OTYPE_PUSHPULL(GPIOB_ADC12_IN9)  | \
                                      PIN_OTYPE_PUSHPULL(GPIOB_PIN2)       | \
@@ -400,7 +400,7 @@
                                      PIN_OTYPE_PUSHPULL(GPIOB_RMII_TXD0)  | \
                                      PIN_OTYPE_PUSHPULL(GPIOB_RMII_TXD1)  | \
                                      PIN_OTYPE_PUSHPULL(GPIOB_SPI2_MISO)  | \
-                                     PIN_OTYPE_PUSHPULL(GPIOB_SPI2_MOSI)    ) 
+                                     PIN_OTYPE_PUSHPULL(GPIOB_SPI2_MOSI)    )
 #define VAL_GPIOB_OSPEEDR           (PIN_OSPEED_HIGH(GPIOB_ADC12_IN8)  | \
                                      PIN_OSPEED_HIGH(GPIOB_ADC12_IN9)  | \
                                      PIN_OSPEED_HIGH(GPIOB_PIN2)       | \
@@ -416,7 +416,7 @@
                                      PIN_OSPEED_HIGH(GPIOB_RMII_TXD0)  | \
                                      PIN_OSPEED_HIGH(GPIOB_RMII_TXD1)  | \
                                      PIN_OSPEED_HIGH(GPIOB_SPI2_MISO)  | \
-                                     PIN_OSPEED_HIGH(GPIOB_SPI2_MOSI)    ) 
+                                     PIN_OSPEED_HIGH(GPIOB_SPI2_MOSI)    )
 #define VAL_GPIOB_PUPDR             (PIN_PUPDR_FLOATING(GPIOB_ADC12_IN8)  | \
                                      PIN_PUPDR_FLOATING(GPIOB_ADC12_IN9)  | \
                                      PIN_PUPDR_PULLUP(GPIOB_PIN2)         | \
@@ -432,7 +432,7 @@
                                      PIN_PUPDR_FLOATING(GPIOB_RMII_TXD0)  | \
                                      PIN_PUPDR_FLOATING(GPIOB_RMII_TXD1)  | \
                                      PIN_PUPDR_FLOATING(GPIOB_SPI2_MISO)  | \
-                                     PIN_PUPDR_FLOATING(GPIOB_SPI2_MOSI)    ) 
+                                     PIN_PUPDR_FLOATING(GPIOB_SPI2_MOSI)    )
 #define VAL_GPIOB_ODR               (PIN_ODR_HIGH(GPIOB_ADC12_IN8)        | \
                                      PIN_ODR_HIGH(GPIOB_ADC12_IN9)        | \
                                      PIN_ODR_HIGH(GPIOB_PIN2)             | \
@@ -588,20 +588,20 @@
  *
  * PD0  - UART4_RX    (alternate 8).
  * PD1  - UART4_TX    (alternate 8)
- * PD2  - SD_CMD      (alternate 12). 
- * PD3  - PIN3        (input pullup) 
- * PD4  - PIN4        (input pullup) 
- * PD5  - PIN5        (input pullup) 
- * PD6  - PIN6        (input pullup) 
- * PD7  - PIN7        (input pullup) 
- * PD8  - PIN8        (input pullup) 
- * PD9  - PIN9        (input pullup) 
- * PD10 - PIN10       (input pullup) 
- * PD11 - PIN11       (input pullup) 
- * PD12 - PIN12       (input pullup) 
- * PD13 - PIN13       (input pullup) 
- * PD14 - PIN14       (input pullup) 
- * PD15 - PIN15       (input pullup) 
+ * PD2  - SD_CMD      (alternate 12).
+ * PD3  - PIN3        (input pullup)
+ * PD4  - PIN4        (input pullup)
+ * PD5  - PIN5        (input pullup)
+ * PD6  - PIN6        (input pullup)
+ * PD7  - PIN7        (input pullup)
+ * PD8  - PIN8        (input pullup)
+ * PD9  - PIN9        (input pullup)
+ * PD10 - PIN10       (input pullup)
+ * PD11 - PIN11       (input pullup)
+ * PD12 - PIN12       (input pullup)
+ * PD13 - PIN13       (input pullup)
+ * PD14 - PIN14       (input pullup)
+ * PD15 - PIN15       (input pullup)
  */
 #define VAL_GPIOD_MODER             (PIN_MODE_ALTERNATE(GPIOD_UART4_RX) | \
                                      PIN_MODE_ALTERNATE(GPIOD_UART4_TX) | \
@@ -838,6 +838,21 @@
 #define SPI1_MOSI_PIN    GPIOB_SPI1_MOSI
 #define SPI1_MISO_PIN    GPIOB_SPI1_MISO
 #define SPI1_SCK_PIN     GPIOB_SPI1_SCK
+
+/*===========================================================================*/
+/* ADC                                                                      */
+/*===========================================================================*/
+
+#define ADC_TRIG_ORIG     12
+#define ADC_SAMPLE_RATE   ( ADC_SMPR2_SMP_AN8(ADC_SAMPLE_3) | ADC_SMPR2_SMP_AN9(ADC_SAMPLE_3) )
+#define ADC_CONV_SEQUENCE ( ADC_SQR3_SQ2_N(ADC_CHANNEL_IN9) | ADC_SQR3_SQ1_N(ADC_CHANNEL_IN8) )
+
+#define ADC_RIGHT_PORT GPIOB
+#define ADC_LEFT_PORT  GPIOB
+#define ADC_RIGHT_PIN  GPIOB_ADC12_IN8
+#define ADC_LEFT_PIN   GPIOB_ADC12_IN9
+#define ADC_DRIVER     ADCD1
+#define ADC_GPT        GPTD4
 
 /*===========================================================================*/
 /* External declarations.                                                    */

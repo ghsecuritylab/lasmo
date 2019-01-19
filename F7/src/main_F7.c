@@ -2,10 +2,14 @@
 #include "hal.h"
 #include "RTT/SEGGER_RTT.h"
 #include "RTT/SEGGER_RTT_Conf.h"
+#include "ShellRTT/shell_rtt.h"
 
+#include "F7/adc.h"
 #include "F7/galva.h"
 #include "F7/sd.h"
 #include "F7/lasers.h"
+
+
 
 int main(void) {
   halInit();
@@ -15,22 +19,19 @@ int main(void) {
   // RTT configuration
   SEGGER_RTT_ConfigUpBuffer(0, NULL, NULL, 0, SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL);
 
-  //lsm_sd_init();
+  shell_rtt_init();
 
-  /**************************
-            WARNING
-   **************************/
-  /* On board E407, galva and max5105/lasers use same pins */
-  if(true){
-    lsm_galva_init();
-    lsm_galva_test();
-  }
-  else{
-    //lsm_max5105_init();
-    //lsm_max5105_test();
-    lsm_lasers_init();
-    lsm_lasers_test();
-  }
+  //lsm_galva_init();
+  //lsm_galva_test();
+
+  //lsm_adc_init();
+
+  //lsm_max5105_init();
+  //lsm_max5105_test();
+  //lsm_adc_test();
+
+  //lsm_lasers_init();
+  //lsm_lasers_test();
 
   while(1){
     chThdSleepMilliseconds(10);

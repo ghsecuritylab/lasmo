@@ -18,6 +18,9 @@ void lsm_sd_test(void);
 // Print directory
 void lsm_print_tree(void);
 
+// Writes data to the specified file
+UINT lsm_sd_write_file(FIL* fp, void* data, int datalen);
+
 /* Read the content of a file (with or without an offset)
  *
  * Note: if no offset is specified, the read/write pointer will increase each
