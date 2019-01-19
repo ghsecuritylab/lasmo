@@ -21,7 +21,7 @@ int main(void) {
             WARNING
    **************************/
   /* On board E407, galva and max5105/lasers use same pins */
-  if(false){
+  if(true){
     lsm_galva_init();
     lsm_galva_test();
   }
