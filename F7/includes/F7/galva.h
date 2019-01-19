@@ -3,8 +3,6 @@
 
 #define AXE_X     0
 #define AXE_Y     1
-#define CHANNEL1  0U
-#define CHANNEL2  1U
 
 void lsm_galva_init(void);
 void lsm_ctrl_galva(int axe, uint16_t value );

@@ -14,16 +14,15 @@
 int main(void) {
   halInit();
   chSysInit();
+  SEGGER_RTT_Init();
   SEGGER_RTT_printf(0, "\r\n---------- Start ! ----------- \r\n");
-
-  shell_rtt_init();
   // RTT configuration
   SEGGER_RTT_ConfigUpBuffer(0, NULL, NULL, 0, SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL);
 
-  //lsm_galva_init();
-  //lsm_galva_test();
+  shell_rtt_init();
 
-  lsm_sd_init();
+  /* lsm_galva_init(); */
+  /* lsm_galva_test(); */
 
   //lsm_adc_init();
 
