@@ -3,12 +3,12 @@
 #include <string.h>
 #include "ch.h"
 
+static char test_file_path[10] = "Test.txt";
+
 ///////////// SD slot monitor
 
 #define POLLING_INTERVAL                10
 #define POLLING_DELAY                   10
-
-#define TEST_FILE                       "Test.txt"
 
 // Poll timer
 static virtual_timer_t sd_slot_poll_timer;
@@ -80,7 +80,7 @@ static FRESULT scan_files(char *path) {
           break;
       }
       else {
-        SEGGER_RTT_printf(0, "%s/%s\r\n", path, fn);
+        SEGGER_RTT_printf(0, "%s/%s\n", path, fn);
       }
     }
   }
@@ -88,7 +88,7 @@ static FRESULT scan_files(char *path) {
 }
 
 // Print the tree rooted at the specified path on the SD card
-void lsm_print_tree(void){
+void lsm_sd_print_tree(void){
   FRESULT err;
   uint32_t fre_clust;
   FATFS *fsp;
@@ -124,42 +124,40 @@ static THD_FUNCTION(lsm_sd_thread, arg) {
     eventmask_t evt = chEvtWaitOne(ALL_EVENTS);
 
     if(evt & EVENT_MASK(0))
-      lsm_insert_handler(0);
+      lsm_sd_insert_handler(0);
     else if(evt & EVENT_MASK(1))
-      lsm_remove_handler(0);
+      lsm_sd_remove_handler(0);
   }
 }
 
-void lsm_insert_handler(eventid_t id){
+void lsm_sd_insert_handler(eventid_t id){
   FRESULT err;
   (void)id;
 
   if (sdcConnect(&SDCD1)) {
-    SEGGER_RTT_WriteString(0, "Connection failure (failure in sdcConnect)\r\n");
+    SEGGER_RTT_WriteString(0, "Connection failure (failure in sdcConnect)\n");
     return;
   }
 
-  SEGGER_RTT_WriteString(0, "Carte SD insérée!\r\n");
+  SEGGER_RTT_WriteString(0, "Carte SD insérée!\n");
 
   err = f_mount(&SDC_FS, "/", 1);
   if (err != FR_OK) {
-    SEGGER_RTT_WriteString(0, "Mount error\r\n");
+    SEGGER_RTT_WriteString(0, "Mount error\n");
     sdcDisconnect(&SDCD1);
     return;
   }
 
   fs_ready = 1;
 
-  lsm_sd_test();
-
   return;
 }
 
-void lsm_remove_handler(eventid_t id){
+void lsm_sd_remove_handler(eventid_t id){
   (void)id;
   sdcDisconnect(&SDCD1);
   fs_ready = 0;
-  SEGGER_RTT_WriteString(0, "Carte SD déconnectée!\r\n");
+  SEGGER_RTT_WriteString(0, "Carte SD déconnectée!\n");
 }
 
 UINT lsm_sd_write_file(FIL* fp, void* data, int datalen){
@@ -169,32 +167,26 @@ UINT lsm_sd_write_file(FIL* fp, void* data, int datalen){
   err = f_write(fp, data, datalen, &bytes_written);
   chThdSleepMilliseconds(512);
 
-  static char test_write[80];
-
-  f_lseek(fp, 0);
-  lsm_sd_read_file(fp, test_write, 80);
-  SEGGER_RTT_printf(0, "Written on the file : %s\r\n", test_write);
-
   if(err){
-    SEGGER_RTT_printf(0, "lsm_sd_write_file: Write error: error #%d\r\n", err);
+    SEGGER_RTT_printf(0, "lsm_sd_write_file: Write error: error #%d\n", err);
     return 0;
   } else {
-    SEGGER_RTT_printf(0, "lsm_sd_write_file: Info: Successfully wrote %d bytes to test file.\r\n", bytes_written);
+    SEGGER_RTT_printf(0, "lsm_sd_write_file: Info: Successfully wrote %d bytes to test file.\n", bytes_written);
     return bytes_written;
   }
 
 }
 
-UINT lsm_sd_read_file(FIL* fp, char* buff, int buflen){
+UINT lsm_sd_read_file(lsm_ilda_file* fp, char* buff, int buflen){
   FRESULT err;
   UINT bytes_read;
 
-  err = f_read(fp, buff, buflen, &bytes_read);
+  err = f_read(&(fp->orig_file), buff, buflen, &bytes_read);
   if(bytes_read == 0)
-    SEGGER_RTT_WriteString(0, "lsm_sd_read_file: Info: End of file reached!\r\n");
+    SEGGER_RTT_WriteString(0, "lsm_sd_read_file: Info: End of file reached!\n");
 
   if(err) {
-    SEGGER_RTT_printf(0, "lsm_sd_read_file: Read error: error #%d\r\n", err);
+    SEGGER_RTT_printf(0, "lsm_sd_read_file: Read error: error #%d\n", err);
     return 0;
   }
 
@@ -202,76 +194,125 @@ UINT lsm_sd_read_file(FIL* fp, char* buff, int buflen){
 
 }
 
-UINT lsm_sd_read_file_with_offset(FIL* fp, char* buff, int buflen, FSIZE_t offset){
+UINT lsm_sd_read_file_with_offset(lsm_ilda_file* fp, char* buff, int buflen, FSIZE_t offset){
   FRESULT err;
 
-  err = f_lseek(fp, offset);
+  err = f_lseek(&(fp->orig_file), offset);
   if(err){
-    SEGGER_RTT_printf(0, "lsm_sd_read_file_with_offset: Error: Invalid offset\r\n");
+    SEGGER_RTT_printf(0, "lsm_sd_read_file_with_offset: Error: Invalid offset\n");
     return 0;
   }
 
   return lsm_sd_read_file(fp, buff, buflen);
 }
 
-void lsm_sd_test(void){
-  if(!fs_ready){
-    SEGGER_RTT_printf(0, "lsm_sd_test: Carte SD non connectée.\r\n");
-    return;
+int lsm_sd_open_file(lsm_ilda_file* fp, char* path) {
+  FRESULT err;
+
+  if(!(fp->flags && LSM_ILDA_FROM_SD)) {
+    SEGGER_RTT_printf(0, "lsm_sd_open_file: File error: this ILDA file is not on the SD card\n");
+    return -1;
   }
 
-  SEGGER_RTT_printf(0, "lsm_sd_test: Info: Printing tree of the SD card...\r\n");
-
-  lsm_print_tree();
-
-  SEGGER_RTT_WriteString(0, "\r\n");
-
-  // Example of use of lsm_sd_read_file (reading a file on the SD card and printing it on the RTT)
-  FRESULT err;
-  FIL test_file;
-  FIL test_file_write;
-  UINT bytes_read;
-  FSIZE_t offset = 0;
-  static char buff[BUFF_SIZE];
-
-  err = f_open(&test_file, TEST_FILE, FA_READ | FA_OPEN_EXISTING);
+  err = f_open(&(fp->orig_file), path, FA_READ | FA_OPEN_EXISTING);
 
   if(err != FR_OK) {
-    if(err == FR_NO_FILE)           SEGGER_RTT_WriteString(0, "lsm_sd_read_file: File Error: File not found, add file \'"TEST_FILE"\' into your root directory on the SD card.\r\n");
-    else if(err == FR_INVALID_NAME) SEGGER_RTT_WriteString(0, "lsm_sd_read_file: File Error: Invalid path\r\n");
-    else if(err == FR_NO_PATH)      SEGGER_RTT_WriteString(0, "lsm_sd_read_file: File Error: Directory not found\r\n");
-    else                            SEGGER_RTT_printf(0, "lsm_sd_read_file: File error: #%d\r\n", err);
+    if(err == FR_NO_FILE)           SEGGER_RTT_printf(0, "lsm_sd_open_file: File Error: File not found, add file \'%s\' into your root directory on the SD card.\n", path);
+    else if(err == FR_INVALID_NAME) SEGGER_RTT_WriteString(0, "lsm_sd_open_file: File Error: Invalid path\n");
+    else if(err == FR_NO_PATH)      SEGGER_RTT_WriteString(0, "lsm_sd_open_file: File Error: Directory not found\n");
+    else                            SEGGER_RTT_printf(0, "lsm_sd_open_file: File error: #%d\n", err);
+    return err;
+  }
+
+  return 0;
+}
+
+int lsm_sd_close_file(lsm_ilda_file* fp) {
+  if(!(fp->flags && LSM_ILDA_FROM_SD)) {
+    SEGGER_RTT_printf(0, "lsm_sd_open_file: File error: this ILDA file is not on the SD card\n");
+    return -1;
+  }
+
+  return (int) f_close(&(fp->orig_file));
+}
+
+/// Test area
+
+static THD_WORKING_AREA(lsm_wa_sd_test_thread, 4096);
+
+static THD_FUNCTION(lsm_sd_test_thread, arg){
+  (void)arg;
+
+  SEGGER_RTT_printf(0, "lsm_sd_test: Info: Printing tree of the SD card...\n");
+
+  lsm_sd_print_tree();
+
+  SEGGER_RTT_WriteString(0, "\n");
+
+  SEGGER_RTT_WriteString(0, "lsm_sd_test: Info: Reading some data on the device...\n");
+
+  int bytes_read;
+  lsm_ilda_file test_file;
+  static char buff[BUFF_SIZE];
+
+  test_file.flags = LSM_ILDA_FROM_SD;
+
+  if(lsm_sd_open_file(&test_file, test_file_path))
+    chThdExit(1);
+
+  while (1) {
+    bytes_read = lsm_sd_read_file(&test_file, buff, BUFF_SIZE-1); // BUFF_SIZE-1 because we need space for the null character
+    if(bytes_read == 0) break;
+    buff[bytes_read] = '\0'; //we end the string
+    SEGGER_RTT_printf(0, "%s\n", buff);
+  }
+
+  lsm_sd_close_file(&test_file);
+
+  // Testing the write function without using the lsm_ilda_file structure, which is meant to be read_only
+
+  SEGGER_RTT_printf(0, "lsm_sd_test: Info: Writing some data on the device...\n");
+  FIL test_file_write;
+
+  f_open(&test_file_write, "Test2.txt", FA_READ | FA_WRITE | FA_OPEN_ALWAYS);
+  lsm_sd_write_file(&test_file_write, "&random_nb", 80);
+  f_close(&test_file_write);
+
+  chThdExit(0);
+}
+
+void lsm_sd_test(void){
+  lsm_sd_init();
+  if(!fs_ready){
+    SEGGER_RTT_printf(0, "lsm_sd_test: Carte SD non connectée.\n");
     return;
   }
 
-  err = f_open(&test_file_write, "Test2.txt", FA_READ | FA_WRITE | FA_OPEN_ALWAYS);
+  SEGGER_RTT_printf(0, "lsm_sd_test: Starting test...\n");
 
-  lsm_sd_write_file(&test_file_write, "&random_nb", 80);
+  chThdWait(chThdCreateStatic(lsm_wa_sd_test_thread, sizeof(lsm_wa_sd_test_thread), NORMALPRIO + 7, lsm_sd_test_thread, NULL));
 
-  f_close(&test_file_write);
+  return;
 
-  while (1) {
-    bytes_read = lsm_sd_read_file_with_offset(&test_file, buff, BUFF_SIZE-1, offset); // BUFF_SIZE-1 because we need space for the null character
-    if(bytes_read == 0) break;
-    buff[bytes_read] = '\0'; //we end the string
-    SEGGER_RTT_WriteString(0, buff);
-    chThdSleepMilliseconds(1); // necessary to avoid RTT buffer overflow (which causes a hard fault)
-    offset = offset + (FSIZE_t) bytes_read;
-  }
 }
 
+static bool sd_init = false;
 // Initialisation function
 void lsm_sd_init(void){
+  if(!sd_init){
     sdcStart(&SDCD1, NULL);
 
     chEvtObjectInit(&card_inserted);
     chEvtObjectInit(&card_removed);
+    SEGGER_RTT_printf(0,"sd init\n");
 
     chThdCreateStatic(lsm_wa_sd_thread, sizeof(lsm_wa_sd_thread), NORMALPRIO +5, lsm_sd_thread, NULL);
+    SEGGER_RTT_printf(0,"sd init2\n");
 
     chSysLock();
     sd_slot_debounce_counter = 0;
     chVTSetI(&sd_slot_poll_timer, TIME_MS2I(POLLING_DELAY), poll_timer_handler, &SDCD1);
     chSysUnlock();
-
+    sd_init = true;
+  }
 }

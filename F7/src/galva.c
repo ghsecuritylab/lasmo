@@ -71,6 +71,7 @@ void lsm_galva_triangle_phase(void){
 }
 
 void lsm_galva_test(void){
+  lsm_galva_init();
   lsm_galva_triangle_phase();
 }
 

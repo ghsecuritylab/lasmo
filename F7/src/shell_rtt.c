@@ -1,28 +1,22 @@
-#include "shell_rtt.h"
-#include "RTT/SEGGER_RTT.h"
+#include "F7/shell_rtt.h"
+
 #include <stdio.h>
 #include <string.h>
+#include "RTT/SEGGER_RTT.h"
 
-#define GETKEY_BUF_SIZE 255
-static void shell_rtt_help(void);
+#include "F7/shell_rtt_conf.h"
 
-static char* shell_command_names[] = {
-  "help",
-  NULL
-};
-static void  (*shell_command_fct[])(void) = {
-  shell_rtt_help
-};
 static char getkey_buf[GETKEY_BUF_SIZE+1] = {0};
 
 static void shell_rtt_help(void){
+  SEGGER_RTT_printf(0,"help ");
   for(size_t i=0 ; shell_command_names[i] ; i++){
     SEGGER_RTT_printf(0,"%s ",shell_command_names[i]);
   }
   SEGGER_RTT_printf(0,"\n");
 }
 
-void shell_rtt_init(void){
+void lsm_shell_rtt_init(void){
   while(1){
     SEGGER_RTT_printf(0, ">>> ");
     for(int i=0; i<GETKEY_BUF_SIZE; i++){
@@ -33,12 +27,15 @@ void shell_rtt_init(void){
       }
       getkey_buf[i] = (char) u;
     }
+    if(strcmp(getkey_buf,"help") == 0){
+        shell_rtt_help();
+        continue;
+    }
     for(size_t i=0; shell_command_names[i] ; i++){
       if(strcmp(getkey_buf,shell_command_names[i]) == 0){
-        (*shell_command_fct[i])();
+        (*shell_command_fcts[i])();
         break;
       }
     }
   }
 }
-
