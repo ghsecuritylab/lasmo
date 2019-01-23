@@ -51,7 +51,7 @@ static void poll_timer_handler(void *p) {
 static FATFS SDC_FS;
 
 // Availability of the filesystem
-int fs_ready;
+static int fs_ready;
 
 //Taken from the RT-STM32-USB-FATFS demo
 /* Generic large buffer.*/
@@ -167,6 +167,7 @@ UINT lsm_sd_write_file(FIL* fp, void* data, int datalen){
   err = f_write(fp, data, datalen, &bytes_written);
   chThdSleepMilliseconds(512);
 
+
   if(err){
     SEGGER_RTT_printf(0, "lsm_sd_write_file: Write error: error #%d\n", err);
     return 0;
@@ -177,7 +178,8 @@ UINT lsm_sd_write_file(FIL* fp, void* data, int datalen){
 
 }
 
-UINT lsm_sd_read_file(lsm_ilda_file* fp, char* buff, int buflen){
+
+int lsm_sd_read_file(lsm_ilda_file_t* fp, char* buff, int buflen){
   FRESULT err;
   UINT bytes_read;
 
@@ -190,11 +192,11 @@ UINT lsm_sd_read_file(lsm_ilda_file* fp, char* buff, int buflen){
     return 0;
   }
 
-  return bytes_read;
+  return (int) bytes_read;
 
 }
 
-UINT lsm_sd_read_file_with_offset(lsm_ilda_file* fp, char* buff, int buflen, FSIZE_t offset){
+int lsm_sd_read_file_with_offset(lsm_ilda_file_t* fp, char* buff, int buflen, FSIZE_t offset){
   FRESULT err;
 
   err = f_lseek(&(fp->orig_file), offset);
@@ -206,13 +208,10 @@ UINT lsm_sd_read_file_with_offset(lsm_ilda_file* fp, char* buff, int buflen, FSI
   return lsm_sd_read_file(fp, buff, buflen);
 }
 
-int lsm_sd_open_file(lsm_ilda_file* fp, char* path) {
+int lsm_sd_open_file(lsm_ilda_file_t* fp, const char* path) {
   FRESULT err;
 
-  if(!(fp->flags && LSM_ILDA_FROM_SD)) {
-    SEGGER_RTT_printf(0, "lsm_sd_open_file: File error: this ILDA file is not on the SD card\n");
-    return -1;
-  }
+  fp->flags |= LSM_ILDA_FROM_SD;
 
   err = f_open(&(fp->orig_file), path, FA_READ | FA_OPEN_EXISTING);
 
@@ -227,7 +226,7 @@ int lsm_sd_open_file(lsm_ilda_file* fp, char* path) {
   return 0;
 }
 
-int lsm_sd_close_file(lsm_ilda_file* fp) {
+int lsm_sd_close_file(lsm_ilda_file_t* fp) {
   if(!(fp->flags && LSM_ILDA_FROM_SD)) {
     SEGGER_RTT_printf(0, "lsm_sd_open_file: File error: this ILDA file is not on the SD card\n");
     return -1;
@@ -252,7 +251,7 @@ static THD_FUNCTION(lsm_sd_test_thread, arg){
   SEGGER_RTT_WriteString(0, "lsm_sd_test: Info: Reading some data on the device...\n");
 
   int bytes_read;
-  lsm_ilda_file test_file;
+  static lsm_ilda_file_t test_file;
   static char buff[BUFF_SIZE];
 
   test_file.flags = LSM_ILDA_FROM_SD;
@@ -269,7 +268,7 @@ static THD_FUNCTION(lsm_sd_test_thread, arg){
 
   lsm_sd_close_file(&test_file);
 
-  // Testing the write function without using the lsm_ilda_file structure, which is meant to be read_only
+  // Testing the write function without using the lsm_ilda_file_t structure, which is meant to be read_only
 
   SEGGER_RTT_printf(0, "lsm_sd_test: Info: Writing some data on the device...\n");
   FIL test_file_write;
@@ -315,4 +314,8 @@ void lsm_sd_init(void){
     chSysUnlock();
     sd_init = true;
   }
+}
+
+int lsm_is_sd_connected(void){
+  return fs_ready;
 }

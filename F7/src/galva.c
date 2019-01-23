@@ -27,4 +27,3 @@ void lsm_galva_test(void){
   control_init(NORMALPRIO + 2);
   lsm_galva_triangle_phase();
 }
-
