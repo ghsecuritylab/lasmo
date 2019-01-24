@@ -26,7 +26,11 @@ static void lasers_sd_mute(int shutdown, int mute) {
 
 static void lasers_init(void) {
   lsm_max5105_init();
+#ifdef NO_HARDWARE_MUTE
   lasers_sd_mute(1, 1);
+#else
+  lasers_sd_mute(1, 0);
+#endif // NO_HARDWARE_MUTE
 }
 
 /*
@@ -140,28 +144,44 @@ static THD_FUNCTION(control_thread, p) {
                 control_emergency_halt("attempt to turn laser on without movement");
               }
               is_on = 1;
+#ifdef NO_HARDWARE_MUTE
               lasers_sd_mute(!is_on, is_muted);
+#else
+              lasers_sd_mute(!is_on, 0);
+#endif // NO_HARDWARE_MUTE
               break;
             case COMMAND_LASERS_OFF:
               if (!is_on) {
                 control_emergency_halt("lasers are already off");
               }
               is_on = 0;
+#ifdef NO_HARDWARE_MUTE
               lasers_sd_mute(!is_on, is_muted);
+#else
+              lasers_sd_mute(!is_on, 0);
+#endif // NO_HARDWARE_MUTE
               break;
             case COMMAND_LASERS_MUTE:
               if (is_muted) {
                 control_emergency_halt("lasers are already muted");
               }
               is_muted = 1;
+#ifdef NO_HARDWARE_MUTE
               lasers_sd_mute(!is_on, is_muted);
+#else
+              lsm_max5105_hw_muteX(is_muted);
+#endif // NO_HARDWARE_MUTE
               break;
             case COMMAND_LASERS_UNMUTE:
               if (!is_muted) {
                 control_emergency_halt("lasers are already unmuted");
               }
               is_muted = 0;
+#ifdef NO_HARDWARE_MUTE
               lasers_sd_mute(!is_on, is_muted);
+#else
+              lsm_max5105_hw_muteX(is_muted);
+#endif // NO_HARDWARE_MUTE
               break;
             case COMMAND_SCANNER_MOVE:
               {
@@ -224,6 +244,9 @@ static void send_command(uint8_t command, msg_t data) {
 static int initialized = 0;
 
 void control_emergency_halt(const char *reason) {
+#ifndef NO_HARDWARE_MUTE
+  lsm_max5105_hw_muteX(1);
+#endif // !NO_HARDWARE_MUTE
   lasers_sd_mute(1, 1);
   chSysHalt(reason);
   for (;;);

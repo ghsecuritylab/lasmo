@@ -26,6 +26,10 @@ void    lsm_max5105_load  (uint8_t addr);
 uint8_t lsm_max5105_read  (uint8_t addr);
 void    lsm_max5105_wr_upd(uint8_t addr, uint8_t data);
 void    lsm_max5105_write (uint8_t addr, uint8_t data);
+#ifndef NO_HARDWARE_MUTE
+// Hardware mute. Can be called from any context.
+void    lsm_max5105_hw_muteX(uint8_t mute);
+#endif // !NO_HARDWARE_MUTE
 
 void lsm_max5105_test(void);
 

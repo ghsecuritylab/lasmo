@@ -584,9 +584,15 @@
  * @details This hook is invoked in case to a system halting error before
  *          the system is halted.
  */
+#ifdef NO_HARDWARE_MUTE
 #define CH_CFG_SYSTEM_HALT_HOOK(reason) {                                   \
-  /* System halt code here.*/                                               \
 }
+#else
+#define CH_CFG_SYSTEM_HALT_HOOK(reason) {                                   \
+  void lsm_max5105_hw_muteX(uint8_t);                                       \
+  lsm_max5105_hw_muteX(1);                                                  \
+}
+#endif // NO_HARDWARE_MUTE
 
 /**
  * @brief   Trace hook.
