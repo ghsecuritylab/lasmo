@@ -47,8 +47,8 @@ static const DACConfig dac1cfg1 = {
 };
 
 static void scanner_xy(int16_t x_value, uint16_t y_value) {
-  dacPutChannelX(&DACD1, SCANNER_CHANNEL1, x_value);
-  dacPutChannelX(&DACD1, SCANNER_CHANNEL2, y_value);
+  dacPutChannelX(&DACD1, SCANNER_CHANNEL1, x_value / 2);
+  dacPutChannelX(&DACD1, SCANNER_CHANNEL2, y_value / 2);
 }
 
 /*
