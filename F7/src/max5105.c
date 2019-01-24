@@ -6,6 +6,10 @@
 
 #include "F7/max5105.h"
 
+#ifndef NO_HARDWARE_MUTE
+#define MUTE_LINE PAL_LINE(GPIOD, 7)
+#endif // NO_HARDWARE_MUTE
+
 /* Serial Interface Programming Commands */
 #define MAX_WRITE   0x20
 #define MAX_WR_UPD  0x28
@@ -44,7 +48,13 @@ void lsm_max5105_init(void){
   palSetPadMode(SPI1_SCK_GPIO , SPI1_SCK_PIN , PAL_MODE_ALTERNATE(5)   );
 
   /* for safety,all dac are muted and shutdowned */
-  lsm_max5105_wr_upd(MAX_SD_MUTE_ADDR,MAX_SHUTDOWN_ALL | MAX_MUTE_ALL);
+#ifdef NO_HARDWARE_MUTE
+  lsm_max5105_wr_upd(MAX_SD_MUTE_ADDR, MAX_SHUTDOWN_ALL | MAX_MUTE_ALL);
+#else
+  palSetLineMode(MUTE_LINE, PAL_MODE_OUTPUT_PUSHPULL);
+  lsm_max5105_hw_muteX(1);
+  lsm_max5105_wr_upd(MAX_SD_MUTE_ADDR, MAX_SHUTDOWN_ALL);
+#endif // NO_HARDWARE_MUTE
 }
 
 
@@ -106,3 +116,12 @@ void lsm_max5105_test(void){
                     NORMALPRIO + 1, lsm_test_thread_fct, NULL);
 }
 
+#ifndef NO_HARDWARE_MUTE
+void lsm_max5105_hw_muteX(uint8_t mute) {
+  if (mute) {
+    palSetLine(MUTE_LINE);
+  } else {
+    palClearLine(MUTE_LINE);
+  }
+}
+#endif // !NO_HARDWARE_MUTE
