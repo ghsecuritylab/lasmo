@@ -1,0 +1,234 @@
+[2018.12.18 21:06:11] [0000m.00s.374ms] [0] WELCOME
+[2018.12.18 21:06:11] [0000m.00s.374ms] [1] iCDB Server ver.2.204, w6NMT3m1DsvvLxNhuorv0Q, build:11282694 created 2018-08-20 09:52:51, sources stamp:w6NMT3m1DsvvLxNhuorv0Q
+[2018.12.18 21:06:11] [0000m.00s.374ms] [1] Copyright 2018 Mentor Graphics Corporation.  All Rights Reserved.
+[2018.12.18 21:06:11] [0000m.00s.374ms] [1] Base flow version [VX.2.4]
+[2018.12.18 21:06:11] [0000m.00s.374ms] [1] Install Id [1845723], Flow Id [X-ENTP VX.2.4], Full Flow Name [Xpedition Enterprise X-ENTP VX.2.4], Exact Access Date [2018/08/01]
+[2018.12.18 21:06:11] [0000m.00s.374ms] [1] Install Id [1845717], Flow Id [X-ENTP DCVX.2.4], Full Flow Name [Xpedition Enterprise X-ENTP VX.2.4], Exact Access Date [2018/08/01]
+[2018.12.18 21:06:11] [0000m.00s.405ms] [1] Machine [PIERRE-PC]  IP [127.0.0.1,137.194.121.9,192.168.0.11]  User [Pierre]  PID [6700]
+[2018.12.18 21:06:11] [0000m.00s.405ms] [1] Operating system [Microsoft Windows 7 Ultimate Edition, 64-bit Service Pack 1 (build 7601)]
+[2018.12.18 21:06:11] [0000m.00s.405ms] [1] Current working dir [D:\telecom\lasmo\PCB]
+[2018.12.18 21:06:11] [0000m.00s.405ms] [1] PATH [C:\MentorGraphics\EEVX.2.4\SDD_HOME\wg\help;C:\MentorGraphics\EEVX.2.4\SDD_HOME\common\win32\bin;C:\MentorGraphics\EEVX.2.4\SDD_HOME\common\win32\lib;C:\MentorGraphics\EEVX.2.4\MGC_HOME.ixn\bin;C:\MentorGraphics\EEVX.2.4\MGC_HOME.ixn\lib;C:\MentorGraphics\EEVX.2.4\SDD_HOME\wg\win32\lib;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Git\cmd;C:\Program Files\OpenVPN\bin]
+[2018.12.18 21:06:11] [0000m.00s.405ms] [1] SDD_HOME [C:\MentorGraphics\EEVX.2.4\SDD_HOME] on file system [NTFS]
+[2018.12.18 21:06:11] [0000m.00s.405ms] [1] SDD_PLATFORM [win32]
+[2018.12.18 21:06:11] [0000m.00s.405ms] [1] WDIR [C:\WDIR\;C:\MentorGraphics\EEVX.2.4\SDD_HOME\standard;]
+[2018.12.18 21:06:11] [0000m.00s.405ms] [1] Local iCDB working dir [C:\WDIR\iCDB] on file system [NTFS]
+[2018.12.18 21:06:11] [0000m.00s.405ms] [1] S: Config file name [ServerWG.cfg]
+[2018.12.18 21:06:11] [0000m.00s.405ms] [2] S: Loading config files
+[2018.12.18 21:06:11] [0000m.00s.405ms] [1] Config file [D:\telecom\lasmo\PCB\Default\default.icdb\cdbsvr\ServerWG.cfg] not found
+[2018.12.18 21:06:11] [0000m.00s.405ms] [1] Config: Non-default value [System.SingleUserMode] = [no]
+[2018.12.18 21:06:11] [0000m.00s.421ms] [3] S: Config loaded
+[2018.12.18 21:06:11] [0000m.00s.468ms] [0] S: Project path [D:\telecom\lasmo\PCB\Default\default.icdb] on file system [HFS Plus]
+[2018.12.18 21:06:11] [0000m.00s.468ms] [1] S: WARNING: No project file (.prj) path specified
+[2018.12.18 21:06:11] [0000m.00s.468ms] [1] S: WARNING: Database auto-repair support DISABLED
+[2018.12.18 21:06:11] [0000m.00s.468ms] [0] S: Multi-user mode (config)
+[2018.12.18 21:06:11] [0000m.00s.468ms] [0] S: Event polling mode autodetection
+[2018.12.18 21:06:11] [0000m.00s.468ms] [0] S: Started up automatically by iCDB Client: PIERRE-PC:Pierre:6204
+[2018.12.18 21:06:11] [0000m.00s.468ms] [0] S: Auto close mode
+[2018.12.18 21:06:11] [0000m.00s.468ms] [0] S: Database ID [158f-3ed3-ea9a-b72d-620c-70cb-20c7-0c50-7c71-2080-80dc-19ca]
+[2018.12.18 21:06:11] [0000m.00s.468ms] [0] PathTranslator: BEGIN dumping
+[2018.12.18 21:06:11] [0000m.00s.468ms] [0] PathTranslator: Local -> global path prefix list
+[2018.12.18 21:06:11] [0000m.00s.468ms] [0] PathTranslator: [C:\Users] -> [\\PIERRE-PC\Users]
+[2018.12.18 21:06:11] [0000m.00s.468ms] [0] PathTranslator: [F:\] -> [\\PIERRE-PC\Users\Pierre\virtual_F]
+[2018.12.18 21:06:11] [0000m.00s.468ms] [0] PathTranslator: Global -> local path prefix list
+[2018.12.18 21:06:11] [0000m.00s.468ms] [0] PathTranslator: [\\PIERRE-PC\Users\Pierre\virtual_F] -> [F:\]
+[2018.12.18 21:06:11] [0000m.00s.468ms] [0] PathTranslator: [\\PIERRE-PC\Users] -> [C:\Users]
+[2018.12.18 21:06:11] [0000m.00s.468ms] [0] PathTranslator: END dumping
+[2018.12.18 21:06:11] [0000m.00s.468ms] [0] S: START
+[2018.12.18 21:06:11] [0000m.00s.468ms] [0] S: Server startup lock file created
+[2018.12.18 21:06:11] [0000m.00s.468ms] [0] S: Listening for client connections on port [10002]
+[2018.12.18 21:06:11] [0000m.00s.483ms] [0] S: Server network ID [Pierre-PC:137.194.121.9,192.168.0.11,Pierre-PC:10002]
+[2018.12.18 21:06:11] [0000m.00s.483ms] [0] S: Server GUID [472d-b7bd-1641-2ae4-3335-91c8-3359-1c50-0b47-86c5-e330-acad]
+[2018.12.18 21:06:11] [0000m.00s.483ms] [0] S: Project GUID [158f-3ed3-ea9a-b72d-620c-70cb-20c7-0c50-7c71-2080-80dc-19ca]
+[2018.12.18 21:06:11] [0000m.00s.483ms] [0] S: Wrote data to server address file
+[2018.12.18 21:06:11] [0000m.00s.483ms] [0] S: Server startup lock file removed
+[2018.12.18 21:06:11] [0000m.00s.483ms] [0] ProjectBackupManager: WARNING: Could not create Project Backup - functionality not initialized
+[2018.12.18 21:06:12] [0000m.00s.639ms] [0] S: Plugins loaded: [PIM] [ENetGen70] 
+[2018.12.18 21:06:12] [0000m.00s.639ms] [1] ServerToolkit: INFO: Plugin not found in SDD_ICDB_BIN [C:\MentorGraphics\EEVX.2.4\SDD_HOME\iCDB\win32\bin]
+[2018.12.18 21:06:12] [0000m.00s.639ms] [1] ServerToolkit: INFO: Plugin not found in SDD_COMMON_BIN [C:\MentorGraphics\EEVX.2.4\SDD_HOME\common\win32\bin]
+[2018.12.18 21:06:12] [0000m.00s.639ms] [1] ServerToolkit: INFO: Plugin not found in PATH
+[2018.12.18 21:06:12] [0000m.00s.639ms] [1] ServerToolkit: INFO: Plugin not found in CWD
+[2018.12.18 21:06:12] [0000m.00s.655ms] [1] ServerToolkit: INFO: returning just plugin exe name!
+[2018.12.18 21:06:12] [0000m.00s.655ms] [0] S: Local disc access time: 254 us
+[2018.12.18 21:06:12] [0000m.00s.655ms] [0] S: File server access time: 244 us
+[2018.12.18 21:06:12] [0000m.00s.655ms] [0] Single file [D:\telecom\lasmo\PCB\Default\default.icdb\icdb.dat] size [237720 (232.1 kB)]
+[2018.12.18 21:06:12] [0000m.00s.655ms] [1] Single file [D:\telecom\lasmo\PCB\Default\default.icdb\icdb.dat] opened in read-write mode
+[2018.12.18 21:06:12] [0000m.00s.655ms] [0] SingleFile: [0000-0000-0000-0000] SFI header version check [1009] [1009]
+[2018.12.18 21:06:12] [0000m.00s.655ms] [0] Database GUARD OK: [237720]
+[2018.12.18 21:06:12] [0000m.00s.655ms] [0] SingleFile: [0000-0000-0000-0000] SFI header version check [1009] [1009]
+[2018.12.18 21:06:12] [0000m.00s.655ms] [0] Database GUARD OK: [237720]
+[2018.12.18 21:06:12] [0000m.00s.655ms] [0] SingleFile: [0000-0000-0000-0000] SFI header version check [1009] [1009]
+[2018.12.18 21:06:12] [0000m.00s.655ms] [0] Database GUARD OK: [237720]
+[2018.12.18 21:06:12] [0000m.00s.655ms] [0] SingleFile: [0000-0000-0000-0000] SFI header version check [1009] [1009]
+[2018.12.18 21:06:12] [0000m.00s.655ms] [0] Database GUARD OK: [237720]
+[2018.12.18 21:06:12] [0000m.00s.655ms] [0] SingleFile: [0000-0000-0000-0000] SFI header version check [1009] [1009]
+[2018.12.18 21:06:12] [0000m.00s.655ms] [0] Database GUARD OK: [237720]
+[2018.12.18 21:06:12] [0000m.00s.655ms] [0] SingleFile: [e30d-de10-9b2f-dc48] SFI version check [1009] [1009]
+[2018.12.18 21:06:12] [0000m.00s.686ms] [0] SingleFile: [e30d-de10-9b2f-dc48] Database SFI header has been read in [32ms 819us]
+[2018.12.18 21:06:12] [0000m.00s.702ms] [0] iCDB Server PI: Server & plugin session [271]
+[2018.12.18 21:06:12] [0000m.00s.702ms] [0] iCDB Server PI: Opening database [D:\telecom\lasmo\PCB\Default\default.icdb]
+[2018.12.18 21:06:12] [0000m.00s.702ms] [0] iCDB Server PI: Database [D:\telecom\lasmo\PCB\Default\default.icdb] opened
+[2018.12.18 21:06:12] [0000m.00s.764ms] [0] iCDB Database: Checking existence of constraint definitions
+[2018.12.18 21:06:12] [0000m.00s.764ms] [0] iCDB Database: Checking constraint definitions version
+[2018.12.18 21:06:12] [0000m.00s.920ms] [1] iCDB Database: Constraint definitions version [ce_ee.cns=7.10.63;user.cns=0fd9-1d32-f121-3443-7d58-eebc-d58e-eb50-3ec0-2070-40dc-19ca] up to date
+[2018.12.18 21:06:12] [0000m.01s.092ms] [0] iCDB Server PI: Initializing plugins
+[2018.12.18 21:06:12] [0000m.01s.092ms] [0] iCDB Server PI: Plugins initialized
+[2018.12.18 21:06:12] [0000m.01s.092ms] [0] S: iCDB database loaded
+[2018.12.18 21:06:12] [0000m.01s.092ms] [0] S: Starting threads
+[2018.12.18 21:06:12] [0000m.01s.092ms] [0] BT: Listening for broadcast messages on port [10000]
+[2018.12.18 21:06:12] [0000m.01s.092ms] [1] CMT: There are no clients - waiting [10 seconds]
+[2018.12.18 21:06:12] [0000m.01s.092ms] [0] ProjectBackupManager: WARNING: Could not startup Project Backup engine - functionality not initialized
+[2018.12.18 21:06:12] [0000m.01s.107ms] [0] IT: Session [272] for host [Pierre-PC] user [Pierre] client type[0] clsvrPluginID[0] with process ID [6204] created
+[2018.12.18 21:06:12] [0000m.01s.107ms] [0] MWT: WindowProc: WM_NCCREATE
+[2018.12.18 21:06:12] [0000m.01s.107ms] [1] SC[272]: Registered sub-client [DCDV] with ID [1] for session ID [272] host [Pierre-PC] user [Pierre] process ID [6204]
+[2018.12.18 21:06:12] [0000m.01s.201ms] [1] CMT: There are [1] clients now: 272
+[2018.12.18 21:06:42] [0000m.30s.825ms] [0] DFAMT: File server access time: 279 us
+[2018.12.18 21:06:55] [0000m.43s.633ms] [0] IT: Session [273] for host [Pierre-PC] user [Pierre] client type[0] clsvrPluginID[0] with process ID [5400] created
+[2018.12.18 21:06:55] [0000m.43s.633ms] [1] ProjectBackupManager: Client [ClientData[ClientNetAddress[Pierre-PC] # ClientUserName[Pierre] # ClientProcessID[5400] # SessionID[273] # Type[0]] # SubClientData[SubClientName[] # SubClientID[0]]] set project file (.prj): local path [D:\telecom\lasmo\PCB\PCB.prj], global path [D:\telecom\lasmo\PCB\PCB.prj]
+[2018.12.18 21:06:55] [0000m.43s.726ms] [1] CMT: There are [2] clients now: 272, 273
+[2018.12.18 21:06:55] [0000m.43s.742ms] [0] PrjBackupMgr: Migrating iCDB upgrade backups from directory [PCB\Default\default.icdb\cdbback] to Project Backup format.
+[2018.12.18 21:06:55] [0000m.43s.742ms] [0] PrjBackupMgr: WARNING: Ignoring iCDB backup file [2018-12-05 13.10.15-2064-pbmf.zip] - will not be migrated.
+[2018.12.18 21:06:55] [0000m.43s.742ms] [1] SC[273]: Registered sub-client [Expedition PCB_4073030] with ID [1] for session ID [273] host [Pierre-PC] user [Pierre] process ID [5400]
+[2018.12.18 21:06:55] [0000m.43s.929ms] [1] SC[273]: Registered sub-client [EEVM] with ID [2] for session ID [273] host [Pierre-PC] user [Pierre] process ID [5400]
+[2018.12.18 21:06:55] [0000m.44s.304ms] [1] SC[273]: UnRegistered sub-client [EEVM] with ID [2] for session ID [273] host [Pierre-PC] user [Pierre] process ID [5400]
+[2018.12.18 21:06:56] [0000m.45s.318ms] [1] SC[273]: Registered sub-client [JobPrefsDBPI_4074948] with ID [3] for session ID [273] host [Pierre-PC] user [Pierre] process ID [5400]
+[2018.12.18 21:06:56] [0000m.45s.333ms] [1] SC[273]: UnRegistered sub-client [JobPrefsDBPI_4074948] with ID [3] for session ID [273] host [Pierre-PC] user [Pierre] process ID [5400]
+[2018.12.18 21:06:58] [0000m.46s.940ms] [1] SC[273]: Registered sub-client [JobPrefsDBPI_4076586] with ID [4] for session ID [273] host [Pierre-PC] user [Pierre] process ID [5400]
+[2018.12.18 21:06:58] [0000m.46s.956ms] [1] SC[273]: UnRegistered sub-client [JobPrefsDBPI_4076586] with ID [4] for session ID [273] host [Pierre-PC] user [Pierre] process ID [5400]
+[2018.12.18 21:07:00] [0000m.48s.703ms] [1] SC[273]: Registered sub-client [JobPrefsDBPI_4078318] with ID [5] for session ID [273] host [Pierre-PC] user [Pierre] process ID [5400]
+[2018.12.18 21:07:00] [0000m.48s.765ms] [1] SC[273]: UnRegistered sub-client [JobPrefsDBPI_4078318] with ID [5] for session ID [273] host [Pierre-PC] user [Pierre] process ID [5400]
+[2018.12.18 21:07:00] [0000m.49s.358ms] [1] SC[273]: Registered sub-client [JobPrefsDBPI_4078989] with ID [6] for session ID [273] host [Pierre-PC] user [Pierre] process ID [5400]
+[2018.12.18 21:07:00] [0000m.49s.452ms] [1] SC[273]: UnRegistered sub-client [JobPrefsDBPI_4078989] with ID [6] for session ID [273] host [Pierre-PC] user [Pierre] process ID [5400]
+[2018.12.18 21:07:01] [0000m.49s.779ms] [1] SC[273]: Registered sub-client [ExpeditionCrossProber] with ID [7] for session ID [273] host [Pierre-PC] user [Pierre] process ID [5400]
+[2018.12.18 21:07:01] [0000m.49s.795ms] [1] SC[273]: Registered sub-client [StartServerClient12c4] with ID [8] for session ID [273] host [Pierre-PC] user [Pierre] process ID [5400]
+[2018.12.18 21:07:01] [0000m.49s.795ms] [1] SC[273]: UnRegistered sub-client [StartServerClient12c4] with ID [8] for session ID [273] host [Pierre-PC] user [Pierre] process ID [5400]
+[2018.12.18 21:07:23] [0001m.12s.478ms] [1] SC[273]: UnRegistered sub-client [ExpeditionCrossProber] with ID [7] for session ID [273] host [Pierre-PC] user [Pierre] process ID [5400]
+[2018.12.18 21:07:26] [0001m.14s.948ms] [1] SC[273]: UnRegistered sub-client [Expedition PCB_4073030] with ID [1] for session ID [273] host [Pierre-PC] user [Pierre] process ID [5400]
+[2018.12.18 21:07:26] [0001m.14s.995ms] [1] CMT: Removed client [273]
+[2018.12.18 21:07:26] [0001m.14s.995ms] [1] CMT: There are [1] clients now: 272
+[2018.12.18 21:14:17] [0008m.05s.723ms] [0] IT: Session [274] for host [Pierre-PC] user [Pierre] client type[0] clsvrPluginID[0] with process ID [5512] created
+[2018.12.18 21:14:17] [0008m.05s.723ms] [1] SC[274]: Registered sub-client [ICDBC] with ID [1] for session ID [274] host [Pierre-PC] user [Pierre] process ID [5512]
+[2018.12.18 21:14:17] [0008m.05s.785ms] [1] SC[274]: Registered sub-client [ConsReuseSubClient] with ID [2] for session ID [274] host [Pierre-PC] user [Pierre] process ID [5512]
+[2018.12.18 21:14:17] [0008m.05s.801ms] [1] CMT: There are [2] clients now: 272, 274
+[2018.12.18 21:14:17] [0008m.06s.519ms] [1] SC[274]: UnRegistered sub-client [ICDBC] with ID [1] for session ID [274] host [Pierre-PC] user [Pierre] process ID [5512]
+[2018.12.18 21:14:17] [0008m.06s.519ms] [1] SC[274]: UnRegistered sub-client [ConsReuseSubClient] with ID [2] for session ID [274] host [Pierre-PC] user [Pierre] process ID [5512]
+[2018.12.18 21:14:17] [0008m.06s.565ms] [1] CMT: Removed client [274]
+[2018.12.18 21:14:17] [0008m.06s.565ms] [1] CMT: There are [1] clients now: 272
+[2018.12.18 21:14:19] [0008m.07s.689ms] [0] IT: Session [275] for host [Pierre-PC] user [Pierre] client type[0] clsvrPluginID[0] with process ID [5584] created
+[2018.12.18 21:14:19] [0008m.07s.689ms] [1] SC[275]: Registered sub-client [Packager_4517102] with ID [1] for session ID [275] host [Pierre-PC] user [Pierre] process ID [5584]
+[2018.12.18 21:14:19] [0008m.07s.767ms] [1] CMT: There are [2] clients now: 272, 275
+[2018.12.18 21:14:20] [0008m.08s.781ms] [1] SC[275]: UnRegistered sub-client [Packager_4517102] with ID [1] for session ID [275] host [Pierre-PC] user [Pierre] process ID [5584]
+[2018.12.18 21:14:20] [0008m.08s.859ms] [1] CMT: Removed client [275]
+[2018.12.18 21:14:20] [0008m.08s.859ms] [1] CMT: There are [1] clients now: 272
+[2018.12.18 21:15:02] [0008m.50s.838ms] [0] IT: Session [276] for host [Pierre-PC] user [Pierre] client type[0] clsvrPluginID[0] with process ID [5896] created
+[2018.12.18 21:15:02] [0008m.50s.870ms] [1] SC[276]: Registered sub-client [Expedition PCB_4560268] with ID [1] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:02] [0008m.50s.948ms] [1] CMT: There are [2] clients now: 272, 276
+[2018.12.18 21:15:02] [0008m.51s.072ms] [1] SC[276]: Registered sub-client [EEVM] with ID [2] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:02] [0008m.51s.431ms] [1] SC[276]: UnRegistered sub-client [EEVM] with ID [2] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:04] [0008m.52s.617ms] [1] SC[276]: Registered sub-client [JobPrefsDBPI_4562249] with ID [3] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:04] [0008m.52s.617ms] [1] SC[276]: UnRegistered sub-client [JobPrefsDBPI_4562249] with ID [3] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:06] [0008m.55s.113ms] [1] SC[276]: Registered sub-client [JobPrefsDBPI_4564698] with ID [4] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:06] [0008m.55s.128ms] [1] SC[276]: UnRegistered sub-client [JobPrefsDBPI_4564698] with ID [4] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:12] [0009m.00s.963ms] [1] SC[276]: Registered sub-client [JobPrefsDBPI_4570595] with ID [5] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:12] [0009m.01s.010ms] [1] SC[276]: UnRegistered sub-client [JobPrefsDBPI_4570595] with ID [5] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:12] [0009m.01s.478ms] [1] SC[276]: Registered sub-client [JobPrefsDBPI_4571110] with ID [6] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:12] [0009m.01s.540ms] [1] SC[276]: UnRegistered sub-client [JobPrefsDBPI_4571110] with ID [6] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:13] [0009m.01s.868ms] [1] SC[276]: Registered sub-client [ExpeditionCrossProber] with ID [7] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:13] [0009m.01s.868ms] [1] SC[276]: Registered sub-client [StartServerClient1bf0] with ID [8] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:13] [0009m.01s.883ms] [1] SC[276]: UnRegistered sub-client [StartServerClient1bf0] with ID [8] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:25] [0009m.13s.958ms] [1] SC[276]: UnRegistered sub-client [ExpeditionCrossProber] with ID [7] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:25] [0009m.13s.973ms] [1] SC[276]: Registered sub-client [EEVM_EEVM_1634840] with ID [9] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:25] [0009m.13s.973ms] [1] SC[276]: UnRegistered sub-client [EEVM_EEVM_1634840] with ID [9] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:25] [0009m.14s.535ms] [1] SC[276]: Registered sub-client [JobPrefsDBPI_4584167] with ID [10] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:26] [0009m.14s.613ms] [1] SC[276]: UnRegistered sub-client [JobPrefsDBPI_4584167] with ID [10] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:27] [0009m.16s.083ms] [1] SC[276]: Registered sub-client [JobPrefsDBPI_4585727] with ID [11] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:27] [0009m.16s.146ms] [1] SC[276]: UnRegistered sub-client [JobPrefsDBPI_4585727] with ID [11] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:28] [0009m.16s.910ms] [0] IT: Session [277] for host [Pierre-PC] user [Pierre] client type[0] clsvrPluginID[0] with process ID [4972] created
+[2018.12.18 21:15:28] [0009m.16s.910ms] [1] SC[277]: Registered sub-client [Packager_4586382] with ID [1] for session ID [277] host [Pierre-PC] user [Pierre] process ID [4972]
+[2018.12.18 21:15:28] [0009m.16s.972ms] [1] CMT: There are [3] clients now: 272, 276, 277
+[2018.12.18 21:15:29] [0009m.17s.659ms] [1] SC[277]: UnRegistered sub-client [Packager_4586382] with ID [1] for session ID [277] host [Pierre-PC] user [Pierre] process ID [4972]
+[2018.12.18 21:15:29] [0009m.17s.737ms] [1] CMT: Removed client [277]
+[2018.12.18 21:15:29] [0009m.17s.737ms] [1] CMT: There are [2] clients now: 272, 276
+[2018.12.18 21:15:29] [0009m.18s.408ms] [0] iCDB Storage Server: WARNING: Pending removed files while trying to copy snapshot files: ProjectPath[D:\telecom\lasmo\PCB\Default\default.icdb] Src[D:\telecom\lasmo\PCB\Default\default.icdb] Dst[D:\telecom\lasmo\PCB\Default\default.icdb]
+[2018.12.18 21:15:35] [0009m.24s.538ms] [0] IT: Session [278] for host [Pierre-PC] user [Pierre] client type[0] clsvrPluginID[0] with process ID [6340] created
+[2018.12.18 21:15:35] [0009m.24s.538ms] [1] SC[278]: Registered sub-client [Expedition_4593886] with ID [1] for session ID [278] host [Pierre-PC] user [Pierre] process ID [6340]
+[2018.12.18 21:15:36] [0009m.24s.632ms] [1] CMT: There are [3] clients now: 272, 276, 278
+[2018.12.18 21:15:36] [0009m.24s.663ms] [1] SC[278]: UnRegistered sub-client [Expedition_4593886] with ID [1] for session ID [278] host [Pierre-PC] user [Pierre] process ID [6340]
+[2018.12.18 21:15:36] [0009m.24s.741ms] [1] CMT: Removed client [278]
+[2018.12.18 21:15:36] [0009m.24s.741ms] [1] CMT: There are [2] clients now: 272, 276
+[2018.12.18 21:15:38] [0009m.27s.362ms] [0] IT: Session [279] for host [Pierre-PC] user [Pierre] client type[0] clsvrPluginID[0] with process ID [6340] created
+[2018.12.18 21:15:38] [0009m.27s.362ms] [1] SC[279]: Registered sub-client [JobPrefsDBPI_4595555] with ID [1] for session ID [279] host [Pierre-PC] user [Pierre] process ID [6340]
+[2018.12.18 21:15:38] [0009m.27s.471ms] [1] CMT: There are [3] clients now: 272, 276, 279
+[2018.12.18 21:15:38] [0009m.27s.534ms] [1] SC[279]: UnRegistered sub-client [JobPrefsDBPI_4595555] with ID [1] for session ID [279] host [Pierre-PC] user [Pierre] process ID [6340]
+[2018.12.18 21:15:38] [0009m.27s.580ms] [1] CMT: Removed client [279]
+[2018.12.18 21:15:38] [0009m.27s.580ms] [1] CMT: There are [2] clients now: 272, 276
+[2018.12.18 21:15:39] [0009m.28s.438ms] [0] IT: Session [280] for host [Pierre-PC] user [Pierre] client type[0] clsvrPluginID[0] with process ID [6340] created
+[2018.12.18 21:15:39] [0009m.28s.438ms] [1] SC[280]: Registered sub-client [JobPrefsDBPI_4597801] with ID [1] for session ID [280] host [Pierre-PC] user [Pierre] process ID [6340]
+[2018.12.18 21:15:39] [0009m.28s.454ms] [1] CMT: There are [3] clients now: 272, 276, 280
+[2018.12.18 21:15:39] [0009m.28s.485ms] [1] SC[280]: UnRegistered sub-client [JobPrefsDBPI_4597801] with ID [1] for session ID [280] host [Pierre-PC] user [Pierre] process ID [6340]
+[2018.12.18 21:15:39] [0009m.28s.563ms] [1] CMT: Removed client [280]
+[2018.12.18 21:15:39] [0009m.28s.563ms] [1] CMT: There are [2] clients now: 272, 276
+[2018.12.18 21:15:43] [0009m.32s.260ms] [0] IT: Session [281] for host [Pierre-PC] user [Pierre] client type[0] clsvrPluginID[0] with process ID [4336] created
+[2018.12.18 21:15:43] [0009m.32s.260ms] [1] SC[281]: Registered sub-client [JobPrefsDBPI_4601577] with ID [1] for session ID [281] host [Pierre-PC] user [Pierre] process ID [4336]
+[2018.12.18 21:15:43] [0009m.32s.354ms] [1] SC[281]: Registered sub-client [Expedition_4601982] with ID [2] for session ID [281] host [Pierre-PC] user [Pierre] process ID [4336]
+[2018.12.18 21:15:43] [0009m.32s.370ms] [1] CMT: There are [3] clients now: 272, 276, 281
+[2018.12.18 21:15:43] [0009m.32s.510ms] [1] SC[281]: UnRegistered sub-client [JobPrefsDBPI_4601577] with ID [1] for session ID [281] host [Pierre-PC] user [Pierre] process ID [4336]
+[2018.12.18 21:15:44] [0009m.32s.635ms] [1] SC[281]: UnRegistered sub-client [Expedition_4601982] with ID [2] for session ID [281] host [Pierre-PC] user [Pierre] process ID [4336]
+[2018.12.18 21:15:44] [0009m.32s.697ms] [1] CMT: Removed client [281]
+[2018.12.18 21:15:44] [0009m.32s.697ms] [1] CMT: There are [2] clients now: 272, 276
+[2018.12.18 21:15:44] [0009m.32s.947ms] [1] SC[276]: Registered sub-client [EEVM_EEVM_217042932] with ID [12] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:44] [0009m.32s.994ms] [1] SC[276]: UnRegistered sub-client [EEVM_EEVM_217042932] with ID [12] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:44] [0009m.32s.994ms] [1] SC[276]: Registered sub-client [EEVM_EEVM_217042932] with ID [13] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:44] [0009m.32s.994ms] [1] SC[276]: UnRegistered sub-client [EEVM_EEVM_217042932] with ID [13] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:44] [0009m.33s.009ms] [1] SC[276]: Registered sub-client [EEVM_EEVM_217042932] with ID [14] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:44] [0009m.33s.040ms] [1] SC[276]: UnRegistered sub-client [EEVM_EEVM_217042932] with ID [14] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:46] [0009m.35s.287ms] [1] SC[276]: UnRegistered sub-client [Expedition PCB_4560268] with ID [1] for session ID [276] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:46] [0009m.35s.318ms] [1] CMT: Removed client [276]
+[2018.12.18 21:15:46] [0009m.35s.318ms] [1] CMT: There are [1] clients now: 272
+[2018.12.18 21:15:47] [0009m.36s.363ms] [0] IT: Session [282] for host [Pierre-PC] user [Pierre] client type[0] clsvrPluginID[0] with process ID [5896] created
+[2018.12.18 21:15:47] [0009m.36s.379ms] [1] SC[282]: Registered sub-client [Expedition PCB_4605695] with ID [1] for session ID [282] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:47] [0009m.36s.410ms] [1] CMT: There are [2] clients now: 272, 282
+[2018.12.18 21:15:48] [0009m.37s.096ms] [1] SC[282]: Registered sub-client [JobPrefsDBPI_4606725] with ID [2] for session ID [282] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:15:48] [0009m.37s.112ms] [1] SC[282]: UnRegistered sub-client [JobPrefsDBPI_4606725] with ID [2] for session ID [282] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:16:01] [0009m.50s.427ms] [1] SC[282]: Registered sub-client [JobPrefsDBPI_4620047] with ID [3] for session ID [282] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:16:01] [0009m.50s.442ms] [1] SC[282]: UnRegistered sub-client [JobPrefsDBPI_4620047] with ID [3] for session ID [282] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:16:01] [0009m.50s.520ms] [1] SC[282]: Registered sub-client [ExpeditionCrossProber] with ID [4] for session ID [282] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:19:57] [0013m.46s.013ms] [1] SC[272]: Registered sub-client [StartServerClient1bdc] with ID [2] for session ID [272] host [Pierre-PC] user [Pierre] process ID [6204]
+[2018.12.18 21:19:57] [0013m.46s.013ms] [1] SC[272]: UnRegistered sub-client [StartServerClient1bdc] with ID [2] for session ID [272] host [Pierre-PC] user [Pierre] process ID [6204]
+[2018.12.18 21:30:05] [0023m.54s.156ms] [1] SC[282]: UnRegistered sub-client [ExpeditionCrossProber] with ID [4] for session ID [282] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:30:08] [0023m.57s.417ms] [1] SC[282]: UnRegistered sub-client [Expedition PCB_4605695] with ID [1] for session ID [282] host [Pierre-PC] user [Pierre] process ID [5896]
+[2018.12.18 21:30:08] [0023m.57s.464ms] [1] CMT: Removed client [282]
+[2018.12.18 21:30:08] [0023m.57s.464ms] [1] CMT: There are [1] clients now: 272
+[2018.12.18 21:30:09] [0023m.58s.462ms] [1] SC[272]: UnRegistered sub-client [DCDV] with ID [1] for session ID [272] host [Pierre-PC] user [Pierre] process ID [6204]
+[2018.12.18 21:30:09] [0023m.58s.556ms] [1] CMT: Removed client [272]
+[2018.12.18 21:30:09] [0023m.58s.556ms] [1] CMT: There are no clients left - waiting [1 seconds]
+[2018.12.18 21:30:11] [0023m.59s.663ms] [0] CMT: Starting server auto-close
+[2018.12.18 21:30:11] [0023m.59s.757ms] [0] S: Closing server
+[2018.12.18 21:30:11] [0023m.59s.819ms] [0] iCDB Server PI: Closing plugins
+[2018.12.18 21:30:11] [0023m.59s.819ms] [0] iCDB Server PI: Plugins closed
+[2018.12.18 21:30:11] [0023m.59s.819ms] [0] iCDB Server PI: Unloading database
+[2018.12.18 21:30:11] [0023m.59s.819ms] [0] iCDB Server PI: Saving storage
+[2018.12.18 21:30:11] [0023m.59s.819ms] [0] iCDB Server PI: Closing database
+[2018.12.18 21:30:11] [0023m.59s.882ms] [1] iCDB Server PI: Stats: Database defragmentation: max[4] avg[1] holes[45%] data[75%]
+[2018.12.18 21:30:11] [0023m.59s.882ms] [1] iCDB Server PI: Stats: Database file size [272144 (265.8 kB)]
+[2018.12.18 21:30:11] [0023m.59s.897ms] [1] iCDB Server PI: WARNING: Database needs defragmentation!
+[2018.12.18 21:30:11] [0023m.59s.913ms] [0] iCDB Server PI: Database closed
+[2018.12.18 21:30:11] [0023m.59s.913ms] [0] iCDB Server PI: Defragmenting database
+[2018.12.18 21:30:11] [0023m.59s.913ms] [0] iCDB Server PI: Creating database [D:\telecom\lasmo\PCB\Default\default.icdb] backup to file [D:\telecom\lasmo\PCB\Default\default.icdb\cdbback\2018-12-18 21.30.11-6700-d.zip]
+[2018.12.18 21:30:11] [0024m.00s.131ms] [0] iCDB Server PI: Database backup: DONE
+[2018.12.18 21:30:11] [0024m.00s.516ms] [0] SingleFile: [0000-0000-0000-0000] SFI header version check [1009] [1009]
+[2018.12.18 21:30:11] [0024m.00s.516ms] [0] Database GUARD OK: [272144]
+[2018.12.18 21:30:11] [0024m.00s.516ms] [0] SingleFile: [e30d-de10-9b2f-dc48] SFI version check [1009] [1009]
+[2018.12.18 21:30:11] [0024m.00s.571ms] [0] SingleFile: [e30d-de10-9b2f-dc48] Database SFI header has been read in [55ms 177us]
+[2018.12.18 21:30:12] [0024m.00s.907ms] [1] iCDB Server PI: Stats: Database file sizes: before[272144 (265.8 kB)], after[110512 (107.9 kB)], gain[161632 (157.8 kB)]
+[2018.12.18 21:30:12] [0024m.00s.923ms] [0] Single file [D:\telecom\lasmo\PCB\Default\default.icdb\icdb.dat] closed with size [110512 (107.9 kB)]
+[2018.12.18 21:30:12] [0024m.00s.923ms] [0] iCDB Server PI: Database defragmentation completed successfully
+[2018.12.18 21:30:12] [0024m.00s.923ms] [1] BackupTransaction: Removing database backup [D:\telecom\lasmo\PCB\Default\default.icdb\cdbback\2018-12-18 21.30.11-6700-d.zip]
+[2018.12.18 21:30:12] [0024m.00s.923ms] [1] iCDB Server PI: Stats: Total iCDB execution time: [328934] ticks
+[2018.12.18 21:30:12] [0024m.00s.923ms] [1] iCDB Server PI: Stats: Total iCDB execution time: [135033] microseconds
+[2018.12.18 21:30:12] [0024m.00s.923ms] [1] iCDB Server PI: Stats: Total iCDB commands count: [336]
+[2018.12.18 21:30:12] [0024m.00s.923ms] [1] iCDB Server PI: Stats: Average iCDB speed:        [2488] commands per second
+[2018.12.18 21:30:12] [0024m.00s.923ms] [1] iCDB Server PI: Stats: Mem[36818944]
+[2018.12.18 21:30:12] [0024m.00s.923ms] [1] iCDB Server PI: Stats: MemPeak[43749376]
+[2018.12.18 21:30:12] [0024m.01s.032ms] [0] MWT: Destroy the shutdown block reason.
+[2018.12.18 21:30:12] [0024m.01s.032ms] [0] MWT: STOP
+[2018.12.18 21:30:12] [0024m.01s.032ms] [0] S: STOP

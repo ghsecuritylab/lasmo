@@ -1,0 +1,728 @@
+
+                                    Packager
+                                    --------
+
+                       11:22 AM Friday, December 14, 2018
+            Job Name: D:\telecom\lasmo\PCB_security\PCB_security.prj
+
+
+     Packager     Version: 020806.00
+
+        Commandline is: "C:\MentorGraphics\EEVX.2.4\SDD_HOME\wg\win32\bin\package "-uD:\telecom\lasmo\PCB_security\Default\default.icdb" -d -CleanBuild -W1PinNets "-jD:\telecom\lasmo\PCB_security\PCB_security.prj" "
+
+     The Common Database is at "D:\telecom\lasmo\PCB_security\Default\default.icdb".
+
+     The Root of this design is "Schematic1".
+
+     The Front End Snapshot of this design is "DCDV".
+
+     The PCB Design Path of this design is at "D:\telecom\lasmo\PCB_security\PCB\PCB.pcb".
+
+     The Central Library is at "F:\Central_Libs\ENST.lmc".
+
+     The Disable Repackage status indicates that 
+      Repackaging should be allowed.
+
+     A new Target PDB will be created from the Central Library to satisfy the parts
+      requirements of the iCDB.
+
+     The AllowAlphaRefDes status indicates that reference
+      designators containing all alpha characters should be deleted
+      and the relevant symbols repackaged.
+
+     The cross mapping of symbol pin names to Part Number pin
+      numbers will be checked for packaged symbols and mapped correctly
+      for unpackaged symbols.
+
+     A formatted listing of the CDB before packaging will follow.
+
+     Properties that have been checked off in the Property Definition Editor
+      found at Library Manager/Common Properties will be checked for value
+      differences between the PartsDB and the non-null properties on symbols.
+     Those properties checked off (other than Part Number)
+      will not be transferred from the PartsDB to symbols.
+     The following properties were checked off in the Property Definition Editor:
+       "Parametric"
+       "Value2"
+       "Attachment"
+       "Verification Statut"
+       "Commentaire"
+       "Option"
+       "ESR"
+       "Imax"
+       "Place"
+       "Cout HT"
+       "Vf"
+       "Code Fournisseur"
+       "Boitier"
+       "Iac max"
+       "Voltage"
+       "Dielectric"
+       "Techno"
+       "IBIS"
+       "Model Suffix"
+       "Part Label"
+       "VHDL Model"
+       "Verilog Model"
+       "Supply Rename"
+       "Description"
+       "Simulation Model"
+       "Ref Designator"
+       "Tolerance"
+       "Part Number"
+       "Value"
+       "Part Name"
+
+	Checking for errors in the ICDB...
+
+	No errors found.  Proceeding with packaging...
+
+
+
+    WARNING: Block Schematic1, Page 1, Symbol XCMP742:
+     Reference designator removal.
+     The Reference Designator "C" is being removed
+     from Symbol.  Such 'all alpha' designators that are
+     not instance properties are usually built into symbols and are 
+     not intended as a request to be packaged in the same pack with 
+     symbols of like designators.
+
+    WARNING: Block Schematic1, Page 1, Symbol XCMP743:
+     Reference designator removal.
+     The Reference Designator "C" is being removed
+     from Symbol.  Such 'all alpha' designators that are
+     not instance properties are usually built into symbols and are 
+     not intended as a request to be packaged in the same pack with 
+     symbols of like designators.
+
+    WARNING: Block Schematic1, Page 1, Symbol XCMP744:
+     Reference designator removal.
+     The Reference Designator "C" is being removed
+     from Symbol.  Such 'all alpha' designators that are
+     not instance properties are usually built into symbols and are 
+     not intended as a request to be packaged in the same pack with 
+     symbols of like designators.
+
+    WARNING: Block Schematic1, Page 1, Symbol XCMP745:
+     Reference designator removal.
+     The Reference Designator "C" is being removed
+     from Symbol.  Such 'all alpha' designators that are
+     not instance properties are usually built into symbols and are 
+     not intended as a request to be packaged in the same pack with 
+     symbols of like designators.
+
+    WARNING: Block Schematic1, Page 1, Symbol XCMP746:
+     Reference designator removal.
+     The Reference Designator "C" is being removed
+     from Symbol.  Such 'all alpha' designators that are
+     not instance properties are usually built into symbols and are 
+     not intended as a request to be packaged in the same pack with 
+     symbols of like designators.
+
+    WARNING: Block Schematic1, Page 1, Symbol XCMP748:
+     Reference designator removal.
+     The Reference Designator "C" is being removed
+     from Symbol.  Such 'all alpha' designators that are
+     not instance properties are usually built into symbols and are 
+     not intended as a request to be packaged in the same pack with 
+     symbols of like designators.
+
+    WARNING: Block Schematic1, Page 1, Symbol XCMP749:
+     Reference designator removal.
+     The Reference Designator "C" is being removed
+     from Symbol.  Such 'all alpha' designators that are
+     not instance properties are usually built into symbols and are 
+     not intended as a request to be packaged in the same pack with 
+     symbols of like designators.
+
+    WARNING: Block Schematic1, Page 1, Symbol XCMP750:
+     Reference designator removal.
+     The Reference Designator "C" is being removed
+     from Symbol.  Such 'all alpha' designators that are
+     not instance properties are usually built into symbols and are 
+     not intended as a request to be packaged in the same pack with 
+     symbols of like designators.
+
+    WARNING: Block Schematic1, Page 1, Symbol XCMP751:
+     Reference designator removal.
+     The Reference Designator "J" is being removed
+     from Symbol.  Such 'all alpha' designators that are
+     not instance properties are usually built into symbols and are 
+     not intended as a request to be packaged in the same pack with 
+     symbols of like designators.
+
+    WARNING: Block Schematic1, Page 1, Symbol XCMP752:
+     Reference designator removal.
+     The Reference Designator "J" is being removed
+     from Symbol.  Such 'all alpha' designators that are
+     not instance properties are usually built into symbols and are 
+     not intended as a request to be packaged in the same pack with 
+     symbols of like designators.
+     
+     Flat net name: GND
+      CDB netname: GND from top path: Schematic1
+      CDB netnumb: 936748726788030507
+       Aliases:
+        path: <Schematic1>
+        sheet: <Schematic1(1)>
+        net: <GND>
+     Flat net name: VCC
+      CDB netname: VCC from top path: Schematic1
+      CDB netnumb: 936748731082997803
+       Aliases:
+        path: <Schematic1>
+        sheet: <Schematic1(1)>
+        net: <VCC>
+     Flat net name: F1SWCLK
+      CDB netname: F1SWCLK from top path: Schematic1
+      CDB netnumb: 936748726788034613
+       Aliases:
+        path: <Schematic1>
+        sheet: <Schematic1(1)>
+        net: <F1SWCLK>
+     Flat net name: F1SWDAT
+      CDB netname: F1SWDAT from top path: Schematic1
+      CDB netnumb: 936748731083001909
+       Aliases:
+        path: <Schematic1>
+        sheet: <Schematic1(1)>
+        net: <F1SWDAT>
+     Flat net name: F1RSTn
+      CDB netname: F1RSTn from top path: Schematic1
+      CDB netnumb: 936748735377969205
+       Aliases:
+        path: <Schematic1>
+        sheet: <Schematic1(1)>
+        net: <F1RSTn>
+     Flat net name: XSIG011128
+      CDB netname: XSIG011128 from top path: Schematic1
+      CDB netnumb: 936748739672936501
+       Aliases:
+        path: <Schematic1>
+        sheet: <Schematic1(1)>
+        net: <XSIG011128>
+     Flat net name: XSIG011130
+      CDB netname: XSIG011130 from top path: Schematic1
+      CDB netnumb: 936748743967903797
+       Aliases:
+        path: <Schematic1>
+        sheet: <Schematic1(1)>
+        net: <XSIG011130>
+     Flat net name: VCC5V
+      CDB netname: VCC5V from top path: Schematic1
+      CDB netnumb: 936748752557838389
+       Aliases:
+        path: <Schematic1>
+        sheet: <Schematic1(1)>
+        net: <VCC5V>
+     Flat net name: SPI_F72F1_NSS
+      CDB netname: SPI_F72F1_NSS from top path: Schematic1
+      CDB netnumb: 936748756852805685
+       Aliases:
+        path: <Schematic1>
+        sheet: <Schematic1(1)>
+        net: <SPI_F72F1_NSS>
+     Flat net name: SPI_F72F1_SCK
+      CDB netname: SPI_F72F1_SCK from top path: Schematic1
+      CDB netnumb: 936748761147772981
+       Aliases:
+        path: <Schematic1>
+        sheet: <Schematic1(1)>
+        net: <SPI_F72F1_SCK>
+     Flat net name: SPI_F72F1_MISO
+      CDB netname: SPI_F72F1_MISO from top path: Schematic1
+      CDB netnumb: 936748765442740277
+       Aliases:
+        path: <Schematic1>
+        sheet: <Schematic1(1)>
+        net: <SPI_F72F1_MISO>
+     Flat net name: SPI_F72F1_MOSI
+      CDB netname: SPI_F72F1_MOSI from top path: Schematic1
+      CDB netnumb: 936748769737707573
+       Aliases:
+        path: <Schematic1>
+        sheet: <Schematic1(1)>
+        net: <SPI_F72F1_MOSI>
+     Flat net name: LASERS_MUTE
+      CDB netname: LASERS_MUTE from top path: Schematic1
+      CDB netnumb: 936748774032674869
+       Aliases:
+        path: <Schematic1>
+        sheet: <Schematic1(1)>
+        net: <LASERS_MUTE>
+     Flat net name: GALVA_X_PDA
+      CDB netname: GALVA_X_PDA from top path: Schematic1
+      CDB netnumb: 936748778327642165
+       Aliases:
+        path: <Schematic1>
+        sheet: <Schematic1(1)>
+        net: <GALVA_X_PDA>
+     Flat net name: GALVA_X_PDB
+      CDB netname: GALVA_X_PDB from top path: Schematic1
+      CDB netnumb: 936748782622609461
+       Aliases:
+        path: <Schematic1>
+        sheet: <Schematic1(1)>
+        net: <GALVA_X_PDB>
+     Flat net name: GALVA_Y_PDA
+      CDB netname: GALVA_Y_PDA from top path: Schematic1
+      CDB netnumb: 936748786917576757
+       Aliases:
+        path: <Schematic1>
+        sheet: <Schematic1(1)>
+        net: <GALVA_Y_PDA>
+     Flat net name: GALVA_Y_PDB
+      CDB netname: GALVA_Y_PDB from top path: Schematic1
+      CDB netnumb: 936748791212544053
+       Aliases:
+        path: <Schematic1>
+        sheet: <Schematic1(1)>
+        net: <GALVA_Y_PDB>
+     Flat net name: GALVA_X_0V
+      CDB netname: GALVA_X_0V from top path: Schematic1
+      CDB netnumb: 936748795507511349
+       Aliases:
+        path: <Schematic1>
+        sheet: <Schematic1(1)>
+        net: <GALVA_X_0V>
+     Flat net name: GALVA_Y_0V
+      CDB netname: GALVA_Y_0V from top path: Schematic1
+      CDB netnumb: 936748799802478645
+       Aliases:
+        path: <Schematic1>
+        sheet: <Schematic1(1)>
+        net: <GALVA_Y_0V>
+     Flat net name: GALVA_X_CTRL
+      CDB netname: GALVA_X_CTRL from top path: Schematic1
+      CDB netnumb: 936748804097445941
+       Aliases:
+        path: <Schematic1>
+        sheet: <Schematic1(1)>
+        net: <GALVA_X_CTRL>
+     Flat net name: XSIG011168
+      CDB netname: XSIG011168 from top path: Schematic1
+      CDB netnumb: 936748812687380533
+       Aliases:
+        path: <Schematic1>
+        sheet: <Schematic1(1)>
+        net: <XSIG011168>
+     Flat net name: XSIG011171
+      CDB netname: XSIG011171 from top path: Schematic1
+      CDB netnumb: 936748816982347829
+       Aliases:
+        path: <Schematic1>
+        sheet: <Schematic1(1)>
+        net: <XSIG011171>
+     Flat net name: VCC15V
+      CDB netname: VCC15V from top path: Schematic1
+      CDB netnumb: 936748821277315125
+       Aliases:
+        path: <Schematic1>
+        sheet: <Schematic1(1)>
+        net: <VCC15V>
+     Flat net name: VCC-15V
+      CDB netname: VCC-15V from top path: Schematic1
+      CDB netnumb: 936748825572282421
+       Aliases:
+        path: <Schematic1>
+        sheet: <Schematic1(1)>
+        net: <VCC-15V>
+     Flat net name: XSIG011205
+      CDB netname: XSIG011205 from top path: Schematic1
+      CDB netnumb: 936748726788034615
+       Aliases:
+        path: <Schematic1>
+        sheet: <Schematic1(1)>
+        net: <XSIG011205>
+     Flat net name: XSIG011206
+      CDB netname: XSIG011206 from top path: Schematic1
+      CDB netnumb: 936748731083001911
+       Aliases:
+        path: <Schematic1>
+        sheet: <Schematic1(1)>
+        net: <XSIG011206>
+     
+     
+typ_dsg: 10-0057
+     
+ flat ref_dsg:   FROZEN: 0
+  path: <Schematic1>
+  sheet: <Schematic1(1)>
+  cct_ref: <XCMP750>      SELECT COMP
+       Part Number 10-0057  Part Name CAPCERAM0603
+       PDB symbol name: <CAP_NP>  was_ref_dsg: <(null)>
+   phy_pin_nam: 2  sym_pin_nam: 2  pin_seq_num: 2       flat netname: VCC
+   phy_pin_nam: 1  sym_pin_nam: 1  pin_seq_num: 1       flat netname: GND
+     
+ flat ref_dsg:   FROZEN: 0
+  path: <Schematic1>
+  sheet: <Schematic1(1)>
+  cct_ref: <XCMP748>      SELECT COMP
+       Part Number 10-0057  Part Name CAPCERAM0603
+       PDB symbol name: <CAP_NP>  was_ref_dsg: <(null)>
+   phy_pin_nam: 2  sym_pin_nam: 2  pin_seq_num: 2       flat netname: GND
+   phy_pin_nam: 1  sym_pin_nam: 1  pin_seq_num: 1       flat netname: VCC
+     
+ flat ref_dsg:   FROZEN: 0
+  path: <Schematic1>
+  sheet: <Schematic1(1)>
+  cct_ref: <XCMP745>      SELECT COMP
+       Part Number 10-0057  Part Name CAPCERAM0603
+       PDB symbol name: <CAP_NP>  was_ref_dsg: <(null)>
+   phy_pin_nam: 2  sym_pin_nam: 2  pin_seq_num: 2       flat netname: GND
+   phy_pin_nam: 1  sym_pin_nam: 1  pin_seq_num: 1       flat netname: VCC
+     
+ flat ref_dsg:   FROZEN: 0
+  path: <Schematic1>
+  sheet: <Schematic1(1)>
+  cct_ref: <XCMP744>      SELECT COMP
+       Part Number 10-0057  Part Name CAPCERAM0603
+       PDB symbol name: <CAP_NP>  was_ref_dsg: <(null)>
+   phy_pin_nam: 2  sym_pin_nam: 2  pin_seq_num: 2       flat netname: GND
+   phy_pin_nam: 1  sym_pin_nam: 1  pin_seq_num: 1       flat netname: VCC
+     
+ flat ref_dsg:   FROZEN: 0
+  path: <Schematic1>
+  sheet: <Schematic1(1)>
+  cct_ref: <XCMP743>      SELECT COMP
+       Part Number 10-0057  Part Name CAPCERAM0603
+       PDB symbol name: <CAP_NP>  was_ref_dsg: <(null)>
+   phy_pin_nam: 2  sym_pin_nam: 2  pin_seq_num: 2       flat netname: GND
+   phy_pin_nam: 1  sym_pin_nam: 1  pin_seq_num: 1       flat netname: VCC
+     
+ flat ref_dsg:   FROZEN: 0
+  path: <Schematic1>
+  sheet: <Schematic1(1)>
+  cct_ref: <XCMP742>      SELECT COMP
+       Part Number 10-0057  Part Name CAPCERAM0603
+       PDB symbol name: <CAP_NP>  was_ref_dsg: <(null)>
+   phy_pin_nam: 2  sym_pin_nam: 2  pin_seq_num: 2       flat netname: GND
+   phy_pin_nam: 1  sym_pin_nam: 1  pin_seq_num: 1       flat netname: VCC
+     
+typ_dsg: 40-0143
+     
+ flat ref_dsg: U1  FROZEN: 2
+  path: <Schematic1>
+  sheet: <Schematic1(1)>
+  cct_ref: <XCMP718>      SELECT COMP
+       Part Number 40-0143  Part Name STM32F103RE
+       PDB symbol name: <STM32F103RE>  was_ref_dsg: <U1>
+   phy_pin_nam: 6  sym_pin_nam: OSCOUT  pin_seq_num: 0       flat netname: XSIG011128
+   phy_pin_nam: 5  sym_pin_nam: OSCIN  pin_seq_num: 0       flat netname: XSIG011130
+   phy_pin_nam: 12  sym_pin_nam: GNDA  pin_seq_num: 0       flat netname: GND
+   phy_pin_nam: 47  sym_pin_nam: GND_3  pin_seq_num: 0       flat netname: GND
+   phy_pin_nam: 18  sym_pin_nam: GND_2  pin_seq_num: 0       flat netname: GND
+   phy_pin_nam: 31  sym_pin_nam: GND_1  pin_seq_num: 0       flat netname: GND
+   phy_pin_nam: 63  sym_pin_nam: GND_0  pin_seq_num: 0       flat netname: GND
+   phy_pin_nam: 54  sym_pin_nam: PD2  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 4  sym_pin_nam: PC15  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 3  sym_pin_nam: PC14  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 2  sym_pin_nam: PC13  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 53  sym_pin_nam: PC12  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 52  sym_pin_nam: PC11  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 51  sym_pin_nam: PC10  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 40  sym_pin_nam: PC9  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 39  sym_pin_nam: PC8  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 38  sym_pin_nam: PC7  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 37  sym_pin_nam: PC6  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 25  sym_pin_nam: PC5  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 24  sym_pin_nam: PC4  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 11  sym_pin_nam: PC3  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 46  sym_pin_nam: JTMS/SWDIO  pin_seq_num: 0       flat netname: F1SWDAT
+   phy_pin_nam: 55  sym_pin_nam: JTDO  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 50  sym_pin_nam: JTDI  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 49  sym_pin_nam: JTCK/SWCLK  pin_seq_num: 0       flat netname: F1SWCLK
+   phy_pin_nam: 56  sym_pin_nam: JNTRST  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 28  sym_pin_nam: BOOT1/PB2  pin_seq_num: 0       flat netname: XSIG011205
+   phy_pin_nam: 60  sym_pin_nam: BOOT0  pin_seq_num: 0       flat netname: XSIG011206
+   phy_pin_nam: 1  sym_pin_nam: VBAT  pin_seq_num: 0       flat netname: VCC
+   phy_pin_nam: 7  sym_pin_nam: RSTn  pin_seq_num: 0       flat netname: F1RSTn
+   phy_pin_nam: 10  sym_pin_nam: PC2  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 9  sym_pin_nam: PC1  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 8  sym_pin_nam: PC0  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 36  sym_pin_nam: PB15  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 35  sym_pin_nam: PB14  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 34  sym_pin_nam: PB13  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 33  sym_pin_nam: PB12  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 30  sym_pin_nam: PB11  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 29  sym_pin_nam: PB10  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 62  sym_pin_nam: PB9  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 61  sym_pin_nam: PB8  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 59  sym_pin_nam: PB7  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 58  sym_pin_nam: PB6  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 57  sym_pin_nam: PB5  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 27  sym_pin_nam: PB1  pin_seq_num: 0       flat netname: GALVA_X_CTRL
+   phy_pin_nam: 26  sym_pin_nam: PB0  pin_seq_num: 0       flat netname: GALVA_X_CTRL
+   phy_pin_nam: 45  sym_pin_nam: PA12  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 44  sym_pin_nam: PA11  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 43  sym_pin_nam: PA10  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 42  sym_pin_nam: PA9  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 41  sym_pin_nam: PA8  pin_seq_num: 0       flat netname: LASERS_MUTE
+   phy_pin_nam: 23  sym_pin_nam: PA7  pin_seq_num: 0       flat netname: SPI_F72F1_MOSI
+   phy_pin_nam: 22  sym_pin_nam: PA6  pin_seq_num: 0       flat netname: SPI_F72F1_MISO
+   phy_pin_nam: 21  sym_pin_nam: PA5  pin_seq_num: 0       flat netname: SPI_F72F1_SCK
+   phy_pin_nam: 20  sym_pin_nam: PA4  pin_seq_num: 0       flat netname: SPI_F72F1_NSS
+   phy_pin_nam: 17  sym_pin_nam: PA3  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 16  sym_pin_nam: PA2  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 15  sym_pin_nam: PA1  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 14  sym_pin_nam: PA0  pin_seq_num: 0       Unconnected Pin
+   phy_pin_nam: 13  sym_pin_nam: VDDA  pin_seq_num: 0       flat netname: VCC
+   phy_pin_nam: 48  sym_pin_nam: VDD_4  pin_seq_num: 0       flat netname: VCC
+   phy_pin_nam: 19  sym_pin_nam: VDD_3  pin_seq_num: 0       flat netname: VCC
+   phy_pin_nam: 32  sym_pin_nam: VDD_2  pin_seq_num: 0       flat netname: VCC
+   phy_pin_nam: 64  sym_pin_nam: VDD_1  pin_seq_num: 0       flat netname: VCC
+     
+typ_dsg: 81-0013
+     
+ flat ref_dsg: QZ1  FROZEN: 2
+  path: <Schematic1>
+  sheet: <Schematic1(1)>
+  cct_ref: <XCMP719>      SELECT COMP
+       Part Number 81-0013  Part Name QUARTZ
+       PDB symbol name: <QUARTZ_HC_US>  was_ref_dsg: <QZ1>
+   phy_pin_nam: 2  sym_pin_nam: 2  pin_seq_num: 1       flat netname: XSIG011130
+   phy_pin_nam: 1  sym_pin_nam: 1  pin_seq_num: 2       flat netname: XSIG011128
+     
+typ_dsg: 10-0030
+     
+ flat ref_dsg: C2  FROZEN: 2
+  path: <Schematic1>
+  sheet: <Schematic1(1)>
+  cct_ref: <XCMP721>      SELECT COMP
+       Part Number 10-0030  Part Name CAPCERAM0603
+       PDB symbol name: <CAP_NP>  was_ref_dsg: <C2>
+   phy_pin_nam: 2  sym_pin_nam: 2  pin_seq_num: 2       flat netname: GND
+   phy_pin_nam: 1  sym_pin_nam: 1  pin_seq_num: 1       flat netname: XSIG011130
+     
+ flat ref_dsg: C1  FROZEN: 2
+  path: <Schematic1>
+  sheet: <Schematic1(1)>
+  cct_ref: <XCMP720>      SELECT COMP
+       Part Number 10-0030  Part Name CAPCERAM0603
+       PDB symbol name: <CAP_NP>  was_ref_dsg: <C1>
+   phy_pin_nam: 2  sym_pin_nam: 2  pin_seq_num: 2       flat netname: GND
+   phy_pin_nam: 1  sym_pin_nam: 1  pin_seq_num: 1       flat netname: XSIG011128
+     
+typ_dsg: 70-0081
+     
+ flat ref_dsg: J1  FROZEN: 2
+  path: <Schematic1>
+  sheet: <Schematic1(1)>
+  cct_ref: <XCMP723>      SELECT EXT
+       Part Number 70-0081  Part Name MINI_SWD_CONNECTOR
+       PDB symbol name: <CON10_HE10_SWD>  was_ref_dsg: <J1>
+   phy_pin_nam: 10  sym_pin_nam: 10  pin_seq_num: 10       flat netname: F1RSTn
+   phy_pin_nam: 8  sym_pin_nam: 8  pin_seq_num: 9       Unconnected Pin
+   phy_pin_nam: 6  sym_pin_nam: 6  pin_seq_num: 8       Unconnected Pin
+   phy_pin_nam: 4  sym_pin_nam: 4  pin_seq_num: 7       flat netname: F1SWCLK
+   phy_pin_nam: 2  sym_pin_nam: 2  pin_seq_num: 6       flat netname: F1SWDAT
+   phy_pin_nam: 9  sym_pin_nam: 9  pin_seq_num: 5       flat netname: GND
+   phy_pin_nam: 5  sym_pin_nam: 5  pin_seq_num: 3       flat netname: GND
+   phy_pin_nam: 3  sym_pin_nam: 3  pin_seq_num: 2       flat netname: GND
+   phy_pin_nam: 1  sym_pin_nam: 1  pin_seq_num: 1       flat netname: VCC
+     
+typ_dsg: 70-0003
+     
+ flat ref_dsg:   FROZEN: 0
+  path: <Schematic1>
+  sheet: <Schematic1(1)>
+  cct_ref: <XCMP752>      SELECT EXT
+       Part Number 70-0003  Part Name BARETTE
+       PDB symbol name: <CON3>  was_ref_dsg: <(null)>
+   phy_pin_nam: 3  sym_pin_nam: 3  pin_seq_num: 3       flat netname: GND
+   phy_pin_nam: 2  sym_pin_nam: 2  pin_seq_num: 2       flat netname: XSIG011206
+   phy_pin_nam: 1  sym_pin_nam: 1  pin_seq_num: 1       flat netname: VCC
+     
+ flat ref_dsg:   FROZEN: 0
+  path: <Schematic1>
+  sheet: <Schematic1(1)>
+  cct_ref: <XCMP751>      SELECT EXT
+       Part Number 70-0003  Part Name BARETTE
+       PDB symbol name: <CON3>  was_ref_dsg: <(null)>
+   phy_pin_nam: 3  sym_pin_nam: 3  pin_seq_num: 3       flat netname: GND
+   phy_pin_nam: 2  sym_pin_nam: 2  pin_seq_num: 2       flat netname: XSIG011205
+   phy_pin_nam: 1  sym_pin_nam: 1  pin_seq_num: 1       flat netname: VCC
+     
+ flat ref_dsg: J3  FROZEN: 2
+  path: <Schematic1>
+  sheet: <Schematic1(1)>
+  cct_ref: <XCMP726>      SELECT EXT
+       Part Number 70-0003  Part Name BARETTE
+       PDB symbol name: <CON3>  was_ref_dsg: <J3>
+   phy_pin_nam: 3  sym_pin_nam: 3  pin_seq_num: 3       flat netname: GALVA_Y_0V
+   phy_pin_nam: 2  sym_pin_nam: 2  pin_seq_num: 2       flat netname: GALVA_Y_PDB
+   phy_pin_nam: 1  sym_pin_nam: 1  pin_seq_num: 1       flat netname: GALVA_Y_PDA
+     
+ flat ref_dsg: J2  FROZEN: 2
+  path: <Schematic1>
+  sheet: <Schematic1(1)>
+  cct_ref: <XCMP725>      SELECT EXT
+       Part Number 70-0003  Part Name BARETTE
+       PDB symbol name: <CON3>  was_ref_dsg: <J2>
+   phy_pin_nam: 3  sym_pin_nam: 3  pin_seq_num: 3       flat netname: GALVA_X_0V
+   phy_pin_nam: 2  sym_pin_nam: 2  pin_seq_num: 2       flat netname: GALVA_X_PDB
+   phy_pin_nam: 1  sym_pin_nam: 1  pin_seq_num: 1       flat netname: GALVA_X_PDA
+     
+typ_dsg: 20-0037
+     
+ flat ref_dsg: D1  FROZEN: 2
+  path: <Schematic1>
+  sheet: <Schematic1(1)>
+  cct_ref: <XCMP727>      SELECT COMP
+       Part Number 20-0037  Part Name LED_RED_0805
+       PDB symbol name: <LED>  was_ref_dsg: <D1>
+   phy_pin_nam: 1  sym_pin_nam: CATHODE  pin_seq_num: 2       flat netname: GND
+   phy_pin_nam: 2  sym_pin_nam: ANODE  pin_seq_num: 1       flat netname: XSIG011168
+     
+typ_dsg: 01-0182
+     
+ flat ref_dsg: R2  FROZEN: 2
+  path: <Schematic1>
+  sheet: <Schematic1(1)>
+  cct_ref: <XCMP728>      SELECT COMP
+       Part Number 01-0182  Part Name RES_0603_E96
+       PDB symbol name: <RES>  was_ref_dsg: <R2>
+   phy_pin_nam: 2  sym_pin_nam: 2  pin_seq_num: 2       flat netname: XSIG011168
+   phy_pin_nam: 1  sym_pin_nam: 1  pin_seq_num: 1       flat netname: XSIG011171
+     
+typ_dsg: 30-0025
+     
+ flat ref_dsg: Q1  FROZEN: 2
+  path: <Schematic1>
+  sheet: <Schematic1(1)>
+  cct_ref: <XCMP740>      SELECT COMP
+       Part Number 30-0025  Part Name PMOS
+       PDB symbol name: <PMOS>  was_ref_dsg: <Q1>
+   phy_pin_nam: 3  sym_pin_nam: DRAIN  pin_seq_num: 1       flat netname: XSIG011171
+   phy_pin_nam: 2  sym_pin_nam: SOURCE  pin_seq_num: 3       flat netname: VCC
+   phy_pin_nam: 1  sym_pin_nam: GATE  pin_seq_num: 2       flat netname: LASERS_MUTE
+     
+typ_dsg: 70-0015
+     
+ flat ref_dsg: J4  FROZEN: 2
+  path: <Schematic1>
+  sheet: <Schematic1(1)>
+  cct_ref: <XCMP741>      SELECT EXT
+       Part Number 70-0015  Part Name MICROMATCH
+       PDB symbol name: <CON10_188275>  was_ref_dsg: <J4>
+   phy_pin_nam: 10  sym_pin_nam: 10  pin_seq_num: 10       flat netname: GND
+   phy_pin_nam: 9  sym_pin_nam: 9  pin_seq_num: 5       flat netname: LASERS_MUTE
+   phy_pin_nam: 8  sym_pin_nam: 8  pin_seq_num: 9       flat netname: SPI_F72F1_MOSI
+   phy_pin_nam: 7  sym_pin_nam: 7  pin_seq_num: 4       flat netname: SPI_F72F1_MISO
+   phy_pin_nam: 6  sym_pin_nam: 6  pin_seq_num: 8       flat netname: SPI_F72F1_SCK
+   phy_pin_nam: 5  sym_pin_nam: 5  pin_seq_num: 3       flat netname: SPI_F72F1_NSS
+   phy_pin_nam: 4  sym_pin_nam: 4  pin_seq_num: 7       flat netname: VCC5V
+   phy_pin_nam: 3  sym_pin_nam: 3  pin_seq_num: 2       flat netname: VCC
+   phy_pin_nam: 2  sym_pin_nam: 2  pin_seq_num: 6       flat netname: VCC-15V
+   phy_pin_nam: 1  sym_pin_nam: 1  pin_seq_num: 1       flat netname: VCC15V
+     
+typ_dsg: 10-0075
+     
+ flat ref_dsg:   FROZEN: 0
+  path: <Schematic1>
+  sheet: <Schematic1(1)>
+  cct_ref: <XCMP746>      SELECT COMP
+       Part Number 10-0075  Part Name CAPCERAM1812
+       PDB symbol name: <CAP_NP>  was_ref_dsg: <(null)>
+   phy_pin_nam: 2  sym_pin_nam: 2  pin_seq_num: 2       flat netname: GND
+   phy_pin_nam: 1  sym_pin_nam: 1  pin_seq_num: 1       flat netname: VCC
+     
+typ_dsg: 10-0060
+     
+ flat ref_dsg:   FROZEN: 0
+  path: <Schematic1>
+  sheet: <Schematic1(1)>
+  cct_ref: <XCMP749>      SELECT COMP
+       Part Number 10-0060  Part Name CAPCERAM0402
+       PDB symbol name: <CAP_NP>  was_ref_dsg: <(null)>
+   phy_pin_nam: 2  sym_pin_nam: 2  pin_seq_num: 2       flat netname: GND
+   phy_pin_nam: 1  sym_pin_nam: 1  pin_seq_num: 1       flat netname: VCC
+
+     Common Data Base has been read
+
+     Target PDB Name: Integration\LocalPartsDB.pdb
+
+     Number of Part Numbers: 12
+          Part Numb: 01-0182 -> Vend Part: 01-0182 
+          Part Numb: 10-0030 -> Vend Part: 10-0030 
+          Part Numb: 10-0057 -> Vend Part: 10-0057 
+          Part Numb: 10-0060 -> Vend Part: 10-0060 
+          Part Numb: 10-0075 -> Vend Part: 10-0075 
+          Part Numb: 20-0037 -> Vend Part: 20-0037 
+          Part Numb: 30-0025 -> Vend Part: 30-0025 
+          Part Numb: 40-0143 -> Vend Part: 40-0143 
+          Part Numb: 70-0003 -> Vend Part: 70-0003 
+          Part Numb: 70-0015 -> Vend Part: 70-0015 
+          Part Numb: 70-0081 -> Vend Part: 70-0081 
+          Part Numb: 81-0013 -> Vend Part: 81-0013 
+
+     Number of Part Names: 0
+
+     Number of Part Labels: 0
+
+
+     Checking for value differences between non-null symbol properties and PartsDB properties,
+      but only for those properties checked off in the Property Definition Editor
+
+     Checking the validity of the packaging of prepackaged schematic
+      symbols.  Only the first error in symbols having the same
+      Reference Designator will be reported.
+
+     The packaging of all prepackaged schematic symbols is consistent
+      with the Parts DataBase data for the cross mapping of
+      symbol pin names to Part Number pin numbers.
+      Symbols that were not prepackaged will now be packaged correctly.
+      
+     No errors in Existing Schematic Packaging.
+
+     The Common DataBase has been read and will be packaged.
+     Clustering 21 Symbols:
+              21  ********************
+     Clustering is Complete
+
+     Packager Assignments successfully completed
+
+
+
+     26 nets were found containing 83 pins
+     21 components were found
+
+     Parsed netlist - Augmenting..
+
+     Augmented - Adding phantom pins....
+
+     Numbering Nets....
+
+    After augmentation of supply pins, there are 26 nets where 9 nets have only one pin:
+      INFO:  Block Schematic1 Page 1, Pin 1 on Symbol XCMP725: Single pin on net GALVA_X_PDA.
+      INFO:  Block Schematic1 Page 1, Pin 2 on Symbol XCMP725: Single pin on net GALVA_X_PDB.
+      INFO:  Block Schematic1 Page 1, Pin 3 on Symbol XCMP725: Single pin on net GALVA_X_0V.
+      INFO:  Block Schematic1 Page 1, Pin 1 on Symbol XCMP726: Single pin on net GALVA_Y_PDA.
+      INFO:  Block Schematic1 Page 1, Pin 2 on Symbol XCMP726: Single pin on net GALVA_Y_PDB.
+      INFO:  Block Schematic1 Page 1, Pin 3 on Symbol XCMP726: Single pin on net GALVA_Y_0V.
+      INFO:  Block Schematic1 Page 1, Pin 2 on Symbol XCMP741: Single pin on net VCC-15V.
+      INFO:  Block Schematic1 Page 1, Pin 4 on Symbol XCMP741: Single pin on net VCC5V.
+      INFO:  Block Schematic1 Page 1, Pin 1 on Symbol XCMP741: Single pin on net VCC15V.
+
+
+     Checking Pins....
+
+     Testing of Packaging has been completed with 10 warnings.
+      Erroneous results may occur if not fixed.
+
+     Updating the Common DataBase
+
+     A BAM WasIs List: Integration\CDBBackAnno.bam has been created.
+     There have been 10 reference designator changes.
+     The BAM file will list all of the from-to changes.
+
+The Common DataBase has been successfully updated.
+
+     Packager finished successfully.
+     !THE iCDB IS UP-TO-DATE!
+     
+     An unused pin and gate report has been written to Integration\UnusedPins.txt
+     An unused gate report for gates not in schematic has been written to Integration\UnusedGates.txt
+     An augmented pin report has been written to Integration\AugmentedPins.txt.
+
+     There have been 10 warnings.

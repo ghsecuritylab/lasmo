@@ -1,0 +1,255 @@
+[2019.01.06 18:01:34] [0000m.00s.187ms] [0] WELCOME
+[2019.01.06 18:01:34] [0000m.00s.187ms] [1] iCDB Server ver.2.204, w6NMT3m1DsvvLxNhuorv0Q, build:11282694 created 2018-08-20 09:52:51, sources stamp:w6NMT3m1DsvvLxNhuorv0Q
+[2019.01.06 18:01:34] [0000m.00s.187ms] [1] Copyright 2018 Mentor Graphics Corporation.  All Rights Reserved.
+[2019.01.06 18:01:34] [0000m.00s.187ms] [1] Base flow version [VX.2.4]
+[2019.01.06 18:01:34] [0000m.00s.187ms] [1] Install Id [1845723], Flow Id [X-ENTP VX.2.4], Full Flow Name [Xpedition Enterprise X-ENTP VX.2.4], Exact Access Date [2018/08/01]
+[2019.01.06 18:01:34] [0000m.00s.187ms] [1] Install Id [1845717], Flow Id [X-ENTP DCVX.2.4], Full Flow Name [Xpedition Enterprise X-ENTP VX.2.4], Exact Access Date [2018/08/01]
+[2019.01.06 18:01:34] [0000m.00s.203ms] [1] Machine [DESKTOP-D6MOGOB]  IP [10.0.2.15,127.0.0.1]  User [alexis]  PID [2068]
+[2019.01.06 18:01:34] [0000m.00s.203ms] [1] Operating system [Microsoft Business Edition, 64-bit (build 9200)]
+[2019.01.06 18:01:34] [0000m.00s.203ms] [1] Current working dir [Z:\LASMO\PCB]
+[2019.01.06 18:01:34] [0000m.00s.203ms] [1] PATH [C:\mentorgraphics\EEVX.2.4\SDD_HOME\wg\help;C:\mentorgraphics\EEVX.2.4\SDD_HOME\common\win32\bin;C:\mentorgraphics\EEVX.2.4\SDD_HOME\common\win32\lib;C:\mentorgraphics\EEVX.2.4\MGC_HOME.ixn\bin;C:\mentorgraphics\EEVX.2.4\MGC_HOME.ixn\lib;C:\mentorgraphics\EEVX.2.4\SDD_HOME\wg\win32\lib;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\alexi\AppData\Local\Microsoft\WindowsApps;]
+[2019.01.06 18:01:34] [0000m.00s.203ms] [1] SDD_HOME [C:\mentorgraphics\EEVX.2.4\SDD_HOME] on file system [NTFS]
+[2019.01.06 18:01:34] [0000m.00s.203ms] [1] SDD_PLATFORM [win32]
+[2019.01.06 18:01:34] [0000m.00s.203ms] [1] WDIR [C:\Users\alexi\Documents\WDIR;C:\mentorgraphics\EEVX.2.4\SDD_HOME\standard;]
+[2019.01.06 18:01:34] [0000m.00s.203ms] [1] Local iCDB working dir [C:\Users\alexi\Documents\WDIR\iCDB] on file system [NTFS]
+[2019.01.06 18:01:34] [0000m.00s.203ms] [1] S: Config file name [ServerWG.cfg]
+[2019.01.06 18:01:34] [0000m.00s.203ms] [2] S: Loading config files
+[2019.01.06 18:01:34] [0000m.00s.203ms] [1] Config file [Z:\LASMO\PCB\Default\default.icdb\cdbsvr\ServerWG.cfg] not found
+[2019.01.06 18:01:34] [0000m.00s.203ms] [1] Config: Non-default value [System.SingleUserMode] = [no]
+[2019.01.06 18:01:34] [0000m.00s.203ms] [3] S: Config loaded
+[2019.01.06 18:01:34] [0000m.00s.281ms] [0] S: Project path [Z:\LASMO\PCB\Default\default.icdb] on file system [VBoxSharedFolderFS]
+[2019.01.06 18:01:34] [0000m.00s.281ms] [0] S: Project global path [\\VBoxSvr\2019\LASMO\PCB\Default\default.icdb] on file system [UNKNOWN]
+[2019.01.06 18:01:34] [0000m.00s.281ms] [1] S: WARNING: No project file (.prj) path specified
+[2019.01.06 18:01:34] [0000m.00s.296ms] [1] S: WARNING: Database auto-repair support DISABLED
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] S: Multi-user mode (config)
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] S: Event polling mode autodetection
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] S: Started up automatically by iCDB Client: DESKTOP-D6MOGOB:alexis:1768
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] S: Auto close mode
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] S: Database ID [8b2a-c99b-ff42-004c-2fee-13c7-fee1-3c50-8c00-609f-9fef-0fc8]
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] PathTranslator: BEGIN dumping
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] PathTranslator: Local -> global path prefix list
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] PathTranslator: [C:\WINDOWS\system32\spool\drivers] -> [\\DESKTOP-D6MOGOB\print$]
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] PathTranslator: [F:\] -> [\\vboxsrv\mentor\]
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] PathTranslator: [G:\] -> [\\vboxsrv\windows\]
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] PathTranslator: [X:\] -> [\\VBoxSvr\mentor\]
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] PathTranslator: [Y:\] -> [\\VBoxSvr\Windows\]
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] PathTranslator: [Z:\] -> [\\VBoxSvr\2019\]
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] PathTranslator: Global -> local path prefix list
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] PathTranslator: [\\DESKTOP-D6MOGOB\print$] -> [C:\WINDOWS\system32\spool\drivers]
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] PathTranslator: [\\vboxsrv\windows\] -> [G:\]
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] PathTranslator: [\\VBoxSvr\Windows\] -> [Y:\]
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] PathTranslator: [\\vboxsrv\mentor\] -> [F:\]
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] PathTranslator: [\\VBoxSvr\mentor\] -> [X:\]
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] PathTranslator: [\\VBoxSvr\2019\] -> [Z:\]
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] PathTranslator: END dumping
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] S: START
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] S: Server startup lock file created
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] S: Listening for client connections on port [10000]
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] S: Server network ID [DESKTOP-D6MOGOB:10.0.2.15,DESKTOP-D6MOGOB:10000]
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] S: Server GUID [e137-adb2-ff1c-8b2a-e643-23c3-7432-3c50-cefe-509f-9fef-0fc8]
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] S: Project GUID [8b2a-c99b-ff42-004c-2fee-13c7-fee1-3c50-8c00-609f-9fef-0fc8]
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] S: Wrote data to server address file
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] S: Server startup lock file removed
+[2019.01.06 18:01:34] [0000m.00s.296ms] [0] ProjectBackupManager: WARNING: Could not create Project Backup - functionality not initialized
+[2019.01.06 18:01:34] [0000m.00s.327ms] [0] S: Plugins loaded: [PIM] [ENetGen70] 
+[2019.01.06 18:01:34] [0000m.00s.327ms] [1] ServerToolkit: INFO: Plugin not found in SDD_ICDB_BIN [C:\mentorgraphics\EEVX.2.4\SDD_HOME\iCDB\win32\bin]
+[2019.01.06 18:01:34] [0000m.00s.327ms] [1] ServerToolkit: INFO: Plugin not found in SDD_COMMON_BIN [C:\mentorgraphics\EEVX.2.4\SDD_HOME\common\win32\bin]
+[2019.01.06 18:01:34] [0000m.00s.343ms] [1] ServerToolkit: INFO: Plugin not found in PATH
+[2019.01.06 18:01:34] [0000m.00s.343ms] [1] ServerToolkit: INFO: Plugin not found in CWD
+[2019.01.06 18:01:34] [0000m.00s.343ms] [1] ServerToolkit: INFO: returning just plugin exe name!
+[2019.01.06 18:01:34] [0000m.00s.343ms] [0] S: Local disc access time: 37 us
+[2019.01.06 18:01:34] [0000m.00s.343ms] [0] S: File server access time: 559 us
+[2019.01.06 18:01:34] [0000m.00s.343ms] [0] S: Server will not release in-memory storage after read (memory usage overhead) - for better performance
+[2019.01.06 18:01:34] [0000m.00s.343ms] [0] Single file [Z:\LASMO\PCB\Default\default.icdb\icdb.dat] size [160568 (156.8 kB)]
+[2019.01.06 18:01:34] [0000m.00s.343ms] [1] Single file [Z:\LASMO\PCB\Default\default.icdb\icdb.dat] opened in read-write mode
+[2019.01.06 18:01:34] [0000m.00s.343ms] [0] SingleFile: [0000-0000-0000-0000] SFI header version check [1009] [1009]
+[2019.01.06 18:01:34] [0000m.00s.343ms] [0] Database GUARD OK: [160568]
+[2019.01.06 18:01:34] [0000m.00s.343ms] [0] SingleFile: [0000-0000-0000-0000] SFI header version check [1009] [1009]
+[2019.01.06 18:01:34] [0000m.00s.343ms] [0] Database GUARD OK: [160568]
+[2019.01.06 18:01:34] [0000m.00s.343ms] [0] SingleFile: [0000-0000-0000-0000] SFI header version check [1009] [1009]
+[2019.01.06 18:01:34] [0000m.00s.359ms] [0] Database GUARD OK: [160568]
+[2019.01.06 18:01:34] [0000m.00s.359ms] [0] SingleFile: [0000-0000-0000-0000] SFI header version check [1009] [1009]
+[2019.01.06 18:01:34] [0000m.00s.359ms] [0] Database GUARD OK: [160568]
+[2019.01.06 18:01:34] [0000m.00s.359ms] [0] SingleFile: [0000-0000-0000-0000] SFI header version check [1009] [1009]
+[2019.01.06 18:01:34] [0000m.00s.359ms] [0] Database GUARD OK: [160568]
+[2019.01.06 18:01:34] [0000m.00s.359ms] [0] SingleFile: [2729-4de2-9e24-4b65] SFI version check [1009] [1009]
+[2019.01.06 18:01:34] [0000m.00s.374ms] [0] SingleFile: [2729-4de2-9e24-4b65] Database SFI header has been read in [24ms 856us]
+[2019.01.06 18:01:34] [0000m.00s.390ms] [0] iCDB Server PI: Server & plugin session [336]
+[2019.01.06 18:01:34] [0000m.00s.390ms] [0] iCDB Server PI: Opening database [Z:\LASMO\PCB\Default\default.icdb]
+[2019.01.06 18:01:34] [0000m.00s.390ms] [0] iCDB Server PI: Database [Z:\LASMO\PCB\Default\default.icdb] opened
+[2019.01.06 18:01:34] [0000m.00s.406ms] [0] iCDB Database: Checking existence of constraint definitions
+[2019.01.06 18:01:34] [0000m.00s.406ms] [0] iCDB Database: Checking constraint definitions version
+[2019.01.06 18:01:34] [0000m.00s.453ms] [1] iCDB Database: Constraint definitions version [ce_ee.cns=7.10.63;user.cns=ec49-fb41-b7ae-9a43-92d0-cfbe-2d0c-fb50-c20e-509f-9fef-0fc8] up to date
+[2019.01.06 18:01:34] [0000m.00s.546ms] [0] iCDB Server PI: Initializing plugins
+[2019.01.06 18:01:34] [0000m.00s.546ms] [0] iCDB Server PI: Plugins initialized
+[2019.01.06 18:01:34] [0000m.00s.546ms] [0] S: iCDB database loaded
+[2019.01.06 18:01:34] [0000m.00s.562ms] [0] S: Starting threads
+[2019.01.06 18:01:34] [0000m.00s.562ms] [0] BT: Listening for broadcast messages on port [10000]
+[2019.01.06 18:01:34] [0000m.00s.562ms] [0] ProjectBackupManager: WARNING: Could not startup Project Backup engine - functionality not initialized
+[2019.01.06 18:01:34] [0000m.00s.562ms] [1] CMT: There are no clients - waiting [10 seconds]
+[2019.01.06 18:01:34] [0000m.00s.578ms] [0] MWT: WindowProc: WM_NCCREATE
+[2019.01.06 18:01:34] [0000m.00s.578ms] [0] IT: Session [337] for host [DESKTOP-D6MOGOB] user [alexis] client type[0] clsvrPluginID[0] with process ID [1768] created
+[2019.01.06 18:01:34] [0000m.00s.578ms] [1] SC[337]: Registered sub-client [DCDV] with ID [1] for session ID [337] host [DESKTOP-D6MOGOB] user [alexis] process ID [1768]
+[2019.01.06 18:01:34] [0000m.00s.672ms] [1] CMT: There are [1] clients now: 337
+[2019.01.06 18:01:42] [0000m.08s.581ms] [0] IT: Session [338] for host [DESKTOP-D6MOGOB] user [alexis] client type[0] clsvrPluginID[0] with process ID [1100] created
+[2019.01.06 18:01:42] [0000m.08s.581ms] [1] SC[338]: Registered sub-client [ICDBC] with ID [1] for session ID [338] host [DESKTOP-D6MOGOB] user [alexis] process ID [1100]
+[2019.01.06 18:01:42] [0000m.08s.597ms] [1] CMT: There are [2] clients now: 337, 338
+[2019.01.06 18:01:42] [0000m.08s.612ms] [1] SC[338]: Registered sub-client [ConsReuseSubClient] with ID [2] for session ID [338] host [DESKTOP-D6MOGOB] user [alexis] process ID [1100]
+[2019.01.06 18:01:44] [0000m.10s.645ms] [1] SC[338]: UnRegistered sub-client [ICDBC] with ID [1] for session ID [338] host [DESKTOP-D6MOGOB] user [alexis] process ID [1100]
+[2019.01.06 18:01:44] [0000m.10s.660ms] [1] SC[338]: UnRegistered sub-client [ConsReuseSubClient] with ID [2] for session ID [338] host [DESKTOP-D6MOGOB] user [alexis] process ID [1100]
+[2019.01.06 18:01:44] [0000m.10s.708ms] [1] CMT: Removed client [338]
+[2019.01.06 18:01:44] [0000m.10s.708ms] [1] CMT: There are [1] clients now: 337
+[2019.01.06 18:01:45] [0000m.11s.755ms] [0] IT: Session [339] for host [DESKTOP-D6MOGOB] user [alexis] client type[0] clsvrPluginID[0] with process ID [4120] created
+[2019.01.06 18:01:45] [0000m.11s.755ms] [1] SC[339]: Registered sub-client [Packager_17327640] with ID [1] for session ID [339] host [DESKTOP-D6MOGOB] user [alexis] process ID [4120]
+[2019.01.06 18:01:45] [0000m.11s.833ms] [1] CMT: There are [2] clients now: 337, 339
+[2019.01.06 18:01:46] [0000m.12s.240ms] [1] SC[339]: UnRegistered sub-client [Packager_17327640] with ID [1] for session ID [339] host [DESKTOP-D6MOGOB] user [alexis] process ID [4120]
+[2019.01.06 18:01:46] [0000m.12s.271ms] [1] CMT: Removed client [339]
+[2019.01.06 18:01:46] [0000m.12s.271ms] [1] CMT: There are [1] clients now: 337
+[2019.01.06 18:02:22] [0000m.48s.629ms] [0] DFAMT: File server access time: 3430 us
+[2019.01.06 20:11:58] [0130m.23s.973ms] [0] IT: Session [340] for host [DESKTOP-D6MOGOB] user [alexis] client type[0] clsvrPluginID[0] with process ID [6968] created
+[2019.01.06 20:11:58] [0130m.23s.973ms] [1] SC[340]: Registered sub-client [ICDBC] with ID [1] for session ID [340] host [DESKTOP-D6MOGOB] user [alexis] process ID [6968]
+[2019.01.06 20:11:58] [0130m.23s.989ms] [1] SC[340]: Registered sub-client [ConsReuseSubClient] with ID [2] for session ID [340] host [DESKTOP-D6MOGOB] user [alexis] process ID [6968]
+[2019.01.06 20:11:58] [0130m.24s.068ms] [1] CMT: There are [2] clients now: 337, 340
+[2019.01.06 20:12:00] [0130m.26s.131ms] [1] SC[340]: UnRegistered sub-client [ICDBC] with ID [1] for session ID [340] host [DESKTOP-D6MOGOB] user [alexis] process ID [6968]
+[2019.01.06 20:12:00] [0130m.26s.131ms] [1] SC[340]: UnRegistered sub-client [ConsReuseSubClient] with ID [2] for session ID [340] host [DESKTOP-D6MOGOB] user [alexis] process ID [6968]
+[2019.01.06 20:12:00] [0130m.26s.194ms] [1] CMT: Removed client [340]
+[2019.01.06 20:12:00] [0130m.26s.194ms] [1] CMT: There are [1] clients now: 337
+[2019.01.06 20:12:01] [0130m.27s.053ms] [0] IT: Session [341] for host [DESKTOP-D6MOGOB] user [alexis] client type[0] clsvrPluginID[0] with process ID [3912] created
+[2019.01.06 20:12:01] [0130m.27s.053ms] [1] SC[341]: Registered sub-client [Packager_23528000] with ID [1] for session ID [341] host [DESKTOP-D6MOGOB] user [alexis] process ID [3912]
+[2019.01.06 20:12:01] [0130m.27s.084ms] [1] CMT: There are [2] clients now: 337, 341
+[2019.01.06 20:12:01] [0130m.27s.585ms] [1] SC[341]: UnRegistered sub-client [Packager_23528000] with ID [1] for session ID [341] host [DESKTOP-D6MOGOB] user [alexis] process ID [3912]
+[2019.01.06 20:12:01] [0130m.27s.632ms] [1] CMT: Removed client [341]
+[2019.01.06 20:12:01] [0130m.27s.632ms] [1] CMT: There are [1] clients now: 337
+[2019.01.06 20:15:02] [0133m.28s.863ms] [0] IT: Session [342] for host [DESKTOP-D6MOGOB] user [alexis] client type[0] clsvrPluginID[0] with process ID [3212] created
+[2019.01.06 20:15:02] [0133m.28s.863ms] [1] SC[342]: Registered sub-client [ICDBC] with ID [1] for session ID [342] host [DESKTOP-D6MOGOB] user [alexis] process ID [3212]
+[2019.01.06 20:15:02] [0133m.28s.879ms] [1] SC[342]: Registered sub-client [ConsReuseSubClient] with ID [2] for session ID [342] host [DESKTOP-D6MOGOB] user [alexis] process ID [3212]
+[2019.01.06 20:15:03] [0133m.28s.941ms] [1] CMT: There are [2] clients now: 337, 342
+[2019.01.06 20:15:04] [0133m.30s.270ms] [1] SC[342]: UnRegistered sub-client [ICDBC] with ID [1] for session ID [342] host [DESKTOP-D6MOGOB] user [alexis] process ID [3212]
+[2019.01.06 20:15:04] [0133m.30s.270ms] [1] SC[342]: UnRegistered sub-client [ConsReuseSubClient] with ID [2] for session ID [342] host [DESKTOP-D6MOGOB] user [alexis] process ID [3212]
+[2019.01.06 20:15:04] [0133m.30s.396ms] [1] CMT: Removed client [342]
+[2019.01.06 20:15:04] [0133m.30s.396ms] [1] CMT: There are [1] clients now: 337
+[2019.01.06 20:15:05] [0133m.31s.083ms] [0] IT: Session [343] for host [DESKTOP-D6MOGOB] user [alexis] client type[0] clsvrPluginID[0] with process ID [6548] created
+[2019.01.06 20:15:05] [0133m.31s.083ms] [1] SC[343]: Registered sub-client [DCDV_TagNets_2995] with ID [1] for session ID [343] host [DESKTOP-D6MOGOB] user [alexis] process ID [6548]
+[2019.01.06 20:15:05] [0133m.31s.099ms] [1] SC[343]: UnRegistered sub-client [DCDV_TagNets_2995] with ID [1] for session ID [343] host [DESKTOP-D6MOGOB] user [alexis] process ID [6548]
+[2019.01.06 20:15:05] [0133m.31s.176ms] [1] CMT: There are [2] clients now: 337, 343
+[2019.01.06 20:15:05] [0133m.31s.176ms] [1] CMT: Removed client [343]
+[2019.01.06 20:15:05] [0133m.31s.176ms] [1] CMT: There are [1] clients now: 337
+[2019.01.06 20:15:35] [0134m.00s.986ms] [0] IT: Session [344] for host [DESKTOP-D6MOGOB] user [alexis] client type[0] clsvrPluginID[0] with process ID [8800] created
+[2019.01.06 20:15:35] [0134m.00s.986ms] [1] ProjectBackupManager: Client [ClientData[ClientNetAddress[DESKTOP-D6MOGOB] # ClientUserName[alexis] # ClientProcessID[8800] # SessionID[344] # Type[0]] # SubClientData[SubClientName[] # SubClientID[0]]] set project file (.prj): local path [Z:\LASMO\PCB\PCB.prj], global path [\\VBoxSvr\2019\LASMO\PCB\PCB.prj]
+[2019.01.06 20:15:35] [0134m.01s.017ms] [0] PrjBackupMgr: Migrating iCDB upgrade backups from directory [PCB\Default\default.icdb\cdbback] to Project Backup format.
+[2019.01.06 20:15:35] [0134m.01s.017ms] [0] PrjBackupMgr: WARNING: Ignoring iCDB backup file [2018-12-05 13.10.15-2064-pbmf.zip] - will not be migrated.
+[2019.01.06 20:15:35] [0134m.01s.017ms] [1] SC[344]: Registered sub-client [Expedition PCB_23741953] with ID [1] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:15:35] [0134m.01s.095ms] [1] CMT: There are [2] clients now: 337, 344
+[2019.01.06 20:15:35] [0134m.01s.189ms] [1] SC[344]: Registered sub-client [EEVM] with ID [2] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:15:35] [0134m.01s.502ms] [1] SC[344]: UnRegistered sub-client [EEVM] with ID [2] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:15:36] [0134m.02s.127ms] [1] SC[344]: Registered sub-client [JobPrefsDBPI_23743140] with ID [3] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:15:36] [0134m.02s.142ms] [1] SC[344]: UnRegistered sub-client [JobPrefsDBPI_23743140] with ID [3] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:15:36] [0134m.02s.221ms] [1] PrjBackupMgr: Successfully created Project Backup [Z:\LASMO\PCB\Default\ProjectBackup\backups\2019-01-06 20.15.35 - auto.zip] with GUID [639e-645f-03d5-b383-7d35-23cc-d352-3c50-492e-509f-9fef-0fc8]
+[2019.01.06 20:15:36] [0134m.02s.221ms] [0] PrjBackupEngine: Successfully created backup:  BackupGUID[639e-645f-03d5-b383-7d35-23cc-d352-3c50-492e-509f-9fef-0fc8] CreationTime[Sunday, January 06, 2019 19:15:35] Type[Autosave] Creator[iCDB Server (2019-01-06 18.01.34-2068)] ApplicationName[iCDB Server (2019-01-06 18.01.34-2068)] UserName[alexis] MachineName[DESKTOP-D6MOGOB] Description[Autosave] FullFlowName[Xpedition Enterprise X-ENTP VX.2.4] FlowId[EEVX.2.4] GBSInstallId[1845723; 1845717] GBSBuildId[11282694] IcdbVersion[3500] ReferenceLogFilePath[] BackupFilePath[Z:\LASMO\PCB\Default\ProjectBackup\backups\2019-01-06 20.15.35 - auto.zip] BackupFileSize[481365] Persistent[FALSE]
+[2019.01.06 20:15:37] [0134m.03s.111ms] [1] SC[344]: Registered sub-client [JobPrefsDBPI_23744109] with ID [4] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:15:37] [0134m.03s.111ms] [1] SC[344]: UnRegistered sub-client [JobPrefsDBPI_23744109] with ID [4] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:15:41] [0134m.07s.535ms] [1] SC[344]: Registered sub-client [JobPrefsDBPI_23748546] with ID [5] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:15:41] [0134m.07s.567ms] [1] SC[344]: UnRegistered sub-client [JobPrefsDBPI_23748546] with ID [5] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:15:42] [0134m.07s.973ms] [1] SC[344]: Registered sub-client [JobPrefsDBPI_23748968] with ID [6] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:15:42] [0134m.07s.988ms] [1] SC[344]: UnRegistered sub-client [JobPrefsDBPI_23748968] with ID [6] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:15:42] [0134m.08s.129ms] [1] SC[344]: Registered sub-client [ExpeditionCrossProber] with ID [7] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:15:42] [0134m.08s.129ms] [1] SC[344]: Registered sub-client [StartServerClient13d4] with ID [8] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:15:42] [0134m.08s.129ms] [1] SC[344]: UnRegistered sub-client [StartServerClient13d4] with ID [8] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:16:08] [0134m.34s.031ms] [1] SC[344]: UnRegistered sub-client [ExpeditionCrossProber] with ID [7] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:16:08] [0134m.34s.046ms] [1] SC[344]: Registered sub-client [EEVM_EEVM_1699320] with ID [9] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:16:08] [0134m.34s.046ms] [1] SC[344]: UnRegistered sub-client [EEVM_EEVM_1699320] with ID [9] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:16:08] [0134m.34s.297ms] [1] SC[344]: Registered sub-client [JobPrefsDBPI_23775312] with ID [10] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:16:08] [0134m.34s.328ms] [1] SC[344]: UnRegistered sub-client [JobPrefsDBPI_23775312] with ID [10] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:16:10] [0134m.36s.192ms] [1] SC[344]: Registered sub-client [JobPrefsDBPI_23777203] with ID [11] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:16:10] [0134m.36s.222ms] [1] SC[344]: UnRegistered sub-client [JobPrefsDBPI_23777203] with ID [11] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:16:10] [0134m.36s.683ms] [0] IT: Session [345] for host [DESKTOP-D6MOGOB] user [alexis] client type[0] clsvrPluginID[0] with process ID [6468] created
+[2019.01.06 20:16:10] [0134m.36s.683ms] [1] SC[345]: Registered sub-client [Packager_23777640] with ID [1] for session ID [345] host [DESKTOP-D6MOGOB] user [alexis] process ID [6468]
+[2019.01.06 20:16:10] [0134m.36s.746ms] [1] CMT: There are [3] clients now: 337, 344, 345
+[2019.01.06 20:16:11] [0134m.37s.230ms] [1] SC[345]: UnRegistered sub-client [Packager_23777640] with ID [1] for session ID [345] host [DESKTOP-D6MOGOB] user [alexis] process ID [6468]
+[2019.01.06 20:16:11] [0134m.37s.293ms] [1] CMT: Removed client [345]
+[2019.01.06 20:16:11] [0134m.37s.293ms] [1] CMT: There are [2] clients now: 337, 344
+[2019.01.06 20:16:13] [0134m.39s.107ms] [0] IT: Session [346] for host [DESKTOP-D6MOGOB] user [alexis] client type[0] clsvrPluginID[0] with process ID [6604] created
+[2019.01.06 20:16:13] [0134m.39s.107ms] [1] SC[346]: Registered sub-client [Expedition_23780062] with ID [1] for session ID [346] host [DESKTOP-D6MOGOB] user [alexis] process ID [6604]
+[2019.01.06 20:16:13] [0134m.39s.154ms] [1] SC[346]: UnRegistered sub-client [Expedition_23780062] with ID [1] for session ID [346] host [DESKTOP-D6MOGOB] user [alexis] process ID [6604]
+[2019.01.06 20:16:13] [0134m.39s.200ms] [1] CMT: There are [3] clients now: 337, 344, 346
+[2019.01.06 20:16:13] [0134m.39s.200ms] [1] CMT: Removed client [346]
+[2019.01.06 20:16:13] [0134m.39s.200ms] [1] CMT: There are [2] clients now: 337, 344
+[2019.01.06 20:16:14] [0134m.40s.529ms] [0] IT: Session [347] for host [DESKTOP-D6MOGOB] user [alexis] client type[0] clsvrPluginID[0] with process ID [6604] created
+[2019.01.06 20:16:14] [0134m.40s.529ms] [1] SC[347]: Registered sub-client [JobPrefsDBPI_23781484] with ID [1] for session ID [347] host [DESKTOP-D6MOGOB] user [alexis] process ID [6604]
+[2019.01.06 20:16:14] [0134m.40s.560ms] [1] SC[347]: UnRegistered sub-client [JobPrefsDBPI_23781484] with ID [1] for session ID [347] host [DESKTOP-D6MOGOB] user [alexis] process ID [6604]
+[2019.01.06 20:16:14] [0134m.40s.639ms] [1] CMT: There are [3] clients now: 337, 344, 347
+[2019.01.06 20:16:14] [0134m.40s.639ms] [1] CMT: Removed client [347]
+[2019.01.06 20:16:14] [0134m.40s.639ms] [1] CMT: There are [2] clients now: 337, 344
+[2019.01.06 20:16:15] [0134m.41s.216ms] [0] IT: Session [348] for host [DESKTOP-D6MOGOB] user [alexis] client type[0] clsvrPluginID[0] with process ID [6604] created
+[2019.01.06 20:16:15] [0134m.41s.216ms] [1] SC[348]: Registered sub-client [JobPrefsDBPI_23782187] with ID [1] for session ID [348] host [DESKTOP-D6MOGOB] user [alexis] process ID [6604]
+[2019.01.06 20:16:15] [0134m.41s.232ms] [1] SC[348]: UnRegistered sub-client [JobPrefsDBPI_23782187] with ID [1] for session ID [348] host [DESKTOP-D6MOGOB] user [alexis] process ID [6604]
+[2019.01.06 20:16:15] [0134m.41s.326ms] [1] CMT: There are [3] clients now: 337, 344, 348
+[2019.01.06 20:16:15] [0134m.41s.326ms] [1] CMT: Removed client [348]
+[2019.01.06 20:16:15] [0134m.41s.326ms] [1] CMT: There are [2] clients now: 337, 344
+[2019.01.06 20:16:17] [0134m.43s.123ms] [0] IT: Session [349] for host [DESKTOP-D6MOGOB] user [alexis] client type[0] clsvrPluginID[0] with process ID [1468] created
+[2019.01.06 20:16:17] [0134m.43s.123ms] [1] SC[349]: Registered sub-client [JobPrefsDBPI_23784062] with ID [1] for session ID [349] host [DESKTOP-D6MOGOB] user [alexis] process ID [1468]
+[2019.01.06 20:16:17] [0134m.43s.171ms] [1] SC[349]: Registered sub-client [Expedition_23784171] with ID [2] for session ID [349] host [DESKTOP-D6MOGOB] user [alexis] process ID [1468]
+[2019.01.06 20:16:17] [0134m.43s.218ms] [1] CMT: There are [3] clients now: 337, 344, 349
+[2019.01.06 20:16:17] [0134m.43s.218ms] [1] SC[349]: UnRegistered sub-client [JobPrefsDBPI_23784062] with ID [1] for session ID [349] host [DESKTOP-D6MOGOB] user [alexis] process ID [1468]
+[2019.01.06 20:16:17] [0134m.43s.311ms] [1] SC[349]: Registered sub-client [JobPrefsDBPI_23784312] with ID [3] for session ID [349] host [DESKTOP-D6MOGOB] user [alexis] process ID [1468]
+[2019.01.06 20:16:17] [0134m.43s.311ms] [1] SC[349]: UnRegistered sub-client [JobPrefsDBPI_23784312] with ID [3] for session ID [349] host [DESKTOP-D6MOGOB] user [alexis] process ID [1468]
+[2019.01.06 20:16:17] [0134m.43s.311ms] [1] SC[349]: UnRegistered sub-client [Expedition_23784171] with ID [2] for session ID [349] host [DESKTOP-D6MOGOB] user [alexis] process ID [1468]
+[2019.01.06 20:16:17] [0134m.43s.327ms] [1] CMT: Removed client [349]
+[2019.01.06 20:16:17] [0134m.43s.327ms] [1] CMT: There are [2] clients now: 337, 344
+[2019.01.06 20:16:17] [0134m.43s.920ms] [1] SC[344]: Registered sub-client [EEVM_EEVM_256003348] with ID [12] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:16:17] [0134m.43s.920ms] [1] SC[344]: UnRegistered sub-client [EEVM_EEVM_256003348] with ID [12] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:16:18] [0134m.43s.936ms] [1] SC[344]: Registered sub-client [EEVM_EEVM_256003348] with ID [13] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:16:18] [0134m.43s.936ms] [1] SC[344]: UnRegistered sub-client [EEVM_EEVM_256003348] with ID [13] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:16:18] [0134m.43s.936ms] [1] SC[344]: Registered sub-client [EEVM_EEVM_255999252] with ID [14] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:16:18] [0134m.43s.952ms] [1] SC[344]: UnRegistered sub-client [EEVM_EEVM_255999252] with ID [14] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:16:18] [0134m.44s.656ms] [1] SC[344]: UnRegistered sub-client [Expedition PCB_23741953] with ID [1] for session ID [344] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:16:18] [0134m.44s.781ms] [1] CMT: Removed client [344]
+[2019.01.06 20:16:18] [0134m.44s.796ms] [1] CMT: There are [1] clients now: 337
+[2019.01.06 20:16:19] [0134m.45s.015ms] [0] IT: Session [350] for host [DESKTOP-D6MOGOB] user [alexis] client type[0] clsvrPluginID[0] with process ID [8800] created
+[2019.01.06 20:16:19] [0134m.45s.015ms] [1] SC[350]: Registered sub-client [Expedition PCB_23785984] with ID [1] for session ID [350] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:16:19] [0134m.45s.031ms] [1] CMT: There are [2] clients now: 337, 350
+[2019.01.06 20:16:19] [0134m.45s.390ms] [1] SC[350]: Registered sub-client [JobPrefsDBPI_23786406] with ID [2] for session ID [350] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:16:19] [0134m.45s.406ms] [1] SC[350]: UnRegistered sub-client [JobPrefsDBPI_23786406] with ID [2] for session ID [350] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:16:25] [0134m.51s.571ms] [1] SC[350]: Registered sub-client [JobPrefsDBPI_23792562] with ID [3] for session ID [350] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:16:25] [0134m.51s.582ms] [1] SC[350]: UnRegistered sub-client [JobPrefsDBPI_23792562] with ID [3] for session ID [350] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:16:25] [0134m.51s.673ms] [1] SC[350]: Registered sub-client [ExpeditionCrossProber] with ID [4] for session ID [350] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 20:16:35] [0135m.01s.515ms] [1] SC[337]: Registered sub-client [StartServerClient298] with ID [2] for session ID [337] host [DESKTOP-D6MOGOB] user [alexis] process ID [1768]
+[2019.01.06 20:16:35] [0135m.01s.515ms] [1] SC[337]: UnRegistered sub-client [StartServerClient298] with ID [2] for session ID [337] host [DESKTOP-D6MOGOB] user [alexis] process ID [1768]
+[2019.01.06 21:47:58] [0226m.24s.677ms] [1] SC[350]: UnRegistered sub-client [ExpeditionCrossProber] with ID [4] for session ID [350] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 21:47:59] [0226m.25s.474ms] [1] SC[350]: UnRegistered sub-client [Expedition PCB_23785984] with ID [1] for session ID [350] host [DESKTOP-D6MOGOB] user [alexis] process ID [8800]
+[2019.01.06 21:47:59] [0226m.25s.522ms] [1] CMT: Removed client [350]
+[2019.01.06 21:47:59] [0226m.25s.522ms] [1] CMT: There are [1] clients now: 337
+[2019.01.06 21:47:59] [0226m.25s.771ms] [1] SC[337]: UnRegistered sub-client [DCDV] with ID [1] for session ID [337] host [DESKTOP-D6MOGOB] user [alexis] process ID [1768]
+[2019.01.06 21:47:59] [0226m.25s.868ms] [1] CMT: Removed client [337]
+[2019.01.06 21:47:59] [0226m.25s.868ms] [1] CMT: There are no clients left - waiting [1 seconds]
+[2019.01.06 21:48:01] [0226m.26s.959ms] [0] CMT: Starting server auto-close
+[2019.01.06 21:48:01] [0226m.27s.068ms] [0] S: Closing server
+[2019.01.06 21:48:01] [0226m.27s.228ms] [0] iCDB Server PI: Closing plugins
+[2019.01.06 21:48:01] [0226m.27s.228ms] [0] iCDB Server PI: Plugins closed
+[2019.01.06 21:48:01] [0226m.27s.228ms] [0] iCDB Server PI: Unloading database
+[2019.01.06 21:48:01] [0226m.27s.228ms] [0] iCDB Server PI: Saving storage
+[2019.01.06 21:48:01] [0226m.27s.228ms] [0] iCDB Server PI: Closing database
+[2019.01.06 21:48:01] [0226m.27s.257ms] [1] iCDB Server PI: Stats: Database defragmentation: max[3] avg[1] holes[38%] data[77%]
+[2019.01.06 21:48:01] [0226m.27s.257ms] [1] iCDB Server PI: Stats: Database file size [270272 (263.9 kB)]
+[2019.01.06 21:48:01] [0226m.27s.273ms] [1] iCDB Server PI: WARNING: Database needs defragmentation!
+[2019.01.06 21:48:01] [0226m.27s.304ms] [0] iCDB Server PI: Database closed
+[2019.01.06 21:48:01] [0226m.27s.304ms] [0] iCDB Server PI: Defragmenting database
+[2019.01.06 21:48:01] [0226m.27s.304ms] [0] iCDB Server PI: Creating database [Z:\LASMO\PCB\Default\default.icdb] backup to file [Z:\LASMO\PCB\Default\default.icdb\cdbback\2019-01-06 21.48.01-2068-d.zip]
+[2019.01.06 21:48:01] [0226m.27s.678ms] [0] iCDB Server PI: Database backup: DONE
+[2019.01.06 21:48:01] [0226m.27s.757ms] [0] SingleFile: [0000-0000-0000-0000] SFI header version check [1009] [1009]
+[2019.01.06 21:48:01] [0226m.27s.757ms] [0] Database GUARD OK: [270272]
+[2019.01.06 21:48:01] [0226m.27s.757ms] [0] SingleFile: [2729-4de2-9e24-4b65] SFI version check [1009] [1009]
+[2019.01.06 21:48:01] [0226m.27s.803ms] [0] SingleFile: [2729-4de2-9e24-4b65] Database SFI header has been read in [50ms 344us]
+[2019.01.06 21:48:02] [0226m.27s.944ms] [1] iCDB Server PI: Stats: Database file sizes: before[270272 (263.9 kB)], after[116784 (114.0 kB)], gain[153488 (149.9 kB)]
+[2019.01.06 21:48:02] [0226m.27s.961ms] [0] Single file [Z:\LASMO\PCB\Default\default.icdb\icdb.dat] closed with size [116784 (114.0 kB)]
+[2019.01.06 21:48:02] [0226m.27s.961ms] [0] iCDB Server PI: Database defragmentation completed successfully
+[2019.01.06 21:48:02] [0226m.27s.961ms] [1] BackupTransaction: Removing database backup [Z:\LASMO\PCB\Default\default.icdb\cdbback\2019-01-06 21.48.01-2068-d.zip]
+[2019.01.06 21:48:02] [0226m.27s.961ms] [1] iCDB Server PI: Stats: Total iCDB execution time: [1544752] ticks
+[2019.01.06 21:48:02] [0226m.27s.961ms] [1] iCDB Server PI: Stats: Total iCDB execution time: [154475] microseconds
+[2019.01.06 21:48:02] [0226m.27s.961ms] [1] iCDB Server PI: Stats: Total iCDB commands count: [1724]
+[2019.01.06 21:48:02] [0226m.27s.961ms] [1] iCDB Server PI: Stats: Average iCDB speed:        [11160] commands per second
+[2019.01.06 21:48:02] [0226m.27s.961ms] [1] iCDB Server PI: Stats: Mem[36646912]
+[2019.01.06 21:48:02] [0226m.27s.961ms] [1] iCDB Server PI: Stats: MemPeak[45481984]
+[2019.01.06 21:48:02] [0226m.28s.069ms] [0] MWT: Destroy the shutdown block reason.
+[2019.01.06 21:48:02] [0226m.28s.069ms] [0] MWT: STOP
+[2019.01.06 21:48:02] [0226m.28s.069ms] [0] S: STOP

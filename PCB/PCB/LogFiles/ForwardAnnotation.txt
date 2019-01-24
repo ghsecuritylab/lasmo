@@ -1,0 +1,190 @@
+
+                               Forward Annotation
+                               ------------------
+
+                       11:55 PM Thursday, January 10, 2019
+                       Job Name: Z:\LASMO\PCB\PCB\PCB.pcb
+
+
+Version:  01.01.00
+
+     A new Target PDB will be created from the Central Library to satisfy the parts
+      requirements of the iCDB.
+
+     The schematic source is a Common Data Base.
+
+     The AllowAlphaRefDes status indicates that reference
+      designators containing all alpha characters should be deleted
+      and the relevant symbols repackaged.
+
+
+
+     Common Data Base has been read
+
+     Target PDB Name: Work\Layout_Temp\PartsDB.pdb
+
+     Number of Part Numbers: 61
+          Part Numb: 00-0038 -> Vend Part: 00-0038 
+          Part Numb: 00-0078 -> Vend Part: 00-0078 
+          Part Numb: 00-0081 -> Vend Part: 00-0081 
+          Part Numb: 00-0086 -> Vend Part: 00-0086 
+          Part Numb: 00-0090 -> Vend Part: 00-0090 
+          Part Numb: 00-0098 -> Vend Part: 00-0098 
+          Part Numb: 00-0104 -> Vend Part: 00-0104 
+          Part Numb: 00-0122 -> Vend Part: 00-0122 
+          Part Numb: 00-0129 -> Vend Part: 00-0129 
+          Part Numb: 00-0134 -> Vend Part: 00-0134 
+          Part Numb: 01-0164 -> Vend Part: 01-0164 
+          Part Numb: 01-0214 -> Vend Part: 01-0214 
+          Part Numb: 01-0243 -> Vend Part: 01-0243 
+          Part Numb: 01-0339 -> Vend Part: 01-0339 
+          Part Numb: 01-0385 -> Vend Part: 01-0385 
+          Part Numb: 01-0393 -> Vend Part: 01-0393 
+          Part Numb: 01-0398 -> Vend Part: 01-0398 
+          Part Numb: 10-0006 -> Vend Part: 10-0006 
+          Part Numb: 10-0007 -> Vend Part: 10-0007 
+          Part Numb: 10-0011 -> Vend Part: 10-0011 
+          Part Numb: 10-0026 -> Vend Part: 10-0026 
+          Part Numb: 10-0030 -> Vend Part: 10-0030 
+          Part Numb: 10-0038 -> Vend Part: 10-0038 
+          Part Numb: 10-0046 -> Vend Part: 10-0046 
+          Part Numb: 10-0057 -> Vend Part: 10-0057 
+          Part Numb: 10-0068 -> Vend Part: 10-0068 
+          Part Numb: 10-0070 -> Vend Part: 10-0070 
+          Part Numb: 10-0095 -> Vend Part: 10-0095 
+          Part Numb: 10-0106 -> Vend Part: 10-0106 
+          Part Numb: 10-0110 -> Vend Part: 10-0110 
+          Part Numb: 10-0112 -> Vend Part: 10-0112 
+          Part Numb: 10-0113 -> Vend Part: 10-0113 
+          Part Numb: 10-0120 -> Vend Part: 10-0120 
+          Part Numb: 20-0019 -> Vend Part: 20-0019 
+          Part Numb: 20-0022 -> Vend Part: 20-0022 
+          Part Numb: 20-0035 -> Vend Part: 20-0035 
+          Part Numb: 20-0037 -> Vend Part: 20-0037 
+          Part Numb: 30-0025 -> Vend Part: 30-0025 
+          Part Numb: 40-0003 -> Vend Part: 40-0003 
+          Part Numb: 40-0153 -> Vend Part: 40-0153 
+          Part Numb: 40-0293 -> Vend Part: 40-0293 
+          Part Numb: 40-0313 -> Vend Part: 40-0313 
+          Part Numb: 40-0321 -> Vend Part: 40-0321 
+          Part Numb: 40-0354 -> Vend Part: 40-0354 
+          Part Numb: 40-0364 -> Vend Part: 40-0364 
+          Part Numb: 40-0365 -> Vend Part: 40-0365 
+          Part Numb: 50-0024 -> Vend Part: 50-0024 
+          Part Numb: 50-0044 -> Vend Part: 50-0044 
+          Part Numb: 70-0001 -> Vend Part: 70-0001 
+          Part Numb: 70-0003 -> Vend Part: 70-0003 
+          Part Numb: 70-0010 -> Vend Part: 70-0010 
+          Part Numb: 70-0011 -> Vend Part: 70-0011 
+          Part Numb: 70-0053 -> Vend Part: 70-0053 
+          Part Numb: 70-0058 -> Vend Part: 70-0058 
+          Part Numb: 70-0066 -> Vend Part: 70-0066 
+          Part Numb: 70-0081 -> Vend Part: 70-0081 
+          Part Numb: 70-0102 -> Vend Part: 70-0102 
+          Part Numb: 70-0112 -> Vend Part: 70-0112 
+          Part Numb: 80-0073 -> Vend Part: 80-0073 
+          Part Numb: 81-0007 -> Vend Part: 81-0007 
+          Part Numb: 83-0028 -> Vend Part: 83-0028 
+
+     Number of Part Names: 0
+
+     Number of Part Labels: 0
+
+
+     Checking for value differences between symbol properties and PartsDB properties
+
+     Checking the validity of the packaging of prepackaged schematic
+      symbols.  Only the first error in symbols having the same
+      Reference Designator will be reported.
+
+     The packaging of all prepackaged schematic symbols is consistent
+      with the Parts DataBase data for the cross mapping of
+      symbol pin names to Part Number pin numbers.
+      Symbols that were not prepackaged will now be packaged correctly.
+      
+     No errors in Existing Schematic Packaging.
+
+     WARNING: Unable to find the following cell(s) in central library
+	(_VB_DRILL_DRAWING_)THRU
+	(_VB_DRILL_SYMBOLS_)THRU
+	DXF_SVG battery
+	
+
+
+     The Common DataBase has been read and will be packaged.
+     Clustering 129 Symbols:
+             129  ****************************
+             100  **************************************************
+              50  **************************************************
+     Clustering is Complete
+
+     Packager Assignments successfully completed
+
+
+
+     97 nets were found containing 433 pins
+     121 components were found
+
+     Creating a formatted Schematic Netlist (LogFiles\SchematicNetlist.txt)...
+     A formatted Schematic Netlist has been created.
+
+     The Logic DataBase has been compiled from the Schematic Design.
+      Use Netload to bring the Component Design into sync.
+
+     This Logic Data was Compiled with 1 warnings.
+      Erroneous results may occur if not fixed.
+
+                                     NetLoad
+                                     -------
+
+                       11:55 PM Thursday, January 10, 2019
+                       Job Name: Z:\LASMO\PCB\PCB\PCB.pcb
+
+
+Version:  02.11.12
+
+	Netloading the Layout.  Unused components will be deleted.
+
+	Unconnected pins will be set to net "(Net0)".
+
+	Schematic reference designator changes will be forward annotated.
+
+
+     Netload completed successfully with 0 warning(s).
+     
+     Back Annotating...
+
+  Updating Logic Database...
+
+     Version:  99.00.05
+
+     No changes made to Existing Schematic Packaging.
+
+
+     There is no symbol data to be back annotated to the schematic source.
+
+
+     The Logic DataBase has been updated and the Common DataBase has
+      automatically been brought into sync with the Logic DataBase.
+      Please proceed with your design.
+
+     Finished updating the Logic Database.
+
+     Creating a formatted Schematic Netlist (LogFiles\AfterBakAnnoNetlist.txt)...
+     A formatted Schematic Netlist has been created.
+
+            Creating a new netlist text file (LogFiles\KeyinNetList.txt)
+            from the Logic Database (Work\Layout_Temp\LogicDB.lgc)...
+  A new netlist text file has been generated.
+
+
+
+                 Beginning Netload on the Layout Design.
+           ---------------------------------------------------
+	Assigned net (Net0) to a trace which was originally on net PHY_RSTn.
+
+Forward-Annotation on the Layout Design has been successfully completed.
+
+There were 1 reassignments of nets.
+There were 0 traces broken back.
+There were 0 nets removed from the Layout Design.

@@ -1,0 +1,14 @@
+# OS files
+.DS_Store
+Desktop.ini
+._*
+Thumbs.db
+.Spotlight-V100
+.Trashes
+*~
+
+#Xpedition file
+PCB/Work
+PCB/Config/alexis
+PCB/Config/bak
+Default/ProjectBackup

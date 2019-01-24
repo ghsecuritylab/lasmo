@@ -1,0 +1,123 @@
+[2019.01.10 22:34:12] [0000m.01s.444ms] [0] WELCOME
+[2019.01.10 22:34:12] [0000m.01s.444ms] [1] iCDB Server ver.2.204, w6NMT3m1DsvvLxNhuorv0Q, build:11282694 created 2018-08-20 09:52:51, sources stamp:w6NMT3m1DsvvLxNhuorv0Q
+[2019.01.10 22:34:12] [0000m.01s.444ms] [1] Copyright 2018 Mentor Graphics Corporation.  All Rights Reserved.
+[2019.01.10 22:34:12] [0000m.01s.444ms] [1] Base flow version [VX.2.4]
+[2019.01.10 22:34:12] [0000m.01s.444ms] [1] Install Id [1845723], Flow Id [X-ENTP VX.2.4], Full Flow Name [Xpedition Enterprise X-ENTP VX.2.4], Exact Access Date [2018/08/01]
+[2019.01.10 22:34:12] [0000m.01s.444ms] [1] Install Id [1845717], Flow Id [X-ENTP DCVX.2.4], Full Flow Name [Xpedition Enterprise X-ENTP VX.2.4], Exact Access Date [2018/08/01]
+[2019.01.10 22:34:12] [0000m.01s.444ms] [1] Machine [DESKTOP-D6MOGOB]  IP [10.0.2.15,127.0.0.1]  User [alexis]  PID [7304]
+[2019.01.10 22:34:12] [0000m.01s.462ms] [1] Operating system [Microsoft Business Edition, 64-bit (build 9200)]
+[2019.01.10 22:34:12] [0000m.01s.462ms] [1] Current working dir [Z:\LASMO\PCB]
+[2019.01.10 22:34:12] [0000m.01s.462ms] [1] PATH [C:\mentorgraphics\EEVX.2.4\SDD_HOME\wg\help;C:\mentorgraphics\EEVX.2.4\SDD_HOME\common\win32\bin;C:\mentorgraphics\EEVX.2.4\SDD_HOME\common\win32\lib;C:\mentorgraphics\EEVX.2.4\MGC_HOME.ixn\bin;C:\mentorgraphics\EEVX.2.4\MGC_HOME.ixn\lib;C:\mentorgraphics\EEVX.2.4\SDD_HOME\wg\win32\lib;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\alexi\AppData\Local\Microsoft\WindowsApps;]
+[2019.01.10 22:34:12] [0000m.01s.462ms] [1] SDD_HOME [C:\mentorgraphics\EEVX.2.4\SDD_HOME] on file system [NTFS]
+[2019.01.10 22:34:12] [0000m.01s.462ms] [1] SDD_PLATFORM [win32]
+[2019.01.10 22:34:12] [0000m.01s.462ms] [1] WDIR [C:\Users\alexi\Documents\WDIR;C:\mentorgraphics\EEVX.2.4\SDD_HOME\standard;]
+[2019.01.10 22:34:12] [0000m.01s.462ms] [1] Local iCDB working dir [C:\Users\alexi\Documents\WDIR\iCDB] on file system [NTFS]
+[2019.01.10 22:34:12] [0000m.01s.462ms] [1] S: Config file name [ServerWG.cfg]
+[2019.01.10 22:34:12] [0000m.01s.462ms] [2] S: Loading config files
+[2019.01.10 22:34:12] [0000m.01s.462ms] [1] Config file [Z:\LASMO\PCB\Default\default.icdb\cdbsvr\ServerWG.cfg] not found
+[2019.01.10 22:34:12] [0000m.01s.462ms] [1] Config: Non-default value [System.SingleUserMode] = [no]
+[2019.01.10 22:34:12] [0000m.01s.462ms] [3] S: Config loaded
+[2019.01.10 22:34:12] [0000m.01s.581ms] [0] S: Project path [Z:\LASMO\PCB\Default\default.icdb] on file system [VBoxSharedFolderFS]
+[2019.01.10 22:34:12] [0000m.01s.581ms] [0] S: Project global path [\\VBoxSvr\2019\LASMO\PCB\Default\default.icdb] on file system [UNKNOWN]
+[2019.01.10 22:34:12] [0000m.01s.581ms] [1] S: WARNING: No project file (.prj) path specified
+[2019.01.10 22:34:12] [0000m.01s.581ms] [1] S: WARNING: Database auto-repair support DISABLED
+[2019.01.10 22:34:12] [0000m.01s.581ms] [0] S: Multi-user mode (config)
+[2019.01.10 22:34:12] [0000m.01s.581ms] [0] S: Event polling mode autodetection
+[2019.01.10 22:34:12] [0000m.01s.581ms] [0] S: Started up automatically by iCDB Client: DESKTOP-D6MOGOB:alexis:6840
+[2019.01.10 22:34:12] [0000m.01s.581ms] [0] S: Auto close mode
+[2019.01.10 22:34:12] [0000m.01s.581ms] [0] S: Database ID [6462-cae9-21ea-5043-f606-63c4-7066-3c50-4d00-609f-9fef-0fc8]
+[2019.01.10 22:34:12] [0000m.01s.598ms] [0] PathTranslator: BEGIN dumping
+[2019.01.10 22:34:12] [0000m.01s.598ms] [0] PathTranslator: Local -> global path prefix list
+[2019.01.10 22:34:12] [0000m.01s.598ms] [0] PathTranslator: [C:\WINDOWS\system32\spool\drivers] -> [\\DESKTOP-D6MOGOB\print$]
+[2019.01.10 22:34:12] [0000m.01s.598ms] [0] PathTranslator: [F:\] -> [\\vboxsrv\mentor\]
+[2019.01.10 22:34:12] [0000m.01s.598ms] [0] PathTranslator: [G:\] -> [\\vboxsrv\windows\]
+[2019.01.10 22:34:12] [0000m.01s.598ms] [0] PathTranslator: [X:\] -> [\\VBoxSvr\mentor\]
+[2019.01.10 22:34:12] [0000m.01s.598ms] [0] PathTranslator: [Y:\] -> [\\VBoxSvr\Windows\]
+[2019.01.10 22:34:12] [0000m.01s.598ms] [0] PathTranslator: [Z:\] -> [\\VBoxSvr\2019\]
+[2019.01.10 22:34:12] [0000m.01s.598ms] [0] PathTranslator: Global -> local path prefix list
+[2019.01.10 22:34:12] [0000m.01s.598ms] [0] PathTranslator: [\\DESKTOP-D6MOGOB\print$] -> [C:\WINDOWS\system32\spool\drivers]
+[2019.01.10 22:34:12] [0000m.01s.598ms] [0] PathTranslator: [\\vboxsrv\windows\] -> [G:\]
+[2019.01.10 22:34:12] [0000m.01s.598ms] [0] PathTranslator: [\\VBoxSvr\Windows\] -> [Y:\]
+[2019.01.10 22:34:12] [0000m.01s.598ms] [0] PathTranslator: [\\vboxsrv\mentor\] -> [F:\]
+[2019.01.10 22:34:12] [0000m.01s.598ms] [0] PathTranslator: [\\VBoxSvr\mentor\] -> [X:\]
+[2019.01.10 22:34:12] [0000m.01s.598ms] [0] PathTranslator: [\\VBoxSvr\2019\] -> [Z:\]
+[2019.01.10 22:34:12] [0000m.01s.598ms] [0] PathTranslator: END dumping
+[2019.01.10 22:34:12] [0000m.01s.598ms] [0] S: START
+[2019.01.10 22:34:12] [0000m.01s.598ms] [0] S: Server startup lock file created
+[2019.01.10 22:34:12] [0000m.01s.598ms] [0] S: Listening for client connections on port [10000]
+[2019.01.10 22:34:12] [0000m.01s.598ms] [0] S: Server network ID [DESKTOP-D6MOGOB:10.0.2.15,DESKTOP-D6MOGOB:10000]
+[2019.01.10 22:34:12] [0000m.01s.598ms] [0] S: Server GUID [0c75-6b6a-ff16-2230-45ab-73c9-5ab7-3c50-050e-509f-9fef-0fc8]
+[2019.01.10 22:34:12] [0000m.01s.598ms] [0] S: Project GUID [6462-cae9-21ea-5043-f606-63c4-7066-3c50-4d00-609f-9fef-0fc8]
+[2019.01.10 22:34:12] [0000m.01s.598ms] [0] S: Wrote data to server address file
+[2019.01.10 22:34:12] [0000m.01s.598ms] [0] S: Server startup lock file removed
+[2019.01.10 22:34:12] [0000m.01s.598ms] [0] ProjectBackupManager: WARNING: Could not create Project Backup - functionality not initialized
+[2019.01.10 22:34:12] [0000m.01s.754ms] [0] S: Plugins loaded: [PIM] [ENetGen70] 
+[2019.01.10 22:34:12] [0000m.01s.771ms] [1] ServerToolkit: INFO: Plugin not found in SDD_ICDB_BIN [C:\mentorgraphics\EEVX.2.4\SDD_HOME\iCDB\win32\bin]
+[2019.01.10 22:34:12] [0000m.01s.771ms] [1] ServerToolkit: INFO: Plugin not found in SDD_COMMON_BIN [C:\mentorgraphics\EEVX.2.4\SDD_HOME\common\win32\bin]
+[2019.01.10 22:34:12] [0000m.01s.771ms] [1] ServerToolkit: INFO: Plugin not found in PATH
+[2019.01.10 22:34:12] [0000m.01s.771ms] [1] ServerToolkit: INFO: Plugin not found in CWD
+[2019.01.10 22:34:12] [0000m.01s.771ms] [1] ServerToolkit: INFO: returning just plugin exe name!
+[2019.01.10 22:34:12] [0000m.01s.771ms] [0] S: Local disc access time: 37 us
+[2019.01.10 22:34:12] [0000m.01s.771ms] [0] S: File server access time: 455 us
+[2019.01.10 22:34:12] [0000m.01s.771ms] [0] S: Server will not release in-memory storage after read (memory usage overhead) - for better performance
+[2019.01.10 22:34:12] [0000m.01s.771ms] [0] Single file [Z:\LASMO\PCB\Default\default.icdb\icdb.dat] size [105328 (102.9 kB)]
+[2019.01.10 22:34:12] [0000m.01s.771ms] [1] Single file [Z:\LASMO\PCB\Default\default.icdb\icdb.dat] opened in read-write mode
+[2019.01.10 22:34:12] [0000m.01s.771ms] [0] SingleFile: [0000-0000-0000-0000] SFI header version check [1009] [1009]
+[2019.01.10 22:34:12] [0000m.01s.771ms] [0] Database GUARD OK: [105328]
+[2019.01.10 22:34:12] [0000m.01s.771ms] [0] SingleFile: [0000-0000-0000-0000] SFI header version check [1009] [1009]
+[2019.01.10 22:34:12] [0000m.01s.771ms] [0] Database GUARD OK: [105328]
+[2019.01.10 22:34:12] [0000m.01s.789ms] [0] SingleFile: [0000-0000-0000-0000] SFI header version check [1009] [1009]
+[2019.01.10 22:34:12] [0000m.01s.789ms] [0] Database GUARD OK: [105328]
+[2019.01.10 22:34:12] [0000m.01s.789ms] [0] SingleFile: [0000-0000-0000-0000] SFI header version check [1009] [1009]
+[2019.01.10 22:34:12] [0000m.01s.789ms] [0] Database GUARD OK: [105328]
+[2019.01.10 22:34:12] [0000m.01s.789ms] [0] SingleFile: [0000-0000-0000-0000] SFI header version check [1009] [1009]
+[2019.01.10 22:34:12] [0000m.01s.789ms] [0] Database GUARD OK: [105328]
+[2019.01.10 22:34:12] [0000m.01s.789ms] [0] SingleFile: [9878-8e3e-3131-ab6c] SFI version check [1009] [1009]
+[2019.01.10 22:34:12] [0000m.01s.806ms] [0] SingleFile: [9878-8e3e-3131-ab6c] Database SFI header has been read in [23ms 871us]
+[2019.01.10 22:34:12] [0000m.01s.823ms] [0] iCDB Server PI: Server & plugin session [565]
+[2019.01.10 22:34:12] [0000m.01s.823ms] [0] iCDB Server PI: Opening database [Z:\LASMO\PCB\Default\default.icdb]
+[2019.01.10 22:34:12] [0000m.01s.823ms] [0] iCDB Server PI: Database [Z:\LASMO\PCB\Default\default.icdb] opened
+[2019.01.10 22:34:12] [0000m.01s.909ms] [0] iCDB Database: Checking existence of constraint definitions
+[2019.01.10 22:34:12] [0000m.01s.909ms] [0] iCDB Database: Checking constraint definitions version
+[2019.01.10 22:34:12] [0000m.01s.961ms] [1] iCDB Database: Constraint definitions version [ce_ee.cns=7.10.63;user.cns=ec49-fb41-b7ae-9a43-92d0-cfbe-2d0c-fb50-c20e-509f-9fef-0fc8] up to date
+[2019.01.10 22:34:12] [0000m.02s.063ms] [0] iCDB Server PI: Initializing plugins
+[2019.01.10 22:34:12] [0000m.02s.063ms] [0] iCDB Server PI: Plugins initialized
+[2019.01.10 22:34:12] [0000m.02s.063ms] [0] S: iCDB database loaded
+[2019.01.10 22:34:12] [0000m.02s.063ms] [0] S: Starting threads
+[2019.01.10 22:34:12] [0000m.02s.063ms] [0] BT: Listening for broadcast messages on port [10000]
+[2019.01.10 22:34:12] [0000m.02s.063ms] [1] CMT: There are no clients - waiting [10 seconds]
+[2019.01.10 22:34:12] [0000m.02s.063ms] [0] ProjectBackupManager: WARNING: Could not startup Project Backup engine - functionality not initialized
+[2019.01.10 22:34:12] [0000m.02s.080ms] [0] IT: Session [566] for host [DESKTOP-D6MOGOB] user [alexis] client type[0] clsvrPluginID[0] with process ID [6840] created
+[2019.01.10 22:34:12] [0000m.02s.080ms] [0] MWT: WindowProc: WM_NCCREATE
+[2019.01.10 22:34:12] [0000m.02s.080ms] [1] SC[566]: Registered sub-client [DCDV] with ID [1] for session ID [566] host [DESKTOP-D6MOGOB] user [alexis] process ID [6840]
+[2019.01.10 22:34:12] [0000m.02s.080ms] [1] SC[566]: UnRegistered sub-client [DCDV] with ID [1] for session ID [566] host [DESKTOP-D6MOGOB] user [alexis] process ID [6840]
+[2019.01.10 22:34:12] [0000m.02s.201ms] [1] CMT: There are [1] clients now: 566
+[2019.01.10 22:34:12] [0000m.02s.201ms] [1] CMT: Removed client [566]
+[2019.01.10 22:34:12] [0000m.02s.201ms] [1] CMT: There are no clients left - waiting [1 seconds]
+[2019.01.10 22:34:13] [0000m.02s.716ms] [0] IT: Session [567] for host [DESKTOP-D6MOGOB] user [alexis] client type[0] clsvrPluginID[0] with process ID [6840] created
+[2019.01.10 22:34:13] [0000m.02s.716ms] [1] SC[567]: Registered sub-client [DCDV] with ID [1] for session ID [567] host [DESKTOP-D6MOGOB] user [alexis] process ID [6840]
+[2019.01.10 22:34:13] [0000m.02s.716ms] [1] SC[567]: UnRegistered sub-client [DCDV] with ID [1] for session ID [567] host [DESKTOP-D6MOGOB] user [alexis] process ID [6840]
+[2019.01.10 22:34:13] [0000m.02s.820ms] [1] CMT: Removed client [567]
+[2019.01.10 22:34:13] [0000m.02s.820ms] [1] CMT: There are no clients left - waiting [1 seconds]
+[2019.01.10 22:34:15] [0000m.04s.299ms] [0] CMT: Starting server auto-close
+[2019.01.10 22:34:15] [0000m.04s.419ms] [0] S: Closing server
+[2019.01.10 22:34:15] [0000m.04s.436ms] [0] ProjectBackupManager: WARNING: Could not shutdown Project Backup engine - not started yet
+[2019.01.10 22:34:15] [0000m.04s.590ms] [0] iCDB Server PI: Closing plugins
+[2019.01.10 22:34:15] [0000m.04s.590ms] [0] iCDB Server PI: Plugins closed
+[2019.01.10 22:34:15] [0000m.04s.590ms] [0] iCDB Server PI: Unloading database
+[2019.01.10 22:34:15] [0000m.04s.694ms] [0] iCDB Server PI: Saving storage
+[2019.01.10 22:34:15] [0000m.04s.694ms] [0] iCDB Server PI: Closing database
+[2019.01.10 22:34:15] [0000m.04s.694ms] [1] iCDB Server PI: Stats: Database defragmentation: max[1] avg[1] holes[0%] data[98%]
+[2019.01.10 22:34:15] [0000m.04s.694ms] [1] iCDB Server PI: Stats: Database file size [105848 (103.4 kB)]
+[2019.01.10 22:34:15] [0000m.04s.711ms] [0] iCDB Server PI: Database closed
+[2019.01.10 22:34:15] [0000m.04s.711ms] [1] iCDB Server PI: Stats: Total iCDB execution time: [126] ticks
+[2019.01.10 22:34:15] [0000m.04s.711ms] [1] iCDB Server PI: Stats: Total iCDB execution time: [12] microseconds
+[2019.01.10 22:34:15] [0000m.04s.711ms] [1] iCDB Server PI: Stats: Total iCDB commands count: [2]
+[2019.01.10 22:34:15] [0000m.04s.711ms] [1] iCDB Server PI: Stats: Average iCDB speed:        [158730] commands per second
+[2019.01.10 22:34:15] [0000m.04s.711ms] [1] iCDB Server PI: Stats: Mem[31682560]
+[2019.01.10 22:34:15] [0000m.04s.711ms] [1] iCDB Server PI: Stats: MemPeak[37326848]
+[2019.01.10 22:34:15] [0000m.04s.711ms] [0] Single file [Z:\LASMO\PCB\Default\default.icdb\icdb.dat] closed with size [105848 (103.4 kB)]
+[2019.01.10 22:34:15] [0000m.04s.728ms] [0] ProjectBackupManager: WARNING: Could not create Project Backup - functionality not initialized
+[2019.01.10 22:34:15] [0000m.04s.866ms] [0] MWT: Destroy the shutdown block reason.
+[2019.01.10 22:34:15] [0000m.04s.866ms] [0] MWT: STOP
+[2019.01.10 22:34:15] [0000m.04s.866ms] [0] S: STOP

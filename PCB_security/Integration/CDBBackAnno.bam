@@ -1,0 +1,98 @@
+
+/* Sym: 0523AA98  Path 1: Schematic1  Page 1: Schematic1(1) */
+CHANGE 'Schematic1(1)' 	INSTANCE
+  SELECT COMP XCMP743                 /* Reference Desig is C4 */
+    PARAM 'Part Name' = 'CAPCERAM0603' 
+    PARAM 'Value' = '100nF' 
+    PARAM 'Tolerance' = '10%' 
+    PARAM 'Description' = 'Capacitor Ceramic X7R / 100nF / 16V / ±10% / case 0603' 
+    PARAM 'Part Label' = 'CAP C0603 100nF X7R 16V' 
+    PARAM 'Code Fournisseur' = 'Fa : 1414027' 
+    PARAM 'Cout HT' = '0.014' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C4'         /* Reference Desig was (null) */
+  SELECT COMP XCMP742                 /* Reference Desig is C3 */
+    PARAM 'Part Name' = 'CAPCERAM0603' 
+    PARAM 'Value' = '100nF' 
+    PARAM 'Tolerance' = '10%' 
+    PARAM 'Description' = 'Capacitor Ceramic X7R / 100nF / 16V / ±10% / case 0603' 
+    PARAM 'Part Label' = 'CAP C0603 100nF X7R 16V' 
+    PARAM 'Code Fournisseur' = 'Fa : 1414027' 
+    PARAM 'Cout HT' = '0.014' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C3'         /* Reference Desig was (null) */
+  SELECT COMP XCMP744                 /* Reference Desig is C5 */
+    PARAM 'Part Name' = 'CAPCERAM0603' 
+    PARAM 'Value' = '100nF' 
+    PARAM 'Tolerance' = '10%' 
+    PARAM 'Description' = 'Capacitor Ceramic X7R / 100nF / 16V / ±10% / case 0603' 
+    PARAM 'Part Label' = 'CAP C0603 100nF X7R 16V' 
+    PARAM 'Code Fournisseur' = 'Fa : 1414027' 
+    PARAM 'Cout HT' = '0.014' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C5'         /* Reference Desig was (null) */
+  SELECT EXT XCMP752                  /* Reference Desig is J6 */
+    PARAM 'Part Name' = 'BARETTE' 
+    PARAM 'Description' = 'Jumper 3 points en ligne 2.54mm avec cavalier associe' 
+    PARAM 'Part Label' = 'JUMPER 3PTS' 
+    PARAM 'Cout HT' = '0.2' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'J6'         /* Reference Desig was (null) */
+  SELECT EXT XCMP751                  /* Reference Desig is J5 */
+    PARAM 'Part Name' = 'BARETTE' 
+    PARAM 'Description' = 'Jumper 3 points en ligne 2.54mm avec cavalier associe' 
+    PARAM 'Part Label' = 'JUMPER 3PTS' 
+    PARAM 'Cout HT' = '0.2' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'J5'         /* Reference Desig was (null) */
+  SELECT COMP XCMP750                 /* Reference Desig is C8 */
+    PARAM 'Part Name' = 'CAPCERAM0603' 
+    PARAM 'Value' = '100nF' 
+    PARAM 'Tolerance' = '10%' 
+    PARAM 'Description' = 'Capacitor Ceramic X7R / 100nF / 16V / ±10% / case 0603' 
+    PARAM 'Part Label' = 'CAP C0603 100nF X7R 16V' 
+    PARAM 'Code Fournisseur' = 'Fa : 1414027' 
+    PARAM 'Cout HT' = '0.014' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C8'         /* Reference Desig was (null) */
+  SELECT COMP XCMP749                 /* Reference Desig is C10 */
+    PARAM 'Part Name' = 'CAPCERAM0402' 
+    PARAM 'Value' = '1uF' 
+    PARAM 'Tolerance' = '10%' 
+    PARAM 'Description' = 'Capacitor Ceramic X5R / 1uF / 6.3V / ±10% / case 0402' 
+    PARAM 'Part Label' = 'CAP C0402 1uF X5R 6.3V' 
+    PARAM 'Code Fournisseur' = 'Fa : 2362087' 
+    PARAM 'Cout HT' = '0.025' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C10'         /* Reference Desig was (null) */
+  SELECT COMP XCMP748                 /* Reference Desig is C7 */
+    PARAM 'Part Name' = 'CAPCERAM0603' 
+    PARAM 'Value' = '100nF' 
+    PARAM 'Tolerance' = '10%' 
+    PARAM 'Description' = 'Capacitor Ceramic X7R / 100nF / 16V / ±10% / case 0603' 
+    PARAM 'Part Label' = 'CAP C0603 100nF X7R 16V' 
+    PARAM 'Code Fournisseur' = 'Fa : 1414027' 
+    PARAM 'Cout HT' = '0.014' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C7'         /* Reference Desig was (null) */
+  SELECT COMP XCMP746                 /* Reference Desig is C9 */
+    PARAM 'Part Name' = 'CAPCERAM1812' 
+    PARAM 'Value' = '4,7uF' 
+    PARAM 'Tolerance' = '80%' 
+    PARAM 'Description' = 'Capacitor Ceramic X7S / 4.7uF / 100V case 1812' 
+    PARAM 'Part Label' = 'CAP C1812 4.7uF X7S 100V' 
+    PARAM 'Dielectric' = 'X7S' 
+    PARAM 'Code Fournisseur' = 'Fa : 1844446' 
+    PARAM 'Cout HT' = '1.12' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C9'         /* Reference Desig was (null) */
+  SELECT COMP XCMP745                 /* Reference Desig is C6 */
+    PARAM 'Part Name' = 'CAPCERAM0603' 
+    PARAM 'Value' = '100nF' 
+    PARAM 'Tolerance' = '10%' 
+    PARAM 'Description' = 'Capacitor Ceramic X7R / 100nF / 16V / ±10% / case 0603' 
+    PARAM 'Part Label' = 'CAP C0603 100nF X7R 16V' 
+    PARAM 'Code Fournisseur' = 'Fa : 1414027' 
+    PARAM 'Cout HT' = '0.014' 
+    PARAM 23 = DELETE                    /* Component Fix flag */
+    PARAM 15 = 'C6'         /* Reference Desig was (null) */
