@@ -154,6 +154,9 @@
 #define GPIOE_PIN14                 14U
 #define GPIOE_PIN15                 15U
 
+#define GPIOH_OSC_IN                0U
+#define GPIOH_OSC_OUT               1U
+
 /*
  * IO lines assignments.
  */
@@ -191,6 +194,8 @@
 #define LINE_UART4_RX               PAL_LINE(GPIOD, 0U)
 #define LINE_UART4_TX               PAL_LINE(GPIOD, 1U)
 #define LINE_SD_CMD                 PAL_LINE(GPIOD, 2U)
+#define LINE_OSC_IN                 PAL_LINE(GPIOH, 0U)
+#define LINE_OSC_OUT                PAL_LINE(GPIOH, 1U)
 
 /*===========================================================================*/
 /* Driver pre-compile time settings.                                         */
@@ -814,8 +819,29 @@
                                      PIN_AFIO_AF(GPIOE_PIN14, 0U)       | \
                                      PIN_AFIO_AF(GPIOE_PIN15, 0U)         )
 
-/*===========================================================================*/
-/* DAC                                                                       */
+/*
+ * GPIOH setup:
+ *
+ * PH0  - OSC_IN      (input floating)
+ * PH1  - OSC_OUT     (input floating)
+ */
+
+ #define VAL_GPIOH_MODER             (PIN_MODE_INPUT(GPIOH_OSC_IN)       | \
+                                      PIN_MODE_INPUT(GPIOH_OSC_OUT)      )
+ #define VAL_GPIOH_OTYPER            (PIN_OTYPE_PUSHPULL(GPIOH_OSC_IN)   | \
+                                      PIN_OTYPE_PUSHPULL(GPIOH_OSC_OUT)  )
+ #define VAL_GPIOH_OSPEEDR           (PIN_OSPEED_HIGH(GPIOH_OSC_IN)      | \
+                                      PIN_OSPEED_HIGH(GPIOH_OSC_OUT)     )
+ #define VAL_GPIOH_PUPDR             (PIN_PUPDR_FLOATING(GPIOH_OSC_IN)   | \
+                                      PIN_PUPDR_FLOATING(GPIOH_OSC_OUT)  )
+ #define VAL_GPIOH_ODR               (PIN_ODR_HIGH(GPIOH_OSC_IN)         | \
+                                      PIN_ODR_HIGH(GPIOH_OSC_OUT)        )
+
+ #define VAL_GPIOH_AFRL              (PIN_AFIO_AF(GPIOH_OSC_IN, 0U)      | \
+                                      PIN_AFIO_AF(GPIOH_OSC_OUT, 0U)     )
+
+/*=========================================================*/
+/* DAC                                                     */
 /*===========================================================================*/
 #define DAC1_GPIO        GPIOA
 #define DAC2_GPIO        GPIOA

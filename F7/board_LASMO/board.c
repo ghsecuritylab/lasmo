@@ -66,6 +66,9 @@ typedef struct {
 #if STM32_HAS_GPIOE || defined(__DOXYGEN__)
   gpio_setup_t          PEData;
 #endif
+#if STM32_HAS_GPIOH || defined(__DOXYGEN__)
+  gpio_setup_t          PHData;
+#endif
 } gpio_config_t;
 
 /**
@@ -91,6 +94,10 @@ static const gpio_config_t gpio_default_config = {
 #if STM32_HAS_GPIOE
   {VAL_GPIOE_MODER, VAL_GPIOE_OTYPER, VAL_GPIOE_OSPEEDR, VAL_GPIOE_PUPDR,
    VAL_GPIOE_ODR,   VAL_GPIOE_AFRL,   VAL_GPIOE_AFRH},
+#endif
+#if STM32_HAS_GPIOH
+  {VAL_GPIOH_MODER, VAL_GPIOH_OTYPER, VAL_GPIOH_OSPEEDR, VAL_GPIOH_PUPDR,
+   VAL_GPIOH_ODR,   VAL_GPIOH_AFRL,   0},
 #endif
 };
 
@@ -131,6 +138,9 @@ static void stm32_gpio_init(void) {
 #endif
 #if STM32_HAS_GPIOE
   gpio_init(GPIOE, &gpio_default_config.PEData);
+#endif
+#if STM32_HAS_GPIOH
+  gpio_init(GPIOH, &gpio_default_config.PHData);
 #endif
 }
 
