@@ -41,4 +41,7 @@ void control_lasers_set(uint8_t r, uint8_t g, uint8_t b);
 // been allowed.
 void control_scanner_xy(uint16_t x, uint16_t y);
 
+// Set the scanner rate in pulse per second.
+void control_scanner_set_rate(uint16_t pps);
+
 #endif // F7_CONTROL_H

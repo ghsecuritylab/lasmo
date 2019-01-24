@@ -3,6 +3,13 @@
 #include "F7/max5105.h"
 
 /*
+ * CONSTANTS DEFINING BEHAVIOUR OF THIS MODULE
+ */
+
+#define MAX_SAFE_MOVE_INTERVAL_MS 25
+#define MAX_RATE_PPS 30000
+
+/*
  * LASERS CONTROL
  */
 
@@ -23,14 +30,11 @@ static void lasers_init(void) {
 }
 
 /*
- * SCANNERS CONTROL
+ * SCANNER CONTROL
  */
 
 #define SCANNER_CHANNEL1 0U
 #define SCANNER_CHANNEL2 1U
-
-/* 30kpps -> T=33,33us */
-#define MIN_PTS_PERIOD_US 34
 
 static const DACConfig dac1cfg1 = {
   .init         = 0U,
@@ -47,14 +51,14 @@ static void scanner_xy(int16_t x_value, uint16_t y_value) {
  * Starting DAC1 driver, setting up the output pin as analog as suggested
  * by the Reference Manual.
  */
-static void scanners_init(void) {
+static void scanner_init(void) {
   palSetPadMode(DAC1_GPIO, DAC1_PIN, PAL_MODE_INPUT_ANALOG);
   palSetPadMode(DAC2_GPIO, DAC2_PIN, PAL_MODE_INPUT_ANALOG);
   dacObjectInit(&DACD1);
   dacStart(&DACD1, &dac1cfg1);
 
-  /* for no conflic on first point */
-  chThdSleepMicroseconds(MIN_PTS_PERIOD_US);
+  /* Prevent the scanner from moving several times in succession at startup */
+  chThdSleepMilliseconds(1);
 }
 
 /*
@@ -70,8 +74,10 @@ static void next_frameISR(GPTDriver *gptp) {
 	chSysUnlockFromISR();
 }
 
+#define RATE_DIVISOR_PPS 1200000
+
 static const GPTConfig timer_cfg = {
-  30000*2, // 30kpps
+  RATE_DIVISOR_PPS,
   next_frameISR,
   0,
   0
@@ -81,14 +87,16 @@ static void next_frame_timer_init(void) {
   gptStart(&GPTD5, &timer_cfg);
 }
 
-#define MAX_SAFE_MOVE_INTERVAL_TICKS (TIME_MS2I(25))
+#define MIN_RATE_PPS (1000 / MAX_SAFE_MOVE_INTERVAL_MS)
+#define MAX_SAFE_MOVE_INTERVAL_TICKS (TIME_MS2I(MAX_SAFE_MOVE_INTERVAL_MS))
 
-#define COMMAND_SCANNERS_MOVE 0
+#define COMMAND_SCANNER_MOVE 0
 #define COMMAND_LASERS_ON 1
 #define COMMAND_LASERS_OFF 2
 #define COMMAND_LASERS_MUTE 3
 #define COMMAND_LASERS_UNMUTE 4
 #define COMMAND_LASERS_SET 5
+#define COMMAND_SCANNER_RATE 6
 
 #define MAX_SCANNER_VALUE 4095
 
@@ -101,13 +109,14 @@ static THD_WORKING_AREA(control_thread_wa, 256);
 static THD_FUNCTION(control_thread, p) {
   (void) p;
   next_frame_timer_init();
-  scanners_init();
+  scanner_init();
   lasers_init();
   int is_on = 0;
   int is_muted = 1;
   systime_t last_move = 0;
   uint16_t last_x = 0;
   uint16_t last_y = 0;
+  uint16_t rate_divisor = RATE_DIVISOR_PPS / 30000 - 1;
   for (;;) {
     const sysinterval_t since_last_move = chVTGetSystemTimeX() - last_move;
     if (is_on && since_last_move >= MAX_SAFE_MOVE_INTERVAL_TICKS) {
@@ -154,14 +163,14 @@ static THD_FUNCTION(control_thread, p) {
               is_muted = 0;
               lasers_sd_mute(!is_on, is_muted);
               break;
-            case COMMAND_SCANNERS_MOVE:
+            case COMMAND_SCANNER_MOVE:
               {
                 // Wait until we have the right to move, but not above
                 // the safety delay in case the timer does not fire for
                 // any reason. In this case, we abort.
                 switch (chBSemWaitTimeout(&next_frame_ok, MAX_SAFE_MOVE_INTERVAL_TICKS)) {
                   case MSG_OK:
-                    gptStartOneShot(&GPTD5, 1);
+                    gptStartOneShot(&GPTD5, rate_divisor);
                     break;
                   case MSG_TIMEOUT:
                     control_emergency_halt("next frame timer did not fire in time");
@@ -181,6 +190,11 @@ static THD_FUNCTION(control_thread, p) {
                 scanner_xy(x, y);
                 break;
               }
+            case COMMAND_SCANNER_RATE:
+              if (data < MIN_RATE_PPS || data > MAX_RATE_PPS)
+                control_emergency_halt("scanner rate out of bounds");
+              rate_divisor = RATE_DIVISOR_PPS / data - 1;
+              break;
             default:
               control_emergency_halt("unknown command received");
           }
@@ -246,5 +260,9 @@ void control_lasers_set(uint8_t r, uint8_t g, uint8_t b) {
 }
 
 void control_scanner_xy(uint16_t x, uint16_t y) {
-  send_command(COMMAND_SCANNERS_MOVE, (x << 16) | y);
+  send_command(COMMAND_SCANNER_MOVE, (x << 16) | y);
+}
+
+void control_scanner_set_rate(uint16_t pps) {
+  send_command(COMMAND_SCANNER_RATE, pps);
 }
