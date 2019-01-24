@@ -42,9 +42,9 @@ int main(void) {
   //lsm_max5105_test();
   //lsm_adc_test();
 
-  lsm_max5105_init();
-  lasers_sd_mute(1, 1);
-  lsm_lasers_test();
+  /* lsm_max5105_init(); */
+  /* lasers_sd_mute(1, 1); */
+  /* lsm_lasers_test(); */
 
   //lsm_decoder_test("TheRiddle/theriddle.ild");
 
