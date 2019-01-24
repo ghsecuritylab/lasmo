@@ -266,3 +266,12 @@ void control_scanner_xy(uint16_t x, uint16_t y) {
 void control_scanner_set_rate(uint16_t pps) {
   send_command(COMMAND_SCANNER_RATE, pps);
 }
+
+void control_write_eeprom_configuration() {
+  lasers_init();
+  lsm_max5105_write(MAX_SD_MUTE_ADDR, MAX_MUTE_ALL | MAX_SHUTDOWN_ALL);
+  lsm_max5105_write(MAX_DAC0_ADDR, 0);
+  lsm_max5105_write(MAX_DAC1_ADDR, 0);
+  lsm_max5105_write(MAX_DAC2_ADDR, 0);
+  lsm_max5105_write(MAX_DAC3_ADDR, 0);
+}

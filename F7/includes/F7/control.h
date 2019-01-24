@@ -44,4 +44,8 @@ void control_scanner_xy(uint16_t x, uint16_t y);
 // Set the scanner rate in pulse per second.
 void control_scanner_set_rate(uint16_t pps);
 
+// Write the permanent configuration into the non-volatile DAC
+// registers: lasers off, muted, value at 0.
+void control_write_eeprom_configuration(void);
+
 #endif // F7_CONTROL_H
