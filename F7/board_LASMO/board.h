@@ -45,7 +45,6 @@
 /*
  * Board oscillators-related settings.
  */
-//TODO
 #if !defined(STM32_LSECLK)
 #define STM32_LSECLK                32768U
 #endif
