@@ -117,6 +117,9 @@ static THD_FUNCTION(control_thread, p) {
   uint16_t last_x = 0;
   uint16_t last_y = 0;
   uint16_t rate_divisor = RATE_DIVISOR_PPS / 30000 - 1;
+  uint8_t last_r = 0;
+  uint8_t last_g = 0;
+  uint8_t last_b = 0;
   for (;;) {
     const sysinterval_t since_last_move = chVTGetSystemTimeX() - last_move;
     if (is_on && since_last_move >= MAX_SAFE_MOVE_INTERVAL_TICKS) {
@@ -162,6 +165,21 @@ static THD_FUNCTION(control_thread, p) {
               }
               is_muted = 0;
               lasers_sd_mute(!is_on, is_muted);
+              break;
+            case COMMAND_LASERS_SET:
+              {
+                const uint8_t r = data >> 16;
+                const uint8_t g = data >> 8;
+                const uint8_t b = data;
+                if (r != last_r || g != last_g || b != last_b) {
+                  lsm_max5105_wr_upd(MAX_DAC0_ADDR, r);
+                  lsm_max5105_wr_upd(MAX_DAC1_ADDR, g);
+                  lsm_max5105_wr_upd(MAX_DAC2_ADDR, b);
+                  last_r = r;
+                  last_g = g;
+                  last_b = b;
+                }
+              }
               break;
             case COMMAND_SCANNER_MOVE:
               {
