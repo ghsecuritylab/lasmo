@@ -17,11 +17,11 @@ static THD_FUNCTION(lsm_test_thread_fct, p) {
   control_lasers_on();
   control_lasers_unmute();
 
-  while(1){
+ // while(1){
     SEGGER_RTT_printf(0, "##### TEST LASERs | RED - 1sec\n");
     control_lasers_set(0xFF,0x00,0x00);
     chThdSleepMilliseconds(1000);
-
+/*
     SEGGER_RTT_printf(0, "##### TEST LASERs | GREEN - 1sec\n");
     control_lasers_set(0x00,0xFF,0x00);
     chThdSleepMilliseconds(1000);
@@ -40,8 +40,8 @@ static THD_FUNCTION(lsm_test_thread_fct, p) {
 
     SEGGER_RTT_printf(0, "##### TEST LASERs | Yellow - 1sec\n");
     control_lasers_set(0xFF,0xC3,0x00);
-    chThdSleepMilliseconds(1000);
-  }
+    chThdSleepMilliseconds(1000); */
+  //}
 }
 
 void lsm_lasers_test(void){
