@@ -3,7 +3,6 @@
 *.d
 *.o
 build/
-.gdbinit
 .gdb_history
 .ods\#
 .~lock.*
