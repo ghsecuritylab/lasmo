@@ -308,6 +308,9 @@ void lsm_sd_init(void){
     chThdCreateStatic(lsm_wa_sd_thread, sizeof(lsm_wa_sd_thread), NORMALPRIO +5, lsm_sd_thread, NULL);
     SEGGER_RTT_printf(0,"sd init2\n");
 
+    if(sdc_lld_is_card_inserted(&SDCD1))
+      lsm_sd_insert_handler(0);
+
     chSysLock();
     sd_slot_debounce_counter = 0;
     chVTSetI(&sd_slot_poll_timer, TIME_MS2I(POLLING_DELAY), poll_timer_handler, &SDCD1);
