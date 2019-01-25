@@ -114,7 +114,9 @@ static THD_FUNCTION(control_thread, p) {
   (void) p;
   next_frame_timer_init();
   scanner_init();
+#ifndef BOARD_E407
   lasers_init();
+#endif
   int is_on = 0;
   int is_muted = 1;
   systime_t last_move = 0;

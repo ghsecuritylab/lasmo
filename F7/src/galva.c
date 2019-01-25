@@ -9,21 +9,19 @@
 #include "F7/control.h"
 
 void lsm_galva_triangle_phase(void){
-  uint32_t t_us = 500;
-  SEGGER_RTT_printf(0, "Begin of a triangle signal on X and Y with T=%d ms\n", (t_us * 2* (4092 / 4) / 1000));
+  SEGGER_RTT_printf(0, "Begin of a triangle signal on X and Y with T=%d ms\n", (2* (4092 / 4) * 1000 / 30000));
   while(1){
     for(uint16_t x=0 ; x < 4092 ; x+=4){
       control_scanner_xy(x,x);
-      chThdSleepMicroseconds(t_us);
     }
     for(uint16_t x=4092 ; x >0 ; x-=4){
       control_scanner_xy(x,x);
-      chThdSleepMicroseconds(t_us);
     }
   }
 }
 
 void lsm_galva_test(void){
   control_init(NORMALPRIO + 2);
+  control_scanner_set_rate(30000);
   lsm_galva_triangle_phase();
 }

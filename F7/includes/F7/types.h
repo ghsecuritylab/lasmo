@@ -2,6 +2,7 @@
 #define TYPES_H
 
 #include <stdint.h>
+#include "ff.h"
 
 #define LSM_ILDA_FROM_SD       0x01
 #define LSM_ILDA_FROM_ETHERNET 0x02
@@ -36,3 +37,4 @@ typedef struct {
 } lsm_point_t;
 
 #endif
+
