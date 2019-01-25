@@ -22,28 +22,7 @@ limitations under the License.
 #include "F7/converter.h"
 #include <string.h>
 
-
 #define SPEED   115200
-
-static char* file_name[] = {
-  "ILDA_files/earth/earth.ild",
-  "ILDA_files/plane/1plane.ild",
-  "ILDA_files/riddle2/theriddle.ild",
-  "ILDA_files/pacman/PL.ild",
-  "ILDA_files/romain/cirlce.ild",
-  NULL
-};
-
-// value-49 is convertion char to int
-static void lsm_choice(char value ){
-  SEGGER_RTT_printf(0,"Reading file : %s\n", file_name[(size_t)value-49]);
-  if (value-49 == -1)
-    lsm_converter_stop();
-  else{
-    lsm_converter_start(file_name[(size_t)value-49]);
-  }
-}
-
 
 void lsm_uart_send_ilda_path(char array_path[ILDA_PATH_MAX_SIZE]){
   size_t sz = strlen(array_path);
@@ -55,14 +34,13 @@ void lsm_uart_send_ilda_path(char array_path[ILDA_PATH_MAX_SIZE]){
   else{
     SEGGER_RTT_printf(0, "\r\nInvalid Send Code Return \r\n");
   }
-  chThdSleepMilliseconds(100);
 }
 
 
 THD_WORKING_AREA(wa_uart_send_thrd, 128);
 THD_FUNCTION(uart_send, data);
 
-THD_WORKING_AREA(wa_uart_rcv_thrd, 1024);
+THD_WORKING_AREA(wa_uart_rcv_thrd, 2048);
 THD_FUNCTION(uart_rcv, p);
 
 /*
@@ -85,7 +63,6 @@ static const UARTConfig uart_cfg = {
 };
 
 static void lsm_port_setup(void) {
-  // Se situe en haut du connecteur
   palSetPadMode(GPIO_UART, GPIO_UART_TX, PAL_MODE_ALTERNATE(8));
   palSetPadMode(GPIO_UART, GPIO_UART_RX, PAL_MODE_ALTERNATE(8));
 }
@@ -100,21 +77,37 @@ void lsm_uart_init(void){
 THD_FUNCTION(uart_rcv, p){
   (void) p ;
   msg_t msg ;
-  size_t sz ;
-  static char rx_buf [1];
+  size_t sz_rcv;
+  char size_rcv[2];
+  sz_rcv = sizeof(size_rcv);
   while(1){
-    sz = sizeof(rx_buf);
-    msg = uartReceiveTimeout(&PORT_UART, &sz, rx_buf,TIME_INFINITE );
+    msg = uartReceiveTimeout(&PORT_UART, &sz_rcv, size_rcv,TIME_INFINITE );
     if (msg == MSG_OK){
-      SEGGER_RTT_printf(0, "\r\nMessage Received : \n");
-      for (unsigned int i = 0; i <sz; i++){
-        SEGGER_RTT_printf(0, "%c", rx_buf[i]);
+      SEGGER_RTT_printf(0, "\r\nSize Receive :\n");
+      for (unsigned int i = 0; i <sz_rcv; i++){
+        SEGGER_RTT_printf(0, "%c", size_rcv[i]);
       }
-      SEGGER_RTT_printf(0, "\n ");
-      lsm_choice(rx_buf[0]);
+      SEGGER_RTT_printf(0, "\n");
     }
     else
       SEGGER_RTT_printf(0, "\r\nInvalid Received Code Return \r\n");
+
+    int size_r = atoi(size_rcv);
+    char path_rcv[size_r];
+    size_t sz_path = sizeof(path_rcv);
+    msg = uartReceiveTimeout(&PORT_UART, &sz_path, path_rcv,TIME_INFINITE );
+    path_rcv[sz_path]= '\0';
+
+    if (msg == MSG_OK){
+      SEGGER_RTT_printf(0, "\r\nBuffer full:\n");
+      for (unsigned int i = 0; i <sz_path; i++){
+        SEGGER_RTT_printf(0, "%c", path_rcv[i]);
+      }
+      SEGGER_RTT_printf(0, "\n");
+    }
+    else
+      SEGGER_RTT_printf(0, "\r\nInvalid Received Code Return \r\n");
+    lsm_converter_start(path_rcv);
   }
 }
 
@@ -137,11 +130,10 @@ THD_FUNCTION(uart_send, data){
   }
 }
 
-void lsm_uart_test(){
-  chThdCreateStatic(wa_uart_send_thrd, sizeof(wa_uart_send_thrd),NORMALPRIO + 1, uart_send, NULL);
+void lsm_uart_rx(){
   chThdCreateStatic(wa_uart_rcv_thrd, sizeof(wa_uart_rcv_thrd),NORMALPRIO +1, uart_rcv, NULL);
 }
 
-void lsm_uart_rx(){
-  chThdCreateStatic(wa_uart_rcv_thrd, sizeof(wa_uart_rcv_thrd),NORMALPRIO +1, uart_rcv, NULL);
+void lsm_uart_tx(){
+  chThdCreateStatic(wa_uart_send_thrd, sizeof(wa_uart_send_thrd),NORMALPRIO + 1, uart_send, NULL);
 }

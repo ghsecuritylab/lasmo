@@ -21,10 +21,11 @@
 static const char *TAG="wifi";
 
 extern const uint8_t lasmo_html_str[] asm("_binary_lasmo_html_start");
+extern const uint8_t underscore_str[] asm("_binary_underscore_js_start");
+extern const uint8_t paths_str[] asm("_binary_paths_txt_start");
 
 /* An HTTP GET handler */
-esp_err_t hello_get_handler(httpd_req_t *req)
-{
+esp_err_t hello_get_handler(httpd_req_t *req) {
   ESP_LOGI(TAG, "GET handler");
   httpd_resp_send(req, (const char*) lasmo_html_str, strlen((const char*) lasmo_html_str));
   return ESP_OK;
@@ -36,96 +37,69 @@ httpd_uri_t index_uri = {
   .handler   = hello_get_handler,
 };
 
+/* An HTTP GET handler */
+esp_err_t underscore_get_handler(httpd_req_t *req){
+  ESP_LOGI(TAG, "GET handler");
+  httpd_resp_send(req, (const char*) underscore_str, strlen((const char*) underscore_str));
+  return ESP_OK;
+}
+
+httpd_uri_t underscore_uri = {
+  .uri       = "/underscore.js",
+  .method    = HTTP_GET,
+  .handler   = underscore_get_handler,
+};
+
+/* An HTTP GET handler */
+esp_err_t path_get_handler(httpd_req_t *req) {
+  ESP_LOGI(TAG, "GET handler");
+  httpd_resp_send(req, (const char*) paths_str, strlen((const char*) paths_str));
+  return ESP_OK;
+}
+
+httpd_uri_t path_uri = {
+  .uri       = "/paths.txt",
+  .method    = HTTP_GET,
+  .handler   = path_get_handler,
+};
 
 /* An HTTP POST handler */
-esp_err_t state_post_handler(httpd_req_t *req)
-{
-  ESP_LOGI(TAG, "POST handler");
-  int buffer_size = 100;
-  char buffer[buffer_size];
 
-  /* Redirect to lasmo */
-  httpd_resp_set_status(req, "303");
-  httpd_resp_set_hdr(req, "Location", "/lasmo.html");
-  if (req->content_len > buffer_size) {
-    ESP_LOGI(TAG, "Too long POST");
-    httpd_resp_send(req, (const char*) lasmo_html_str, strlen((const char*) lasmo_html_str));
-    return ESP_OK;
-  }
+esp_err_t response_post_handler(httpd_req_t *req){
+  ESP_LOGI(TAG, "POST handler");
+  int buffer_size = 128;
+  char buffer[buffer_size];
+  static char char_to_send[128];
+  char int_buf [2];
+
   if (httpd_req_recv(req, buffer, req->content_len) < 0) {
     ESP_LOGI(TAG, "Problem receiving POST");
     return ESP_FAIL;
   }
-
-
-  int state ;
-  if (sscanf(buffer, "state = %d", &state) == 0 ){
-    ESP_LOGI(TAG, "Couldn't parse POST");
+  ESP_LOGI(TAG, "Value = %s", buffer);
+  char * tmp = strstr(buffer, ".ild");
+  tmp[4]='\0';
+  if (tmp != NULL){
+    size_t i = tmp - buffer +5;
+    strncpy((char*)(char_to_send), (char*)(buffer), i);
+    sprintf(int_buf, "%d", i-1);
+    lsm_uart_esp_send_data(TAG,int_buf);
+    ESP_LOGI(TAG, "Char_send= %s",char_to_send);
+    lsm_uart_esp_send_data(TAG, char_to_send);
   }
-  else{
-    switch(state){
-      case 1 : lsm_uart_esp_send_data(TAG,"1");
-      break;
-      case 2 : lsm_uart_esp_send_data(TAG,"2");
-      break;
-      case 3 :lsm_uart_esp_send_data(TAG,"3");
-      break;
-      case 4 : lsm_uart_esp_send_data(TAG,"4");
-      break;
-      default: break;
-    }
-    ESP_LOGI(TAG, "Value = %d", state);
-  }
-
-
   httpd_resp_send(req, (const char*) lasmo_html_str, strlen((const char*) lasmo_html_str));
-
+  buffer[0]= 0;
   return ESP_OK;
 }
 
-
-httpd_uri_t state_uri = {
-  .uri       = "/state",
+httpd_uri_t response_uri = {
+  .uri       = "/response",
   .method    = HTTP_POST,
-  .handler   = state_post_handler,
+  .handler   = response_post_handler,
   .user_ctx  = NULL
 };
 
-/* An HTTP POST handler */
-esp_err_t stop_post_handler(httpd_req_t *req)
-{
-	ESP_LOGI(TAG, "POST handler");
-	int buffer_size = 100;
-	char buffer[buffer_size];
-
-	/* Redirect to lasmo */
-	httpd_resp_set_status(req, "303");
-	httpd_resp_set_hdr(req, "Location", "/lasmo.html");
-	if (req->content_len > buffer_size) {
-		ESP_LOGI(TAG, "Too long POST");
-		httpd_resp_send(req, (const char*) lasmo_html_str, strlen((const char*) lasmo_html_str));
-		return ESP_OK;
-	}
-	if (httpd_req_recv(req, buffer, req->content_len) < 0) {
-		ESP_LOGI(TAG, "Problem receiving POST");
-		return ESP_FAIL;
-	}
-
-	lsm_uart_esp_send_data(TAG,"0");
-	httpd_resp_send(req, (const char*) lasmo_html_str, strlen((const char*) lasmo_html_str));
-	return ESP_OK;
-}
-
-
-httpd_uri_t stop_uri = {
-	.uri       = "/stop",
-	.method    = HTTP_POST,
-	.handler   = stop_post_handler,
-	.user_ctx  = NULL
-};
-
-httpd_handle_t start_webserver(void)
-{
+httpd_handle_t start_webserver(void){
   httpd_handle_t server = NULL;
   httpd_config_t config = HTTPD_DEFAULT_CONFIG();
 
@@ -135,10 +109,11 @@ httpd_handle_t start_webserver(void)
     // Set URI handlers
     ESP_LOGI(TAG, "Registering URI handlers");
     httpd_register_uri_handler(server, &index_uri);
-    httpd_register_uri_handler(server, &state_uri);
+    httpd_register_uri_handler(server, &underscore_uri);
+    httpd_register_uri_handler(server, &path_uri);
+    httpd_register_uri_handler(server, &response_uri);
     return server;
   }
-
   ESP_LOGI(TAG, "Error starting server!");
   return NULL;
 }

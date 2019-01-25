@@ -20,12 +20,12 @@ CONDITIONS OF ANY KIND, either express or implied.
 #include "esp_system.h"
 #include "esp_spi_flash.h"
 
-#define ECHO_TEST_TXD  (GPIO_NUM_15)
+#define ECHO_TEST_TXD  (GPIO_NUM_17)
 #define ECHO_TEST_RXD  (GPIO_NUM_16)
 #define ECHO_TEST_RTS  (UART_PIN_NO_CHANGE)
 #define ECHO_TEST_CTS  (UART_PIN_NO_CHANGE)
 
-#define BUF_SIZE (1024)
+#define BUF_SIZE (7000)
 
 static const char* TAG = "uart";
 
@@ -64,20 +64,46 @@ static void lsm_esp_tx_task(){
   }
 }
 
+static char files_path[6000];
+static const char *RX_TASK_TAG = "RX_TASK";
+static uint8_t data[BUF_SIZE+1];
+
+static void lsm_esp_cp_tree(){
+  int occur = 0;
+  int occur_path = 0;
+  while(data [occur]){
+
+    char * tmp = strstr((char*)data + occur, ".ild");
+    if( tmp != NULL){
+      size_t i = tmp - ((char*)data+occur) +4;
+      strncpy((char*)(files_path + occur_path), (char*)(data+occur), i);
+      occur += i ;
+      occur_path += i ;
+      files_path[occur_path]='\n';
+      occur_path++;
+    }
+  }
+  ESP_LOGI(RX_TASK_TAG, "Char_SEND= %s",files_path);
+}
+
 static void lsm_esp_rx_task(){
-  static const char *RX_TASK_TAG = "RX_TASK";
   esp_log_level_set(RX_TASK_TAG, ESP_LOG_INFO);
-  uint8_t* data = (uint8_t*) malloc(BUF_SIZE+1);
   while (1) {
     const int rxBytes = uart_read_bytes(UART_NUM_1, data, BUF_SIZE, 1000 / portTICK_RATE_MS);
     if (rxBytes > 0) {
       data[rxBytes] = 0;
       ESP_LOGI(RX_TASK_TAG, "Read %d bytes: '%s'", rxBytes, data);
       ESP_LOG_BUFFER_HEXDUMP(RX_TASK_TAG, data, rxBytes, ESP_LOG_INFO);
+      lsm_esp_cp_tree();
     }
   }
-  free(data);
 }
+
+
+
+/*void lsm_uart_fileTask(){
+  xTaskCreate(lsm_esp_cp_files_task, "uart_cp_file_task", 1024*2, NULL, configMAX_PRIORITIES, NULL);
+}*/
 
 void lsm_uart_rxTask(){
   xTaskCreate(lsm_esp_rx_task, "uart_rx_task", 1024*2, NULL, configMAX_PRIORITIES, NULL);
