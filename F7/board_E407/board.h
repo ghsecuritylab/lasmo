@@ -1414,4 +1414,12 @@ extern "C" {
 #define SPI1_MISO_PIN    GPIOA_PIN6
 #define SPI1_SCK_PIN     GPIOA_PIN5
 
+/*===========================================================================*/
+/* UART                                                                     */
+/*===========================================================================*/
+#define PORT_UART                UARTD6
+#define GPIO_UART                GPIOC
+#define GPIO_UART_TX           	 GPIOC_USART6_TX
+#define GPIO_UART_RX           	 GPIOC_USART6_RX
+
 #endif /* BOARD_H */

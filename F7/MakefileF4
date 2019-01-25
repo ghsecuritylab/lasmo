@@ -10,7 +10,7 @@ endif
 
 # C specific options here (added to USE_OPT).
 ifeq ($(USE_COPT),)
-  USE_COPT =
+  USE_COPT = -D BOARD_E407
 endif
 
 # C++ specific options here (added to USE_OPT).
@@ -273,4 +273,3 @@ debug: $(ELF)
 
 .PHONY: startgdbserver shell  rttviewer stopgdbserver debug
 endif
-
