@@ -10,4 +10,4 @@ build_F7:
     stage: build
     image: tuetuopay/arm-none-eabi
     script:
-        - cd F7 && make -f MakefileF7
+        - cd F7 && make
