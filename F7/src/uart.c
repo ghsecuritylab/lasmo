@@ -37,7 +37,7 @@ static const UARTConfig uart_cfg = {
 	NULL,
 	NULL,
 	NULL,
-#ifdef BOARD_LASMO
+#ifndef BOARD_E407
 	NULL,
 	TIME_INFINITE,
 #endif
