@@ -5,7 +5,6 @@
 #include "RTT/SEGGER_RTT_Conf.h"
 
 #include "F7/lasers.h"
-#include "F7/max5105.h"
 #include "F7/control.h"
 
 /* TEST CODES */

@@ -7,20 +7,8 @@
 #include "F7/adc.h"
 #include "F7/galva.h"
 #include "F7/sd.h"
-#include "F7/max5105.h"
 #include "F7/lasers.h"
 #include "F7/decoder.h"
-
-static void lasers_sd_mute(int shutdown, int mute) {
-  uint8_t state = MAX_DAC3_SHUTDOWN | MAX_DAC3_MUTE;
-  if (shutdown) {
-    state |= MAX_DAC0_SHUTDOWN | MAX_DAC1_SHUTDOWN | MAX_DAC2_SHUTDOWN;
-  }
-  if (mute) {
-    state |= MAX_DAC0_MUTE | MAX_DAC1_MUTE | MAX_DAC2_MUTE;
-  }
-  lsm_max5105_wr_upd(MAX_SD_MUTE_ADDR, state);
-}
 
 int main(void) {
   halInit();
