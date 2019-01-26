@@ -83,4 +83,3 @@ void lsm_converter_start(void){
     display_frame(frame_buffer[0],ILDA_BUFFER_SIZE);
   }
 }
-

@@ -64,6 +64,7 @@ static THD_FUNCTION(lsm_decoder_thread, arg){
 
   for(;;){
     const ilda_header_t *current_header = ilda_read_next_header(&ilda);
+		SEGGER_RTT_printf(0, "Number of records: %d", current_header->number_of_records);
     if(!(current_header)){
       SEGGER_RTT_printf(0, "lsm_decoder_thread: Error: Invalid header: %s\n", ilda.error);
       chThdExit(1);
@@ -80,6 +81,7 @@ static THD_FUNCTION(lsm_decoder_thread, arg){
         chThdExit(1);
       }
     }
+
 
     number_of_records = current_header->number_of_records;
     /* SEGGER_RTT_printf(0,"get frame SD\n"); */
@@ -145,4 +147,3 @@ void lsm_decoder_test(const char* filepath) {
 
 }
 */
-
