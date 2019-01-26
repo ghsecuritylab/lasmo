@@ -34,10 +34,14 @@ static char* file_name[] = {
   NULL
 };
 
+// value-49 is convertion char to int
 static void lsm_choice(char value ){
   SEGGER_RTT_printf(0,"Reading file : %s\n", file_name[(size_t)value-49]);
-  lsm_converter_init(file_name[(size_t)value-49]);
-  lsm_converter_start();
+  if (value-49 == -1)
+    lsm_converter_stop();
+  else{
+    lsm_converter_start(file_name[(size_t)value-49]);
+  }
 }
 
 

@@ -91,6 +91,39 @@ httpd_uri_t state_uri = {
   .user_ctx  = NULL
 };
 
+/* An HTTP POST handler */
+esp_err_t stop_post_handler(httpd_req_t *req)
+{
+	ESP_LOGI(TAG, "POST handler");
+	int buffer_size = 100;
+	char buffer[buffer_size];
+
+	/* Redirect to lasmo */
+	httpd_resp_set_status(req, "303");
+	httpd_resp_set_hdr(req, "Location", "/lasmo.html");
+	if (req->content_len > buffer_size) {
+		ESP_LOGI(TAG, "Too long POST");
+		httpd_resp_send(req, (const char*) lasmo_html_str, strlen((const char*) lasmo_html_str));
+		return ESP_OK;
+	}
+	if (httpd_req_recv(req, buffer, req->content_len) < 0) {
+		ESP_LOGI(TAG, "Problem receiving POST");
+		return ESP_FAIL;
+	}
+
+	lsm_uart_esp_send_data(TAG,"0");
+	httpd_resp_send(req, (const char*) lasmo_html_str, strlen((const char*) lasmo_html_str));
+	return ESP_OK;
+}
+
+
+httpd_uri_t stop_uri = {
+	.uri       = "/stop",
+	.method    = HTTP_POST,
+	.handler   = stop_post_handler,
+	.user_ctx  = NULL
+};
+
 httpd_handle_t start_webserver(void)
 {
   httpd_handle_t server = NULL;
