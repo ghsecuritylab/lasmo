@@ -6,6 +6,7 @@
 #include "ff.h"
 
 #include "F7/types.h"
+#include "F7/uart.h"
 
 #include "RTT/SEGGER_RTT.h"
 #include "RTT/SEGGER_RTT_Conf.h"
@@ -14,8 +15,12 @@
 void lsm_sd_init(void);
 void lsm_sd_test(void);
 
-// Print directory
+// Print directory on the RTT
 void lsm_sd_print_tree(void);
+
+// Write the tree as a JSON string in the buffer. The int returned is the length
+// of the string, or -1 if an error has occured
+void lsm_sd_send_tree_to_esp(void);
 
 // File open/close functions for the decoder files (open files in read-only mode)
 int lsm_sd_open_file(lsm_ilda_file_t* fp, const char* path);
