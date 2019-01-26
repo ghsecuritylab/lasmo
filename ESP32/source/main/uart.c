@@ -71,7 +71,7 @@ static void lsm_esp_rx_task(){
   while (1) {
     const int rxBytes = uart_read_bytes(UART_NUM_1, data, BUF_SIZE, 1000 / portTICK_RATE_MS);
     if (rxBytes > 0) {
-      data[rxBytes] = 3;
+      data[rxBytes] = 0;
       ESP_LOGI(RX_TASK_TAG, "Read %d bytes: '%s'", rxBytes, data);
       ESP_LOG_BUFFER_HEXDUMP(RX_TASK_TAG, data, rxBytes, ESP_LOG_INFO);
     }
@@ -79,9 +79,8 @@ static void lsm_esp_rx_task(){
   free(data);
 }
 
-void lsm_uart_esp_test(){
-	xTaskCreate(lsm_esp_rx_task, "uart_rx_task", 1024*2, NULL, configMAX_PRIORITIES, NULL);
-	xTaskCreate(lsm_esp_tx_task, "uart_tx_task", 1024*2, NULL, configMAX_PRIORITIES, NULL);
+void lsm_uart_rxTask(){
+		xTaskCreate(lsm_esp_rx_task, "uart_rx_task", 1024*2, NULL, configMAX_PRIORITIES, NULL);
 }
 
 void lsm_uart_txTask(){

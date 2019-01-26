@@ -222,7 +222,6 @@ int lsm_sd_open_file(lsm_ilda_file_t* fp, const char* path) {
     else                            SEGGER_RTT_printf(0, "lsm_sd_open_file: File error: #%d\n", err);
     return err;
   }
-
   return 0;
 }
 
@@ -231,7 +230,6 @@ int lsm_sd_close_file(lsm_ilda_file_t* fp) {
     SEGGER_RTT_printf(0, "lsm_sd_open_file: File error: this ILDA file is not on the SD card\n");
     return -1;
   }
-
   return (int) f_close(&(fp->orig_file));
 }
 

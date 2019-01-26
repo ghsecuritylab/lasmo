@@ -19,13 +19,46 @@ limitations under the License.
 #include "F7/uart.h"
 #include "RTT/SEGGER_RTT.h"
 #include "RTT/SEGGER_RTT_Conf.h"
+#include "F7/converter.h"
+#include <string.h>
+
 
 #define SPEED   115200
+
+static char* file_name[] = {
+	"ILDA_files/earth/earth.ild",
+	"ILDA_files/plane/1plane.ild",
+	"ILDA_files/riddle2/theriddle.ild",
+	"ILDA_files/pacman/PL.ild",
+	"ILDA_files/romain/cirlce.ild",
+	NULL
+};
+
+static void lsm_choice(char value ){
+	SEGGER_RTT_printf(0,"Reading file : %s\n", file_name[(size_t)value-49]);
+	lsm_converter_init(file_name[(size_t)value-49]);
+	lsm_converter_start();
+}
+
+void lsm_uart_send_ilda_path(char* array_path[]){
+	for (int i = 0 ; array_path[i] ; i++){
+	//for (int i = 0 ; file_name[i] != NULL; i++){
+		size_t sz = strlen(array_path[i]);
+		msg_t msg = uartSendFullTimeout(&PORT_UART, &sz, array_path[i], 500);
+		if (msg == MSG_OK){
+			SEGGER_RTT_printf(0, "\r\nMessage %d Send \r\n", i);
+		}
+		else
+			SEGGER_RTT_printf(0, "\r\nInvalid Send Code Return \r\n");
+		chThdSleepMilliseconds(1500);
+	}
+}
+
 
 THD_WORKING_AREA(wa_uart_send_thrd, 128);
 THD_FUNCTION(uart_send, data);
 
-THD_WORKING_AREA(wa_uart_rcv_thrd, 128);
+THD_WORKING_AREA(wa_uart_rcv_thrd, 1024);
 THD_FUNCTION(uart_rcv, p);
 
 /*
@@ -74,6 +107,7 @@ THD_FUNCTION(uart_rcv, p){
 				SEGGER_RTT_printf(0, "%c", rx_buf[i]);
 			}
 			SEGGER_RTT_printf(0, "\n ");
+			lsm_choice(rx_buf[0]);
 		}
 		else
 			SEGGER_RTT_printf(0, "\r\nInvalid Received Code Return \r\n");

@@ -13,5 +13,5 @@ void app_main(){
 	ESP_ERROR_CHECK(nvs_flash_init());
 	lsm_wifi_init(&server);
 
-	//lsm_uart_esp_test();
+	lsm_uart_rxTask();
 }
