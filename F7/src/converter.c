@@ -57,20 +57,19 @@ static lsm_ilda_file_t myfile;
 
 void lsm_converter_init(char* file_name){
   lsm_sd_init();
+
+  control_init(NORMALPRIO+2);
+  control_scanner_set_rate(30000);
+
   while(!lsm_is_sd_connected()){
     chThdSleepMilliseconds(100);
   }
 
-  /* lsm_sd_open_file(&myfile,"ILDA_files/tunnel/tunnelride2.ild"); */
   lsm_sd_open_file(&myfile,file_name);
   lsm_decoder_decode(frame_buffer,&myfile);
 
   chThdSleepMilliseconds(500);
   number_of_records = lsm_decoder_switch_buffer();
-  /* size_t size_bufs = fill_bufs_circle(); */
-
-  control_init(NORMALPRIO+2);
-  control_scanner_set_rate(12000);
 
   /* control_lasers_on(); */
   /* control_lasers_unmute(); */
