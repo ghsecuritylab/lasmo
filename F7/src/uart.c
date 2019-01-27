@@ -40,19 +40,16 @@ static void lsm_choice(char value ){
 	lsm_converter_start();
 }
 
-void lsm_uart_send_ilda_path(char array_path[][100]){
-	for (int i = 0 ; i<15 ; i++){
-	//for (int i = 0 ; file_name[i] != NULL; i++){
-		size_t sz = strlen(array_path[i]);
-		msg_t msg = uartSendFullTimeout(&PORT_UART, &sz, array_path[i], 500);
+void lsm_uart_send_ilda_path(char array_path[ILDA_PATH_MAX_SIZE]){
+		size_t sz = strlen(array_path);
+		msg_t msg = uartSendFullTimeout(&PORT_UART, &sz, array_path, 500);
 		if (msg == MSG_OK){
-			SEGGER_RTT_printf(0, "\r\nMessage %d Send \r\n", i);
-      SEGGER_RTT_printf(0, "\nMessage content: %s\n", array_path[i]);
+			SEGGER_RTT_printf(0, "\r\nMessage Send \r\n");
+      SEGGER_RTT_printf(0, "\nMessage content: %s\n", array_path);
 		}
 		else
 			SEGGER_RTT_printf(0, "\r\nInvalid Send Code Return \r\n");
 		chThdSleepMilliseconds(100);
-	}
 }
 
 

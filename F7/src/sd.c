@@ -57,8 +57,7 @@ static int fs_ready;
 /* Generic large buffer.*/
 static uint8_t fbuff[BUFF_SIZE];
 
-static char to_esp32[15][100];
-static char tmp[100];
+static char to_esp32[ILDA_PATH_MAX_SIZE];
 
 static FRESULT scan_files(char *path) {
   static FILINFO fno;
@@ -90,7 +89,7 @@ static FRESULT scan_files(char *path) {
   return res;
 }
 
-static int scan_files_in_buff(char* path, int* idx, int* depth) {
+static int scan_files_in_buff(char* path, int* depth) {
   static FILINFO fno;
   int res;
   DIR dir;
@@ -108,7 +107,7 @@ static int scan_files_in_buff(char* path, int* idx, int* depth) {
         *depth += 1;
         *(path + i) = '/';
         strcpy(path + i + 1, fn);
-        res = scan_files_in_buff(path, idx, depth);
+        res = scan_files_in_buff(path, depth);
         *(path + i) = '\0';
         *depth -= 1;
       }
@@ -116,17 +115,9 @@ static int scan_files_in_buff(char* path, int* idx, int* depth) {
         if(strstr(fn, ".ild")) {
           // need to check if the extension is really '.ild' without anything after
           if(strstr(fn, ".ild")[4] == '\0') {
-            if(*idx >= 15) {
-              lsm_uart_send_ilda_path(to_esp32);
-              *idx = 0;
-            }
-
-            strcat(strcat(strcat(strcat(tmp, path), "/"), fn), "");
-            SEGGER_RTT_printf(0,"to_esp32[%d] = \"%s\"\n", *idx, tmp);
-
-            strcpy(to_esp32[*idx], tmp);
-            *idx += 1;
-            tmp[0] = '\0';
+            strcat(strcat(strcat(strcat(to_esp32, path), "/"), fn), "");
+            lsm_uart_send_ilda_path(to_esp32);
+            to_esp32[0] = '\0';
           }
         }
       }
@@ -134,15 +125,8 @@ static int scan_files_in_buff(char* path, int* idx, int* depth) {
 
     SEGGER_RTT_printf(0, "Info: Leaving directory, current depth: %d\n", *depth);
 
-    if(*depth == 0) {
-      for(i = *idx; i<15; i++) {
-        to_esp32[i][0] = '.';
-        to_esp32[i][1] = '\0';
-      }
-
-      lsm_uart_send_ilda_path(to_esp32);
+    if(*depth == 0)
       SEGGER_RTT_printf(0, "lsm_sd_send_tree_to_esp: Info: The tree has been sent.\n");
-    }
 
   }
   return res;
@@ -185,9 +169,8 @@ void lsm_sd_send_tree_to_esp(void) {
   }
 
   fbuff[0] = 0;
-  int idx = 0;
   int depth = 0;
-  scan_files_in_buff((char*)fbuff, &idx, &depth);
+  scan_files_in_buff((char*)fbuff, &depth);
 }
 
 ////////////////// User thread and functions
