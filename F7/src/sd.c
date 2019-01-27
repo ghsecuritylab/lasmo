@@ -57,6 +57,8 @@ static int fs_ready;
 /* Generic large buffer.*/
 static uint8_t fbuff[BUFF_SIZE];
 
+static char to_esp32[ILDA_PATH_MAX_SIZE];
+
 static FRESULT scan_files(char *path) {
   static FILINFO fno;
   FRESULT res;
@@ -87,7 +89,49 @@ static FRESULT scan_files(char *path) {
   return res;
 }
 
-// Print the tree rooted at the specified path on the SD card
+static int scan_files_in_buff(char* path, int* depth) {
+  static FILINFO fno;
+  int res;
+  DIR dir;
+  size_t i;
+  char *fn;
+
+  res = f_opendir(&dir, path);
+  if (res == FR_OK) {
+    i = strlen(path);
+    while (((res = f_readdir(&dir, &fno)) == FR_OK) && fno.fname[0]) {
+      if (FF_FS_RPATH && fno.fname[0] == '.')
+        continue;
+      fn = fno.fname;
+      if (fno.fattrib & AM_DIR) {
+        *depth += 1;
+        *(path + i) = '/';
+        strcpy(path + i + 1, fn);
+        res = scan_files_in_buff(path, depth);
+        *(path + i) = '\0';
+        *depth -= 1;
+      }
+      else {
+        if(strstr(fn, ".ild")) {
+          // need to check if the extension is really '.ild' without anything after
+          if(strstr(fn, ".ild")[4] == '\0') {
+            strcat(strcat(strcat(strcat(to_esp32, path), "/"), fn), "");
+            lsm_uart_send_ilda_path(to_esp32);
+            to_esp32[0] = '\0';
+          }
+        }
+      }
+    }
+
+    SEGGER_RTT_printf(0, "Info: Leaving directory, current depth: %d\n", *depth);
+
+    if(*depth == 0)
+      SEGGER_RTT_printf(0, "lsm_sd_send_tree_to_esp: Info: The tree has been sent.\n");
+
+  }
+  return res;
+}
+// Print the tree of the SD card
 void lsm_sd_print_tree(void){
   FRESULT err;
   uint32_t fre_clust;
@@ -106,6 +150,27 @@ void lsm_sd_print_tree(void){
 
   fbuff[0] = 0;
   scan_files((char*)fbuff);
+}
+
+void lsm_sd_send_tree_to_esp(void) {
+  uint32_t fre_clust;
+  FATFS *fsp;
+
+  if(!fs_ready) {
+    SEGGER_RTT_WriteString(0, "Filesystem not ready.");
+    return;
+  }
+
+  FRESULT err;
+
+  if((err = f_getfree("/", &fre_clust, &fsp)) != FR_OK) {
+    SEGGER_RTT_printf(0, "Filesystem error. Check your disk. Error: %d\n", err);
+    return;
+  }
+
+  fbuff[0] = 0;
+  int depth = 0;
+  scan_files_in_buff((char*)fbuff, &depth);
 }
 
 ////////////////// User thread and functions

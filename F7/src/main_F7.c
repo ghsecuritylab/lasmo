@@ -23,7 +23,9 @@ int main(void) {
   // lsm_shell_rtt_init();
 
   //lsm_galva_test();
-  //lsm_sd_init();
+
+  lsm_sd_init();
+
 
   //lsm_adc_init();
 
