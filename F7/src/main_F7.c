@@ -27,9 +27,9 @@ int main(void) {
 
   //lsm_adc_init();
 
-   /*lsm_converter_init("ILDA_files/tunnel/tunnelride2.ild");
-   lsm_converter_start();
-  *//* lsm_converter_start(); */
+  lsm_converter_init("ILDA_files/tunnel/tunnelride2.ild");
+  lsm_converter_start();
+  /* lsm_converter_start(); */
 
   /* lsm_max5105_init(); */
   /* lasers_sd_mute(1, 1); */

@@ -31,21 +31,34 @@ static const SPIConfig hs_spicfg = {
 };
 
 static void lsm_max5105_swap_bufs(void){
+#ifdef BOARD_E407
   spiAcquireBus(&SPID1);
   spiStart(&SPID1, &hs_spicfg);
-
   spiSelect(&SPID1);
   spiExchange(&SPID1, SPI_BUFFERS_SIZE, txbuf, rxbuf);
   spiUnselect(&SPID1);
-
   spiReleaseBus(&SPID1);
+#else
+  spiAcquireBus(&SPID3);
+  spiStart(&SPID3, &hs_spicfg);
+  spiSelect(&SPID3);
+  spiExchange(&SPID3, SPI_BUFFERS_SIZE, txbuf, rxbuf);
+  spiUnselect(&SPID3);
+  spiReleaseBus(&SPID3);
+#endif
 }
 
 void lsm_max5105_init(void){
   palSetPadMode(SPI1_NSS_GPIO , SPI1_NSS_PIN , PAL_MODE_OUTPUT_PUSHPULL);
+#ifdef BOARD_E407
   palSetPadMode(SPI1_MOSI_GPIO, SPI1_MOSI_PIN, PAL_MODE_ALTERNATE(5)   );
   palSetPadMode(SPI1_MISO_GPIO, SPI1_MISO_PIN, PAL_MODE_ALTERNATE(5)   );
   palSetPadMode(SPI1_SCK_GPIO , SPI1_SCK_PIN , PAL_MODE_ALTERNATE(5)   );
+#else
+  palSetPadMode(SPI1_MOSI_GPIO, SPI1_MOSI_PIN, PAL_MODE_ALTERNATE(6)   );
+  palSetPadMode(SPI1_MISO_GPIO, SPI1_MISO_PIN, PAL_MODE_ALTERNATE(6)   );
+  palSetPadMode(SPI1_SCK_GPIO , SPI1_SCK_PIN , PAL_MODE_ALTERNATE(6)   );
+#endif
 
   /* for safety,all dac are muted and shutdowned */
 #ifdef NO_HARDWARE_MUTE

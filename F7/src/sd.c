@@ -303,7 +303,7 @@ void lsm_sd_init(void){
     chEvtObjectInit(&card_removed);
     SEGGER_RTT_printf(0,"sd init\n");
 
-    chThdCreateStatic(lsm_wa_sd_thread, sizeof(lsm_wa_sd_thread), NORMALPRIO +5, lsm_sd_thread, NULL);
+    chThdCreateStatic(lsm_wa_sd_thread, sizeof(lsm_wa_sd_thread), NORMALPRIO +2, lsm_sd_thread, NULL);
     SEGGER_RTT_printf(0,"sd init2\n");
 
     if(sdc_lld_is_card_inserted(&SDCD1))
