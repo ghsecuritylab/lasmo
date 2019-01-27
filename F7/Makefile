@@ -10,7 +10,7 @@ endif
 
 # C specific options here (added to USE_OPT).
 ifeq ($(USE_COPT),)
-  USE_COPT = 
+  USE_COPT =
 endif
 
 # C++ specific options here (added to USE_OPT).
@@ -25,7 +25,7 @@ endif
 
 # Linker extra options here.
 ifeq ($(USE_LDOPT),)
-  USE_LDOPT = 
+  USE_LDOPT =
 endif
 
 # Enable this if you want link time optimizations (LTO)
@@ -115,6 +115,8 @@ include $(CHIBIOS)/os/various/shell/shell.mk
 include $(CHIBIOS)/os/hal/lib/streams/streams.mk
 #FATFS files
 include $(CHIBIOS)/os/various/fatfs_bindings/fatfs.mk
+#LWIP files
+include $(CHIBIOS)/os/various/lwip_bindings/lwip.mk
 #evtimer files
 ALLCSRC += $(CHIBIOS)/os/various/evtimer.c
 # User files
@@ -278,4 +280,3 @@ debug: $(ELF)
 
 .PHONY: startgdbserver shell  rttviewer stopgdbserver debug
 endif
-

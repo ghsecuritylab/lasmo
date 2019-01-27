@@ -77,6 +77,7 @@
 #endif
 
 #define DEFAULT_TCP_RECVMBOX_SIZE       6
+#define DEFAULT_ACCEPTMBOX_SIZE         4
 
 /* Use ChibiOS specific priorities. */
 #if !defined(TCPIP_THREAD_PRIO)

@@ -41,6 +41,7 @@
  */
 #define BOARD_PHY_ID                MII_KS8721_ID
 #define BOARD_PHY_RMII
+#define BOARD_PHY_ADDRESS           0
 
 /*
  * Board oscillators-related settings.
