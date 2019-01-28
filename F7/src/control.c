@@ -162,9 +162,14 @@ static THD_FUNCTION(control_thread, p) {
                 const uint8_t g = data >> 8;
                 const uint8_t b = data;
                 if (r != last_r || g != last_g || b != last_b) {
+#ifdef MONOCHROME_MODE
+                  // 4.9V * 171 / 255 = 3.29V
+                  lsm_max5105_wr_upd(MAX_DAC0_ADDR, r || g || b ? 171 : 0);
+#else
                   lsm_max5105_wr_upd(MAX_DAC0_ADDR, r);
                   lsm_max5105_wr_upd(MAX_DAC1_ADDR, g);
                   lsm_max5105_wr_upd(MAX_DAC2_ADDR, b);
+#endif // MONOCHROME_MODE
                   last_r = r;
                   last_g = g;
                   last_b = b;
