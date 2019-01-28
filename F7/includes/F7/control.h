@@ -4,6 +4,12 @@
 #include "ch.h"
 #include <stdint.h>
 
+// The following symbols may be defined while compiling this module:
+// - NO_HARDWARE_MUTE: mute using the DAC control rather than the
+//                     dedicated output
+// - MONOCHROME_MODE:  use only the DAC0 channel in 3.3V output all or
+//                     nothing (instead of 0-4.9V).
+
 // Initialize control module. The priority must be high enough so that
 // the lasers can be safely muted if required. Lasers start muted
 // at a 30kPPS speed.
@@ -23,6 +29,7 @@ void control_lasers_mute(void);
 void control_lasers_unmute(void);
 
 // Set the lasers color, without impacting their visibility.
+// In monochrome mode, any non-zero value will turn the laser on.
 void control_lasers_set(uint8_t r, uint8_t g, uint8_t b);
 
 // Set the scanner position. x and y must both be in the [0; 4096[
