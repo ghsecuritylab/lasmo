@@ -9,4 +9,6 @@ void lsm_uart_tx(void);
 void lsm_uart_rx(void);
 void lsm_uart_send_ilda_path(char array_path[ILDA_PATH_MAX_SIZE]);
 
+void lsm_choice(char value);
+
 #endif

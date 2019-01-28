@@ -60,8 +60,8 @@
 //#define MEMP_DEBUG                      LWIP_DBG_ON
 //#define SYS_DEBUG                       LWIP_DBG_ON
 //#define TIMERS_DEBUG                    LWIP_DBG_ON
-#define TCP_DEBUG                       LWIP_DBG_ON
-#define TCPIP_DEBUG                     LWIP_DBG_ON
+//#define TCP_DEBUG                       LWIP_DBG_ON
+//#define TCPIP_DEBUG                     LWIP_DBG_ON
 //#define DNS_DEBUG                      LWIP_DBG_ON
 
 #include "RTT/SEGGER_RTT.h"

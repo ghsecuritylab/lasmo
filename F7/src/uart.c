@@ -25,6 +25,23 @@ limitations under the License.
 
 #define SPEED   115200
 
+static char* file_name[] = {
+  "ILDA_files/earth/earth.ild",
+  "ILDA_files/plane/1plane.ild",
+  "ILDA_files/riddle2/theriddle.ild",
+  "ILDA_files/pacman/PL.ild",
+  "ILDA_files/romain/cirlce.ild",
+  NULL
+};
+
+void lsm_choice(char value ){
+  SEGGER_RTT_printf(0,"Reading file : %s\n", file_name[(size_t)value-49]);
+  if (value-49 == -1)
+    lsm_converter_stop();
+  else{
+    lsm_converter_start(file_name[(size_t)value-49]);
+  }
+}
 void lsm_uart_send_ilda_path(char array_path[ILDA_PATH_MAX_SIZE]){
   size_t sz = strlen(array_path);
   msg_t msg = uartSendFullTimeout(&PORT_UART, &sz, array_path, 500);

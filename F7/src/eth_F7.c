@@ -1,15 +1,4 @@
-#include "hal.h"
-
-#include "ch.h"
-#include "hal_mac_lld.h"
-#include "lwipthread.h"
-#include "lwip/dhcp.h"
-#include "lwip/netif.h"
-#include "lwip/opt.h"
-#include "lwip/arch.h"
-#include "lwip/api.h"
 #include "F7/eth_F7.h"
-
 
 // MAC addresse configuration
 static uint8_t mac_add[6] = {0xe4, 0x42, 0xa6 , 0x8f, 0x65, 0xe3};
@@ -52,7 +41,63 @@ void lsm_dhcp_init(void){
 }
 
 static const char http_html_hdr[] = "HTTP/1.1 200 OK\r\nContent-type: text/html\r\n\r\n";
-static const char http_index_html[] = "<html><head><title>LASMO</title></head><body>Hello Word!</body></html>";
+//static const char http_index_html[] = "<html><head><title>LASMO</title><body>Hello World</body></html>";
+static const char http_index_html[] = "<!DOCTYPE html><html>\
+  <head>\
+    <meta charset = \"utf-8\">\
+    <meta name = \"viewport\" content = \"width = device_widtch, initial-scale = 1\">\
+    <title> 	Lasmo site </title>\
+    <style type=\"text/css\">\
+      body{\
+        color:#444;\
+        margin:40px auto;\
+        max-width:650px;\
+        line-height:1.6;\
+        font-size:18px;\
+        padding:0 10px\
+      }\
+      h1,h2,h3{line-height:1.2}\
+    </style>\
+  </head>\
+  <body>\
+    <text> <strong>	Bienvenue sur la page de LASMO </strong> <br><br>\
+    <div>\
+      <label for=\"file\">Choose a file to display</label>\
+    </div>\
+    <form action = \"/state\"> <br>\
+      <div>\
+        <input type=\"radio\" name=\"state\" value = \"1\"> Earth<br>\
+        <input type=\"radio\" name=\"state\" value = \"2\"> Plane<br>\
+        <input type=\"radio\" name=\"state\" value = \"3\"> The Riddle<br>\
+        <input type=\"radio\" name=\"state\" value = \"4\"> Pacman <br>\
+        <button type = \"submit\" formmethod=\"post\">Send </button>\
+      </div>\
+    </form>\
+  </body>\
+</html>";
+
+static void http_post_handler(struct netconn *conn, char* buf, uint16_t buflen) {
+  SEGGER_RTT_printf(0, "lsm_eth_thread: Info: POST request received!\n%s\n", buf);
+  char* state;
+  struct netbuf *inbuf;
+  while(netconn_recv(conn, &inbuf) == ERR_OK) {
+    netbuf_data(inbuf, (void**)&buf, &buflen);
+
+    if((state = strstr(buf, "state="))){
+      char value = state[6];
+      SEGGER_RTT_printf(0, "lsm_eth_thread: Info: Chosen %c!\n", value);
+      lsm_choice(value);
+    }
+
+  }
+
+  netconn_write(conn, http_html_hdr, sizeof(http_html_hdr)-1, NETCONN_NOCOPY);
+
+  /* Send our HTML page */
+  netconn_write(conn, http_index_html, sizeof(http_index_html)-1, NETCONN_NOCOPY);
+
+
+}
 
 static void http_server_serve(struct netconn *conn) {
   struct netbuf *inbuf;
@@ -61,7 +106,7 @@ static void http_server_serve(struct netconn *conn) {
   err_t err;
 
   /* Read the data from the port, blocking if nothing yet there.
-   We assume the request (the part we care about) is in one netbuf */
+    We assume the request (the part we care about) is in one netbuf */
   err = netconn_recv(conn, &inbuf);
 
   if (err == ERR_OK) {
@@ -77,19 +122,32 @@ static void http_server_serve(struct netconn *conn) {
         buf[4]=='/' ) {
 
       /* Send the HTML header
-             * subtract 1 from the size, since we dont send the \0 in the string
-             * NETCONN_NOCOPY: our data is const static, so no need to copy it
-       */
+      * subtract 1 from the size, since we dont send the \0 in the string
+      * NETCONN_NOCOPY: our data is const static, so no need to copy it
+      */
       netconn_write(conn, http_html_hdr, sizeof(http_html_hdr)-1, NETCONN_NOCOPY);
 
       /* Send our HTML page */
       netconn_write(conn, http_index_html, sizeof(http_index_html)-1, NETCONN_NOCOPY);
     }
+
+    else if(buflen>=6 &&
+        buf[0]=='P' &&
+        buf[1]=='O' &&
+        buf[2]=='S' &&
+        buf[3]=='T' &&
+        buf[4]==' ' &&
+        buf[5]=='/'
+      ) {
+
+      http_post_handler(conn,(char*) buf, buflen);
+
+    }
   }
-  SEGGER_RTT_printf(0, "Succeed!! \r\n");
+
+
   /* Close the connection (server closes in HTTP) */
   netconn_close(conn);
-  SEGGER_RTT_printf(0, "Succeed 1 \r\n");
 
   /* Delete the buffer (netconn_recv gives us ownership,
    so we have to make sure to deallocate the buffer) */
