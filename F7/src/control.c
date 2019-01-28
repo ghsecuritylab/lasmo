@@ -67,9 +67,9 @@ static BSEMAPHORE_DECL(next_frame_ok, 0);
 
 static void next_frameISR(GPTDriver *gptp) {
   (void) gptp;
-	chSysLockFromISR();
+  chSysLockFromISR();
   chBSemSignalI(&next_frame_ok);
-	chSysUnlockFromISR();
+  chSysUnlockFromISR();
 }
 
 #define RATE_DIVISOR_PPS 1200000
