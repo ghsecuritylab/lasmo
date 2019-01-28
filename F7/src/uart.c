@@ -72,7 +72,7 @@ static const UARTConfig uart_cfg = {
   NULL,
   #ifndef BOARD_E407
   NULL,
-  TIME_INFINITE,
+  0,
   #endif
   SPEED,
   0,
