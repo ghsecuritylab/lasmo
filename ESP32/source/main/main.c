@@ -7,11 +7,11 @@
 
 void app_main(){
 
-	lsm_uart_esp_init();
+  lsm_uart_esp_init();
+  
+  static httpd_handle_t server = NULL;
+  ESP_ERROR_CHECK(nvs_flash_init());
+  lsm_wifi_init(&server);
 
-	static httpd_handle_t server = NULL;
-	ESP_ERROR_CHECK(nvs_flash_init());
-	lsm_wifi_init(&server);
-
-	lsm_uart_rxTask();
+  lsm_uart_rxTask();
 }

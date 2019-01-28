@@ -30,29 +30,29 @@ CONDITIONS OF ANY KIND, either express or implied.
 static const char* TAG = "uart";
 
 void lsm_uart_esp_init(){
-	uart_config_t uart_config = {
-		.baud_rate = 115200,
-		.data_bits = UART_DATA_8_BITS,
-		.parity    = UART_PARITY_DISABLE,
-		.stop_bits = UART_STOP_BITS_1,
-		.flow_ctrl = UART_HW_FLOWCTRL_DISABLE
-	};
-	uart_param_config(UART_NUM_1, &uart_config);
-	uart_set_pin(UART_NUM_1, ECHO_TEST_TXD, ECHO_TEST_RXD, ECHO_TEST_RTS, ECHO_TEST_CTS);
-	uart_driver_install(UART_NUM_1, BUF_SIZE * 2, 0, 0, NULL, 0);
-		int fd;
-	if ((fd = open("/dev/uart/0", O_RDWR)) == -1) {
-		ESP_LOGE(TAG, "Cannot open UART\n");
-		vTaskDelay(5000 / portTICK_PERIOD_MS);
-	}
-	ESP_LOGI(TAG, "Uart initiated");
+  uart_config_t uart_config = {
+    .baud_rate = 115200,
+    .data_bits = UART_DATA_8_BITS,
+    .parity    = UART_PARITY_DISABLE,
+    .stop_bits = UART_STOP_BITS_1,
+    .flow_ctrl = UART_HW_FLOWCTRL_DISABLE
+  };
+  uart_param_config(UART_NUM_1, &uart_config);
+  uart_set_pin(UART_NUM_1, ECHO_TEST_TXD, ECHO_TEST_RXD, ECHO_TEST_RTS, ECHO_TEST_CTS);
+  uart_driver_install(UART_NUM_1, BUF_SIZE * 2, 0, 0, NULL, 0);
+  int fd;
+  if ((fd = open("/dev/uart/0", O_RDWR)) == -1) {
+    ESP_LOGE(TAG, "Cannot open UART\n");
+    vTaskDelay(5000 / portTICK_PERIOD_MS);
+  }
+  ESP_LOGI(TAG, "Uart initiated");
 }
 
 int lsm_uart_esp_send_data(const char* name, const char * data){
-	const int len = strlen(data);
-	const int txBytes = uart_write_bytes(UART_NUM_1, data, len);
-	ESP_LOGI(name, "Wrote %d bytes", txBytes);
-	return txBytes;
+  const int len = strlen(data);
+  const int txBytes = uart_write_bytes(UART_NUM_1, data, len);
+  ESP_LOGI(name, "Wrote %d bytes", txBytes);
+  return txBytes;
 }
 
 static void lsm_esp_tx_task(){
@@ -80,9 +80,9 @@ static void lsm_esp_rx_task(){
 }
 
 void lsm_uart_rxTask(){
-		xTaskCreate(lsm_esp_rx_task, "uart_rx_task", 1024*2, NULL, configMAX_PRIORITIES, NULL);
+  xTaskCreate(lsm_esp_rx_task, "uart_rx_task", 1024*2, NULL, configMAX_PRIORITIES, NULL);
 }
 
 void lsm_uart_txTask(){
-		xTaskCreate(lsm_esp_tx_task, "uart_tx_task", 1024*2, NULL, configMAX_PRIORITIES, NULL);
+  xTaskCreate(lsm_esp_tx_task, "uart_tx_task", 1024*2, NULL, configMAX_PRIORITIES, NULL);
 }
