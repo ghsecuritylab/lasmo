@@ -134,18 +134,10 @@ THD_FUNCTION(uart_send, data){
 }
 
 void lsm_uart_test(){
-  thread_t *uart_send_thrd = NULL;
-  if (uart_send_thrd == NULL)
-    uart_send_thrd = chThdCreateStatic(wa_uart_send_thrd, sizeof(wa_uart_send_thrd),NORMALPRIO + 1, uart_send, NULL);
-
-  thread_t *uart_rcv_thrd = NULL;
-  if(uart_rcv_thrd == NULL)
-    uart_rcv_thrd = chThdCreateStatic(wa_uart_rcv_thrd, sizeof(wa_uart_rcv_thrd),NORMALPRIO +1, uart_rcv, NULL);
-
+  chThdCreateStatic(wa_uart_send_thrd, sizeof(wa_uart_send_thrd),NORMALPRIO + 1, uart_send, NULL);
+  chThdCreateStatic(wa_uart_rcv_thrd, sizeof(wa_uart_rcv_thrd),NORMALPRIO +1, uart_rcv, NULL);
 }
 
 void lsm_uart_rx(){
-  thread_t *uart_rcv_thrd = NULL;
-  if(uart_rcv_thrd == NULL)
-    uart_rcv_thrd = chThdCreateStatic(wa_uart_rcv_thrd, sizeof(wa_uart_rcv_thrd),NORMALPRIO +1, uart_rcv, NULL);
+  chThdCreateStatic(wa_uart_rcv_thrd, sizeof(wa_uart_rcv_thrd),NORMALPRIO +1, uart_rcv, NULL);
 }
