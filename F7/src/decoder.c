@@ -64,7 +64,6 @@ static THD_FUNCTION(lsm_decoder_thread, arg){
 
   for(;;){
     const ilda_header_t *current_header = ilda_read_next_header(&ilda);
-		SEGGER_RTT_printf(0, "Number of records: %d", current_header->number_of_records);
     if(!(current_header)){
       SEGGER_RTT_printf(0, "lsm_decoder_thread: Error: Invalid header: %s\n", ilda.error);
       chThdExit(1);
@@ -82,9 +81,7 @@ static THD_FUNCTION(lsm_decoder_thread, arg){
       }
     }
 
-
     number_of_records = current_header->number_of_records;
-    /* SEGGER_RTT_printf(0,"get frame SD\n"); */
 
     if(ilda_read_records(
           &ilda,
@@ -110,40 +107,4 @@ thread_t* lsm_decoder_decode(ilda_point_t myframe_buffer[2][ILDA_BUFFER_SIZE], l
   frame_buffers[1] = myframe_buffer[1];
   return chThdCreateStatic(lsm_wa_decoder_thread, sizeof(lsm_wa_decoder_thread), NORMALPRIO +1, lsm_decoder_thread, NULL);
 }
-/*
-void lsm_decoder_test(const char* filepath) {
 
-  while(!lsm_is_sd_connected()){
-    chThdSleepMilliseconds(10);
-  }
-
-  static ilda_point_t frame_buffer[2][ILDA_BUFFER_SIZE];
-
-  static lsm_ilda_file_t ilda_file;
-
-  ilda_file.flags = LSM_ILDA_FROM_SD;
-
-  frame_read_done = 0;
-
-  if(lsm_sd_open_file(&ilda_file, filepath)) {
-    SEGGER_RTT_printf(0, "lsm_decoder_test: Error: invalid file\n");
-    return;
-  }
-
-
-  thread_t* decoder_thread = lsm_decoder_decode((ilda_point_t**)frame_buffer, &ilda_file);
-
-  while(frame_read_done != 2){
-
-    chThdSleepMicroseconds(1);
-
-    if(frame_read_done) {
-      lsm_decoder_switch_buffer();
-    }
-
-  }
-
-  chThdWait(decoder_thread);
-
-}
-*/
