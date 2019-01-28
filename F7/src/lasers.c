@@ -13,7 +13,6 @@ static THD_FUNCTION(lsm_test_thread_fct, p) {
   (void)p;
   control_init(NORMALPRIO + 1);
 
-  control_lasers_on();
   control_lasers_unmute();
 
  // while(1){

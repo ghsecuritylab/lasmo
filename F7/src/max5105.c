@@ -62,11 +62,11 @@ void lsm_max5105_init(void){
 
   /* for safety,all dac are muted and shutdowned */
 #ifdef NO_HARDWARE_MUTE
-  lsm_max5105_wr_upd(MAX_SD_MUTE_ADDR, MAX_SHUTDOWN_ALL | MAX_MUTE_ALL);
+  lsm_max5105_wr_upd(MAX_SD_MUTE_ADDR, MAX_MUTE_ALL);
 #else
   palSetLineMode(MUTE_LINE, PAL_MODE_OUTPUT_PUSHPULL);
   lsm_max5105_hw_muteX(1);
-  lsm_max5105_wr_upd(MAX_SD_MUTE_ADDR, MAX_SHUTDOWN_ALL);
+  lsm_max5105_wr_upd(MAX_SD_MUTE_ADDR, MAX_MUTE_ALL);
 #endif // NO_HARDWARE_MUTE
 }
 
