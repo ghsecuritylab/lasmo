@@ -13,23 +13,17 @@
  * LASERS CONTROL
  */
 
-static void lasers_sd_mute(int shutdown, int mute) {
-  uint8_t state = MAX_DAC3_SHUTDOWN | MAX_DAC3_MUTE;
-  if (shutdown) {
-    state |= MAX_DAC0_SHUTDOWN | MAX_DAC1_SHUTDOWN | MAX_DAC2_SHUTDOWN;
-  }
-  if (mute) {
-    state |= MAX_DAC0_MUTE | MAX_DAC1_MUTE | MAX_DAC2_MUTE;
-  }
-  lsm_max5105_wr_upd(MAX_SD_MUTE_ADDR, state);
+static void lasers_mute(int mute) {
+  lsm_max5105_wr_upd(MAX_SD_MUTE_ADDR,
+      mute ? MAX_DAC0_MUTE | MAX_DAC2_MUTE | MAX_DAC3_MUTE : 0);
 }
 
 static void lasers_init(void) {
   lsm_max5105_init();
 #ifdef NO_HARDWARE_MUTE
-  lasers_sd_mute(1, 1);
+  lasers_mute(1);
 #else
-  lasers_sd_mute(1, 0);
+  lasers_mute(0);
 #endif // NO_HARDWARE_MUTE
 }
 
@@ -117,7 +111,6 @@ static THD_FUNCTION(control_thread, p) {
 #ifndef BOARD_E407
   lasers_init();
 #endif
-  int is_on = 0;
   int is_muted = 1;
   systime_t last_move = 0;
   uint16_t last_x = 0;
@@ -128,51 +121,26 @@ static THD_FUNCTION(control_thread, p) {
   uint8_t last_b = 0;
   for (;;) {
     const sysinterval_t since_last_move = chVTGetSystemTimeX() - last_move;
-    if (is_on && since_last_move >= MAX_SAFE_MOVE_INTERVAL_TICKS) {
+    if (!is_muted && since_last_move >= MAX_SAFE_MOVE_INTERVAL_TICKS) {
       control_emergency_halt("no move in max allowed interval while laser is on");
     }
     msg_t command;
     switch (chMBFetchTimeout(&control_mbox,
           &command,
-          is_on
+          (!is_muted)
             ? MAX_SAFE_MOVE_INTERVAL_TICKS - since_last_move
             : TIME_INFINITE)) {
       case MSG_OK:
         {
           const uint32_t data = command & 0xfffffff;
           switch ((command >> 28) & 0xf) {
-            case COMMAND_LASERS_ON:
-              if (is_on) {
-                control_emergency_halt("lasers are already on");
-              }
-              if (chVTGetSystemTimeX() - last_move >= MAX_SAFE_MOVE_INTERVAL_TICKS) {
-                control_emergency_halt("attempt to turn laser on without movement");
-              }
-              is_on = 1;
-#ifdef NO_HARDWARE_MUTE
-              lasers_sd_mute(!is_on, is_muted);
-#else
-              lasers_sd_mute(!is_on, 0);
-#endif // NO_HARDWARE_MUTE
-              break;
-            case COMMAND_LASERS_OFF:
-              if (!is_on) {
-                control_emergency_halt("lasers are already off");
-              }
-              is_on = 0;
-#ifdef NO_HARDWARE_MUTE
-              lasers_sd_mute(!is_on, is_muted);
-#else
-              lasers_sd_mute(!is_on, 0);
-#endif // NO_HARDWARE_MUTE
-              break;
             case COMMAND_LASERS_MUTE:
               if (is_muted) {
                 control_emergency_halt("lasers are already muted");
               }
               is_muted = 1;
 #ifdef NO_HARDWARE_MUTE
-              lasers_sd_mute(!is_on, is_muted);
+              lasers_mute(is_muted);
 #else
               lsm_max5105_hw_muteX(is_muted);
 #endif // NO_HARDWARE_MUTE
@@ -183,7 +151,7 @@ static THD_FUNCTION(control_thread, p) {
               }
               is_muted = 0;
 #ifdef NO_HARDWARE_MUTE
-              lasers_sd_mute(!is_on, is_muted);
+              lasers_mute(is_muted);
 #else
               lsm_max5105_hw_muteX(is_muted);
 #endif // NO_HARDWARE_MUTE
@@ -267,7 +235,7 @@ void control_emergency_halt(const char *reason) {
 #ifndef NO_HARDWARE_MUTE
   lsm_max5105_hw_muteX(1);
 #endif // !NO_HARDWARE_MUTE
-  lasers_sd_mute(1, 1);
+  lasers_mute(1);
   chSysHalt(reason);
   for (;;);
 }
@@ -280,14 +248,6 @@ void control_init(tprio_t prio) {
         control_thread, 0);
     initialized = 1;
   }
-}
-
-void control_lasers_on(void) {
-  send_command(COMMAND_LASERS_ON, 0);
-}
-
-void control_lasers_off(void) {
-  send_command(COMMAND_LASERS_OFF, 0);
 }
 
 void control_lasers_mute(void) {
@@ -312,9 +272,10 @@ void control_scanner_set_rate(uint16_t pps) {
 
 void control_write_eeprom_configuration() {
   lasers_init();
-  lsm_max5105_write(MAX_SD_MUTE_ADDR, MAX_MUTE_ALL | MAX_SHUTDOWN_ALL);
+  lsm_max5105_write(MAX_SD_MUTE_ADDR, MAX_MUTE_ALL);
   lsm_max5105_write(MAX_DAC0_ADDR, 0);
   lsm_max5105_write(MAX_DAC1_ADDR, 0);
   lsm_max5105_write(MAX_DAC2_ADDR, 0);
   lsm_max5105_write(MAX_DAC3_ADDR, 0);
+  chThdSleepMilliseconds(15);
 }

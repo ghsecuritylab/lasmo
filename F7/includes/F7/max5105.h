@@ -9,11 +9,7 @@
 #define MAX_DAC3_ADDR         0x03
 #define MAX_SD_MUTE_ADDR      0x04
 
-#define MAX_DAC0_SHUTDOWN     0x01
-#define MAX_DAC1_SHUTDOWN     0x02
-#define MAX_DAC2_SHUTDOWN     0x04
-#define MAX_DAC3_SHUTDOWN     0x08
-#define MAX_SHUTDOWN_ALL      0x0F
+//values
 #define MAX_DAC0_MUTE         0x10
 #define MAX_DAC1_MUTE         0x20
 #define MAX_DAC2_MUTE         0x40
