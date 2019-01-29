@@ -46,6 +46,11 @@ static void set_stop_flag(uint8_t flag){
   chMtxUnlock(&stop_flag_mtx);
 }
 
+static BSEMAPHORE_DECL(display_stoped_bsem, 1);
+void lsm_converter_wait_stoped(void){
+  chBSemWait(&display_stoped_bsem);
+}
+
 //next frame functions
 static BSEMAPHORE_DECL(next_frame_bsem, 0);
 static THD_WORKING_AREA(frame_tim_thread_wa, 256);
@@ -147,6 +152,13 @@ void lsm_converter_stop(){
   set_stop_flag(TRUE);
   lsm_decoder_stop();
   lsm_sd_close_file(&myfile);
+  chBSemSignal(&display_stoped_bsem);
 }
 
+void lsm_converter_end_of_file(){
+  /* control_lasers_mute(); */
+  set_stop_flag(TRUE);
+  lsm_sd_close_file(&myfile);
+  chBSemSignal(&display_stoped_bsem);
+}
 

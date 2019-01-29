@@ -1,4 +1,5 @@
 #include "F7/decoder.h"
+#include "F7/converter.h"
 
 int current_working_buffer_index;
 
@@ -72,7 +73,8 @@ stop_label:
       break;
     default:
       SEGGER_RTT_WriteString(0, "lsm_decoder_thread: Error: Invalid reading mode\n");
-      chThdExit(1);
+      lsm_converter_end_of_file();
+      goto stop_label;
   }
 
   SEGGER_RTT_printf(0, "lsm_decoder_thread: Info: Starting reading file...\n\n");
@@ -81,18 +83,21 @@ stop_label:
     const ilda_header_t *current_header = ilda_read_next_header(&ilda);
     if(!(current_header)){
       SEGGER_RTT_printf(0, "lsm_decoder_thread: Error: Invalid header: %s\n", ilda.error);
-      chThdExit(1);
+      lsm_converter_end_of_file();
+      goto stop_label;
     }
 
     if(ilda_is_end_of_file(current_header)) {
       SEGGER_RTT_printf(0, "lsm_decoder_thread: Info: Reached end of file!");
-      break;
+      lsm_converter_end_of_file();
+      goto stop_label;
     }
 
     if(ilda_is_palette(current_header)){
       if(ilda_read_palette(&ilda)){
         SEGGER_RTT_printf(0, "lsm_decoder_thread: Error: Invalid palette: %s\n", ilda.error);
-        chThdExit(1);
+        lsm_converter_end_of_file();
+        goto stop_label;
       }
     }
 
@@ -104,7 +109,8 @@ stop_label:
           ILDA_BUFFER_SIZE*sizeof(ilda_point_t)
        )){
       SEGGER_RTT_printf(0, "lsm_decoder_thread: Error: %s\n", ilda.error);
-      chThdExit(1);
+      lsm_converter_end_of_file();
+      goto stop_label;
     }
 
     frame_read_done = 1;
