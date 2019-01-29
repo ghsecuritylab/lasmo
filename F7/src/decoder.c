@@ -37,11 +37,7 @@ static ssize_t read_from_wifi(void* opaque, void* buffer, size_t length){
 }
 
 static ssize_t read_from_ethernet(void* opaque, void* buffer, size_t length){
-  //TODO: complete when Ethernet API is ready
-  (void)opaque;
-  (void)buffer;
-  (void)length;
-  return 0;
+  return (ssize_t) lsm_eth_read_buffer((lsm_ilda_file_t*) opaque, (uint8_t*)buffer, length);
 }
 
 static THD_WORKING_AREA(lsm_wa_decoder_thread, 1024);
@@ -79,8 +75,11 @@ stop_label:
 
   SEGGER_RTT_printf(0, "lsm_decoder_thread: Info: Starting reading file...\n\n");
 
+  SEGGER_RTT_printf(0, "Frame number\tFormat Code\tFrame Name\tCompany name\tNb of records\tTotal frames\n\n");
+
   for(;;){
     const ilda_header_t *current_header = ilda_read_next_header(&ilda);
+
     if(!(current_header)){
       SEGGER_RTT_printf(0, "lsm_decoder_thread: Error: Invalid header: %s\n", ilda.error);
       lsm_converter_end_of_file();
@@ -100,7 +99,6 @@ stop_label:
         goto stop_label;
       }
     }
-
 
     number_of_records = current_header->number_of_records;
 

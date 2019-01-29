@@ -29,9 +29,6 @@ int lsm_sd_close_file(lsm_ilda_file_t* fp);
 // Writes data to the specified file
 UINT lsm_sd_write_file(FIL* fp, void* data, int datalen);
 
-// Writes data to the specified file
-UINT lsm_sd_write_file(FIL* fp, void* data, int datalen);
-
 /* Read the content of a file (with or without an offset)
  *
  * Note: if no offset is specified, the read/write pointer will increase each

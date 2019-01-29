@@ -76,8 +76,13 @@
 #define TCPIP_THREAD_STACKSIZE          1024
 #endif
 
+#define TCP_MSS 1460
+#define TCP_WND 7300
+
 #define DEFAULT_TCP_RECVMBOX_SIZE       6
 #define DEFAULT_ACCEPTMBOX_SIZE         4
+
+#define LWIP_SO_RCVTIMEO 1
 
 /* Use ChibiOS specific priorities. */
 #if !defined(TCPIP_THREAD_PRIO)
@@ -108,7 +113,6 @@
 
 //MAC Address byte 5.
 #define LWIP_ETHADDR_5                      0xe4
-
 
 static inline int dbg_function(const char * sFormat, ...) {
    int r;

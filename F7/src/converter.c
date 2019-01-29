@@ -3,8 +3,6 @@
 #include "RTT/SEGGER_RTT.h"
 #include "RTT/SEGGER_RTT_Conf.h"
 
-#include "F7/types.h"
-
 #include "F7/converter.h"
 #include "F7/control.h"
 #include "F7/decoder.h"
@@ -141,16 +139,17 @@ static THD_FUNCTION(display_thread, p) {
 void lsm_converter_init(void){
   set_stop_flag(TRUE);
 
-  lsm_sd_init();
+  //lsm_sd_init();
 
   control_init(NORMALPRIO+2);
   control_scanner_set_rate(30000);
 
+  /*
   //wait SD card
   while(!lsm_is_sd_connected()){
     chThdSleepMilliseconds(100);
   }
-
+*/
   lsm_decoder_init(frame_buffer);
 
   //create display thread
@@ -172,12 +171,30 @@ void lsm_converter_start(char* file_name){
   chBSemSignal(&display_start_bsem);
 }
 
+
 void lsm_converter_stop(){
   set_stop_flag(TRUE);
   control_lasers_force_mute();
   lsm_decoder_stop();
   lsm_sd_close_file(&myfile);
   chBSemSignal(&display_stoped_bsem);
+
+}
+
+void lsm_converter_start_from_ethernet(struct netconn *conn) {
+
+  myfile.eth = conn;
+  myfile.flags = LSM_ILDA_FROM_ETHERNET;
+
+  lsm_decoder_start(&myfile);
+
+  chThdSleepMilliseconds(500);
+  number_of_records = lsm_decoder_switch_buffer();
+
+  /* control_lasers_unmute(); */
+
+  set_stop_flag(FALSE);
+  chBSemSignal(&display_start_bsem);
 }
 
 void lsm_converter_end_of_file(){
