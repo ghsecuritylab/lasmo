@@ -19,7 +19,10 @@ size_t lsm_decoder_switch_buffer(void);
 // The thread pauses when a buffer is filled. You must then use lsm_decoder_switch_buffer()
 // to make the thread continue, and fill the other buffer.
 // Returns a pointer to the thread so that you can use chThdWait() to wait for the thread
-thread_t* lsm_decoder_decode(ilda_point_t frame_buffer[2][ILDA_BUFFER_SIZE], lsm_ilda_file_t* ilda_file);
+void lsm_decoder_init(ilda_point_t frame_buffer[2][ILDA_BUFFER_SIZE]);
+
+void lsm_decoder_start(lsm_ilda_file_t* ilda_file);
+void lsm_decoder_stop(void);
 
 // Test function, decodes the specified ILDA file located on the SD card
 void lsm_decoder_test(const char* filepath);
