@@ -135,26 +135,24 @@ static THD_FUNCTION(control_thread, p) {
           const uint32_t data = command & 0xfffffff;
           switch ((command >> 28) & 0xf) {
             case COMMAND_LASERS_MUTE:
-              if (is_muted) {
-                control_emergency_halt("lasers are already muted");
-              }
-              is_muted = 1;
+              if (!is_muted) {
+                is_muted = 1;
 #ifdef NO_HARDWARE_MUTE
-              lasers_mute(is_muted);
+                lasers_mute(is_muted);
 #else
-              lsm_max5105_hw_muteX(is_muted);
+                lsm_max5105_hw_muteX(is_muted);
 #endif // NO_HARDWARE_MUTE
+              }
               break;
             case COMMAND_LASERS_UNMUTE:
-              if (!is_muted) {
-                control_emergency_halt("lasers are already unmuted");
-              }
-              is_muted = 0;
+              if (is_muted) {
+                is_muted = 0;
 #ifdef NO_HARDWARE_MUTE
-              lasers_mute(is_muted);
+                lasers_mute(is_muted);
 #else
-              lsm_max5105_hw_muteX(is_muted);
+                lsm_max5105_hw_muteX(is_muted);
 #endif // NO_HARDWARE_MUTE
+              }
               break;
             case COMMAND_LASERS_SET:
               {
