@@ -11,10 +11,10 @@
 #endif // NO_HARDWARE_MUTE
 
 /* Serial Interface Programming Commands */
-#define MAX_WRITE   0x20
-#define MAX_WR_UPD  0x28
-#define MAX_READ    0x30
-#define MAX_LOAD    0x38
+#define MAX_WRITE   0x80
+#define MAX_WR_UPD  0xA0
+#define MAX_READ    0xC0
+#define MAX_LOAD    0xE0
 
 #define SPI_BUFFERS_SIZE    2
 static uint8_t txbuf[SPI_BUFFERS_SIZE];
@@ -83,14 +83,14 @@ uint8_t lsm_max5105_read(uint8_t addr){
 }
 
 void lsm_max5105_wr_upd(uint8_t addr, uint8_t data){
-    txbuf[0] = MAX_WR_UPD | addr;
-    txbuf[1] = data;
+    txbuf[0] = MAX_WR_UPD | addr | (data >> 6);
+    txbuf[1] = 0xFC & ( data<< 2);
     lsm_max5105_swap_bufs();
 }
 
 void lsm_max5105_write(uint8_t addr, uint8_t data){
-    txbuf[0] = MAX_WRITE | addr;
-    txbuf[1] = data;
+    txbuf[0] = MAX_WRITE | addr | (data >> 6);
+    txbuf[1] = 0xFC & (data << 2);
     lsm_max5105_swap_bufs();
 }
 

@@ -3,11 +3,12 @@
 
 #include <stdint.h>
 
+// addrs
 #define MAX_DAC0_ADDR         0x00
-#define MAX_DAC1_ADDR         0x01
-#define MAX_DAC2_ADDR         0x02
-#define MAX_DAC3_ADDR         0x03
-#define MAX_SD_MUTE_ADDR      0x04
+#define MAX_DAC1_ADDR         0x04
+#define MAX_DAC2_ADDR         0x08
+#define MAX_DAC3_ADDR         0x0C
+#define MAX_SD_MUTE_ADDR      0x10
 
 //values
 #define MAX_DAC0_MUTE         0x10
