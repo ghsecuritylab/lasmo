@@ -115,6 +115,7 @@ static THD_FUNCTION(display_thread, p) {
 void lsm_converter_init(void){
   chMtxObjectInit(&stop_flag_mtx);
   chMtxObjectInit(&pause_flag_mtx);
+  set_stop_flag(TRUE);
 
   lsm_sd_init();
 
@@ -135,6 +136,8 @@ void lsm_converter_init(void){
 }
 
 void lsm_converter_start(char* file_name){
+  if(!get_stop_flag())
+    lsm_converter_stop();
   lsm_sd_open_file(&myfile,file_name);
   lsm_decoder_start(&myfile);
 
