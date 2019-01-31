@@ -73,10 +73,16 @@ static int display_frame(ilda_point_t* buf, size_t size_buf){
   (void) size_buf;
   size_t i=0;
   while(1){
+    if(ilda_is_blanking(buf[i].status_code)){
+      control_lasers_mute();
+    }
+    else{
+      control_lasers_set(buf[i].color.r,buf[i].color.g,buf[i].color.b);
+      control_lasers_unmute();
+    }
     control_scanner_xy(transform(buf[i].pos.x) , transform(buf[i].pos.y));
     ++i;
     i %= number_of_records;
-    //set laser here
 
     //if stop is called
     if(get_stop_flag())
