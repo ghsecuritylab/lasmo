@@ -1,0 +1,15 @@
+# Read https://docs.gitlab.com/ee/ci/yaml/ for the documentation
+
+build_F4:
+    stage: build
+    image: tuetuopay/arm-none-eabi
+    script:
+        - git submodule update --init
+        - cd F7 && make -f MakefileF4
+
+build_F7:
+    stage: build
+    image: tuetuopay/arm-none-eabi
+    script:
+        - git submodule update --init
+        - cd F7 && make
