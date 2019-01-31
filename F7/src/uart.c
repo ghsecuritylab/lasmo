@@ -20,6 +20,7 @@ limitations under the License.
 #include "RTT/SEGGER_RTT.h"
 #include "RTT/SEGGER_RTT_Conf.h"
 #include "F7/converter.h"
+#include "F7/sd.h"
 #include <string.h>
 
 #define SPEED   115200
@@ -72,6 +73,8 @@ void lsm_uart_init(void){
   lsm_port_setup();
   uartStart(&PORT_UART, &uart_cfg);
   SEGGER_RTT_printf(0, "\r\nUart initialisation \r\n");
+  lsm_uart_rx();
+  lsm_sd_send_tree_to_esp();
 }
 
 THD_FUNCTION(uart_rcv, p){

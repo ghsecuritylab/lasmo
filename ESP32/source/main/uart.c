@@ -64,7 +64,7 @@ static void lsm_esp_tx_task(){
   }
 }
 
-static char files_path[6000];
+char files_path[6000];
 static const char *RX_TASK_TAG = "RX_TASK";
 static uint8_t data[BUF_SIZE+1];
 

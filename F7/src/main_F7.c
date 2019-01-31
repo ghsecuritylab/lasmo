@@ -22,6 +22,8 @@ int main(void) {
   SEGGER_RTT_Init();
   SEGGER_RTT_ConfigUpBuffer(0, NULL, NULL, 0, SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL);
   SEGGER_RTT_printf(0, "\r\n---------- Start ! ----------- \r\n");
+  lsm_converter_init();
+  lsm_uart_init();
 
   chThdSleep(TIME_INFINITE);
 }
