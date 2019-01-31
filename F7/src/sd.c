@@ -123,8 +123,6 @@ static int scan_files_in_buff(char* path, int* depth) {
       }
     }
 
-    SEGGER_RTT_printf(0, "Info: Leaving directory, current depth: %d\n", *depth);
-
     if(*depth == 0)
       SEGGER_RTT_printf(0, "lsm_sd_send_tree_to_esp: Info: The tree has been sent.\n");
 
@@ -171,6 +169,20 @@ void lsm_sd_send_tree_to_esp(void) {
   fbuff[0] = 0;
   int depth = 0;
   scan_files_in_buff((char*)fbuff, &depth);
+}
+
+static BSEMAPHORE_DECL(send_tree_bsem, 1);
+THD_FUNCTION(send_tree, p){
+  (void) p ;
+  while(1){
+    chBSemWait(&send_tree_bsem);
+    lsm_sd_send_tree_to_esp();
+  }
+}
+THD_WORKING_AREA(wa_send_tree, 1024);
+
+void lsm_sd_send_tree(void){
+  chBSemSignal(&send_tree_bsem);
 }
 
 ////////////////// User thread and functions
@@ -379,9 +391,11 @@ void lsm_sd_init(void){
     chVTSetI(&sd_slot_poll_timer, TIME_MS2I(POLLING_DELAY), poll_timer_handler, &SDCD1);
     chSysUnlock();
     sd_init = true;
+    chThdCreateStatic(wa_send_tree, sizeof(wa_send_tree),NORMALPRIO +1, send_tree, NULL);
   }
 }
 
 int lsm_is_sd_connected(void){
   return fs_ready;
 }
+

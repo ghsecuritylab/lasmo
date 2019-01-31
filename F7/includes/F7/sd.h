@@ -44,4 +44,5 @@ void lsm_sd_remove_handler(eventid_t id);
 
 int lsm_is_sd_connected(void);
 
+void lsm_sd_send_tree(void);
 #endif

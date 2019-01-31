@@ -25,7 +25,7 @@ CONDITIONS OF ANY KIND, either express or implied.
 #define ECHO_TEST_RTS  (UART_PIN_NO_CHANGE)
 #define ECHO_TEST_CTS  (UART_PIN_NO_CHANGE)
 
-#define BUF_SIZE (7000)
+#define BUF_SIZE (8000)
 
 static const char* TAG = "uart";
 
@@ -68,11 +68,11 @@ char files_path[6000];
 static const char *RX_TASK_TAG = "RX_TASK";
 static uint8_t data[BUF_SIZE+1];
 
+volatile int good = 0;
 static void lsm_esp_cp_tree(){
   int occur = 0;
-  int occur_path = 0;
+  static int occur_path = 0;
   while(data [occur]){
-
     char * tmp = strstr((char*)data + occur, ".ild");
     if( tmp != NULL){
       size_t i = tmp - ((char*)data+occur) +4;
@@ -83,7 +83,8 @@ static void lsm_esp_cp_tree(){
       occur_path++;
     }
   }
-  ESP_LOGI(RX_TASK_TAG, "Char_SEND= %s",files_path);
+  ESP_LOGI(RX_TASK_TAG, "DONE");
+  good = 1;
 }
 
 static void lsm_esp_rx_task(){
@@ -92,18 +93,10 @@ static void lsm_esp_rx_task(){
     const int rxBytes = uart_read_bytes(UART_NUM_1, data, BUF_SIZE, 1000 / portTICK_RATE_MS);
     if (rxBytes > 0) {
       data[rxBytes] = 0;
-      ESP_LOGI(RX_TASK_TAG, "Read %d bytes: '%s'", rxBytes, data);
-      ESP_LOG_BUFFER_HEXDUMP(RX_TASK_TAG, data, rxBytes, ESP_LOG_INFO);
       lsm_esp_cp_tree();
     }
   }
 }
-
-
-
-/*void lsm_uart_fileTask(){
-  xTaskCreate(lsm_esp_cp_files_task, "uart_cp_file_task", 1024*2, NULL, configMAX_PRIORITIES, NULL);
-}*/
 
 void lsm_uart_rxTask(){
   xTaskCreate(lsm_esp_rx_task, "uart_rx_task", 1024*2, NULL, configMAX_PRIORITIES, NULL);
