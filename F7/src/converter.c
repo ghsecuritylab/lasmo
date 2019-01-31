@@ -14,7 +14,7 @@ static ilda_point_t frame_buffer[2][ILDA_BUFFER_SIZE];
 static lsm_ilda_file_t myfile;
 
 // Pause functions
-static mutex_t pause_flag_mtx;
+static MUTEX_DECL(pause_flag_mtx);
 static uint8_t pause_flag = FALSE;
 static uint8_t get_pause_flag(void){
   chMtxLock(&pause_flag_mtx);
@@ -32,7 +32,7 @@ void lsm_converter_pause(uint8_t state){
 }
 
 // Stop functions
-static mutex_t stop_flag_mtx;
+static MUTEX_DECL(stop_flag_mtx);
 static int stop_flag = TRUE;
 static uint8_t get_stop_flag(void){
   chMtxLock(&stop_flag_mtx);
@@ -113,8 +113,6 @@ static THD_FUNCTION(display_thread, p) {
 }
 
 void lsm_converter_init(void){
-  chMtxObjectInit(&stop_flag_mtx);
-  chMtxObjectInit(&pause_flag_mtx);
   set_stop_flag(TRUE);
 
   lsm_sd_init();
