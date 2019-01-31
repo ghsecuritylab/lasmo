@@ -234,10 +234,10 @@ UINT lsm_sd_write_file(FIL* fp, void* data, int datalen){
 
 
   if(err){
-    SEGGER_RTT_printf(0, "lsm_sd_write_file: Write error: error #%d\n", err);
+    //SEGGER_RTT_printf(0, "lsm_sd_write_file: Write error: error #%d\n", err);
     return 0;
   } else {
-    SEGGER_RTT_printf(0, "lsm_sd_write_file: Info: Successfully wrote %d bytes to test file.\n", bytes_written);
+    //SEGGER_RTT_printf(0, "lsm_sd_write_file: Info: Successfully wrote %d bytes to test file.\n", bytes_written);
     return bytes_written;
   }
 

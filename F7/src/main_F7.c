@@ -25,5 +25,7 @@ int main(void) {
   lsm_converter_init();
   lsm_uart_init();
 
+  lsm_ethernet_init();
+
   chThdSleep(TIME_INFINITE);
 }

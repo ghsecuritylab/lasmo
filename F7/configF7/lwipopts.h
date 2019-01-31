@@ -60,8 +60,8 @@
 //#define MEMP_DEBUG                      LWIP_DBG_ON
 //#define SYS_DEBUG                       LWIP_DBG_ON
 //#define TIMERS_DEBUG                    LWIP_DBG_ON
-#define TCP_DEBUG                       LWIP_DBG_ON
-#define TCPIP_DEBUG                     LWIP_DBG_ON
+//#define TCP_DEBUG                       LWIP_DBG_ON
+//#define TCPIP_DEBUG                     LWIP_DBG_ON
 //#define DNS_DEBUG                      LWIP_DBG_ON
 
 #include "RTT/SEGGER_RTT.h"
@@ -78,6 +78,11 @@
 
 #define DEFAULT_TCP_RECVMBOX_SIZE       6
 #define DEFAULT_ACCEPTMBOX_SIZE         4
+
+#define TCP_MSS 1460
+#define TCP_WND 7300
+
+#define LWIP_SO_RCVTIMEO 1
 
 /* Use ChibiOS specific priorities. */
 #if !defined(TCPIP_THREAD_PRIO)
