@@ -8,7 +8,7 @@
 //#include "F7/wifi.h"
 #include "F7/eth_F7.h"
 
-#include "ILDA_decoder/ilda_decoder.h"
+#include "ilda-decoder.h"
 #include "F7/types.h"
 
 // Makes the decoder switch buffer once he has finished filling up one
