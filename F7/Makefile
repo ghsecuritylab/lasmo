@@ -215,7 +215,7 @@ CPPWARN = -Wall -Wextra -Wundef
 #
 
 # List all user C define here, like -D_DEBUG=1
-UDEFS = -DMONOCHROME_MODE
+UDEFS = -DATTENUATE_MODE
 
 # Define ASM defines here
 UADEFS =
