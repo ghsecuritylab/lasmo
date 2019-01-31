@@ -101,6 +101,7 @@ stop_label:
       }
     }
 
+
     number_of_records = current_header->number_of_records;
 
     if(ilda_read_records(
@@ -140,4 +141,3 @@ void lsm_decoder_start(lsm_ilda_file_t* ilda_file) {
   working_ilda_file = ilda_file;
   chBSemSignal(&next_ilda_file);
 }
-

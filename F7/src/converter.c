@@ -165,7 +165,6 @@ void lsm_converter_start(char* file_name){
   curr_file_name = file_name;
   lsm_sd_open_file(&myfile,file_name);
   lsm_decoder_start(&myfile);
-
   chThdSleepMilliseconds(500);
   number_of_records = lsm_decoder_switch_buffer();
 
@@ -190,4 +189,3 @@ void lsm_converter_end_of_file(){
     lsm_converter_start(curr_file_name);
   }
 }
-

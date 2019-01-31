@@ -1,33 +1,139 @@
-<!DOCTYPE html><html>
+<!DOCTYPE html>
+<html>
   <head>
     <meta charset = "utf-8">
-    <meta name = "viewport" content = "width = device_widtch, initial-scale = 1">
-    <title> 	Lasmo site </title>
+    <meta name = "viewport" content = "width = device_width, initial-scale = 1">
+    <title> LASMO </title>
     <style type="text/css">
-body{
-  color:#444;
-  margin:40px auto;
-  max-width:650px;
-  line-height:1.6;
-  font-size:18px;
-  padding:0 10px
-}
-  h1,h2,h3{line-height:1.2}
+    body{
+      color:#444;
+      margin:40px auto;
+      max-width:650px;
+      line-height:1.6;
+      font-size:18px;
+      padding:0 10px
+    }
+    h1,h2,h3{line-height:1.2}
     </style>
   </head>
   <body>
-    <text> <strong>	Bienvenue sur la page de LASMO </strong> <br><br>
+  <!-- <script src="jquery.min.js" type="text/javascript"></script>
+  <script src="jstree.min.js" type="text/javascript"></script> -->
+  <script src="underscore.js" type="text/javascript"></script>
+  <text> <strong>	Bienvenue sur la page de LASMO 2 </strong> <br><br>
     <div>
-      <label for="file">Choose a file to display </label>
+      <label for="file">Choose a way to display </label>
     </div>
-    <form action = "/state"> <br>
-      <div>
-        <input type="radio" name="state" value = "1"> Earth<br>
-        <input type="radio" name="state" value = "2"> Plane<br>
-        <input type="radio" name="state" value = "3"> The Riddle<br>
-        <input type="radio" name="state" value = "4"> Pacman <br>
-        <button type = "submit" formmethod="post">Send </button>
-      </div>
-    </form>
-  </body>
+    <button id="chooseSd">Animation on SD</button>
+    <button id="chooseStream">Animation over WiFi/Ethernet</button>
+
+    <div id="SdTree"></div>
+    <div id="Response"></div>
+
+    <script type="text/javascript">
+    //this part is widely inspired from this solution, by Brandon Clapp:
+    //http://brandonclapp.com/arranging-an-array-of-flat-paths-into-a-json-tree-like-structure/
+    function arrangeIntoTree(paths, cb) {
+      var tree = [];
+
+      // This example uses the underscore.js library.
+      _.each(paths, function(path) {
+        var pathParts = path.split('/');
+        pathParts.shift(); // Remove first blank element from the parts array.
+        var currentLevel = tree; // initialize currentLevel to root
+        _.each(pathParts, function(part) {
+          // check to see if the path already exists.
+          var existingPath = _.findWhere(currentLevel, {
+            name: part
+          });
+
+          if (existingPath) {
+            // The path to this item was already in the tree, so don't add it again.
+            // Set the current level to this path's children
+            currentLevel = existingPath.children;
+          } else {
+            var newPart = {
+              name: part,
+              children: [],
+            }
+            currentLevel.push(newPart);
+            currentLevel = newPart.children;
+          }
+        });
+      });
+      cb(tree);
+    }
+
+    function submitValue() {
+      function getParentFolder(node) {
+        if(node.title === '/')
+        return "";
+        else {
+          return getParentFolder(node.parentNode.parentNode) + node.title + "/";
+        }
+      }
+      var filename = getParentFolder(this.parentNode.parentNode) + this.name;
+      var sendReq = new XMLHttpRequest();
+      sendReq.open("POST", 'http://192.168.0.1:80/response', true);
+      sendReq.send(filename);
+    }
+
+    function convertNode(node, div){
+      if(node.children.length === 0) {
+        var listElement = document.createElement('li');
+        var innerButton = document.createElement('button');
+        innerButton.onclick = submitValue;
+        innerButton.name = node.name;
+        var elText = document.createTextNode(node.name);
+        innerButton.appendChild(elText);
+        listElement.appendChild(innerButton);
+        div.appendChild(listElement);
+      }
+      else {
+        var li = document.createElement('li');
+        var ul = document.createElement('ul');
+        ul.title = node.name;
+        var ulText = document.createTextNode(node.name);
+        ul.appendChild(ulText);
+        _.forEach(node.children, function(child) {
+          convertNode(child, ul);
+        });
+        li.appendChild(ul);
+        div.appendChild(li);
+      }
+    };
+
+    document.getElementById("chooseSd").onclick = function() {
+      var treeRequest = new XMLHttpRequest();
+      treeRequest.onreadystatechange = function(event) {
+        if (this.readyState === XMLHttpRequest.DONE) {
+          if (this.status === 200 || this.status === 0) {
+            var text = this.responseText;
+            console.log("Réponse reçue, réponse: %s", this.responseText);
+            var array = text.split("\n");
+            arrangeIntoTree(array, function(tree){
+              var treeWrapper = {
+                name:"/",
+                children:tree
+              };
+              if(document.getElementById("tree") !== null)
+              document.getElementById("SdTree").removeChild(document.getElementById("tree"));
+              var treeRoot = document.createElement('ul');
+              treeRoot.id = "tree";
+              convertNode(treeWrapper, treeRoot);
+              document.getElementById('SdTree').appendChild(treeRoot);
+            });
+          } else {
+            console.log("Status de la réponse: %d (%s)", this.status, this.statusText);
+          }
+        }
+      };
+      // The server should handle this GET request by sending a response with the list
+      // of the paths of all the ILDA files on the SD card, separated by \n.
+      treeRequest.open('GET', 'http://192.168.0.1/paths.txt', true);
+      treeRequest.send();
+    }
+  </script>
+
+</body>
 </html>
