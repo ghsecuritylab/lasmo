@@ -15,14 +15,13 @@
 #include "lwip/sys.h"
 #include "lwip/sockets.h"
 #include "uart.h"
-#define ESP_WIFI_SSID      "lasmo"
+#define ESP_WIFI_SSID      "lasmoF4"
 #define ESP_WIFI_PASS      "lasmo123"
 
 static const char *TAG="wifi";
 
 extern const uint8_t lasmo_html_str[] asm("_binary_lasmo_html_start");
 extern const uint8_t underscore_str[] asm("_binary_underscore_js_start");
-extern const uint8_t paths_str[] asm("_binary_paths_txt_start");
 
 /* An HTTP GET handler */
 esp_err_t hello_get_handler(httpd_req_t *req) {
@@ -53,7 +52,7 @@ httpd_uri_t underscore_uri = {
 /* An HTTP GET handler */
 esp_err_t path_get_handler(httpd_req_t *req) {
   ESP_LOGI(TAG, "GET handler");
-  httpd_resp_send(req, (const char*) paths_str, strlen((const char*) paths_str));
+  httpd_resp_send(req, (const char*) files_path, strlen((const char*) files_path));
   return ESP_OK;
 }
 
