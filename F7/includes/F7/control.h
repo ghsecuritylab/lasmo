@@ -9,6 +9,7 @@
 //                     dedicated output
 // - MONOCHROME_MODE:  use only the DAC0 channel in 3.3V output all or
 //                     nothing (instead of 0-4.9V).
+// - ATTENUATE_MODE:   output 0.7V max instead of 4.9V
 
 // Initialize control module. The priority must be high enough so that
 // the lasers can be safely muted if required. Lasers start muted

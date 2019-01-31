@@ -261,6 +261,11 @@ void control_lasers_unmute(void) {
 }
 
 void control_lasers_set(uint8_t r, uint8_t g, uint8_t b) {
+#ifdef ATTENUATE_MODE
+  r = r * 7 / 49;
+  g = g * 7 / 49;
+  b = b * 7 / 49;
+#endif
   send_command(COMMAND_LASERS_SET, (r << 16) | (g << 8) | b);
 }
 
