@@ -158,15 +158,18 @@ static THD_FUNCTION(control_thread, p) {
               break;
             case COMMAND_LASERS_SET:
               {
-                const uint8_t r = data >> 16;
-                const uint8_t g = data >> 8;
-                const uint8_t b = data;
-                if (r != last_r || g != last_g || b != last_b) {
+                uint8_t r = data >> 16;
+                uint8_t g = data >> 8;
+                uint8_t b = data;
 #ifdef MONOCHROME_MODE
                   // 4.9V * 171 / 255 = 3.29V
-                  lsm_max5105_wr_upd(MAX_DAC0_ADDR, r || g || b ? 171 : 0);
-#else
+                r = r || b || g ? 171 : 0;
+                g = 0;
+                b = 0;
+#endif // MONOCHROME_MODE
+                if (r != last_r || g != last_g || b != last_b) {
                   lsm_max5105_wr_upd(MAX_DAC0_ADDR, r);
+#ifdef MONOCHROME_MODE
                   lsm_max5105_wr_upd(MAX_DAC1_ADDR, g);
                   lsm_max5105_wr_upd(MAX_DAC2_ADDR, b);
 #endif // MONOCHROME_MODE
