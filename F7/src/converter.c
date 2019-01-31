@@ -169,14 +169,12 @@ void lsm_converter_start(char* file_name){
   chThdSleepMilliseconds(500);
   number_of_records = lsm_decoder_switch_buffer();
 
-  /* control_lasers_unmute(); */
-
   set_stop_flag(FALSE);
   chBSemSignal(&display_start_bsem);
 }
 
 void lsm_converter_stop(){
-  /* control_lasers_mute(); */
+  control_lasers_force_mute();
   set_stop_flag(TRUE);
   lsm_decoder_stop();
   lsm_sd_close_file(&myfile);
@@ -184,7 +182,7 @@ void lsm_converter_stop(){
 }
 
 void lsm_converter_end_of_file(){
-  /* control_lasers_mute(); */
+  control_lasers_force_mute();
   set_stop_flag(TRUE);
   lsm_sd_close_file(&myfile);
   chBSemSignal(&display_stoped_bsem);
