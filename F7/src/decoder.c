@@ -25,7 +25,12 @@ size_t lsm_decoder_switch_buffer(void) {
 }
 
 static ssize_t read_from_sd_card(void* opaque, void* buffer, size_t length){
-  return (ssize_t) lsm_sd_read_file((lsm_ilda_file_t*) opaque, buffer, length);
+  ssize_t n = lsm_sd_read_file((lsm_ilda_file_t*) opaque, buffer, length);
+  if (n == 0) {
+    f_lseek(&((lsm_ilda_file_t*) opaque)->orig_file, 0); 
+    n = lsm_sd_read_file((lsm_ilda_file_t*) opaque, buffer, length);
+  }
+  return n;
 }
 
 static ssize_t read_from_wifi(void* opaque, void* buffer, size_t length){
@@ -87,9 +92,8 @@ stop_label:
     }
 
     if(ilda_is_end_of_file(current_header)) {
-      SEGGER_RTT_printf(0, "lsm_decoder_thread: Info: Reached end of file!");
-      lsm_converter_end_of_file();
-      goto stop_label;
+      SEGGER_RTT_printf(0, "lsm_decoder_thread: Info: Reached end of file, looping!");
+      continue;
     }
 
     if(ilda_is_palette(current_header)){
