@@ -145,18 +145,10 @@ static THD_FUNCTION(control_thread, p) {
                 uint8_t r = data >> 16;
                 uint8_t g = data >> 8;
                 uint8_t b = data;
-#ifdef MONOCHROME_MODE
-                // 4.9V * 171 / 255 = 3.29V
-                r = r || b || g ? 171 : 0;
-                g = 0;
-                b = 0;
-#endif // MONOCHROME_MODE
                 if (r != last_r || g != last_g || b != last_b) {
                   lsm_max5105_wr_upd(MAX_DAC0_ADDR, r);
-#ifdef MONOCHROME_MODE
-                  lsm_max5105_wr_upd(MAX_DAC1_ADDR, g);
-                  lsm_max5105_wr_upd(MAX_DAC2_ADDR, b);
-#endif // MONOCHROME_MODE
+                  lsm_max5105_wr_upd(MAX_DAC2_ADDR, g);
+                  lsm_max5105_wr_upd(MAX_DAC3_ADDR, b);
                   last_r = r;
                   last_g = g;
                   last_b = b;
@@ -261,11 +253,20 @@ void control_lasers_unmute(void) {
 }
 
 void control_lasers_set(uint8_t r, uint8_t g, uint8_t b) {
+#ifdef MONOCHROME_MODE
 #ifdef ATTENUATE_MODE
-  r = r * 7 / 49;
-  g = g * 7 / 49;
-  b = b * 7 / 49;
-#endif
+#error MONOCHROME_MODE and ATTENUATE_MODE are exclusive
+#endif // ATTENUATE_MODE
+  // 4.9V * 171 / 255 = 3.29V
+  r = r || b || g ? 171 : 0;
+  g = 0;
+  b = 0;
+#endif // MONOCHROME_MODE
+#ifdef ATTENUATE_MODE
+  r = r * 125 / 490;
+  g = g * 125 / 490;
+  b = b * 125 / 490;
+#endif // ATTENUATE_MODE
   send_command(COMMAND_LASERS_SET, (r << 16) | (g << 8) | b);
 }
 
