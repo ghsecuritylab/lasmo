@@ -12,6 +12,7 @@
 static size_t number_of_records;
 static ilda_point_t frame_buffer[2][ILDA_BUFFER_SIZE];
 static lsm_ilda_file_t myfile;
+static char* curr_file_name;
 
 // Pause functions
 static mutex_t pause_flag_mtx;
@@ -46,6 +47,25 @@ static void set_stop_flag(uint8_t flag){
   chMtxUnlock(&stop_flag_mtx);
 }
 
+// Loop functions
+static MUTEX_DECL(loop_flag_mtx);
+static int loop_flag = TRUE;
+static uint8_t get_loop_flag(void){
+  chMtxLock(&loop_flag_mtx);
+  uint8_t r = loop_flag;
+  chMtxUnlock(&loop_flag_mtx);
+  return r;
+}
+static void set_loop_flag(uint8_t flag){
+  chMtxLock(&loop_flag_mtx);
+  loop_flag = flag;
+  chMtxUnlock(&loop_flag_mtx);
+}
+void lsm_converter_loop_mode(uint8_t loop_mode){
+  set_loop_flag(loop_mode);
+}
+
+// wait_stoped
 static BSEMAPHORE_DECL(display_stoped_bsem, 1);
 void lsm_converter_wait_stoped(void){
   chBSemWait(&display_stoped_bsem);
@@ -144,6 +164,7 @@ void lsm_converter_init(void){
 void lsm_converter_start(char* file_name){
   if(!get_stop_flag())
     lsm_converter_stop();
+  curr_file_name = file_name;
   lsm_sd_open_file(&myfile,file_name);
   lsm_decoder_start(&myfile);
 
@@ -169,5 +190,8 @@ void lsm_converter_end_of_file(){
   set_stop_flag(TRUE);
   lsm_sd_close_file(&myfile);
   chBSemSignal(&display_stoped_bsem);
+  if(get_loop_flag()){
+    lsm_converter_start(curr_file_name);
+  }
 }
 
