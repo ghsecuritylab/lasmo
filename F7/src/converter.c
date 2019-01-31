@@ -174,16 +174,16 @@ void lsm_converter_start(char* file_name){
 }
 
 void lsm_converter_stop(){
-  control_lasers_force_mute();
   set_stop_flag(TRUE);
+  control_lasers_force_mute();
   lsm_decoder_stop();
   lsm_sd_close_file(&myfile);
   chBSemSignal(&display_stoped_bsem);
 }
 
 void lsm_converter_end_of_file(){
-  control_lasers_force_mute();
   set_stop_flag(TRUE);
+  control_lasers_force_mute();
   lsm_sd_close_file(&myfile);
   chBSemSignal(&display_stoped_bsem);
   if(get_loop_flag()){
