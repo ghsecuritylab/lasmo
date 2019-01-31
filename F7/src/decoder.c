@@ -102,6 +102,7 @@ stop_label:
         lsm_converter_end_of_file();
         goto stop_label;
       }
+      continue;
     }
 
     number_of_records = current_header->number_of_records;

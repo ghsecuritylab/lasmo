@@ -89,22 +89,21 @@ static int transform(int x) { return (x + 32768) * 4095 / 65535; }
 //this function display one ilda_frame in loop until next frame or stop is called
 static int display_frame(ilda_point_t* buf, size_t size_buf){
   (void) size_buf;
-  size_t i=0;
   while(1){
-    if(ilda_is_blanking(buf[i].status_code)){
-      control_lasers_mute();
-    }
-    else{
-      control_lasers_set(buf[i].color.r,buf[i].color.g,buf[i].color.b);
-      control_lasers_unmute();
-    }
-    control_scanner_xy(transform(buf[i].pos.x) , transform(buf[i].pos.y));
-    ++i;
-    i %= number_of_records;
+    for(size_t i=0; i < number_of_records ; ++i){
+      if(ilda_is_blanking(buf[i].status_code)){
+        control_lasers_mute();
+      }
+      else{
+        control_lasers_set(buf[i].color.r,buf[i].color.g,buf[i].color.b);
+        control_lasers_unmute();
+      }
+      control_scanner_xy(4095 - transform(buf[i].pos.x) , transform(buf[i].pos.y));
 
-    //if stop is called
-    if(get_stop_flag())
-      return DISPLAY_END_WITH_STOP;
+      //if stop is called
+      if(get_stop_flag())
+        return DISPLAY_END_WITH_STOP;
+    }
 
     //if we have to change the frame
     switch (chBSemWaitTimeout(&next_frame_bsem,TIME_IMMEDIATE)) {
@@ -139,17 +138,16 @@ static THD_FUNCTION(display_thread, p) {
 void lsm_converter_init(void){
   set_stop_flag(TRUE);
 
-  //lsm_sd_init();
+  lsm_sd_init();
 
   control_init(NORMALPRIO+2);
   control_scanner_set_rate(30000);
 
-  /*
   //wait SD card
   while(!lsm_is_sd_connected()){
     chThdSleepMilliseconds(100);
   }
-*/
+
   lsm_decoder_init(frame_buffer);
 
   //create display thread
