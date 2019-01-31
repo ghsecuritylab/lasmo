@@ -300,7 +300,7 @@ int lsm_sd_close_file(lsm_ilda_file_t* fp) {
 
 /// Test area
 
-static THD_WORKING_AREA(lsm_wa_sd_test_thread, 4096);
+static THD_WORKING_AREA(lsm_wa_sd_test_thread, 1024);
 
 static THD_FUNCTION(lsm_sd_test_thread, arg){
   (void)arg;
