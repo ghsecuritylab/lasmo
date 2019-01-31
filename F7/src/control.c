@@ -135,24 +135,10 @@ static THD_FUNCTION(control_thread, p) {
           const uint32_t data = command & 0xfffffff;
           switch ((command >> 28) & 0xf) {
             case COMMAND_LASERS_MUTE:
-              if (!is_muted) {
-                is_muted = 1;
-#ifdef NO_HARDWARE_MUTE
-                lasers_mute(is_muted);
-#else
-                lsm_max5105_hw_muteX(is_muted);
-#endif // NO_HARDWARE_MUTE
-              }
+              is_muted = 1;
               break;
             case COMMAND_LASERS_UNMUTE:
-              if (is_muted) {
-                is_muted = 0;
-#ifdef NO_HARDWARE_MUTE
-                lasers_mute(is_muted);
-#else
-                lsm_max5105_hw_muteX(is_muted);
-#endif // NO_HARDWARE_MUTE
-              }
+              is_muted = 0;
               break;
             case COMMAND_LASERS_SET:
               {
@@ -160,7 +146,7 @@ static THD_FUNCTION(control_thread, p) {
                 uint8_t g = data >> 8;
                 uint8_t b = data;
 #ifdef MONOCHROME_MODE
-                  // 4.9V * 171 / 255 = 3.29V
+                // 4.9V * 171 / 255 = 3.29V
                 r = r || b || g ? 171 : 0;
                 g = 0;
                 b = 0;
@@ -196,11 +182,16 @@ static THD_FUNCTION(control_thread, p) {
                 if (x > MAX_SCANNER_VALUE || y > MAX_SCANNER_VALUE) {
                   control_emergency_halt("coordinates out of bound");
                 }
-                if (x != last_x || y != last_y) {
+                if (x != last_x || y != last_y || is_muted) {
                   last_move = chVTGetSystemTimeX();
                   last_x = x;
                   last_y = y;
                 }
+#ifdef NO_HARDWARE_MUTE
+                lasers_mute(is_muted);
+#else
+                lsm_max5105_hw_muteX(is_muted);
+#endif // NO_HARDWARE_MUTE
                 scanner_xy(x, y);
                 break;
               }
@@ -258,6 +249,11 @@ void control_init(tprio_t prio) {
 
 void control_lasers_mute(void) {
   send_command(COMMAND_LASERS_MUTE, 0);
+}
+
+void control_lasers_force_mute(void) {
+  control_lasers_mute();
+  control_scanner_xy(0, 0);
 }
 
 void control_lasers_unmute(void) {

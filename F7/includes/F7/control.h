@@ -21,11 +21,12 @@ __attribute__((noreturn))
 void control_emergency_halt(const char *reason);
 
 // Mute the lasers.
-// The lasers must be unmuted prior to this operation.
 void control_lasers_mute(void);
 
+// Forcibly mute the lasers.
+void control_lasers_force_mute(void);
+
 // Unmute the lasers.
-// The lasers must be muted prior to this operation.
 void control_lasers_unmute(void);
 
 // Set the lasers color, without impacting their visibility.
