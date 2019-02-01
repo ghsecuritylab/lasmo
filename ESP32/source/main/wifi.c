@@ -15,7 +15,7 @@
 #include "lwip/sys.h"
 #include "lwip/sockets.h"
 #include "uart.h"
-#define ESP_WIFI_SSID      "lasmoF4"
+#define ESP_WIFI_SSID      "lasmo"
 #define ESP_WIFI_PASS      "lasmo123"
 
 static const char *TAG="wifi";
@@ -37,7 +37,7 @@ httpd_uri_t index_uri = {
 };
 
 /* An HTTP GET handler */
-esp_err_t underscore_get_handler(httpd_req_t *req){
+esp_err_t underscore_get_handler(httpd_req_t *req) {
   ESP_LOGI(TAG, "GET handler");
   httpd_resp_send(req, (const char*) underscore_str, strlen((const char*) underscore_str));
   return ESP_OK;
@@ -49,9 +49,17 @@ httpd_uri_t underscore_uri = {
   .handler   = underscore_get_handler,
 };
 
+static int begin = 1;
 /* An HTTP GET handler */
 esp_err_t path_get_handler(httpd_req_t *req) {
   ESP_LOGI(TAG, "GET handler");
+  if(begin){
+    lsm_uart_esp_send_data(TAG,"tr");
+    begin=0;
+  }
+  while(!good ){
+    vTaskDelay( 100 / portTICK_RATE_MS);
+  }
   httpd_resp_send(req, (const char*) files_path, strlen((const char*) files_path));
   return ESP_OK;
 }
@@ -64,10 +72,9 @@ httpd_uri_t path_uri = {
 
 /* An HTTP POST handler */
 
-esp_err_t response_post_handler(httpd_req_t *req){
+esp_err_t response_post_handler(httpd_req_t *req) {
   ESP_LOGI(TAG, "POST handler");
-  int buffer_size = 128;
-  char buffer[buffer_size];
+  static char buffer[128];
   static char char_to_send[128];
   char int_buf [2];
 
@@ -98,7 +105,40 @@ httpd_uri_t response_uri = {
   .user_ctx  = NULL
 };
 
-httpd_handle_t start_webserver(void){
+
+/* An HTTP POST handler */
+esp_err_t pause_post_handler(httpd_req_t *req) {
+	ESP_LOGI(TAG, "Pause handler");
+  lsm_uart_esp_send_data(TAG,"ps");
+	httpd_resp_send(req, (const char*) lasmo_html_str, strlen((const char*) lasmo_html_str));
+
+	return ESP_OK;
+}
+
+httpd_uri_t pause_uri = {
+	.uri       = "/pause",
+	.method    = HTTP_POST,
+	.handler   = pause_post_handler,
+	.user_ctx  = NULL
+};
+
+/* An HTTP POST handler */
+esp_err_t stop_post_handler(httpd_req_t *req) {
+	ESP_LOGI(TAG, "Stop handler");
+  lsm_uart_esp_send_data(TAG,"st");
+  httpd_resp_send(req, (const char*) lasmo_html_str, strlen((const char*) lasmo_html_str));
+
+	return ESP_OK;
+}
+
+httpd_uri_t stop_uri = {
+	.uri       = "/stop",
+	.method    = HTTP_POST,
+	.handler   = stop_post_handler,
+	.user_ctx  = NULL
+};
+
+httpd_handle_t start_webserver(void) {
   httpd_handle_t server = NULL;
   httpd_config_t config = HTTPD_DEFAULT_CONFIG();
 
@@ -111,14 +151,15 @@ httpd_handle_t start_webserver(void){
     httpd_register_uri_handler(server, &underscore_uri);
     httpd_register_uri_handler(server, &path_uri);
     httpd_register_uri_handler(server, &response_uri);
+    httpd_register_uri_handler(server, &pause_uri);
+    httpd_register_uri_handler(server, &stop_uri);
     return server;
   }
   ESP_LOGI(TAG, "Error starting server!");
   return NULL;
 }
 
-static esp_err_t event_handler(void *ctx, system_event_t *event)
-{
+static esp_err_t event_handler(void *ctx, system_event_t *event) {
   httpd_handle_t *server = (httpd_handle_t *) ctx;
 
   switch(event->event_id) {

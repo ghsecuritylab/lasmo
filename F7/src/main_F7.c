@@ -14,6 +14,8 @@
 #include "F7/converter.h"
 #include "F7/eth_F7.h"
 
+
+
 int main(void) {
   halInit();
   chSysInit();
@@ -24,10 +26,8 @@ int main(void) {
   SEGGER_RTT_printf(0, "\r\n---------- Start ! ----------- \r\n");
 
   lsm_converter_init();
-  lsm_converter_start("ILDA_files/geometry/geometry.ild");
-
-  //lsm_uart_init();
-  //lsm_ethernet_init();
+  lsm_uart_init();
+  lsm_uart_rx();
 
   chThdSleep(TIME_INFINITE);
 }

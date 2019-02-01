@@ -30,6 +30,10 @@ void lsm_converter_pause(uint8_t state){
   set_pause_flag(state);
 }
 
+void lsm_converter_pause_swap(void){
+  lsm_converter_pause(!get_pause_flag());
+}
+
 // Stop functions
 static MUTEX_DECL(stop_flag_mtx);
 static int stop_flag = TRUE;
@@ -141,13 +145,14 @@ void lsm_converter_init(void){
 void lsm_converter_start(char* file_name){
   if(!get_stop_flag())
     lsm_converter_stop();
+  set_stop_flag(FALSE);
+  lsm_converter_pause(0);
   curr_file_name = file_name;
   lsm_sd_open_file(&myfile,file_name);
   lsm_decoder_start(&myfile);
   chThdSleepMilliseconds(500);
   number_of_records = lsm_decoder_switch_buffer();
 
-  set_stop_flag(FALSE);
   chBSemSignal(&display_start_bsem);
 }
 

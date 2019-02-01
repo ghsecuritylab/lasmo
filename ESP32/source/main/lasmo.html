@@ -17,16 +17,22 @@
     </style>
   </head>
   <body>
-  <!-- <script src="jquery.min.js" type="text/javascript"></script>
-  <script src="jstree.min.js" type="text/javascript"></script> -->
   <script src="underscore.js" type="text/javascript"></script>
-  <text> <strong>	Bienvenue sur la page de LASMO 2 </strong> <br><br>
+  <text> <strong>	Bienvenue sur la page de LASMO  </strong> <br><br>
     <div>
       <label for="file">Choose a way to display </label>
     </div>
+    <form action="/stop" method= "post">
+      <div>
+        <input type="submit" name="boutonStop" id="stop" value="Stop the animation">
+      </div>
+    </form>
+    <form action="/pause" method= "post">
+      <div>
+        <input type="submit" name="boutoPause" id="pause" value="Pause the animation">
+      </div>
+    </form>
     <button id="chooseSd">Animation on SD</button>
-    <button id="chooseStream">Animation over WiFi/Ethernet</button>
-
     <div id="SdTree"></div>
     <div id="Response"></div>
 

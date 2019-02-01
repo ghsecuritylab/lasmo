@@ -16,7 +16,7 @@
 #define LSM_ILDA_IS_SYNC       0x04
 #define LSM_ILDA_IS_OLD_FORMAT 0x08
 
-#define ILDA_BUFFER_SIZE       3000
+#define ILDA_BUFFER_SIZE       3500
 
 // Top-level structure modeling an ILDA file. COntains info about the file origin and if it's synced or not.
 typedef struct {

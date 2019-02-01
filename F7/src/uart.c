@@ -25,38 +25,17 @@ limitations under the License.
 
 #define SPEED   115200
 
-static char* file_name[] = {
-  "ILDA_files/earth/earth.ild",
-  "ILDA_files/plane/1plane.ild",
-  "ILDA_files/riddle2/theriddle.ild",
-  "ILDA_files/pacman/PL.ild",
-  "ILDA_files/romain/cirlce.ild",
-  NULL
-};
-
-void lsm_choice(char value ){
-  SEGGER_RTT_printf(0,"Reading file : %s\n", file_name[(size_t)value-49]);
-  if (value-49 == -1)
-    lsm_converter_stop();
-  else{
-    lsm_converter_start(file_name[(size_t)value-49]);
-  }
-}
 void lsm_uart_send_ilda_path(char array_path[ILDA_PATH_MAX_SIZE]){
   size_t sz = strlen(array_path);
   msg_t msg = uartSendFullTimeout(&PORT_UART, &sz, array_path, 500);
   if (msg == MSG_OK){
-    SEGGER_RTT_printf(0, "\r\nMessage Send \r\n");
-    SEGGER_RTT_printf(0, "\nMessage content: %s\n", array_path);
+  //  SEGGER_RTT_printf(0, "\r\nMessage Send \r\n");
+  //  SEGGER_RTT_printf(0, "\nMessage content: %s\n", array_path);
   }
   else{
     SEGGER_RTT_printf(0, "\r\nInvalid Send Code Return \r\n");
   }
 }
-
-
-THD_WORKING_AREA(wa_uart_send_thrd, 128);
-THD_FUNCTION(uart_send, data);
 
 THD_WORKING_AREA(wa_uart_rcv_thrd, 2048);
 THD_FUNCTION(uart_rcv, p);
@@ -90,70 +69,36 @@ void lsm_uart_init(void){
   lsm_port_setup();
   uartStart(&PORT_UART, &uart_cfg);
   SEGGER_RTT_printf(0, "\r\nUart initialisation \r\n");
-  lsm_uart_rx();
-  lsm_sd_send_tree_to_esp();
 }
 
 THD_FUNCTION(uart_rcv, p){
   (void) p ;
-  msg_t msg ;
   size_t sz_rcv;
-  char size_rcv[2];
-  sz_rcv = sizeof(size_rcv);
+  char size_rcv[3];
+  sz_rcv = sizeof(size_rcv)-1;
   while(1){
-    msg = uartReceiveTimeout(&PORT_UART, &sz_rcv, size_rcv,TIME_INFINITE );
-    if (msg == MSG_OK){
-      SEGGER_RTT_printf(0, "\r\nSize Receive :\n");
-      for (unsigned int i = 0; i <sz_rcv; i++){
-        SEGGER_RTT_printf(0, "%c", size_rcv[i]);
-      }
-      SEGGER_RTT_printf(0, "\n");
+    uartReceiveTimeout(&PORT_UART, &sz_rcv, size_rcv,TIME_INFINITE );
+    size_rcv[2]='\0';
+    if (strcmp(size_rcv, "st")== 0 ){
+      lsm_converter_stop();
     }
-    else
-      SEGGER_RTT_printf(0, "\r\nInvalid Received Code Return \r\n");
-
-    int size_r = atoi(size_rcv);
-    char path_rcv[size_r];
-    size_t sz_path = sizeof(path_rcv);
-    msg = uartReceiveTimeout(&PORT_UART, &sz_path, path_rcv,TIME_INFINITE );
-    path_rcv[sz_path]= '\0';
-
-    if (msg == MSG_OK){
-      SEGGER_RTT_printf(0, "\r\nBuffer full:\n");
-      for (unsigned int i = 0; i <sz_path; i++){
-        SEGGER_RTT_printf(0, "%c", path_rcv[i]);
-      }
-      SEGGER_RTT_printf(0, "\n");
+    else if(strcmp(size_rcv,"ps")==0){
+      lsm_converter_pause_swap();
     }
-    else
-      SEGGER_RTT_printf(0, "\r\nInvalid Received Code Return \r\n");
-    lsm_converter_start(path_rcv);
-  }
-}
-
-THD_FUNCTION(uart_send, data){
-  (void) data ;
-  msg_t msg ;
-  size_t sz ;
-  static const char tx_buf[] = "0123456789ABCDEF";
-  int compteur = 0;
-  while(1){
-    sz = sizeof(tx_buf);
-    msg = uartSendFullTimeout(&PORT_UART, &sz, tx_buf, 500);
-    if (msg == MSG_OK){
-      SEGGER_RTT_printf(0, "\r\nMessage %d Send \r\n", compteur);
-      compteur++;
+    else if(strcmp(size_rcv, "tr")==0){
+      lsm_sd_send_tree();
     }
-    else
-      SEGGER_RTT_printf(0, "\r\nInvalid Send Code Return \r\n");
-    chThdSleepMilliseconds(1000);
+    else{
+      int size_r = atoi(size_rcv);
+      char path_rcv[size_r];
+      size_t sz_path = sizeof(path_rcv);
+      uartReceiveTimeout(&PORT_UART, &sz_path, path_rcv,TIME_INFINITE );
+      path_rcv[sz_path]= '\0';
+      lsm_converter_start(path_rcv);
+    }
   }
 }
 
 void lsm_uart_rx(){
   chThdCreateStatic(wa_uart_rcv_thrd, sizeof(wa_uart_rcv_thrd),NORMALPRIO +1, uart_rcv, NULL);
-}
-
-void lsm_uart_tx(){
-  chThdCreateStatic(wa_uart_send_thrd, sizeof(wa_uart_send_thrd),NORMALPRIO + 1, uart_send, NULL);
 }
