@@ -21,6 +21,7 @@ limitations under the License.
 #include "RTT/SEGGER_RTT_Conf.h"
 #include "F7/converter.h"
 #include "F7/sd.h"
+#include "F7/control.h"
 #include <string.h>
 
 #define SPEED   115200
@@ -79,11 +80,21 @@ THD_FUNCTION(uart_rcv, p){
   while(1){
     uartReceiveTimeout(&PORT_UART, &sz_rcv, size_rcv,TIME_INFINITE );
     size_rcv[2]='\0';
+    //If we receive the stop message from the wifi
     if (strcmp(size_rcv, "st")== 0 ){
       lsm_converter_stop();
     }
+    // If wwe receive the pause message from the wifi
     else if(strcmp(size_rcv,"ps")==0){
       lsm_converter_pause_swap();
+    }
+    // We set the rate at 12000 kpps
+    else if(strcmp(size_rcv,"rd")==0){
+      control_scanner_set_rate(12000);
+    }
+    //We set the rate at 30000 kpps
+    else if(strcmp(size_rcv,"rt")==0){
+      control_scanner_set_rate(30000);
     }
     else if(strcmp(size_rcv, "tr")==0){
       lsm_sd_send_tree();
