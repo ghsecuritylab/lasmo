@@ -95,6 +95,7 @@ static void next_frame_timer_init(void) {
 #define COMMAND_LASERS_UNMUTE 4
 #define COMMAND_LASERS_SET 5
 #define COMMAND_SCANNER_RATE 6
+#define COMMAND_LASERS_MUTE_EOF 7
 
 #define MAX_SCANNER_VALUE 4095
 
@@ -124,16 +125,17 @@ static THD_FUNCTION(control_thread, p) {
     if (!is_muted && since_last_move >= MAX_SAFE_MOVE_INTERVAL_TICKS) {
       control_emergency_halt("no move in max allowed interval while laser is on");
     }
-    msg_t command;
+    msg_t message;
     switch (chMBFetchTimeout(&control_mbox,
-          &command,
+          &message,
           (!is_muted)
             ? MAX_SAFE_MOVE_INTERVAL_TICKS - since_last_move
             : TIME_INFINITE)) {
       case MSG_OK:
         {
-          const uint32_t data = command & 0xfffffff;
-          switch ((command >> 28) & 0xf) {
+          const uint32_t command = (message >> 28) & 0xf;
+          const uint32_t data = message & 0xfffffff;
+          switch (command) {
             case COMMAND_LASERS_MUTE:
               is_muted = 1;
               break;
@@ -155,6 +157,7 @@ static THD_FUNCTION(control_thread, p) {
                 }
               }
               break;
+            case COMMAND_LASERS_MUTE_EOF:
             case COMMAND_SCANNER_MOVE:
               {
                 // Wait until we have the right to move, but not above
@@ -169,10 +172,17 @@ static THD_FUNCTION(control_thread, p) {
                   case MSG_RESET:
                     control_emergency_halt("next frame semaphore was reset");
                 }
-                const uint16_t x = data >> 16;
-                const uint16_t y = data & 0xffff;
-                if (x > MAX_SCANNER_VALUE || y > MAX_SCANNER_VALUE) {
-                  control_emergency_halt("coordinates out of bound");
+                uint16_t x, y;
+                if (command == COMMAND_LASERS_MUTE_EOF) {
+                  x = last_x;
+                  y = last_y;
+                  is_muted = 1;
+                } else {
+                  x = data >> 16;
+                  y = data & 0xffff;
+                  if (x > MAX_SCANNER_VALUE || y > MAX_SCANNER_VALUE) {
+                    control_emergency_halt("coordinates out of bound");
+                  }
                 }
                 if (x != last_x || y != last_y || is_muted) {
                   last_move = chVTGetSystemTimeX();
@@ -244,8 +254,7 @@ void control_lasers_mute(void) {
 }
 
 void control_lasers_force_mute(void) {
-  control_lasers_mute();
-  control_scanner_xy(0, 0);
+  send_command(COMMAND_LASERS_MUTE_EOF, 0);
 }
 
 void control_lasers_unmute(void) {
