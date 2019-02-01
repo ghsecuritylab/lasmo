@@ -123,6 +123,38 @@ httpd_uri_t pause_uri = {
 };
 
 /* An HTTP POST handler */
+esp_err_t speed12_post_handler(httpd_req_t *req) {
+	ESP_LOGI(TAG, "Rate 12 handler");
+  lsm_uart_esp_send_data(TAG,"rd");
+	httpd_resp_send(req, (const char*) lasmo_html_str, strlen((const char*) lasmo_html_str));
+
+	return ESP_OK;
+}
+
+httpd_uri_t speed12_uri = {
+	.uri       = "/speed12",
+	.method    = HTTP_POST,
+	.handler   = speed12_post_handler,
+	.user_ctx  = NULL
+};
+
+/* An HTTP POST handler */
+esp_err_t speed30_post_handler(httpd_req_t *req) {
+	ESP_LOGI(TAG, "Rate 30 handler");
+  lsm_uart_esp_send_data(TAG,"rt");
+	httpd_resp_send(req, (const char*) lasmo_html_str, strlen((const char*) lasmo_html_str));
+
+	return ESP_OK;
+}
+
+httpd_uri_t speed30_uri = {
+	.uri       = "/speed30",
+	.method    = HTTP_POST,
+	.handler   = speed30_post_handler,
+	.user_ctx  = NULL
+};
+
+/* An HTTP POST handler */
 esp_err_t stop_post_handler(httpd_req_t *req) {
 	ESP_LOGI(TAG, "Stop handler");
   lsm_uart_esp_send_data(TAG,"st");
@@ -153,6 +185,8 @@ httpd_handle_t start_webserver(void) {
     httpd_register_uri_handler(server, &response_uri);
     httpd_register_uri_handler(server, &pause_uri);
     httpd_register_uri_handler(server, &stop_uri);
+    httpd_register_uri_handler(server, &speed12_uri);
+    httpd_register_uri_handler(server, &speed30_uri);
     return server;
   }
   ESP_LOGI(TAG, "Error starting server!");
