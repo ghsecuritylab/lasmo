@@ -90,6 +90,7 @@ static int display_frame(ilda_point_t* buf, size_t size_buf){
       if(get_stop_flag())
         return DISPLAY_END_WITH_STOP;
     }
+    control_lasers_force_mute();
 
     //if we have to change the frame
     switch (chBSemWaitTimeout(&next_frame_bsem,TIME_IMMEDIATE)) {
